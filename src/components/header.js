@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
               </Link>
 
               <div className="navbar-dropdown">
-                <Link to="/" className="navbar-item">Vehicles</Link>
+                <Link to="/support/" className="navbar-item">Vehicles</Link>
                 <Link to="/" className="navbar-item">Equipment</Link>
                 <Link to="/" className="navbar-item">Deploy</Link>
                 <Link to="/" className="navbar-item">Human Resources</Link>

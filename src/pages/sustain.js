@@ -1,8 +1,10 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import People from "../templates/ppl"
+import Health from "../templates/health"
+import Social from "../templates/social"
 
 const Sustainability = () => (
   <Layout>
@@ -26,9 +28,9 @@ const Sustainability = () => (
     </div>
 
     <div className="container">
-      <div id="ppl">People Development</div>
-      <div id="health">People Development</div>
-      <div id="social">People Development</div>
+      <div id="ppl"><People></People></div>
+      <div id="health"><Health></Health></div>
+      <div id="social"><Social></Social></div>
     </div>
 
     </div>
