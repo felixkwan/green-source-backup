@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Tab from './Tab';
-import Template from '../components/template';
 
 class Tabs extends Component {
   static propTypes = {
@@ -48,7 +47,7 @@ class Tabs extends Component {
             );
           })}
         </ul>
-        <div className="tab-content">
+        <div className=" section tab-content">
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
             return child.props.children;
