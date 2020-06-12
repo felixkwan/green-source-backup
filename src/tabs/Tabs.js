@@ -48,12 +48,12 @@ class Tabs extends Component {
             );
           })}
         </ul>
-        <Template className="tab-content">
+        <div className="tab-content">
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
             return child.props.children;
           })}
-        </Template>
+        </div>
       </div>
     );
   }
