@@ -20,26 +20,16 @@ const Sustainability = () => (
     </div>
 
     <div className="pages-wrapper container">
-
-
-    <div className="sustain-tabs tabs is-centered">
-    <Tabs>
-      <div label="ppl">People Development</div>
-      <div label="events">Events</div>
-      <div label="social">Social Responsibility</div>
-
-    </Tabs>
-    </div>
-
-    <div className="container">
-    </div>
-
+      <div className="tab-wrapper">
+        <Tabs>
+          <div label="People Development">People Development</div>
+          <div label="Events">Events</div>
+          <div label="Social Responsibility">Social Responsibility</div>
+        </Tabs>
+      </div>
     </div>
 
   </Layout>
 )
-
-const container = document.createElement('div');
-document.body.appendChild(container);
 
 export default Sustainability

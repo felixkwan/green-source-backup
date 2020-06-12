@@ -451,13 +451,16 @@ h6 {
   }
 }
 
+.tabs-container {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .tab-list {
   border-bottom: 1px solid #ccc;
-  padding-left: 0;
 }
 
 .tab-list-item {
-  display: inline-block;
   list-style: none;
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;

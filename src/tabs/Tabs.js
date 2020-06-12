@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Tab from './Tab';
+import Template from '../components/template';
 
 class Tabs extends Component {
   static propTypes = {
@@ -32,8 +33,8 @@ class Tabs extends Component {
     } = this;
 
     return (
-      <div className="tabs">
-        <ol className="tab-list">
+      <div className="tabs tabs-container is-centered">
+        <ul className="tab-list">
           {children.map((child) => {
             const { label } = child.props;
 
@@ -46,13 +47,13 @@ class Tabs extends Component {
               />
             );
           })}
-        </ol>
-        <div className="tab-content">
+        </ul>
+        <Template className="tab-content">
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
             return child.props.children;
           })}
-        </div>
+        </Template>
       </div>
     );
   }

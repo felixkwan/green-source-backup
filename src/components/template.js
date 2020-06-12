@@ -15,7 +15,9 @@ const Template = ({ children }) => {
   return (
     <>
       <main>
-        {children}
+        <div className="container">
+          {children}
+        </div>
       </main>
     </>
   )
