@@ -471,3 +471,22 @@ h6 {
   border: solid $primary-color;
   border-width: 0 0 1px 0;
 }
+
+.tab-content {
+  max-width: 1366px;
+  white-space: normal;
+}
+
+.paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.paragraph-img {
+  position: inherit;
+  display: block;
+  min-height: 440px;
+  background-image: url("../images/service-1440.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 3rem auto 1.5rem;
+}
