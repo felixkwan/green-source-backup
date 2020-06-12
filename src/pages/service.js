@@ -21,36 +21,28 @@ const Service = () => (
         <div className="column">
           <aside className="menu">
             <p className="menu-label">
-              General
+              Gardening
             </p>
             <ul className="menu-list">
-              <li><a href="/">Dashboard</a></li>
-              <li><a href="/">Customers</a></li>
+              <li><p>ABC</p></li>
+              <li><p>ABC</p></li>
             </ul>
             <p className="menu-label">
-              Administration
+              Management
             </p>
             <ul className="menu-list">
-              <li><a href="/">Team Settings</a></li>
+              <li><p>ABC</p></li>
               <li>
-                <a className="is-active" href="/">Manage Your Team</a>
+                <p className="is-active">ABC</p>
                 <ul>
-                  <li><a href="/">Members</a></li>
-                  <li><a href="/">Plugins</a></li>
-                  <li><a href="/">Add a member</a></li>
+                  <li><p>ABC</p></li>
+                  <li><p>ABC</p></li>
+                  <li><p>ABC</p></li>
                 </ul>
               </li>
-              <li><a href="/">Invitations</a></li>
-              <li><a href="/">Cloud Storage Environment Settings</a></li>
-              <li><a href="/">Authentication</a></li>
-            </ul>
-            <p className="menu-label">
-              Transactions
-            </p>
-            <ul className="menu-list">
-              <li><a href="/">Payments</a></li>
-              <li><a href="/">Transfers</a></li>
-              <li><a href="/">Balance</a></li>
+              <li><p>ABC</p></li>
+              <li><p>ABC</p></li>
+              <li><p>ABC</p></li>
             </ul>
           </aside>
         </div>

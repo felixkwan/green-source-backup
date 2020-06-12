@@ -110,6 +110,11 @@ h6 {
   color: $primary-color;
 }
 
+.navbar.is-fixed-top .navbar-end span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .heading-title {
   max-width: 640px;
   color: white;
@@ -444,4 +449,22 @@ h6 {
   .sustain-tabs {
       display: block;
   }
+}
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
 }

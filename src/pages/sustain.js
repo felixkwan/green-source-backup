@@ -2,11 +2,13 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import People from "../templates/ppl"
-import Health from "../templates/health"
-import Social from "../templates/social"
+
+import Tabs from "../tabs/tabs";
+
+
 
 const Sustainability = () => (
+
   <Layout>
     <SEO title="Sustainability" />
     <div className="header-bk top">
@@ -19,23 +21,25 @@ const Sustainability = () => (
 
     <div className="pages-wrapper container">
 
+
     <div className="sustain-tabs tabs is-centered">
-      <ul>
-        <li className="is-active"><a href="#ppl">People Development</a></li>
-        <li><a href="#health">Health & Safety</a></li>
-        <li><a href="#social">Social Responsibility</a></li>
-      </ul>
+    <Tabs>
+      <div label="ppl">People Development</div>
+      <div label="events">Events</div>
+      <div label="social">Social Responsibility</div>
+
+    </Tabs>
     </div>
 
     <div className="container">
-      <div id="ppl"><People></People></div>
-      <div id="health"><Health></Health></div>
-      <div id="social"><Social></Social></div>
     </div>
 
     </div>
 
   </Layout>
 )
+
+const container = document.createElement('div');
+document.body.appendChild(container);
 
 export default Sustainability

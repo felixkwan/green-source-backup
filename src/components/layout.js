@@ -40,9 +40,9 @@ const Layout = ({ children }) => {
           {` `}
           </small>
           <ul className="social-list">
-            <li><a href="https://google.com"><i class="fi fi-instagram"></i></a></li>
-            <li><a href="https://google.com"><i class="fi fi-whatsapp"></i></a></li>
-            <li><a href="https://google.com"><i class="fi fi-facebook"></i></a></li>
+            <li><span ><i className="fi fi-instagram"></i></span></li>
+            <li><span ><i className="fi fi-whatsapp"></i></span></li>
+            <li><span ><i className="fi fi-facebook"></i></span></li>
           </ul>
         </footer>
     </>
