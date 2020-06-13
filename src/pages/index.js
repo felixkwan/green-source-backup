@@ -25,7 +25,7 @@ const IndexPage = () => (
         <div className="divider"></div>
       </div>
 
-      <div clasName="container main-content">
+      <div className="container main-content">
         <div className="main-img"></div>
         <div className="container text-wrapper">
           <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>

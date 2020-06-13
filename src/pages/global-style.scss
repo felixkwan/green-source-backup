@@ -135,6 +135,14 @@ h6 {
   color: $primary-color;
 }
 
+.section-text {
+  text-align: center;
+  max-width: 720px;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 0;
+}
+
 .divider {
   display: block;
   text-align: center;
@@ -161,6 +169,7 @@ h6 {
   z-index: 999;
   margin: auto;
   background: white;
+  height: 3.25rem;
 
   a {
     font-weight: 600;
@@ -187,11 +196,15 @@ h6 {
   }
 }
 
+.navbar-burger {
+
+}
+
 //main
 
 .wrapper {
   width: 100%;
-  margin-top: 55px;
+  margin-top: 3.25rem;
 }
 
 @media #{$desktop-device} {
@@ -463,7 +476,7 @@ h6 {
 .tab-list-item {
   list-style: none;
   margin-bottom: -1px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .tab-list-active {
@@ -488,5 +501,23 @@ h6 {
   background-image: url("../images/service-1440.jpg");
   background-position: center;
   background-size: cover;
-  margin: 3rem auto 1.5rem;
+  margin: 1.5rem auto 1.5rem;
+}
+
+.sustain-footer-title {
+  color: $primary-color;
+}
+
+.sustain-footer {
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
+}
+
+.sustain-img {
+  position: inherit;
+  display: block;
+  min-height: 440px;
+  background-image: url("../images/service-1440.jpg");
+  background-position: center;
+  background-size: cover;
 }

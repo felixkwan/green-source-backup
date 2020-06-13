@@ -100,6 +100,35 @@ const Sustainability = () => (
 
         </Tabs>
       </div>
+
+      <div className="container block-title">
+        <h2 className="section-title sustain-footer-title">Combine 3 Elements</h2>
+        <div className="paragraph section-text">
+            <article>
+              <p>
+              たくさんのこだわりと人の手をかけた我が家のアスパラガス。
+香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
+一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
+ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
+              </p>
+            </article>
+        </div>
+        <div className="divider"></div>
+          <div className="container sustain-footer">
+            <div class="columns is-gapless">
+              <div className="column">
+                  <div className="sustain-img sustain-img-1"></div>
+              </div>
+              <div className="column">
+                  <div className="sustain-img sustain-img-2"></div>
+              </div>
+              <div className="column">
+                  <div className="sustain-img sustain-img-3"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+
     </div>
 
   </Layout>

@@ -10,7 +10,14 @@ const Header = ({ siteTitle }) => (
           <div className="navbar-item">
             <Link to="/">{siteTitle}</Link>
           </div>
+
+          <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
         </div>
+
 
           <div className="navbar-menu navbar-end">
 
