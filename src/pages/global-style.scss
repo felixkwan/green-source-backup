@@ -52,6 +52,11 @@ h6 {
   font-size: 0.95rem;
 }
 
+article {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 //images
 
 .header-wrapper {
@@ -84,6 +89,10 @@ h6 {
 
 .sustain-header {
   background-color: $turquoise;
+}
+
+.contact-header {
+  background-color: $black-ter;
 }
 
 // button
@@ -550,4 +559,31 @@ h6 {
   background-image: url("../images/service-1440.jpg");
   background-position: center;
   background-size: cover;
+}
+
+// contact page
+
+.contact-wrapper {
+  .section-text {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .contact-list {
+    max-width: 720px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+
+  table {
+    font-size: 1.25rem;
+    
+    td, th{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
 }
