@@ -96,12 +96,14 @@ const IndexPage = () => (
             <div className="service-title">
               <h4>四季有著截然不同的風情</h4>
             </div>
+            <div className="container">
             <article>
               <p>
                 高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
               </p>
             </article>
-            <Link to="/service" className="primary-button">Check Our Services</Link>
+            </div>
+            <Link to="/service/" className="primary-button">Check Our Services</Link>
           </div>
         </div>
       </div>

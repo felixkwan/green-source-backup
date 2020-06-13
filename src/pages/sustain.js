@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 import Tabs from "../tabs/tabs"
 
@@ -115,7 +116,7 @@ const Sustainability = () => (
         </div>
         <div className="divider"></div>
           <div className="container sustain-footer">
-            <div class="columns is-gapless">
+            <div className="columns is-gapless">
               <div className="column">
                   <div className="sustain-img sustain-img-1"></div>
               </div>
@@ -126,6 +127,20 @@ const Sustainability = () => (
                   <div className="sustain-img sustain-img-3"></div>
               </div>
             </div>
+
+            <div className="paragraph section-text">
+              <div className="container">
+                <article>
+                  <p>
+                  たくさんのこだわりと人の手をかけた我が家のアスパラガス。
+    香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
+    一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
+    ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
+                  </p>
+                </article>
+              </div>
+            </div>
+            <Link to="/service" className="primary-button button-centered">Check Our Services</Link>
           </div>
       </div>
 

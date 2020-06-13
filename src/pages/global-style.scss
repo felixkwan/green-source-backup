@@ -94,6 +94,15 @@ h6 {
   background-color: $primary-color;
   font-size: 1.15rem;
   font-weight: 500;
+  margin-top: 2.5rem;
+  display: block;
+  text-align: center;
+  max-width: max-content;
+}
+
+.button-centered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 //text
@@ -197,8 +206,32 @@ h6 {
 }
 
 .navbar-burger {
-
+  background: transparent;
+  span {
+    width: 20px;
+    transition: all .25s ease-in-out;
+  }
 }
+
+
+.navbar-burger:hover {
+  background: transparent;
+
+  span:nth-child(2) {
+    transform: scaleX(0.4);
+    transition: all .25s ease-in-out;
+  }
+}
+
+.navbar-burger:focus {
+  background: transparent;
+
+  span:nth-child(2) {
+    transform: scaleX(0.4);
+    transition: all .25s ease-in-out;
+  }
+}
+
 
 //main
 
@@ -344,10 +377,6 @@ h6 {
   margin: auto 0;
 }
 
-.service-content .text-wrapper article {
-  margin-bottom: 2.5rem;
-}
-
 // block-contact
 
 .block-contact {
@@ -458,12 +487,6 @@ h6 {
   display: none;
 }
 
-@media #{$wide-device} {
-  .sustain-tabs {
-      display: block;
-  }
-}
-
 .tabs-container {
   flex-direction: column;
   justify-content: flex-start;
@@ -486,8 +509,14 @@ h6 {
 }
 
 .tab-content {
-  max-width: 1366px;
   white-space: normal;
+  padding: 1.5rem;
+}
+
+@media #{$desktop-device} {
+  .tab-content {
+    padding: 3rem 0 1.5rem;
+  }
 }
 
 .paragraph {
@@ -511,6 +540,7 @@ h6 {
 .sustain-footer {
   padding-top: 1.5rem;
   padding-bottom: 6rem;
+  text-align: center;
 }
 
 .sustain-img {
