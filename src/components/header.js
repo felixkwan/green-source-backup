@@ -1,4 +1,5 @@
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -11,7 +12,7 @@ const Header = ({ siteTitle }) => (
             <Link to="/">{siteTitle}</Link>
           </div>
 
-          <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <div role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -30,10 +31,10 @@ const Header = ({ siteTitle }) => (
               </span>
 
               <div className="navbar-dropdown">
-                <Link to="/support/" className="navbar-item">Vehicles</Link>
-                <Link to="/support/" className="navbar-item">Equipment</Link>
-                <Link to="/support/" className="navbar-item">Deploy</Link>
-                <Link to="/support/" className="navbar-item">Human Resources</Link>
+                <AnchorLink to="/support#vehicles" className="navbar-item">Vehicles</AnchorLink>
+                <AnchorLink to="/support#equipment" className="navbar-item">Equipment</AnchorLink>
+                <AnchorLink to="/support#deploy" className="navbar-item">Deploy</AnchorLink>
+                <AnchorLink to="/support#human-resources" className="navbar-item">Human Resources</AnchorLink>
               </div>
             </div>
 

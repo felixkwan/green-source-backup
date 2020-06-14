@@ -59,7 +59,7 @@ const Contact = () => (
               </tr>
               <tr>
                 <th>Manager</th>
-                <td>Mr. Yip Chi Shing</td>
+                <td>Nic Yip</td>
               </tr>
               <tr>
                 <th>Mobile</th>
