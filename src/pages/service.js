@@ -1,10 +1,25 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-const Service = () => (
+const Service = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "service-1440.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1366) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return (
   <Layout>
     <SEO title="Service" />
     <div className="header-bk top">
@@ -17,50 +32,154 @@ const Service = () => (
 
     <div className="pages-wrapper service-wrapper container clearfix">
       <div className="service-content">
-      <div className="columns side-menu">
+        <div className="columns side-menu">
+
+          <div className="column is-four-fifths service-details">
+            <h1 className="service-heading">Gardening</h1>
+
+            <div className="service-details-wrapper">
+              <div id="item-1" className="container">
+                <h2 className="service-title">Garden Design & Build</h2>
+                <div className="container">
+                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                </div>
+                <div className="container text-wrapper">
+                  <article>
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="service-details-wrapper">
+              <div id="item-2" className="container">
+                <h2 className="service-title">Garden Maintenance</h2>
+                  <div className="tile is-ancestor">
+                    <div className="tile is-vertical">
+
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                        </div>
+                      </div>
+
+                      <div className="tile is-parent">
+                        <div className="tile is-child">
+                          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                        </div>
+                        <div className="tile is-child">
+                          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                <div className="container text-wrapper">
+                  <article>
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                  </article>
+                </div>
+            </div>
+          </div>
+
+          <h1 className="service-heading">Management</h1>
+          <div className="service-details-wrapper">
+            <div id="item-3" className="container">
+              <h2 className="service-title">Water Flow</h2>
+              <div className="container">
+                <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+              </div>
+              <div className="container text-wrapper">
+                <article>
+                  <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                </article>
+              </div>
+            </div>
+
+            <div id="item-3-1" className="container sub-item">
+              <h2 className="service-title">Water Flow Method 1</h2>
+              <div className="container text-wrapper">
+                <article>
+                  <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                </article>
+              </div>
+            </div>
+
+            <div id="item-3-2" className="container sub-item">
+              <h2 className="service-title">Water Flow Method 2</h2>
+              <div className="container text-wrapper">
+                <article>
+                  <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                </article>
+              </div>
+            </div>
+
+
+            <div className="service-details-wrapper">
+              <div id="item-4" className="container">
+                <h2 className="service-title">Item 4</h2>
+                <div className="container">
+                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                </div>
+                <div className="container text-wrapper">
+                  <article>
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div className="service-details-wrapper">
+              <div id="item-5" className="container">
+                <h2 className="service-title">Item 5</h2>
+                <div className="container">
+                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                </div>
+                <div className="container text-wrapper">
+                  <article>
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
           <div className="column">
             <aside className="menu">
-              <p className="menu-label">
+              <h3 className="menu-label">
                 Gardening
-              </p>
+              </h3>
               <ul className="menu-list">
-                <li ><AnchorLink to="#item-1">item-1</AnchorLink></li>
-                <li><AnchorLink to="#item-2">item-2</AnchorLink></li>
+                <li ><AnchorLink to="/service#item-1">Garden Build</AnchorLink></li>
+                <li><AnchorLink to="/service#item-2">Garden Maintain</AnchorLink></li>
               </ul>
-              <p className="menu-label">
+              <h3 className="menu-label">
                 Management
-              </p>
+              </h3>
               <ul className="menu-list">
-                <li><p>ABC</p></li>
+                <li><AnchorLink to="/service#item-3">Water Flow</AnchorLink></li>
                 <li>
                   <ul>
-                    <li><p>ABC</p></li>
-                    <li><p>ABC</p></li>
-                    <li><p>ABC</p></li>
+                    <li><AnchorLink to="/service#item-3-1">Method 1</AnchorLink></li>
+                    <li><AnchorLink to="/service#item-3-2">Method 2</AnchorLink></li>
                   </ul>
                 </li>
-                <li><p>ABC</p></li>
-                <li><p>ABC</p></li>
-                <li><p>ABC</p></li>
+                <li><AnchorLink to="/service#item-4">item-4</AnchorLink></li>
+                <li><AnchorLink to="/service#item-5">item-5</AnchorLink></li>
               </ul>
             </aside>
           </div>
 
-          <div className="column is-four-fifths service-details">
-            <div id="item-1">
-              <p>Garden</p>
-            </div>
-            <div id="item-2">
-              <p>Item-2</p>
-            </div>
           </div>
       </div>
     </div>
 
-    </div>
-
   </Layout>
-)
+  )
+}
 
 export default Service

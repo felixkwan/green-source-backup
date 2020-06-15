@@ -10,11 +10,12 @@ $ultra-wide-device: "only screen and (min-width : 1216px)";
 @import "~bulma/bulma.sass";
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,'Inter', 'Noto Sans TC', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,'Inter','Noto Sans TC', Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.15rem;
   color: $text-color;
 }
@@ -114,6 +115,10 @@ article {
 }
 
 //text
+
+article p {
+  font-size: 1.15rem;
+}
 
 .navbar-link:not(.is-arrowless)::after {
   border-color: $primary-color;
@@ -245,6 +250,7 @@ article {
 
 .wrapper {
   width: 100%;
+  min-height: 100%;
   margin-top: 3.25rem;
 }
 
@@ -461,6 +467,61 @@ article {
 
 //service page
 
+.service-wrapper {
+  overflow-x: hidden;
+}
+
+@media #{$wide-device} {
+  .service-heading {
+    margin-right: 1.5rem;
+  }
+
+  .service-details-wrapper {
+    padding-right: 1.5rem;
+  }
+}
+
+.service-details-wrapper {
+  padding-top: .5rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-heading {
+  border-bottom: 1px solid $white-ter;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.service-title {
+  padding: 1rem 0;
+}
+
+.sub-item {
+  padding-left: 3rem;
+  background-color: #f7f7f7;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+
+  .service-title {
+    padding-top: 2.5rem;
+  }
+
+  .text-wrapper {
+    background: transparent;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+
+.menu-label {
+  font-size: .95rem;
+}
+
+.menu-list li a {
+  font-size: 1.15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 //support page
 
 .support-content {
@@ -513,6 +574,7 @@ article {
 
 // sustain page
 
+
 .sustain-tabs {
   display: none;
 }
@@ -543,6 +605,7 @@ article {
 .tab-content {
   white-space: normal;
   padding: 1.5rem;
+  overflow: hidden;
 }
 
 @media #{$desktop-device} {

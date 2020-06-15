@@ -19,7 +19,7 @@ const Sustainability = () => (
       </div>
     </div>
 
-    <div className="pages-wrapper container">
+    <div className="sustain-wrapper pages-wrapper container">
       <div className="tab-wrapper">
         <Tabs>
 

@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
     <>
     <Helmet>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet" />
     </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
         <div className="wrapper">

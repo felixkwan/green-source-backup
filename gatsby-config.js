@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -100
+        offset: -150
       }
     },
     `gatsby-transformer-sharp`,
