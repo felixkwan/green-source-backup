@@ -469,9 +469,15 @@ article p {
 
 .service-wrapper {
   overflow-x: hidden;
+  padding: 1rem;
 }
 
 @media #{$wide-device} {
+  .service-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .service-heading {
     margin-right: 1.5rem;
   }
