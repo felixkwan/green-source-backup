@@ -1,5 +1,7 @@
 // If need, change your variables before importing Bulma
 $primary-color: #47B972;
+$light-green: #f5fbf8;
+$lighr-grey-green: #e3f4eb;
 $dark-blue-green: #068456;
 $dark-blue: #00282d;
 $text-color: hsl(0, 0%, 22%);
@@ -22,7 +24,7 @@ body {
 }
 
 a {
-  color: $text-color;
+  color: $dark-blue;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,7 +83,7 @@ article {
 }
 
 .service-header {
-  background-color: $black-ter;
+  background-color: $dark-blue;
 }
 
 .client-header {
@@ -156,6 +158,7 @@ article p {
   text-align: center;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  color: $dark-blue;
 }
 
 .section-subtitle {
@@ -221,6 +224,10 @@ article p {
   .navbar-dropdown {
     border-color: $primary-color;
   }
+}
+
+.navbar-item, .navbar-link {
+  color: $dark-blue;
 }
 
 .navbar-burger {
@@ -510,7 +517,7 @@ article p {
 
 .sub-item {
   padding-left: 3rem;
-  background-color: #f7f7f7;
+  background-color: $light-green;
   border-radius: .5rem;
   margin-bottom: 1.5rem;
 
@@ -527,12 +534,17 @@ article p {
 
 .menu-label {
   font-size: .95rem;
+  color: $primary-color;
 }
 
 .menu-list li a {
   font-size: 1.15rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.menu-list a:hover {
+  background-color: $lighr-grey-green ;
 }
 
 //support page
@@ -568,12 +580,12 @@ article p {
 }
 
 .row-1 {
-  background: #eee;
+  background: $light-green;
   margin-top: -3rem;
 }
 
 .row-3 {
-  background: #eee;
+  background: $light-green;
 }
 
 .vehicle-icon {
@@ -646,6 +658,7 @@ article p {
 
 .tab-list {
   border-bottom: 1px solid #ccc;
+  color: $dark-blue;
 }
 
 .tab-list-item {
@@ -671,6 +684,7 @@ article p {
 .tab-title {
   display: flex;
   flex-direction: row;
+  color: $dark-blue;
 
   h2 {
     padding-top: .5rem;
