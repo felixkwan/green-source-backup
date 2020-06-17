@@ -683,6 +683,13 @@ article p {
   background-image: url("../images/icons8-smart-card-64.png");
 }
 
+@media #{$wide-device} {
+  .support-img {
+    margin-top: -8rem;
+    margin-left: -3rem;
+  }  
+}
+
 //client page
 
 .client-list {
