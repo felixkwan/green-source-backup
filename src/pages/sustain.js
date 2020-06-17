@@ -25,8 +25,9 @@ const Sustainability = () => (
 
         <div label="People" className="container">
           <div className="columns tap-content-inner">
-            <div className="column">
-                <h2>People Development</h2>
+            <div className="column tab-title">
+              <div className="bk-icon ppl-icon"></div>
+              <h2>People Development</h2>
             </div>
             <div className="column">
               <div className="paragraph">
@@ -51,8 +52,9 @@ const Sustainability = () => (
 
           <div label="Health" className="container">
             <div className="columns tap-content-inner">
-              <div className="column">
-                  <h2>Health & Events</h2>
+              <div className="column tab-title">
+                <div className="bk-icon health-icon"></div>
+                <h2>Health & Events</h2>
               </div>
               <div className="column">
                 <div className="paragraph">
@@ -76,8 +78,9 @@ const Sustainability = () => (
 
           <div label="Society" className="container">
             <div className="columns tap-content-inner">
-              <div className="column">
-                  <h2>Social Responsibility</h2>
+              <div className="column tab-title">
+                <div className="bk-icon social-icon"></div>
+                <h2>Social Responsibility</h2>
               </div>
               <div className="column">
                 <div className="paragraph">

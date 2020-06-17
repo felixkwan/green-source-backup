@@ -121,6 +121,7 @@ const IndexPage = () => (
     <div className="block-client section">
       <div className="container">
         <h2 className="section-title">Our Clients</h2>
+        <Link to="/client/" className="primary-button button-centered">View More</Link>
       </div>
     </div>
 
