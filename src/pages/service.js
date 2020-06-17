@@ -31,6 +31,13 @@ const Service = () => {
     </div>
 
     <div className="pages-wrapper service-wrapper container clearfix">
+
+      <div className="container text-wrapper">
+        <article class="notes">
+          <p>Service would be modified by case scale.</p>
+        </article>
+      </div>
+
       <div className="service-content">
         <div className="columns side-menu">
 
@@ -39,7 +46,7 @@ const Service = () => {
 
             <div className="service-details-wrapper">
               <div id="item-1" className="container">
-                <h2 className="service-title">Garden Design & Build</h2>
+                <h2 className="service-title">Design & Build</h2>
                 <div className="container">
                   <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                 </div>
@@ -54,7 +61,7 @@ const Service = () => {
 
             <div className="service-details-wrapper">
               <div id="item-2" className="container">
-                <h2 className="service-title">Garden Maintenance</h2>
+                <h2 className="service-title">Maintenance</h2>
                   <div className="tile is-ancestor">
                     <div className="tile is-vertical">
 
@@ -154,8 +161,8 @@ const Service = () => {
                 Gardening
               </h3>
               <ul className="menu-list">
-                <li ><AnchorLink to="/service#item-1">Garden Build</AnchorLink></li>
-                <li><AnchorLink to="/service#item-2">Garden Maintain</AnchorLink></li>
+                <li ><AnchorLink to="/service#item-1">Design & Build</AnchorLink></li>
+                <li><AnchorLink to="/service#item-2">Maintain</AnchorLink></li>
               </ul>
               <h3 className="menu-label">
                 Management

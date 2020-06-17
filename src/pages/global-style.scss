@@ -1,7 +1,8 @@
 // If need, change your variables before importing Bulma
 $primary-color: #47B972;
 $light-green: #f5fbf8;
-$lighr-grey-green: #e3f4eb;
+$light-grey-green: #e3f4eb;
+$grey-green: #9dd8b9;
 $dark-blue-green: #068456;
 $dark-blue: #00282d;
 $text-color: hsl(0, 0%, 22%);
@@ -83,33 +84,61 @@ article {
 }
 
 .service-header {
-  background-color: $dark-blue;
+  background-color: $light-grey-green;
+
+  h1 {
+    color: $dark-blue-green;
+  }
 }
 
 .client-header {
-  background-color: $dark-blue-green;
+  background-color: $light-grey-green;
+
+  h1 {
+    color: $dark-blue-green;
+  }
 }
 
 .sustain-header {
-  background-color: $turquoise;
+  background-color: $light-grey-green;
+
+  h1 {
+    color: $dark-blue-green;
+  }
 }
 
 .contact-header {
-  background-color: $black-ter;
+  background-color: $light-grey-green;
+
+  h1 {
+    color: $dark-blue-green;
+  }
 }
 
-// button
+//button
 
 .primary-button {
   padding: 1rem 1.5rem;
   color: white;
-  background-color: $primary-color;
+  background-color: $dark-blue;
   font-size: 1.15rem;
   font-weight: 500;
   margin-top: 2.5rem;
   display: block;
   text-align: center;
   max-width: max-content;
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+    transition: all .25s ease-in-out;
+  }
+  &:focus {
+    background-color: $primary-color;
+    color: white;
+    transition: all .25s ease-in-out;
+  }
 }
 
 .button-centered {
@@ -128,11 +157,12 @@ article p {
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: $primary-color;
+  border-color: $dark-blue;
 }
 
 .navbar-link:hover {
   color: $primary-color;
+  background-color: $light-green;
 }
 
 .navbar-end a:hover {
@@ -173,6 +203,14 @@ article p {
   padding: 1rem 1.5rem 0;
 }
 
+.title-number {
+  color: $dark-blue;
+}
+
+.title-text {
+  color: $dark-blue;
+}
+
 .divider {
   display: block;
   text-align: center;
@@ -193,6 +231,11 @@ article p {
   color: $turquoise;
 }
 
+.notes {
+  font-size: 0.8rem;
+  color: #9dd8b9;
+}
+
 //navbar
 
 .navbar.is-fixed-top {
@@ -200,7 +243,7 @@ article p {
   margin: auto;
   background: white;
   height: 3.25rem;
-
+  border-bottom: 1px solid $light-grey-green;
   a {
     font-weight: 600;
   }
@@ -222,7 +265,16 @@ article p {
   }
 
   .navbar-dropdown {
-    border-color: $primary-color;
+    border: none;
+
+    a.navbar-item {
+      &:hover {
+        background-color: $light-green;
+      }
+      &:focus {
+        background-color: $light-green;
+      }
+    }
   }
 }
 
@@ -232,8 +284,11 @@ article p {
 
 .navbar-burger {
   background: transparent;
+  color: $dark-blue;
+
   span {
     width: 20px;
+    height: 2px;
     transition: all .25s ease-in-out;
   }
 }
@@ -416,7 +471,7 @@ article p {
 // block-contact
 
 .block-contact {
-  background-color: $white-ter;
+  background-color: $light-green;
 }
 
 .block-contact .contact-content {
@@ -477,11 +532,22 @@ article p {
   margin-top: 2.5rem;
 }
 
+@media #{$desktop-device} {
+  .pages-wrapper {
+    margin-top: 5rem;
+  }
+}
+
 //service page
 
 .service-wrapper {
   overflow-x: hidden;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.service-details {
+  padding-top: 0;
 }
 
 .service-details-wrapper {
@@ -493,10 +559,12 @@ article p {
   border-bottom: 1px solid $white-ter;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  color: $dark-blue;
 }
 
 .service-title {
   padding: 1rem 0;
+  color: $dark-blue;
 }
 
 @media #{desktop-device} {
@@ -523,6 +591,7 @@ article p {
 
   .service-title {
     padding-top: 2.5rem;
+    color: $primary-color;
   }
 
   .text-wrapper {
@@ -534,17 +603,27 @@ article p {
 
 .menu-label {
   font-size: .95rem;
-  color: $primary-color;
+  color: $grey-green;
+}
+
+.menu-list li ul {
+  border-color: $white-ter;
 }
 
 .menu-list li a {
   font-size: 1.15rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
+  color: $dark-blue;
 
-.menu-list a:hover {
-  background-color: $lighr-grey-green ;
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+  &:focus {
+    background-color: $primary-color;
+    color: white;
+  }
 }
 
 //support page
@@ -657,8 +736,11 @@ article p {
 }
 
 .tab-list {
-  border-bottom: 1px solid #ccc;
   color: $dark-blue;
+}
+
+.tabs ul {
+  border-bottom: 1px solid $light-grey-green;
 }
 
 .tab-list-item {

@@ -54,7 +54,7 @@ const Support = () => {
           <div className="hero-body">
             <div className="columns">
                 <div className="column is-one-third">
-                 <Img fluid={data.vehicleImage.childImageSharp.fluid} />
+
                 </div>
 
                 <div className="column support-content vehicle-img">
@@ -80,7 +80,7 @@ const Support = () => {
           <div className="hero-body">
             <div className="columns">
                 <div className="column is-one-third">
-                 <Img fluid={data.vehicleImage.childImageSharp.fluid} />
+
                 </div>
 
                 <div className="column support-content vehicle-img">
@@ -106,7 +106,7 @@ const Support = () => {
           <div className="hero-body">
             <div className="columns">
                 <div className="column is-one-third">
-                 <Img fluid={data.vehicleImage.childImageSharp.fluid} />
+
                 </div>
 
                 <div className="column support-content vehicle-img">
@@ -132,7 +132,7 @@ const Support = () => {
           <div className="hero-body">
             <div className="columns">
                 <div className="column is-one-third">
-                 <Img fluid={data.vehicleImage.childImageSharp.fluid} />
+
                 </div>
 
                 <div className="column support-content vehicle-img">

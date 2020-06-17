@@ -17,8 +17,7 @@ const Clients = () => (
     <div className="pages-wrapper container">
 
     <div className="container block-title">
-      <h4 className="section-subtitle">Build For Seasons</h4>
-      <h2 className="section-title">Everyone Enjoy Create With Us</h2>
+      <h2 className="section-title">We're Waiting For You.</h2>
       <div className="divider"></div>
     </div>
 
