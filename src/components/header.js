@@ -6,7 +6,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="navbar is-fixed-top">
-
+      <div className="container">
         <div className="navbar-brand">
           <div className="navbar-item">
             <Link to="/">{siteTitle}</Link>
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
             <div className="navbar-item"><Link to="/sustain/">Sustainability</Link></div>
             <div className="navbar-item"><Link to="/contact/">Contact</Link></div>
           </div>
-
+      </div>
     </div>
   </header>
 )

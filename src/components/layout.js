@@ -36,15 +36,23 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
         <footer className="footer">
-        <small>
-          © {new Date().getFullYear()} Green Source Gardening Art Co.Ltd
-          {` `}
-          </small>
-          <ul className="social-list">
-            <li><span ><i className="fi fi-instagram"></i></span></li>
-            <li><span ><i className="fi fi-whatsapp"></i></span></li>
-            <li><span ><i className="fi fi-facebook"></i></span></li>
-          </ul>
+          <div className="container">
+            <div className="columns">
+              <div className="column is-half">
+                <small>
+                © {new Date().getFullYear()} Green Source Gardening Art Co.Ltd
+                {` `}
+                </small>
+              </div>
+              <div className="column is-half">
+                <ul className="social-list">
+                  <li><span ><i className="fi fi-instagram"></i></span></li>
+                  <li><span ><i className="fi fi-whatsapp"></i></span></li>
+                  <li><span ><i className="fi fi-facebook"></i></span></li>
+                </ul>
+              </div>            
+            </div>
+          </div>
         </footer>
     </>
   )

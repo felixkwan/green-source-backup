@@ -33,7 +33,7 @@ const Service = () => {
     <div className="pages-wrapper service-wrapper container clearfix">
 
       <div className="container text-wrapper">
-        <article class="notes">
+        <article className="notes">
           <p>Service would be modified by case scale.</p>
         </article>
       </div>
@@ -157,31 +157,31 @@ const Service = () => {
 
           <div className="column">
             <aside className="menu">
-              <h3 className="menu-label">
-                Gardening
-              </h3>
-              <ul className="menu-list">
-                <li ><AnchorLink to="/service#item-1">Design & Build</AnchorLink></li>
-                <li><AnchorLink to="/service#item-2">Maintain</AnchorLink></li>
-              </ul>
-              <h3 className="menu-label">
-                Management
-              </h3>
-              <ul className="menu-list">
-                <li><AnchorLink to="/service#item-3">Water Flow</AnchorLink></li>
-                <li>
-                  <ul>
-                    <li><AnchorLink to="/service#item-3-1">Method 1</AnchorLink></li>
-                    <li><AnchorLink to="/service#item-3-2">Method 2</AnchorLink></li>
-                  </ul>
-                </li>
-                <li><AnchorLink to="/service#item-4">item-4</AnchorLink></li>
-                <li><AnchorLink to="/service#item-5">item-5</AnchorLink></li>
-              </ul>
+                <h3 className="menu-label">
+                  Gardening
+                </h3>
+                <ul className="menu-list">
+                  <li ><AnchorLink to="/service#item-1">Design & Build</AnchorLink></li>
+                  <li><AnchorLink to="/service#item-2">Maintain</AnchorLink></li>
+                </ul>
+                <h3 className="menu-label">
+                  Management
+                </h3>
+                <ul className="menu-list">
+                  <li><AnchorLink to="/service#item-3">Water Flow</AnchorLink></li>
+                  <li>
+                    <ul>
+                      <li><AnchorLink to="/service#item-3-1">Method 1</AnchorLink></li>
+                      <li><AnchorLink to="/service#item-3-2">Method 2</AnchorLink></li>
+                    </ul>
+                  </li>
+                  <li><AnchorLink to="/service#item-4">item-4</AnchorLink></li>
+                  <li><AnchorLink to="/service#item-5">item-5</AnchorLink></li>
+                </ul>
             </aside>
           </div>
 
-          </div>
+        </div>
       </div>
     </div>
 

@@ -116,30 +116,70 @@ const IndexPage = () => (
         <h2 className="section-title">About Our Garden</h2>
         <div className="divider"></div>
       </div>
-    </div>
 
-    <div className="block-client section">
-      <div className="container">
-        <h2 className="section-title">Our Clients</h2>
-        <Link to="/client/" className="primary-button button-centered">View More</Link>
-      </div>
-    </div>
+      <div className="showcase">
 
-    <div className="block-contact">
-      <div className="columns contact-content">
-        <div className="column on-left is-half">
-          <h4 className="contact-title">Contact</h4>
-          <h4 className="contact-subtitle">Ask any question on mobile:</h4>
-          <p>Ask any question on mobile:</p>
-          <div className="contact-button">
-            <p> Mail</p>
+        <div className="container cases">
+          <div className="client-thumb"></div>
+          <div className="client-content">
+            <h4 className="client-title">Company</h4>
+            <small className="client-date">2017-09-20</small>
           </div>
         </div>
 
-        <div className="column on-right is-half">
-          <h4 className="contact-title">Contact</h4>
-          <h4 className="contact-subtitle">Ask any question on mobile:</h4>
-          <p>Ask any question on mobile:</p>
+        <div className="container cases">
+          <div className="client-thumb"></div>
+          <div className="client-content">
+            <h4 className="client-title">Company</h4>
+            <small className="client-date">2017-09-20</small>
+          </div>
+        </div>
+
+        <div className="container cases">
+          <div className="client-thumb"></div>
+          <div className="client-content">
+            <h4 className="client-title">Company</h4>
+            <small className="client-date">2017-09-20</small>
+          </div>
+        </div>
+
+        <div className="container cases">
+          <div className="client-thumb"></div>
+          <div className="client-content">
+            <h4 className="client-title">Company</h4>
+            <small className="client-date">2017-09-20</small>
+          </div>
+        </div>
+
+        <div className="container cases">
+          <div className="client-thumb"></div>
+          <div className="client-content">
+            <h4 className="client-title">Company</h4>
+            <small className="client-date">2017-09-20</small>
+          </div>
+        </div>
+
+      </div>
+      <Link to="/client/" className="primary-button button-centered">View More</Link>
+    </div>
+
+    <div className="block-contact">
+      <div className="container">
+        <div className="columns contact-content">
+          <div className="column is-half">
+            <h4 className="contact-title">Contact</h4>
+            <h4 className="contact-subtitle">Ask any question on mobile:</h4>
+            <p>Ask any question on mobile:</p>
+            <div className="contact-button">
+              <p> Mail</p>
+            </div>
+          </div>
+
+          <div className="column is-half">
+            <h4 className="contact-title">Contact</h4>
+            <h4 className="contact-subtitle">Ask any question on mobile:</h4>
+            <p>Ask any question on mobile:</p>
+          </div>
         </div>
       </div>
     </div>

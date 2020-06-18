@@ -65,6 +65,10 @@ const Contact = () => (
                 <th>Mobile</th>
                 <td>9585 3845</td>
               </tr>
+              <tr>
+                <th>Mail</th>
+                <td>GreenSource@artiuminfo.com</td>
+              </tr>
 
               </tbody>
             </table>
