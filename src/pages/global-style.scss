@@ -17,14 +17,12 @@ $ultra-wide-device: "only screen and (min-width : 1216px)";
 html {
   font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-  height: 100%;
 }
 
 body {
   font-family: 'Inter','Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.15rem;
   color: $text-color;
-  height: 100%;
 }
 
 a {
@@ -64,6 +62,10 @@ article {
   margin-bottom: 1rem;
 }
 
+th {
+  font-weight: 600;
+}
+
 //images
 
 .header-wrapper {
@@ -84,7 +86,7 @@ article {
   background-repeat: no-repeat;
 }
 
-@medium #{$wide-device} {
+@media #{$wide-device} {
   .index-header {
     min-height: 320px;
   }
@@ -217,18 +219,9 @@ article p {
   z-index: 2;
 }
 
-.menu-list a.is-active {
-  background-color: $primary-color;
-}
-
-.tabs li.is-active a {
-  border-color: $turquoise;
-  color: $turquoise;
-}
-
 .notes {
   font-size: 0.8rem;
-  color: #9dd8b9;
+  color: $dark-blue;
 }
 
 //navbar
@@ -239,6 +232,8 @@ article p {
   background: white;
   height: 3.25rem;
   border-bottom: 1px solid $light-grey-green;
+  transition: all .25s ease-in-out;
+  
   a {
     font-weight: 600;
   }
@@ -302,7 +297,7 @@ article p {
 
 .navbar-burger {
   background: transparent;
-  color: $dark-blue;
+  color: white;
 
   span {
     width: 20px;
@@ -327,6 +322,54 @@ article p {
   span:nth-child(2) {
     transform: scaleX(0.4);
     transition: all .25s ease-in-out;
+  }
+}
+
+//navbar responsive
+
+@media only screen and (max-width: 1024px) {
+  .navbar.is-fixed-top {
+    background: $dark-blue;
+    border: none;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.nav-links {
+  height: auto;
+  display: none;
+  overflow: hidden;
+  list-style-type: none;
+  font-weight: 600;
+  background: $dark-blue;
+  transition: all .25 ease-in-out;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem 0;
+
+  .navbar-item {
+    padding: 1rem;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.show-nav {
+  display: block;
+  transition: all .25 ease-in-out;
+}
+
+@media #{$desktop-device} {
+  .nav-links.show-nav {
+    display: none;
   }
 }
 
@@ -713,15 +756,6 @@ article p {
   }
 }
 
-@media #{$desktop-device} {
-  .sticky-menu {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 3.5rem;
-    height: 100%;
-  }
-}
-
 .menu-label {
   font-size: .95rem;
   color: $grey-green;
@@ -744,6 +778,24 @@ article p {
   &:focus {
     background-color: $primary-color;
     color: white;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-list li a {
+    font-size: .95rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .menu-label {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
   }
 }
 
@@ -974,10 +1026,13 @@ article p {
 .contact-wrapper {
   .section-text {
     font-weight: 500;
-    font-size: 1.25rem;
     text-align: left;
     margin-top: 1.5rem;
     padding: 1.5rem;
+
+    article p {
+      font-size: 1.35rem;
+    }
   }
 
   .contact-list {
@@ -992,6 +1047,7 @@ article p {
     td, th{
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
+      color: $dark-blue;
     }
   }
 }
