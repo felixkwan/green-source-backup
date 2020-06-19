@@ -18,9 +18,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      - name: Install dependencies
+        run: yarn install --prod --pure-lockfile
       - name: Build
         run: |
-          yarn
           yarn build
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
