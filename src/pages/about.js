@@ -9,12 +9,12 @@ const About = () => (
     <div className="header-bk top">
       <div className="header-wrapper contact-header">
         <div className="section">
-          <h1 className="heading-title">Contact</h1>
+          <h1 className="heading-title">About Us</h1>
         </div>
       </div>
     </div>
 
-    <div className="contact-wrapper container">
+    <div className="about-wrapper container">
         <div className="paragraph section-text">
           <div className="container">
             <article>
@@ -74,7 +74,7 @@ const About = () => (
             </table>
         </div>
 
-        <div className="contact-footer container">
+        <div className="about-footer container">
         </div>
     </div>
 
