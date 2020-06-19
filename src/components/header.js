@@ -11,6 +11,7 @@ class Header extends Component {
   }
 
   render() {
+
     return (
       <>
         <header>
@@ -18,10 +19,10 @@ class Header extends Component {
             <div className="container">
               <div className="navbar-brand">
                 <div className="navbar-item">
-                  <Link to="/">Green Source Garedening</Link>
+                    <Link to="/">Green Source Gardening</Link>
                 </div>
     
-                <div role="button" onClick={this.Toggle} className="navbar-burger" aria-label="menu" aria-expanded="false">
+                <div role="button" onClick={this.Toggle} className={this.state.toggle ? "navbar-burger is-active" : "navbar-burger"} aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
@@ -56,7 +57,7 @@ class Header extends Component {
                   </div>
 
                 <div className="navbar-item"><Link to="/sustain/">Sustainability</Link></div>
-                <div className="navbar-item"><Link to="/contact/">Contact</Link></div>
+                <div className="navbar-item"><Link to="/about/">About</Link></div>
               </div>
             </div>
           </div>

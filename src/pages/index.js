@@ -116,71 +116,73 @@ const IndexPage = () => (
         <h2 className="section-title">About Our Garden</h2>
         <div className="divider"></div>
       </div>
+      
+      <div className="showcase">
+        <div className="columns is-gapless">
+          <div className="column">
+            <div className="container case">
+              <div className="case-content-wrapper">
+                <div className="case-content">
+                  <h3 className="case-title">School</h3>
+                  <div className="case-info">
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="column">
+            <div className="container case">
+              <div className="case-content-wrapper">
+                <div className="case-content">
+                  <h3 className="case-title">School</h3>
+                  <div className="case-info">
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="showcase">
-
-        <div className="container cases">
-          <div className="client-thumb"></div>
-          <div className="client-content">
-            <h4 className="client-title">Company</h4>
-            <small className="client-date">2017-09-20</small>
+        <div className="columns is-gapless">
+          <div className="column">
+            <div className="container case">
+              <div className="case-content-wrapper">
+                <div className="case-content">
+                  <h3 className="case-title">School</h3>
+                  <div className="case-info">
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="column">
+            <div className="container case">
+              <div className="case-content-wrapper">
+                <div className="case-content">
+                  <h3 className="case-title">School</h3>
+                  <div className="case-info">
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="container cases">
-          <div className="client-thumb"></div>
-          <div className="client-content">
-            <h4 className="client-title">Company</h4>
-            <small className="client-date">2017-09-20</small>
-          </div>
-        </div>
-
-        <div className="container cases">
-          <div className="client-thumb"></div>
-          <div className="client-content">
-            <h4 className="client-title">Company</h4>
-            <small className="client-date">2017-09-20</small>
-          </div>
-        </div>
-
-        <div className="container cases">
-          <div className="client-thumb"></div>
-          <div className="client-content">
-            <h4 className="client-title">Company</h4>
-            <small className="client-date">2017-09-20</small>
-          </div>
-        </div>
-
-        <div className="container cases">
-          <div className="client-thumb"></div>
-          <div className="client-content">
-            <h4 className="client-title">Company</h4>
-            <small className="client-date">2017-09-20</small>
-          </div>
-        </div>
-
       </div>
+
       <Link to="/client/" className="primary-button button-centered">View More</Link>
     </div>
 
     <div className="block-contact">
       <div className="container">
-        <div className="columns contact-content">
-          <div className="column is-half">
-            <h4 className="contact-title">Contact</h4>
-            <h4 className="contact-subtitle">Ask any question on mobile:</h4>
-            <p>Ask any question on mobile:</p>
-            <div className="contact-button">
-              <p> Mail</p>
-            </div>
-          </div>
 
-          <div className="column is-half">
-            <h4 className="contact-title">Contact</h4>
-            <h4 className="contact-subtitle">Ask any question on mobile:</h4>
-            <p>Ask any question on mobile:</p>
-          </div>
-        </div>
       </div>
     </div>
 
