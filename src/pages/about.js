@@ -39,7 +39,7 @@ const About = () => (
         </div>
 
         <div className="contact-list">
-            <table className="table contact-table">
+            <table className="table contact-table is-striped">
               <tbody>
               <tr>
                 <th>Company</th>

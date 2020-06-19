@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Header from "./header"
+import Contact from "./contact"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -35,6 +36,7 @@ const Layout = ({ children }) => {
         <div className="wrapper">
           <main>{children}</main>
         </div>
+        <Contact></Contact>
         <footer className="footer">
           <div className="container">
             <div className="columns">

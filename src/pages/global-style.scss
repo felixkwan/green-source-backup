@@ -137,6 +137,7 @@ th {
   text-align: center;
   max-width: max-content;
   transition: all .25s ease-in-out;
+  border-radius: .5rem;
 
   &:hover {
     background-color: $primary-color;
@@ -153,6 +154,11 @@ th {
 .button-centered {
   margin-left: auto;
   margin-right: auto;
+}
+
+.view-more-button {
+  min-width: 240px;
+  margin-top: 0;
 }
 
 //text
@@ -634,9 +640,6 @@ article p {
 
 //block-case
 
-.block-case {
-}
-
 .showcase {
   max-width: 1366px;
   margin: 0 auto;
@@ -667,11 +670,125 @@ article p {
   }
 }
 
+@media #{$wide-device} {
+  .case-content-wrapper {
+    opacity: 0;
+    transition: all .25s ease-in-out;
+  }
+
+  .case:hover > .case-content-wrapper {
+    opacity: 1;
+    transition: all .25s ease-in-out;
+  }
+}
+.block-case {
+  .text-wrapper {
+    padding: 1rem;
+    margin: 1.5rem auto 0;
+    text-align: center;
+    max-width: 720px;
+  }
+}
+
 //block-contact
 
 .block-contact {
   background-color: $light-green;
+  padding: 3rem 0;
+  color: $dark-blue;
 }
+
+.contact-content-wrapper {
+  padding: 1rem 2.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media #{$wide-device} {
+  .contact-content-wrapper {
+    padding: 1rem 2rem;
+  }
+}
+
+@media #{$desktop-device} {
+  .contact-content-wrapper {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.contact-item {
+  margin-bottom: .5rem;
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: .5rem;
+  }
+}
+
+.contact-item.contact-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $dark-blue;
+
+  h5 {
+    margin-right: .5rem;
+    padding: .5rem 1rem;
+    background: $dark-blue-green;
+    color: white;
+    border-radius: .25rem;
+  }
+
+  h4 {
+    padding: .5rem 0;
+  }
+}
+
+.contact-item.contact-mail {
+
+  a {
+    font-size: 1.25rem;
+    color: $dark-blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    margin-top: 1.5rem;
+    background: transparent;
+    border: 2px solid $dark-blue;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    span:first-child() {
+      display: flex;
+      flex-direction: row;
+      line-height: 1.7;
+
+      i {
+        margin: 0 1.5rem;
+        font-size: 2rem;
+      }
+    }
+
+    span:last-child {
+
+      i {
+        font-size: 1.5rem;
+        margin-top: .25rem;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  a:hover {
+    background: $dark-blue;
+    color: white;
+  }
+}
+
+
 
 //footer
 
@@ -680,7 +797,7 @@ article p {
    padding: 2.5rem 2rem;
    margin-bottom: 0;
    color: white;
-   background: $dark-blue-green;
+   background: $dark-blue;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -1081,7 +1198,7 @@ article p {
 
   .contact-list {
     max-width: 720px;
-    margin: 1.5rem auto;
+    margin: 2.5rem auto;
     padding: 1.5rem;
   }
 
@@ -1094,4 +1211,12 @@ article p {
       color: $dark-blue;
     }
   }
+}
+
+.table td, .table th {
+  border-color: $tea-green;
+}
+
+.table.is-striped tbody tr:not(.is-selected):nth-child(even) {
+  background: $light-green;
 }

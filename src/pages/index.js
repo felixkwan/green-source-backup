@@ -177,15 +177,14 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <Link to="/client/" className="primary-button button-centered">View More</Link>
-    </div>
-
-    <div className="block-contact">
-      <div className="container">
-
+      <div className="container text-wrapper">
+        <article>
+          <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+        </article>
       </div>
-    </div>
 
+      <Link to="/client/" className="primary-button button-centered view-more-button">View More</Link>
+    </div>
   </Layout>
 )
 
