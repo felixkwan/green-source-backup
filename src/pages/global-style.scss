@@ -1095,6 +1095,12 @@ article p {
   margin-bottom: .5rem;
 }
 
+@media only screen and (max-width: 1023px) {
+  .client-wrapper {
+    padding-bottom: 0;
+  }
+}
+
 // sustain page
 
 
