@@ -12,8 +12,10 @@ const IndexPage = () => (
 
     <div className="header-bk top">
       <div className="header-wrapper index-header">
-        <div className="section is-medium">
-          <h1 className="heading-title">Create and maintain a Clean & Green environment for the society</h1>
+        <div className="hero is-medium">
+            <div className="hero-body">
+              <h1 className="heading-title">Create and maintain a Clean & Green environment for the society</h1>
+            </div>
         </div>
       </div>
     </div>

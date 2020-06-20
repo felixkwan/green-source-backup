@@ -88,12 +88,6 @@ th {
   background-repeat: no-repeat;
 }
 
-@media #{$wide-device} {
-  .index-header {
-    min-height: 320px;
-  }
-}
-
 .service-header {
   background-color: $light-grey-green;
 
@@ -179,7 +173,7 @@ article p {
   z-index: 2;
   text-align: center;
   margin: .5rem auto;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -405,7 +399,7 @@ article p {
 
 .wrapper {
   margin-top: 3.25rem;
-  oveflow-x: hidden;
+  overflow-x: hidden;
 }
 
 @media #{$desktop-device} {
