@@ -1263,3 +1263,11 @@ article p {
 .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
   background: $light-green;
 }
+
+@media only screen and (max-width: 1023px) {
+  .about-wrapper {
+    table {
+      font-size: .95rem;
+    }
+  }
+}
