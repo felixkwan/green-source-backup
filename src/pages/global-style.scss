@@ -10,6 +10,7 @@ $text-color: hsl(0, 0%, 22%);
 $wide-device: "only screen and (min-width : 768px)";
 $desktop-device: "only screen and (min-width : 1024px)";
 $ultra-wide-device: "only screen and (min-width : 1216px)";
+$iPad-Pro-screen: "only screen and (width: 1024px)";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "~bulma/bulma.sass";
@@ -254,30 +255,6 @@ article p {
 
 }
 
-@media #{$desktop-device} {
-  .navbar.is-fixed-top {
-    padding: 0 1rem;
-    min-height: 85px;
-  }
-
-  .navbar-brand a:hover {
-    color: $dark-blue;
-  }
-
-  .navbar-dropdown {
-    border: none;
-
-    a.navbar-item {
-      &:hover {
-        background-color: $light-green;
-      }
-      &:focus {
-        background-color: $light-green;
-      }
-    }
-  }
-}
-
 .navbar-link:not(.is-arrowless)::after {
   border-color: $dark-blue;
 }
@@ -337,6 +314,34 @@ article p {
 
 //navbar responsive
 
+@media #{$desktop-device} {
+  .navbar.is-fixed-top {
+    padding: 0 .5rem;
+    min-height: 85px;
+  }
+
+  .navbar-brand a:hover {
+    color: $dark-blue;
+  }
+
+  .navbar-link:not(.is-arrowless)::after {
+    border-color: $primary-color;
+  }
+
+  .navbar-dropdown {
+    border: none;
+
+    a.navbar-item {
+      &:hover {
+        background-color: $light-green;
+      }
+      &:focus {
+        background-color: $light-green;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .navbar.is-fixed-top {
     background: $dark-blue;
@@ -344,6 +349,28 @@ article p {
 
     a {
       color: white;
+    }
+
+    .navbar-dropdown {
+      a {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .navbar-link {
+    margin: 1.25rem 0;
+    border-radius: .5rem;
+    color: $white;
+
+    &:active {
+      color: $dark-blue;
+    }
+    &:hover {
+      color: $dark-blue;
+    }
+    &:focus {
+      color: $dark-blue;
     }
   }
 }
@@ -383,12 +410,11 @@ article p {
   }
 }
 
-
 //main
 
 .wrapper {
-  width: 100%;
-  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3.25rem;
 }
 
