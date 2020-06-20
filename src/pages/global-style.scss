@@ -18,6 +18,7 @@ $iPad-Pro-screen: "only screen and (width: 1024px)";
 html {
   font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  ovreflow-y: scroll;
 }
 
 body {
@@ -348,7 +349,7 @@ article p {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .navbar.is-fixed-top {
     background: $dark-blue;
     border: none;
@@ -357,11 +358,23 @@ article p {
       color: white;
     }
 
-    .navbar-dropdown {
-      a {
-        color: $dark-blue;
-      }
+    .navbar-menu {
+      background: $dark-blue;
+      border-radius: 0 0 1rem 1rem;
     }
+  }
+
+  .navbar-dropdown a:hover {
+    background: transparent;
+  }
+
+  .navbar-item.has-dropdown:hover .navbar-link {
+    color: #46b972;
+    background-color: transparent;
+  }
+
+  .navbar-link:not(.is-arrowless)::after {
+    border-color: $primary-color;
   }
 
   .navbar-link {
@@ -381,47 +394,11 @@ article p {
   }
 }
 
-.nav-links {
-  height: auto;
-  display: none;
-  overflow: hidden;
-  list-style-type: none;
-  font-weight: 600;
-  background: $dark-blue;
-  transition: all .25 ease-in-out;
-  border-radius: 0 0 1rem 1rem;
-  padding: 1rem 0;
-
-  .navbar-item {
-    padding: 1rem;
-  }
-
-  a {
-    color: white;
-
-    &:hover {
-      color: white;
-    }
-  }
-}
-
-.show-nav {
-  display: block;
-  transition: all .25 ease-in-out;
-}
-
-@media #{$desktop-device} {
-  .nav-links.show-nav {
-    display: none;
-  }
-}
-
 //main
 
 .wrapper {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 3.25rem;
+  oveflow-x: hidden;
 }
 
 @media #{$desktop-device} {

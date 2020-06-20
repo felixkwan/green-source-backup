@@ -14,54 +14,43 @@ class Header extends Component {
 
     return (
       <>
-        <header>
-          <div className="navbar is-fixed-top">
-            <div className="container">
+        <nav id="navbar" className="navbar bd-navbar is-fixed-top">
+          <div className="container">
+
               <div className="navbar-brand">
-                <div className="navbar-item">
-                    <Link to="/">Green Source Gardening</Link>
-                </div>
-    
-                <div role="button" onClick={this.Toggle} className={this.state.toggle ? "navbar-burger is-active" : "navbar-burger"} aria-label="menu" aria-expanded="false">
+                <Link className="navbar-item" to="/">Green Source Gardening</Link>
+                <div role="button" onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                 </div>
               </div>
-
-              <div className={this.state.toggle ? "nav-links show-nav" : "nav-links"}>
-                <div className="navbar-mobile container">
+    
+              <div className={this.state.toggle ? "navbar-menu is-active" : "navbar-menu"}>
+                <div className="navbar-end">
                   <div className="navbar-item"><Link to="/service/">Service</Link></div>
                   <div className="navbar-item"><Link to="/client/">Clients</Link></div>
-                  <div className="navbar-item"><Link to="/support/">Support</Link></div>
+      
+                    <div className="navbar-item has-dropdown is-hoverable">
+                      <span className="navbar-link">
+                        Support
+                      </span>
+      
+                      <div className="navbar-dropdown">
+                        <AnchorLink to="/support#vehicles" className="navbar-item">Vehicles</AnchorLink>
+                        <AnchorLink to="/support#equipment" className="navbar-item">Equipment</AnchorLink>
+                        <AnchorLink to="/support#deploy" className="navbar-item">Deploy</AnchorLink>
+                        <AnchorLink to="/support#human-resource" className="navbar-item">Human Resources</AnchorLink>
+                      </div>
+                    </div>
+
                   <div className="navbar-item"><Link to="/sustain/">Sustainability</Link></div>
-                  <div className="navbar-item"><Link to="/contact/">Contact</Link></div>
+                  <div className="navbar-item"><Link to="/about/">About</Link></div>
                 </div>
               </div>
-    
-              <div className="navbar-menu navbar-end">
-                <div className="navbar-item"><Link to="/service/">Service</Link></div>
-                <div className="navbar-item"><Link to="/client/">Clients</Link></div>
-    
-                  <div className="navbar-item has-dropdown is-hoverable">
-                    <span className="navbar-link">
-                      Support
-                    </span>
-    
-                    <div className="navbar-dropdown">
-                      <AnchorLink to="/support#vehicles" className="navbar-item">Vehicles</AnchorLink>
-                      <AnchorLink to="/support#equipment" className="navbar-item">Equipment</AnchorLink>
-                      <AnchorLink to="/support#deploy" className="navbar-item">Deploy</AnchorLink>
-                      <AnchorLink to="/support#human-resource" className="navbar-item">Human Resources</AnchorLink>
-                    </div>
-                  </div>
 
-                <div className="navbar-item"><Link to="/sustain/">Sustainability</Link></div>
-                <div className="navbar-item"><Link to="/about/">About</Link></div>
-              </div>
-            </div>
           </div>
-        </header>
+        </nav>
       </>
     ); 
   }
