@@ -314,6 +314,12 @@ article p {
 
 //navbar responsive
 
+@media #{$iPad-Pro-screen} {
+  .navbar.is-fixed-top {
+    height: 86px;
+  }
+}
+
 @media #{$desktop-device} {
   .navbar.is-fixed-top {
     padding: 0 .5rem;
@@ -421,6 +427,12 @@ article p {
 @media #{$desktop-device} {
   .wrapper {
     margin-top: 85px;
+  }
+}
+
+@media #{$iPad-Pro-screen} {
+  .wrapper {
+    margin-top: 86px;
   }
 }
 
