@@ -361,6 +361,13 @@ article p {
     .navbar-menu {
       background: $dark-blue;
       border-radius: 0 0 1rem 1rem;
+      padding: 1rem;
+    }
+
+    .navbar-end {
+      .navbar-item {
+        border-top: 1px solid hsl(185.5,100%,12.9%);
+      }
     }
   }
 
@@ -378,9 +385,9 @@ article p {
   }
 
   .navbar-link {
-    margin: 1.25rem 0;
+    margin: .5rem 0 .25rem 0;
     border-radius: .5rem;
-    color: $white;
+    color: $primary-color;
 
     &:active {
       color: $dark-blue;
@@ -758,6 +765,14 @@ article p {
 
   h4 {
     padding: .5rem 0;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .contact-item.contact-number {
+    h5 {
+      padding: .5rem .5rem;
+    }
   }
 }
 
