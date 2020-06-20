@@ -79,9 +79,9 @@ th {
 
 .index-header {
   background:linear-gradient( 135deg,
-  rgba(81.6%,94.1%,75.3%, 0.25) 10%,
-  rgba(81.6%,94.1%,75.3%, 0.25) 100%),
-    url("../images/service-1440.jpg");
+  rgba(81.6%,94.1%,75.3%, 0.15) 10%,
+  rgba(81.6%,94.1%,75.3%, 0.35) 100%),
+    url("../images/heading-bk-1920.jpg");
 
   background-position: center;
   background-size: cover;
@@ -169,7 +169,7 @@ article p {
 
 .heading-title {
   max-width: 640px;
-  color: white;
+  color: $white;
   z-index: 2;
   text-align: center;
   margin: .5rem auto;
@@ -1208,10 +1208,22 @@ article p {
   position: inherit;
   display: block;
   min-height: 440px;
-  background-image: url("../images/service-1440.jpg");
   background-position: center;
   background-size: cover;
 }
+
+.sustain-img-1 {
+  background-image: url("../images/ppl-640.jpg");
+}
+
+.sustain-img-2 {
+  background-image: url("../images/dirt-640.jpg");
+}
+
+.sustain-img-3 {
+  background-image: url("../images/water-640.jpg");
+}
+
 
 //About page
 
