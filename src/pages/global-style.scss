@@ -939,10 +939,11 @@ article p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: $dark-blue;
+  border-radius: 0;
 
   &:hover {
-    background-color: $primary-color;
-    color: white;
+    background-color: $light-green;
+    color: $dark-blue;
   }
   &:focus {
     background-color: $primary-color;
