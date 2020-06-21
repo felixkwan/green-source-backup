@@ -228,7 +228,7 @@ article p {
 
 //navbar
 
-.navbar.is-fixed-top {
+.navbar {
   z-index: 999;
   margin: auto;
   background: white;
@@ -263,7 +263,7 @@ article p {
   color: $primary-color;
 }
 
-.navbar.is-fixed-top .navbar-end span {
+.navbar .navbar-end span {
     font-size: 1rem;
     font-weight: 600;
 }
@@ -310,13 +310,13 @@ article p {
 //navbar responsive
 
 @media #{$iPad-Pro-screen} {
-  .navbar.is-fixed-top {
+  .navbar {
     height: 86px;
   }
 }
 
 @media #{$desktop-device} {
-  .navbar.is-fixed-top {
+  .navbar {
     padding: 0 .5rem;
     min-height: 85px;
   }
@@ -344,7 +344,7 @@ article p {
 }
 
 @media only screen and (max-width: 1023px) {
-  .navbar.is-fixed-top {
+  .navbar {
     background: $dark-blue;
     border: none;
 

@@ -14,9 +14,8 @@ class Header extends Component {
 
     return (
       <>
-        <nav id="navbar" className="navbar bd-navbar is-fixed-top">
+        <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
           <div className="container">
-
               <div className="navbar-brand">
                 <Link className="navbar-item" to="/">Green Source Gardening</Link>
                 <div role="button" onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">

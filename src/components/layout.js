@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import posed from 'react-pose'
 
 import Header from "./header"
 import Contact from "./contact"
@@ -34,10 +35,8 @@ const Layout = ({ children }) => {
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet" />
     </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="wrapper">
-          <main>{children}</main>
-        </div>
-        <Contact></Contact>
+            <main>{children}</main>
+            <Contact></Contact>
         <footer className="footer">
           <div className="container">
             <div className="columns">
