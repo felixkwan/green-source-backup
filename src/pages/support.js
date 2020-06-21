@@ -50,7 +50,7 @@ const Support = () => {
          </div>
 
 
-          <div id="vehicles" className="section row-1">
+          <div id="vehicles" className="section section-row row-1">
             <div className="hero">
               <div className="hero-body">
                 <div className="columns">
@@ -76,7 +76,7 @@ const Support = () => {
             </div>
           </div>
 
-          <div id="equipment" className="section row-2">
+          <div id="equipment" className="section section-row row-2">
             <div className="hero">
               <div className="hero-body">
                 <div className="columns">
@@ -102,7 +102,7 @@ const Support = () => {
             </div>
           </div>
 
-          <div id="deploy" className="section row-3">
+          <div id="deploy" className="section section-row row-3">
             <div className="hero">
               <div className="hero-body">
                 <div className="columns">
@@ -128,7 +128,7 @@ const Support = () => {
             </div>
           </div>
 
-          <div id="human-resource" className="section row-4">
+          <div id="human-resource" className="section section-row row-4">
             <div className="hero">
               <div className="hero-body">
                 <div className="columns">

@@ -16,14 +16,14 @@ $iPad-Pro-screen: "only screen and (width: 1024px)";
 @import "~bulma/bulma.sass";
 
 html {
-  font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
+  font-size: 1rem;
 }
 
 body {
-  font-family: 'Inter','Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1.15rem;
+  font-family: 'Inter','Noto Sans JP', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   color: $text-color;
 }
 
@@ -238,16 +238,13 @@ article p {
   
   a {
     font-weight: 600;
+    font-size: 1.15rem;
   }
 
-    .navbar-brand a {
-      font-size: 1.25rem;
-    }
-
-    .navbar-end a {
-      font-size: 1rem;
-    }
-
+  .navbar-brand a {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
 }
 
 .navbar-link:not(.is-arrowless)::after {
@@ -263,18 +260,12 @@ article p {
   color: $primary-color;
 }
 
-.navbar .navbar-end span {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.navbar-item, .navbar-link {
-  color: $dark-blue;
-}
-
 .navbar-link {
-  margin: 1rem 0;
+  color: $dark-blue;
+  font-size: 1.15rem;
+  margin: .75rem 0;
   border-radius: .5rem;
+  font-weight: 600;
 }
 
 .navbar-burger {
@@ -319,10 +310,12 @@ article p {
   .navbar {
     padding: 0 .5rem;
     min-height: 85px;
-  }
 
-  .navbar-brand a:hover {
-    color: $dark-blue;
+    .navbar-brand {
+      a {
+        color: $dark-blue;
+      }
+    }
   }
 
   .navbar-link:not(.is-arrowless)::after {
@@ -348,7 +341,23 @@ article p {
     background: $dark-blue;
     border: none;
 
+    .navbar-brand  {
+      a {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      a:focus {
+        color: white;
+      } 
+    }
+
     a {
+      font-size: 1rem;
       color: white;
     }
 
@@ -458,6 +467,7 @@ article p {
   background-position: center;
   background-size: cover;
   margin: -3rem auto 1.5rem;
+  z-index: -1;
 }
 
 .block-main .text-wrapper {
@@ -999,9 +1009,18 @@ article p {
     }
 }
 
+.section-row {
+  padding: 1rem 1rem;
+}
+
+
 @media #{$desktop-device} {
   .support-content {
     margin-left: 1.5rem;
+  }
+
+  .section-row {
+    padding: 3rem 0;
   }
 }
 
@@ -1161,7 +1180,9 @@ article p {
   width: 48px;
   height: 48px;
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
   margin-right: 1.5rem;
 }
 
@@ -1228,7 +1249,18 @@ article p {
   background-image: url("../images/water-640.jpg");
 }
 
+@media only screen and ( max-width: 375px) {
+  .tab-title {
+    h2 {
+      font-size: 1.5rem;
+      padding-top: 0;
+    }
 
+    h2.health-title {
+      padding-top: .6rem;
+    }
+  }
+}
 //About page
 
 .about-wrapper {

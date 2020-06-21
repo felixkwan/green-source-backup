@@ -18,8 +18,8 @@ class Contact extends Component {
                         </div>
                         <div className="contact-item contact-mail">
                             <a href="#">
-                                <span><i class="fi fi-email"></i>Send us a mail</span>
-                                <span><i class="fi fi-angle-right"></i></span>
+                                <span><i className="fi fi-email"></i>Send us a mail</span>
+                                <span><i className="fi fi-angle-right"></i></span>
                             </a>
                         </div>
                     </div>

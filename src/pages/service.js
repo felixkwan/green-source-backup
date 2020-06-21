@@ -1,10 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Service = () => {
   const data = useStaticQuery(graphql`
@@ -161,22 +160,22 @@ const Service = () => {
                   Gardening
                 </h3>
                 <ul className="menu-list">
-                  <li ><AnchorLink to="/service#item-1">Design & Build</AnchorLink></li>
-                  <li><AnchorLink to="/service#item-2">Maintain</AnchorLink></li>
+                  <li ><Link to="/service#item-1">Design & Build</Link></li>
+                  <li><Link to="/service#item-2">Maintain</Link></li>
                 </ul>
                 <h3 className="menu-label">
                   Management
                 </h3>
                 <ul className="menu-list">
-                  <li><AnchorLink to="/service#item-3">Water Flow</AnchorLink></li>
+                  <li><Link to="/service#item-3">Water Flow</Link></li>
                   <li>
                     <ul>
-                      <li><AnchorLink to="/service#item-3-1">Method 1</AnchorLink></li>
-                      <li><AnchorLink to="/service#item-3-2">Method 2</AnchorLink></li>
+                      <li><Link to="/service#item-3-1">Method 1</Link></li>
+                      <li><Link to="/service#item-3-2">Method 2</Link></li>
                     </ul>
                   </li>
-                  <li><AnchorLink to="/service#item-4">item-4</AnchorLink></li>
-                  <li><AnchorLink to="/service#item-5">item-5</AnchorLink></li>
+                  <li><Link to="/service#item-4">item-4</Link></li>
+                  <li><Link to="/service#item-5">item-5</Link></li>
                 </ul>
             </aside>
           </div>

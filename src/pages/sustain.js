@@ -54,7 +54,7 @@ const Sustainability = () => (
             <div className="columns tap-content-inner">
               <div className="column tab-title">
                 <div className="bk-icon health-icon"></div>
-                <h2>Health & Events</h2>
+                <h2 className="health-title">Health & Events</h2>
               </div>
               <div className="column">
                 <div className="paragraph">

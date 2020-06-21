@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import SEO from "../components/seo"
 
 
@@ -150,7 +150,20 @@ const IndexPage = () => (
                 </p>
               </article>
             </div>
-            <Link to="/service/" className="primary-button">Check Our Services</Link>
+            <AniLink 
+                cover
+                to="/"
+                direction="down"
+                duration={1.5}
+                bg="
+                  center / cover   /* position / size */
+                  no-repeat        /* repeat */
+                  fixed            /* attachment */
+                  padding-box      /* origin */
+                  content-box      /* clip */
+                  white            /* color */
+                "
+            to="/service/" className="primary-button">Check Our Services</AniLink>
           </div>
         </div>
       </div>
@@ -253,11 +266,11 @@ const IndexPage = () => (
         </article>
       </div>
 
-      <Link data-sal="fade"
+      <AniLink fade data-sal="fade"
             data-sal-duration="350"
             data-sal-delay="500"
             data-sal-easing="ease" 
-            to="/client/" className="primary-button button-centered view-more-button">View More</Link>
+            to="/client/" className="primary-button button-centered view-more-button">View More</AniLink>
     </div>
   </Layout>
 )

@@ -14,12 +14,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -150
-      }
-    },
-    {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
           threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
@@ -36,6 +30,7 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
