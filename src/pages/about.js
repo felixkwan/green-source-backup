@@ -14,7 +14,7 @@ const About = () => (
       </div>
     </div>
 
-    <div className="about-wrapper container">
+    <div className="about-wrapper pages-wrapper container">
         <div className="paragraph section-text">
           <div className="container">
             <article>
