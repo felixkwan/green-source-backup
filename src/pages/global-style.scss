@@ -664,6 +664,12 @@ article p {
   background: $light-green;
 }
 
+@media only screen and (max-width: 1023px) {
+  .service-content .text-wrapper {
+    padding: 1rem .5rem;
+  }
+}
+
 //block-case
 
 .showcase {
