@@ -336,6 +336,24 @@ article p {
   }
 }
 
+@media only screen and (width: 1024px) {
+  .navbar {
+    a {
+      font-size: 1rem;
+    }
+
+    .navbar-brand  {
+      a {
+        font-size: 1.35rem;
+        line-height: 1;
+      }
+    }
+    .navbar-link {
+      font-size: 1rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .navbar {
     background: $dark-blue;
