@@ -578,6 +578,12 @@ article p {
 
 }
 
+@media only screen and (width: 1024px) {
+  .info-content {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
 @media #{$desktop-device} {
   .img-wrapper {
     width: 60%;
