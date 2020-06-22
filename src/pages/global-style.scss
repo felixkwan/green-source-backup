@@ -81,11 +81,20 @@ th {
   background:linear-gradient( 135deg,
   rgba(81.6%,94.1%,75.3%, 0.15) 10%,
   rgba(81.6%,94.1%,75.3%, 0.35) 100%),
-    url("../images/heading-bk-1920.jpg");
+    url("../images/doodle-plant-wide.png");
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.heading-title {
+  max-width: 640px;
+  color: $dark-blue;
+  z-index: 2;
+  text-align: center;
+  margin: .5rem auto;
+  font-size: 3rem;
 }
 
 .service-header {
@@ -164,15 +173,6 @@ th {
 
 article p {
   font-size: 1.15rem;
-}
-
-.heading-title {
-  max-width: 640px;
-  color: $white;
-  z-index: 2;
-  text-align: center;
-  margin: .5rem auto;
-  font-size: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
