@@ -783,7 +783,7 @@ article p {
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 1rem;
-  border: 1px solid $dark-blue;
+  background: white;
 
   h5 {
     margin-right: 1rem;
@@ -810,15 +810,13 @@ article p {
 
   a {
     font-size: 1.25rem;
-    color: $dark-blue;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 0;
-    background: transparent;
-    border-color: $dark-blue;
-    border-style: solid;
-    border-width: 0 1px 1px 1px;
+    background: $dark-blue;
+    margin-top: 1.5rem;
     overflow: hidden;
 
     span:first-child() {
@@ -844,7 +842,7 @@ article p {
   }
 
   a:hover {
-    background: $dark-blue;
+    background: $primary-color;
     color: white;
   }
 }
@@ -1457,6 +1455,7 @@ table {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       color: $dark-blue;
+      border: none;
     }
 
     .table-icon {
