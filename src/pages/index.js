@@ -182,12 +182,12 @@ const IndexPage = () => (
       
       <div className="showcase">
         <div className="columns is-gapless">
-          <div className="column">
-            <div  data-sal="fade"
-                  data-sal-duration="350"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"  
-                  className="container case">
+          <div  data-sal="fade"
+                data-sal-duration="350"
+                data-sal-delay="300"
+                data-sal-easing="ease" 
+                className="column">
+            <div className="container case">
               <div className="case-content-wrapper">
                 <div className="case-content">
                   <h3 className="case-title">School</h3>
@@ -199,12 +199,12 @@ const IndexPage = () => (
             </div>
           </div>
           
-          <div className="column">
-            <div  data-sal="fade"
-                  data-sal-duration="350"
-                  data-sal-delay="350"
-                  data-sal-easing="ease" 
-                  className="container case">
+          <div  data-sal="fade"
+                data-sal-duration="350"
+                data-sal-delay="350"
+                data-sal-easing="ease" 
+                className="column">
+            <div className="container case">
               <div className="case-content-wrapper">
                 <div className="case-content">
                   <h3 className="case-title">School</h3>
@@ -220,12 +220,12 @@ const IndexPage = () => (
 
       <div className="showcase">
         <div className="columns is-gapless">
-          <div className="column">
-            <div  data-sal="fade"
-                  data-sal-duration="350"
-                  data-sal-delay="400"
-                  data-sal-easing="ease"     
-                  className="container case">
+          <div  data-sal="fade"
+                data-sal-duration="350"
+                data-sal-delay="400"
+                data-sal-easing="ease" 
+                className="column">
+            <div className="container case">
               <div className="case-content-wrapper">
                 <div className="case-content">
                   <h3 className="case-title">School</h3>
@@ -237,12 +237,12 @@ const IndexPage = () => (
             </div>
           </div>
           
-          <div className="column">
-            <div  data-sal="fade"
+          <div  data-sal="fade"
                   data-sal-duration="350"
                   data-sal-delay="450"
-                  data-sal-easing="ease" 
-                  className="container case">
+                  data-sal-easing="ease"  
+          className="column">
+            <div className="container case">
               <div className="case-content-wrapper">
                 <div className="case-content">
                   <h3 className="case-title">School</h3>

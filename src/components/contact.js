@@ -10,14 +10,14 @@ class Contact extends Component {
                     <div className="container contact-content-wrapper">
                         <div className="contact-item">
                             <h2>Contact</h2>
-                            <small>Let's get to work. If you are thinking about a new garden.</small>
+                            <p>Let's get to work. If you are thinking about a new garden.</p>
                         </div>
                         <div className="contact-item contact-number">
                             <h5>Tel</h5>
                             <h4>2670 0378 / 2697 6456</h4>
                         </div>
                         <div className="contact-item contact-mail">
-                            <a href="#">
+                            <a href="/">
                                 <span><i className="fi fi-email"></i>Send us a mail</span>
                                 <span><i className="fi fi-angle-right"></i></span>
                             </a>

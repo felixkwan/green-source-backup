@@ -42,31 +42,38 @@ const About = () => (
             <table className="table contact-table is-striped">
               <tbody>
               <tr>
-                <th>Company</th>
+                <th className="table-title">Company</th>
+                <td className="table-icon"><i className="fi fi-asterisk"></i></td>
                 <td>Green Source Gardening Art Co.LTD</td>
               </tr>
               <tr>
-                <th>Address</th>
+                <th className="table-title">Address</th>
+                <td className="table-icon"><i className="fi fi-map"></i></td>
                 <td>G/f, No.8, Wilson Road, Jardine's Lookout </td>
               </tr>
               <tr>
-                <th>Tel</th>
+                <th className="table-title">Tel</th>
+                <td className="table-icon"><i className="fi fi-phone"></i></td>
                 <td>2670 0378 / 2697 6456</td>
               </tr>
               <tr>
-                <th>Fax</th>
+                <th className="table-title">Fax</th>
+                <td className="table-icon"><i className="fi fi-export"></i></td>
                 <td>2696 9016</td>
               </tr>
               <tr>
-                <th>Manager</th>
+                <th className="table-title">Manager</th>
+                <td className="table-icon"><i className="fi fi-person"></i></td>
                 <td>Nic Yip</td>
               </tr>
               <tr>
-                <th>Mobile</th>
+                <th className="table-title">Mobile</th>
+                <td className="table-icon"><i className="fi fi-mobile-alt"></i></td>
                 <td>9585 3845</td>
               </tr>
               <tr>
-                <th>Mail</th>
+                <th className="table-title">Mail</th>
+                <td className="table-icon"><i className="fi fi-comments"></i></td>
                 <td>GreenSource@artiuminfo.com</td>
               </tr>
 

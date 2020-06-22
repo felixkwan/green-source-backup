@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Tabs from "../tabs/tabs"
 
@@ -143,7 +143,20 @@ const Sustainability = () => (
                 </article>
               </div>
             </div>
-            <Link to="/service" className="primary-button button-centered">Check Our Services</Link>
+            <AniLink cover
+                  to="/"
+                  direction="down"
+                  duration={1.5}
+                  bg="
+                    center / cover   /* position / size */
+                    no-repeat        /* repeat */
+                    fixed            /* attachment */
+                    padding-box      /* origin */
+                    content-box      /* clip */
+                    white            /* color */
+                  "
+                  to="/service"
+                  className="primary-button button-centered">Check Our Services</AniLink>
           </div>
       </div>
 
