@@ -11,11 +11,19 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="header-bk top">
+    <div  data-sal="zoom-in"
+          data-sal-duration="450"
+          data-sal-delay="150"
+          data-sal-easing="ease"  
+          className="header-bk top">
       <div className="header-wrapper index-header">
         <div className="hero is-medium">
             <div className="hero-body">
-              <h1 className="heading-title">Create and maintain a Clean & Green environment for the society</h1>
+              <h1 data-sal="fade"
+                  data-sal-duration="250"
+                  data-sal-delay="500"
+                  data-sal-easing="ease" 
+                  className="heading-title">Create and maintain a Clean & Green environment for the society</h1>
             </div>
         </div>
       </div>
@@ -23,8 +31,8 @@ const IndexPage = () => (
 
     <div className="block-main blocks">
       <div  data-sal="fade"
-          data-sal-duration="250"
-            data-sal-delay="100"
+            data-sal-duration="250"
+            data-sal-delay="550"
             data-sal-easing="ease" 
             className="container block-title">
         <h4 className="section-subtitle">Showcases</h4>
@@ -35,7 +43,7 @@ const IndexPage = () => (
       <div className="container main-content">
         <div  data-sal="fade"
               data-sal-duration="350"
-              data-sal-delay="150"
+              data-sal-delay="300"
               data-sal-easing="ease"
               className="main-img"></div>
         <div  data-sal="slide-up"

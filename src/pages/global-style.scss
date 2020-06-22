@@ -223,6 +223,7 @@ article p {
 .notes {
   font-size: 0.8rem;
   color: $dark-blue;
+  padding: 0 1rem;
 }
 
 //navbar
@@ -325,6 +326,8 @@ article p {
     border: none;
 
     a.navbar-item {
+      color: $dark-blue;
+
       &:hover {
         background-color: $light-green;
       }
@@ -781,7 +784,7 @@ article p {
   h5 {
     margin-right: 1rem;
     padding: .75rem 1.25rem .75rem 1.25rem;
-    background: $dark-blue-green;
+    background: $dark-blue;
     color: white;
   }
 
@@ -1048,9 +1051,9 @@ article p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .menu-list li a {
-    font-size: .95rem;
+    font-size: 1rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
   }
@@ -1060,7 +1063,7 @@ article p {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -1207,7 +1210,7 @@ article p {
   }
 }
 
-// sustain page
+//sustain page
 
 
 .sustain-tabs {
@@ -1331,7 +1334,79 @@ article p {
   background-image: url("../images/water-640.jpg");
 }
 
-@media only screen and ( max-width: 375px) {
+.tab-title {
+
+  h2.health-title {
+    margin-top: .25rem;
+  }
+
+  .bk-icon {
+    margin-top: .25rem;
+  }
+
+  .health-icon {
+    margin-top: 0;
+  }
+}
+
+
+@media only screen and ( max-width: 1023px) {
+  .tab-title {
+
+    .bk-icon {
+      margin-top: 1rem;
+    }
+
+    .health-icon {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and ( min-width: 905px ) and ( max-width: 1022px) {
+  .tab-title {
+
+    .bk-icon {
+      margin-top: .15rem;
+    }
+
+    .health-icon {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and ( max-width: 768px ) {
+  .tab-title {
+
+    .health-icon {
+      margin-top: 0;
+    }
+
+    .social-icon {
+      margin-top: 0;
+    }
+
+    .ppl-icon {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and ( max-width: 480px ) {
+    .tab-title {
+      h2 {
+        font-size: 1.5rem;
+        padding-top: .5rem;
+      }
+
+      h2.title {
+        padding-top: .35rem;
+      }
+    }
+}
+
+@media only screen and ( max-width: 428px ) {
   .tab-title {
     h2 {
       font-size: 1.5rem;
@@ -1339,7 +1414,11 @@ article p {
     }
 
     h2.health-title {
-      padding-top: .6rem;
+      padding-top: .45rem;
+    }
+
+    .social-icon {
+      margin-top: .25rem;
     }
   }
 }
@@ -1421,3 +1500,7 @@ table {
 }
 
 //animation
+
+[data-sal=zoom-in] {
+  transform: scale(.95);
+}
