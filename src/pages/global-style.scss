@@ -658,7 +658,7 @@ article p {
   }
 }
 
-// block-service
+//block-service
 
 .service-img {
   background-color: $primary-color;
@@ -677,11 +677,6 @@ article p {
 .service-title {
   margin-bottom: 1rem;
   color: $primary-color;
-}
-
-.service-content .text-wrapper {
-  padding: 2.5rem;
-  margin: 0;
 }
 
 .block-service .service-content .text-wrapper {
@@ -960,6 +955,11 @@ article p {
 @media only screen and (max-width: 1023px) {
   .service-content .text-wrapper {
     padding: 1rem .5rem;
+  }
+
+  .block-service .service-content .text-wrapper {
+    padding: 2.5rem;
+    margin: 0;
   }
 
   .sub-item {

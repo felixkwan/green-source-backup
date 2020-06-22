@@ -202,7 +202,7 @@ const IndexPage = () => (
           <div className="column">
             <div  data-sal="fade"
                   data-sal-duration="350"
-                  data-sal-delay="400"
+                  data-sal-delay="350"
                   data-sal-easing="ease" 
                   className="container case">
               <div className="case-content-wrapper">
@@ -223,7 +223,7 @@ const IndexPage = () => (
           <div className="column">
             <div  data-sal="fade"
                   data-sal-duration="350"
-                  data-sal-delay="500"
+                  data-sal-delay="400"
                   data-sal-easing="ease"     
                   className="container case">
               <div className="case-content-wrapper">
@@ -240,7 +240,7 @@ const IndexPage = () => (
           <div className="column">
             <div  data-sal="fade"
                   data-sal-duration="350"
-                  data-sal-delay="600"
+                  data-sal-delay="450"
                   data-sal-easing="ease" 
                   className="container case">
               <div className="case-content-wrapper">
@@ -258,7 +258,7 @@ const IndexPage = () => (
 
       <div  data-sal="slide-up"
             data-sal-duration="350"
-            data-sal-delay="500"
+            data-sal-delay="450"
             data-sal-easing="ease"  
             className="container text-wrapper">
         <article>
