@@ -555,11 +555,18 @@ article p {
   display: block;
   width: 100%;
   height: 50vh;
-  background-image: url("../images/service-1440.jpg");
   background-position: center;
   background-size: cover;
   background-color: $primary-color;
   z-index: -1;
+}
+
+.img-wrapper.on-right {
+  background-image: url("../images/food-1920.jpg");
+}
+
+.img-wrapper.on-left {
+  background-image: url("../images/flower-1920.jpg");
 }
 
 .info-content .text-wrapper {
@@ -666,7 +673,7 @@ article p {
 .service-img {
   background-color: $primary-color;
   display: block;
-  background-image: url("../images/service-1440.jpg");
+  background-image: url("../images/garden-1920.jpg");
   background-position: center;
   background-size: cover;
   min-height: 380px;
@@ -1299,10 +1306,21 @@ article p {
   position: inherit;
   display: block;
   min-height: 440px;
-  background-image: url("../images/service-1440.jpg");
   background-position: center;
   background-size: cover;
   margin: 1.5rem auto 1.5rem;
+}
+
+.ppl-img {
+  background-image: url("../images/ppl-1366.jpg");
+}
+
+.health-img {
+  background-image: url("../images/sustain-1920.jpg");
+}
+
+.society-img {
+  background-image: url("../images/society-1920.jpg");
 }
 
 .sustain-footer-title {
