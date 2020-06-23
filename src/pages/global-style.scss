@@ -1064,7 +1064,7 @@ article p {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .menu {
     display: none;
   }
@@ -1351,78 +1351,19 @@ article p {
 }
 
 
-@media only screen and ( max-width: 1023px) {
+
+@media only screen and ( max-width: 1023px ) {
   .tab-title {
-
-    .bk-icon {
-      margin-top: 1rem;
-    }
-
-    .health-icon {
-      margin-top: 0;
-    }
-  }
-}
-
-@media only screen and ( min-width: 905px ) and ( max-width: 1022px) {
-  .tab-title {
-
-    .bk-icon {
-      margin-top: .15rem;
-    }
-
-    .health-icon {
-      margin-top: 0;
-    }
-  }
-}
-
-@media only screen and ( max-width: 768px ) {
-  .tab-title {
-
-    .health-icon {
-      margin-top: 0;
-    }
-
-    .social-icon {
-      margin-top: 0;
-    }
-
-    .ppl-icon {
-      margin-top: 0;
-    }
-  }
-}
-
-@media only screen and ( max-width: 480px ) {
-    .tab-title {
-      h2 {
-        font-size: 1.5rem;
-        padding-top: .5rem;
-      }
-
-      h2.title {
-        padding-top: .35rem;
-      }
-    }
-}
-
-@media only screen and ( max-width: 428px ) {
-  .tab-title {
+    display: flex;
+    flex-direction: column;
+    color: $dark-blue;
+  
     h2 {
-      font-size: 1.5rem;
-      padding-top: 0;
-    }
-
-    h2.health-title {
-      padding-top: .45rem;
-    }
-
-    .social-icon {
-      margin-top: .25rem;
+      padding-top: .5rem;
     }
   }
 }
+
 //About page
 
 table {
