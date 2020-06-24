@@ -1,6 +1,4 @@
 import React, { Component } from "react"
-
-import Link from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Header extends Component {
@@ -31,11 +29,11 @@ class Header extends Component {
                             white            /* color */
                           "
                 className="navbar-item" to="/">Green Source Gardening</AniLink>
-                <div role="button" onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">
+                <button onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
-                </div>
+                </button>
               </div>
     
               <div className={this.state.toggle ? "navbar-menu is-active" : "navbar-menu"}>

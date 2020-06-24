@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Tab from './Tab';
 
 class Tabs extends Component {
-  static propTypes = {
+  static tabPropTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
   }
 

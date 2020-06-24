@@ -265,6 +265,20 @@ article p {
   font-weight: 600;
 }
 
+button.navbar-burger {
+  border: none;
+
+  &:active {
+    border: none;
+    outline: none;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
 .navbar-burger {
   background: transparent;
   color: white;
@@ -275,7 +289,6 @@ article p {
     transition: all .25s ease-in-out;
   }
 }
-
 
 .navbar-burger:hover {
   background: transparent;
@@ -1235,21 +1248,30 @@ article p {
 }
 
 .tabs ul {
-  border-bottom: 1px solid $light-grey-green;
+  border: none;
 }
 
-.tab-list-item {
-  list-style: none;
-  margin-bottom: -1px;
+button.tab-list-item {
+  margin-left: .5rem;
+  margin-right: .5rem;
   padding: 0.5rem 1.5rem;
   font-weight: 500;
   font-size: 1.15rem;
+  border: none;
+  outline: none;
+  border-radius: 2.5rem;
+  color: $dark-blue;
+  background: #e2f4ea;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.tab-list-active {
-  background-color: white;
-  border: solid $primary-color;
-  border-width: 0 0 1px 0;
+button.tab-list-item.tab-list-active {
+  background-color: $primary-color;
+  outline: none;
+  color: white;
 }
 
 .tab-content {
