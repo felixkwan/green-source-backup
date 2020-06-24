@@ -237,11 +237,11 @@ article p {
   
   a {
     font-weight: 600;
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .navbar-brand a {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     line-height: 1.2;
   }
 }
@@ -261,7 +261,7 @@ article p {
 
 .navbar-link {
   color: $dark-blue;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -335,9 +335,15 @@ button.navbar-burger {
   .navbar-dropdown {
     border: none;
     background-color: white;
-    box-shadow: none;
     border-radius: 0;
+    box-shadow: 0px 0px 0px 0px $primary-color;
     padding: .75rem .75rem ;
+    transition: box-shadow .25s ease-in-out;
+
+    &:hover {
+      box-shadow: 12px 12px 0px 1px $primary-color;
+      transition: box-shadow .25s ease-in-out;
+    }
 
     a.navbar-item {
       color: $dark-blue;
@@ -402,12 +408,6 @@ button.navbar-burger {
       background: $dark-blue;
       border-radius: 0 0 1.5rem 1.5rem;
       padding: 1rem;
-    }
-
-    .navbar-end {
-      .navbar-item {
-        border-top: 1px solid hsl(185.5,100%,12.9%);
-      }
     }
   }
 
@@ -922,6 +922,10 @@ button.navbar-burger {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+
+   small {
+     font-size: 0.9rem;
+   }
 }
 
 .footer .social-list {
@@ -945,7 +949,7 @@ button.navbar-burger {
   }
 }
 
-.footer .social-list a {
+.footer .social-list span {
   color: white;
   font-size: 1.25rem;
 }
