@@ -8,9 +8,10 @@ import SEO from "../components/seo"
 import "./global-style.scss"
 
 const IndexPage = () => (
+
   <Layout>
     <SEO title="Home" />
-
+    
     <div  data-sal="zoom-in"
           data-sal-duration="450"
           data-sal-delay="150"
