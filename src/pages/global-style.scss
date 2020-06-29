@@ -821,7 +821,7 @@ button.navbar-burger {
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 0;
-    background: $dark-blue;
+    background: $primary-color;
     margin-top: 1.5rem;
     overflow: hidden;
     border-radius: .25rem;
@@ -849,7 +849,7 @@ button.navbar-burger {
   }
 
   a:hover {
-    background: $primary-color;
+    background: $dark-blue;
     color: white;
   }
 }
@@ -904,8 +904,8 @@ button.navbar-burger {
   width: 100%;
    padding: 2.5rem 2rem;
    margin-bottom: 0;
-   color: $dark-blue;
-   background: white;
+   color: white;
+   background: $dark-blue;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -937,7 +937,7 @@ button.navbar-burger {
 }
 
 .footer .social-list span {
-  color: $dark-blue;
+  color: white;
   font-size: 1.25rem;
 }
 
@@ -965,22 +965,15 @@ button.navbar-burger {
   margin-bottom: 2.5rem;
 }
 
-.service-heading {
-  margin-bottom: 2.5rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  color: $dark-blue;
-  background: $light-grey-green;
-  max-width: 240px;
-}
-
 .service-title {
   color: $dark-blue;
+  line-height: 1.8;
 }
 
 .service-detail-img {
   overflow: hidden;
 }
+
 
 @media #{$desktop-device} {
 
@@ -988,21 +981,9 @@ button.navbar-burger {
     padding: 0;
   }
 
-  .service-heading {
-    margin-right: 1.5rem;
-  }
-
   .service-details-wrapper {
     overflow: hidden;
     margin: 0 auto 3rem;
-
-    .columns {
-      .column {
-        &:nth-child(even) {
-          margin-top: 3rem;
-        }
-      }
-    }
 
     .text-wrapper {
       padding: 1.5rem;
@@ -1022,17 +1003,17 @@ button.navbar-burger {
   max-width: 720px;
 
   .service-title {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     color: $primary-color;
   }
 
   .text-wrapper {
     background: transparent;
-    padding: 0 2.5rem 2.5rem 2.5rem;
-  }
+    padding: 0 2.5rem 1.5rem 0;
 
-  :last-child {
-    margin-bottom: 2.5rem;
+    article p {
+      font-size: .9rem;
+    }
   }
 }
 
@@ -1051,7 +1032,7 @@ button.navbar-burger {
     padding-left: 1.5rem;
 
     .service-title {
-      font-size: 1.45rem;
+      font-size: 1.25rem;
     }
 
     .text-wrapper {

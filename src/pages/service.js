@@ -32,7 +32,6 @@ const Service = () => {
       <div className="pages-wrapper service-wrapper container clearfix">
         <div className="service-content">
           <div className="container service-details">
-            <h3 className="service-heading">Gardening</h3>
             <div className="service-details-wrapper">
               <div className="columns is-multiline">
                 <div className="column is-half">
@@ -82,8 +81,7 @@ const Service = () => {
         </div>
 
         <div className="service-content">
-          <div className="container service-details"> 
-            <h3 className="service-heading">Management</h3>
+          <div className="container service-details">
             <div className="service-details-wrapper">
               <div className="columns">
                 <div className="column is-half">
@@ -100,7 +98,7 @@ const Service = () => {
                   </div>
 
                   <div id="item-3-1" className="container sub-item">
-                    <h2 className="service-title">Water Flow Method 1</h2>
+                    <h3 className="service-title">Water Flow Method 1</h3>
                     <div className="container text-wrapper">
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
@@ -109,7 +107,7 @@ const Service = () => {
                   </div>
 
                   <div id="item-3-2" className="container sub-item">
-                    <h2 className="service-title">Water Flow Method 2</h2>
+                    <h3 className="service-title">Water Flow Method 2</h3>
                     <div className="container text-wrapper">
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
@@ -132,7 +130,7 @@ const Service = () => {
                   </div>
 
                   <div id="item-4-1" className="container sub-item">
-                    <h2 className="service-title">System 1</h2>
+                    <h3 className="service-title">System 1</h3>
                     <div className="container text-wrapper">
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
