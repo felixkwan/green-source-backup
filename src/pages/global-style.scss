@@ -71,6 +71,10 @@ th {
 
 //images
 
+img {
+  overflow: hidden;
+}
+
 .header-wrapper {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -432,14 +436,6 @@ button.navbar-burger {
 
 //main
 
-.columns {
-  margin: 0;
-}
-
-.columns:last-child  {
-  margin: 0;
-}
-
 .wrapper {
   margin-top: 3.25rem;
   overflow-x: hidden;
@@ -686,6 +682,7 @@ button.navbar-burger {
 .service-content {
   padding: 0;
   margin: 1rem auto;
+  max-width: 1024px;
 }
 
 .service-title {
@@ -970,10 +967,12 @@ button.navbar-burger {
 }
 
 .service-heading {
-  border-bottom: 1px solid $white-ter;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
   color: $dark-blue;
+  background: $light-grey-green;
+  max-width: 240px;
 }
 
 .service-title {
@@ -991,10 +990,12 @@ button.navbar-burger {
   }
 
   .service-details-wrapper {
-    padding-right: 1.5rem;
+    overflow: hidden;
+    margin: 0 auto 3rem;
 
     .text-wrapper {
       padding: 1.5rem;
+      max-width: 720px;
     }
   }
 
@@ -1006,7 +1007,8 @@ button.navbar-burger {
 .sub-item {
   padding-left: 3rem;
   background-color: $light-green;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
+  max-width: 720px;
 
   .service-title {
     padding-top: 2.5rem;
@@ -1024,6 +1026,7 @@ button.navbar-burger {
 }
 
 @media only screen and (max-width: 1023px) {
+
   .service-content .text-wrapper {
     padding: 1rem .5rem;
   }
@@ -1043,50 +1046,6 @@ button.navbar-burger {
     .text-wrapper {
       padding: 0 1rem 1rem 1rem;
     }
-  }
-}
-
-.menu-label {
-  font-size: .95rem;
-  color: $grey-green;
-}
-
-.menu-list li ul {
-  border-color: $white-ter;
-}
-
-.menu-list li a {
-  font-size: 1.15rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: $dark-blue;
-  border-radius: 0;
-
-  &:hover {
-    background-color: $light-green;
-    color: $dark-blue;
-  }
-  &:focus {
-    background-color: $primary-color;
-    color: white;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .menu-list li a {
-    font-size: 1rem;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-  }
-
-  .menu-label {
-    font-size: .8rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
   }
 }
 
