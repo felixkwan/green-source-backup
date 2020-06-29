@@ -33,19 +33,6 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-170781865-2",
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        pageTransitionDelay: 50,
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
