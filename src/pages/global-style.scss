@@ -115,11 +115,6 @@ img {
   }
 }
 
-@media #{$desktop-device} {
-  .header-wrapper {
-    margin-top: -6rem;
-  }
-}
 
 //button
 
@@ -228,6 +223,10 @@ article p {
   background: transparent;
   height: 3.25rem;
   transition: all .25s ease-in-out;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   
   a {
     font-weight: 500;
@@ -437,7 +436,6 @@ button.navbar-burger {
 //main
 
 .wrapper {
-  margin-top: 3.25rem;
   overflow-x: hidden;
 }
 
