@@ -952,13 +952,14 @@ button.navbar-burger {
 //service page
 
 .service-wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0 1rem;
   margin-top: 2.5rem;
 }
 
 .service-details {
   padding-top: 0;
+  overflow: hidden;
 }
 
 .service-details-wrapper {
@@ -979,6 +980,10 @@ button.navbar-burger {
   color: $dark-blue;
 }
 
+.service-detail-img {
+  overflow: hidden;
+}
+
 @media #{$desktop-device} {
 
   .service-wrapper {
@@ -992,6 +997,14 @@ button.navbar-burger {
   .service-details-wrapper {
     overflow: hidden;
     margin: 0 auto 3rem;
+
+    .columns {
+      .column {
+        &:nth-child(even) {
+          margin-top: 3rem;
+        }
+      }
+    }
 
     .text-wrapper {
       padding: 1.5rem;

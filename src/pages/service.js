@@ -33,13 +33,12 @@ const Service = () => {
         <div className="service-content">
           <div className="container service-details">
             <h3 className="service-heading">Gardening</h3>
-
-            <div className="columns is-multiline">
-              <div className="column is-half">
-               <div className="service-details-wrapper">
+            <div className="service-details-wrapper">
+              <div className="columns is-multiline">
+                <div className="column is-half">
                   <div id="item-1" className="container">
                     <h2 className="service-title">Design & Build</h2>
-                    <div className="container">
+                    <div className="container service-detail-img">
                       <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
                     <div className="container text-wrapper">
@@ -49,33 +48,27 @@ const Service = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              
-              <div className="column is-half">
-                <div className="service-details-wrapper">
+                
+                <div className="column is-half">
                   <div id="item-2" className="container">
-                    <h2 className="service-title">Maintenance</h2>
-                      <div className="tile is-ancestor">
-                        <div className="tile is-vertical">
-
-                          <div className="tile is-parent">
-                            <div className="tile is-child">
-                              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                            </div>
+                  <h2 className="service-title">Maintenance</h2>
+                    <div className="tile is-ancestor">
+                      <div className="tile is-vertical">
+                        <div className="tile is-parent">
+                          <div className="tile is-child">
+                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                           </div>
-
-                          <div className="tile is-parent">
-                            <div className="tile is-child">
-                              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                            </div>
-                            <div className="tile is-child">
-                              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                            </div>
+                        </div>
+                        <div className="tile is-parent">
+                          <div className="tile is-child">
+                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                           </div>
-
+                          <div className="tile is-child">
+                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                          </div>
                         </div>
                       </div>
-
+                    </div>
                     <div className="container text-wrapper">
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
@@ -96,7 +89,7 @@ const Service = () => {
                 <div className="column is-half">
                   <div id="item-3" className="container">
                     <h2 className="service-title">Water Management</h2>
-                    <div className="container">
+                    <div className="container service-detail-img">
                         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
                     <div className="container text-wrapper">
@@ -126,11 +119,20 @@ const Service = () => {
                 </div>
 
                 <div className="column is-half">
-                <div id="item-4" className="container">
-                    <h2 className="service-title">Item 4</h2>
-                    <div className="container">
+                  <div id="item-4" className="container">
+                    <h2 className="service-title">Water Tanks and Irrigation Systems</h2>
+                    <div className="container service-detail-img">
                         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
+                    <div className="container text-wrapper">
+                      <article>
+                        <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                      </article>
+                    </div>
+                  </div>
+
+                  <div id="item-4-1" className="container sub-item">
+                    <h2 className="service-title">System 1</h2>
                     <div className="container text-wrapper">
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
