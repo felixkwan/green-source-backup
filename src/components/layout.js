@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
     </Helmet>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header/>
             <main>{children}</main>
             <Contact></Contact>
         <footer className="footer">

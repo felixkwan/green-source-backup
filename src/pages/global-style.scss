@@ -75,6 +75,8 @@ th {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .index-header {
@@ -82,10 +84,11 @@ th {
   rgba(81.6%,94.1%,75.3%, 0.15) 10%,
   rgba(81.6%,94.1%,75.3%, 0.35) 100%),
     url("../images/heading-3400.png");
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .heading-title {
@@ -126,6 +129,12 @@ th {
 
   h1 {
     color: $dark-blue-green;
+  }
+}
+
+@media #{$desktop-device} {
+  .index-header {
+    margin-top: -6rem;
   }
 }
 
@@ -231,7 +240,7 @@ article p {
 .navbar {
   z-index: 999;
   margin: auto;
-  background: white;
+  background: transparent;
   height: 3.25rem;
   transition: all .25s ease-in-out;
   
@@ -252,7 +261,7 @@ article p {
 
 .navbar-item.has-dropdown:hover .navbar-link {
   color: $primary-color;
-  background-color: white;
+  background-color: transparent;
 }
 
 .navbar-end a:hover {
@@ -341,7 +350,7 @@ button.navbar-burger {
     transition: box-shadow .25s ease-in-out;
 
     &:hover {
-      box-shadow: 12px 12px 0px 1px $primary-color;
+      box-shadow: 12px 12px 0px 0px $primary-color;
       transition: box-shadow .25s ease-in-out;
     }
 
