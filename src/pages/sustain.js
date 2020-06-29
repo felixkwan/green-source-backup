@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import Tabs from "../tabs/tabs"
-
 
 const Sustainability = () => (
 
@@ -21,88 +19,89 @@ const Sustainability = () => (
 
     <div className="sustain-wrapper pages-wrapper container">
       <div className="tab-wrapper">
-        <Tabs>
 
-        <div label="People" className="container">
-          <div className="columns tap-content-inner">
-            <div className="column tab-title">
-              <div className="bk-icon ppl-icon"></div>
-              <h2>People Development</h2>
-            </div>
-            <div className="column">
-              <div className="paragraph">
-                  <article>
-                    <p>
-                    たくさんのこだわりと人の手をかけた我が家のアスパラガス。
-香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
-一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
-ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
-                    </p>
-                  </article>
-              </div>
-            </div>
-          </div>
-
-          <div className="container">
-            <div className="paragraph-img ppl-img"></div>
-          </div>
-
-        </div>
-
-
-          <div label="Health" className="container">
+        <div className="tab-content">
+          <div label="People" className="container">
+            <div className="container">
+                <div className="paragraph-img ppl-img"></div>
+            </div> 
             <div className="columns tap-content-inner">
-              <div className="column tab-title">
-                <div className="bk-icon health-icon"></div>
-                <h2 className="health-title">Health & Events</h2>
+              <div className="column left-space">
               </div>
-              <div className="column">
+              <div className="column is-two-thirds">
+                <div className="tab-title">
+                  <h2>People Development</h2>
+                </div>
                 <div className="paragraph">
                     <article>
                       <p>
                       たくさんのこだわりと人の手をかけた我が家のアスパラガス。
-香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
-一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
-ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
+  香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
+  一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
+  ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
                       </p>
                     </article>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div className="tab-content">
+          <div label="Health" className="container">
             <div className="container">
               <div className="paragraph-img health-img"></div>
             </div>
-
-          </div>
-
-          <div label="Society" className="container">
             <div className="columns tap-content-inner">
-              <div className="column tab-title">
-                <div className="bk-icon social-icon"></div>
-                <h2>Social Responsibility</h2>
+              <div className="column left-space">
               </div>
-              <div className="column">
+              <div className="column is-two-thirds">
+                <div className="tab-title">
+                  <h2 className="health-title">Health & Events</h2>
+                </div>
                 <div className="paragraph">
                     <article>
                       <p>
                       たくさんのこだわりと人の手をかけた我が家のアスパラガス。
-香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
-一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
-ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
+                      香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
+                      一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
+                      ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
                       </p>
                     </article>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="container">
-              <div className="paragraph-img society-img"></div>
+          <div className="tab-content">
+            <div label="Society" className="container">
+              <div className="container">
+                <div className="paragraph-img society-img"></div>
+              </div>
+              <div className="columns tap-content-inner">
+                <div className="column left-space">
+                </div>
+                <div className="column is-two-thirds">
+                  <div className="tab-title">
+                    <h2>Social Responsibility</h2>
+                  </div>
+                  <div className="paragraph">
+                      <article>
+                        <p>
+                        たくさんのこだわりと人の手をかけた我が家のアスパラガス。
+                        香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
+                        一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
+                        ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
+                        </p>
+                      </article>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
 
-        </Tabs>
+
       </div>
 
       <div className="container block-title">
