@@ -30,7 +30,7 @@ const Sustainability = () => (
               </div>
               <div className="column is-two-thirds">
                 <div className="tab-title">
-                  <h2>People Development</h2>
+                  <h2>個人發展</h2>
                 </div>
                 <div className="paragraph">
                     <article>
@@ -57,7 +57,7 @@ const Sustainability = () => (
               </div>
               <div className="column is-two-thirds">
                 <div className="tab-title">
-                  <h2 className="health-title">Health & Events</h2>
+                  <h2 className="health-title">健康與安全</h2>
                 </div>
                 <div className="paragraph">
                     <article>
@@ -84,7 +84,7 @@ const Sustainability = () => (
                 </div>
                 <div className="column is-two-thirds">
                   <div className="tab-title">
-                    <h2>Social Responsibility</h2>
+                    <h2>社會責任</h2>
                   </div>
                   <div className="paragraph">
                       <article>

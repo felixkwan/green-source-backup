@@ -13,6 +13,7 @@ $ultra-wide-device: "only screen and (min-width : 1216px)";
 $iPad-Pro-screen: "only screen and (width: 1024px)";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap');
 @import "~bulma/bulma.sass";
 
 html {
@@ -121,7 +122,7 @@ th {
 .primary-button {
   padding: 1rem 1.5rem;
   color: white;
-  background-color: $dark-blue;
+  background-color: $primary-color;
   font-size: 1.15rem;
   font-weight: 500;
   margin-top: 2.5rem;
@@ -129,14 +130,15 @@ th {
   text-align: center;
   max-width: max-content;
   transition: all .25s ease-in-out;
+  border-radius: .25rem;
 
   &:hover {
-    background-color: $primary-color;
+    background-color: $dark-blue;
     color: white;
     transition: all .25s ease-in-out;
   }
   &:focus {
-    background-color: $primary-color;
+    background-color: $dark-blue;
     color: white;
     transition: all .25s ease-in-out;
   }
@@ -148,7 +150,7 @@ th {
 }
 
 .view-more-button {
-  min-width: 240px;
+  min-width: 180px;
   margin-top: 0;
 }
 
@@ -208,9 +210,10 @@ article p {
 }
 
 .notes {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: $dark-blue;
   padding: 0 1rem;
+  margin: 3rem auto;
 }
 
 //navbar
@@ -223,11 +226,12 @@ article p {
   transition: all .25s ease-in-out;
   
   a {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
   }
 
   .navbar-brand a {
+    font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.2;
   }
@@ -249,7 +253,7 @@ article p {
 .navbar-link {
   color: $dark-blue;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button.navbar-burger {
@@ -795,8 +799,8 @@ button.navbar-burger {
   h5 {
     margin-right: 1rem;
     padding: .75rem 1.25rem .75rem 1.25rem;
-    background: $dark-blue;
-    color: white;
+    background: $light-grey-green;
+    color: $dark-blue;
   }
 
   h4 {
@@ -825,6 +829,7 @@ button.navbar-burger {
     background: $dark-blue;
     margin-top: 1.5rem;
     overflow: hidden;
+    border-radius: .25rem;
 
     span:first-child() {
       display: flex;
@@ -991,6 +996,10 @@ button.navbar-burger {
     .text-wrapper {
       padding: 1.5rem;
     }
+  }
+
+  .service-content {
+    margin-top: 3rem;
   }
 }
 
@@ -1314,7 +1323,7 @@ button.tab-list-item.tab-list-active {
 
 .sustain-footer-title {
   color: $primary-color;
-  margin-top: 1.5rem;
+  margin-top: 4.5rem;
 }
 
 .sustain-footer {

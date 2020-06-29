@@ -30,13 +30,6 @@ const Service = () => {
     </div>
 
     <div className="pages-wrapper service-wrapper container clearfix">
-
-      <div className="container text-wrapper">
-        <article className="notes">
-          <p>Service would be modified by case scale.</p>
-        </article>
-      </div>
-
       <div className="service-content">
         <div className="columns side-menu">
 
@@ -182,6 +175,7 @@ const Service = () => {
 
         </div>
       </div>
+
     </div>
 
   </Layout>
