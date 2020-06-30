@@ -78,7 +78,7 @@ img {
 .header-wrapper {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background: url("../images/header-bk-1200.png") no-repeat center center;
+  background: url("../images/header-bk-1920.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -668,6 +668,12 @@ button.navbar-burger {
 
 //block-service
 
+.block-service {
+  background-image: url("../images/bk-shape-1280.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .service-img {
   background-color: $primary-color;
   display: block;
@@ -816,15 +822,16 @@ button.navbar-burger {
 
   a {
     font-size: 1.25rem;
-    color: white;
+    color: $dark-blue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 0;
-    background: $primary-color;
+    background: $light-grey-green;
     margin-top: 1.5rem;
     overflow: hidden;
     border-radius: .25rem;
+    transition: all .25s ease-in-out;
 
     span:first-child() {
       display: flex;
@@ -851,6 +858,13 @@ button.navbar-burger {
   a:hover {
     background: $dark-blue;
     color: white;
+    transition: all .25s ease-in-out;
+  }
+
+  a:focus {
+    background: $dark-blue;
+    color: white;
+    transition: all .25s ease-in-out;
   }
 }
 
@@ -1013,7 +1027,7 @@ button.navbar-burger {
     padding: 0 2.5rem 1.5rem 0;
 
     article p {
-      font-size: .9rem;
+      font-size: 1rem;
     }
   }
 }
@@ -1097,6 +1111,14 @@ button.navbar-burger {
 .row-3,
 .row-4 {
   margin-bottom: 3rem;
+}
+
+.bk-icon {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
 }
 
 .vehicle-icon {
