@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+
+import { StaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Header extends Component {
@@ -12,9 +14,19 @@ class Header extends Component {
   render() {
 
     return (
-      <>
-        <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
-          <div className="container">
+      <StaticQuery
+        query={graphql`
+          query HeadingQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
+          }
+        `}
+        render={data => (
+          <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
+            <div className="container">
               <div className="navbar-brand">
                 <AniLink  cover
                           to="/"
@@ -28,7 +40,8 @@ class Header extends Component {
                             content-box      /* clip */
                             white            /* color */
                           "
-                className="navbar-item" to="/">Green Source Gardening</AniLink>
+                          className="navbar-item" to="/">
+                            {data.site.siteMetadata.title}</AniLink>
                 <button onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
@@ -63,7 +76,9 @@ class Header extends Component {
 
           </div>
         </nav>
-      </>
+        )}
+    />
+
     ); 
   }
 }

@@ -86,10 +86,7 @@ img {
 }
 
 .index-header {
-  background:linear-gradient( 135deg,
-  rgba(81.6%,94.1%,75.3%, 0.15) 10%,
-  rgba(81.6%,94.1%,75.3%, 0.35) 100%),
-    url("../images/heading-1920.png");
+  backdrop-filter: brightness(120%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

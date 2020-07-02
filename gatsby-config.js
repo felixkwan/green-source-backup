@@ -13,7 +13,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-background-image-es5`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
@@ -34,6 +33,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-background-image-es5`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

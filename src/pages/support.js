@@ -19,8 +19,8 @@ const Support = () => {
     }
   `)
 
-
   return (
+
   <Layout>
     <SEO title="Support" />
     <div className="header-bk top">

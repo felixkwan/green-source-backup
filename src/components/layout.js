@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Header from "./header"
@@ -15,16 +14,7 @@ import Contact from "./contact"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          description
-        }
-      }
-    }
-  `)
+  
 
   return (
     <>
@@ -32,7 +22,7 @@ const Layout = ({ children }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css" />
     </Helmet>
-      <Header/>
+      <Header />
             <main>{children}</main>
             <Contact></Contact>
         <footer className="footer">
