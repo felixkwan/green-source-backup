@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@ardatan/aggregate-error@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ardatan/aggregate-error/-/aggregate-error-0.0.1.tgz#1403ac5de10d8ca689fc1f65844c27179ae1d44f"
+  integrity sha512-UQ9BequOTIavs0pTHLMwQwKQF8tTV1oezY/H2O9chA+JNPFZSua55xpU5dPSjAU9/jLJ1VwU+HJuTVN8u7S6Fg==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.1", "@babel/code-frame@^7.8.3":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.1.tgz#d5481c5095daa1c57e16e54c6f9198443afb49ff"
@@ -1458,16 +1463,6 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@graphql-tools/code-file-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/code-file-loader/-/code-file-loader-6.0.10.tgz#aec52aac049806d3a4e20dbe671d2acad544f08a"
-  integrity sha512-p/9GAdZF+/liuNFTTIHISCXUX2Cfzk4tmHdigKbRbo1ho2TFNvf9uGZQSZUdm2QxgZosAWfXjXY++jZkDJztSg==
-  dependencies:
-    "@graphql-tools/graphql-tag-pluck" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    fs-extra "9.0.1"
-    tslib "~2.0.0"
-
 "@graphql-tools/code-file-loader@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/code-file-loader/-/code-file-loader-6.0.8.tgz#6fd21049922066bf0566b922dd9d71a25b42b763"
@@ -1476,16 +1471,6 @@
     "@graphql-tools/graphql-tag-pluck" "6.0.8"
     "@graphql-tools/utils" "6.0.8"
     fs-extra "9.0.1"
-    tslib "~2.0.0"
-
-"@graphql-tools/delegate@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-6.0.10.tgz#f2fe8eea6cd5ce23f1e8f3dacfa6e136cad157da"
-  integrity sha512-FBHrmpSI9QpNbvqc5D4wdQW0WrNVUA2ylFhzsNRk9yvlKzcVKqiTrOpb++j7TLB+tG06dpSkfAssPcgZvU60fw==
-  dependencies:
-    "@graphql-tools/schema" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    aggregate-error "3.0.1"
     tslib "~2.0.0"
 
 "@graphql-tools/delegate@6.0.8":
@@ -1497,15 +1482,6 @@
     "@graphql-tools/utils" "6.0.8"
     tslib "~2.0.0"
 
-"@graphql-tools/git-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/git-loader/-/git-loader-6.0.10.tgz#2fd27f4a0c1efd7b77831456d92bedc2c3a5c30f"
-  integrity sha512-KNtbGgijL2zVH+cQlYCcvYL+fUDxYjzEuwnTvi8iSUtSIVFTdphQIg7+kVuk9sCBdKj7kegFMzHlzh3pfEji1g==
-  dependencies:
-    "@graphql-tools/graphql-tag-pluck" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    simple-git "2.6.0"
-
 "@graphql-tools/git-loader@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/git-loader/-/git-loader-6.0.8.tgz#57d5d63b09ed2d36b5b0c90eed33d5dca8c0517b"
@@ -1514,15 +1490,6 @@
     "@graphql-tools/graphql-tag-pluck" "6.0.8"
     "@graphql-tools/utils" "6.0.8"
     simple-git "2.5.0"
-
-"@graphql-tools/github-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/github-loader/-/github-loader-6.0.10.tgz#dbafbc344509a0b157cd33fd4e122381f6ac4823"
-  integrity sha512-UdeZAfz76CUfDFIjLPtFQaBq3kJlMJObKzh7r9T+dizpbmjl1+kfN2idaGtTJIzCnbWEPtbWMJDtc4ioqpj9oQ==
-  dependencies:
-    "@graphql-tools/graphql-tag-pluck" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    cross-fetch "3.0.4"
 
 "@graphql-tools/github-loader@6.0.8":
   version "6.0.8"
@@ -1533,16 +1500,6 @@
     "@graphql-tools/utils" "6.0.8"
     cross-fetch "3.0.4"
 
-"@graphql-tools/graphql-file-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-6.0.10.tgz#b8853345d71b1168f626ee2d2e10d73e4e30f02c"
-  integrity sha512-SL0KBUkFaZNldTvImlV1OhsL7EjROgoodC5OijjVyDubemAIWp1tjKZmQGCdmc/iJZXDx8vWR1tXi7REatHB2w==
-  dependencies:
-    "@graphql-tools/import" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    fs-extra "9.0.1"
-    tslib "~2.0.0"
-
 "@graphql-tools/graphql-file-loader@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-6.0.8.tgz#ab23b35e47d52925e6e94b6521391161a9b37e0f"
@@ -1552,18 +1509,6 @@
     "@graphql-tools/utils" "6.0.8"
     fs-extra "9.0.1"
     tslib "~2.0.0"
-
-"@graphql-tools/graphql-tag-pluck@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-tag-pluck/-/graphql-tag-pluck-6.0.10.tgz#82368dd50efac9f2dde82f1b5547060a298262f4"
-  integrity sha512-HNWg9kKexWZT3jM5NelEHGrJvVnNFL1FgF+YUWEIrB9/3MK6QB28cWoB+v7CzzLIOr2hn/UHBeCMvz6EmnxWLA==
-  dependencies:
-    "@babel/parser" "7.10.2"
-    "@babel/traverse" "7.10.1"
-    "@babel/types" "7.10.2"
-    "@graphql-tools/utils" "6.0.10"
-  optionalDependencies:
-    vue-template-compiler "^2.6.11"
 
 "@graphql-tools/graphql-tag-pluck@6.0.8":
   version "6.0.8"
@@ -1577,14 +1522,6 @@
   optionalDependencies:
     vue-template-compiler "^2.6.11"
 
-"@graphql-tools/import@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.0.10.tgz#835f86729bc8e71ebcc809b6134df1965d9be977"
-  integrity sha512-nrQR7pQkxm9Zmx6VjtffGeLvz+YgPm+ZN9h/AP/dlRjYJSev7LFlzDwAvk4TyFX4qbAY7RjoZ74qn2ezw1Y0Hw==
-  dependencies:
-    fs-extra "9.0.1"
-    resolve-from "5.0.0"
-
 "@graphql-tools/import@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.0.8.tgz#62dd372d3ce1e2cac471047d80468f4db1294792"
@@ -1593,15 +1530,6 @@
     fs-extra "9.0.1"
     resolve-from "5.0.0"
 
-"@graphql-tools/json-file-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/json-file-loader/-/json-file-loader-6.0.10.tgz#e233a5222a1408463611152750a504ec103a4c27"
-  integrity sha512-BcLPQzG71AT91b7hvmjwqZpFWx/w6/HR7zqSFIuorLuL+E1q9Bs1RCIDSsAgrkX4MN6732ZUeoXnGmtcgukpkw==
-  dependencies:
-    "@graphql-tools/utils" "6.0.10"
-    fs-extra "9.0.1"
-    tslib "~2.0.0"
-
 "@graphql-tools/json-file-loader@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/json-file-loader/-/json-file-loader-6.0.8.tgz#e13a2d944c8336c26d4469f6e95b67f479419fee"
@@ -1609,18 +1537,6 @@
   dependencies:
     "@graphql-tools/utils" "6.0.8"
     fs-extra "9.0.1"
-    tslib "~2.0.0"
-
-"@graphql-tools/links@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/links/-/links-6.0.10.tgz#dc7658abdf863bf585a1e965e469bdfcb577d051"
-  integrity sha512-eLNq4E3zJZy2L94fI3eVOoTttlI+Atb+THlnSK0dPFrFpIC9Jm1C8G6kG0FvTVJ9TzPTo6TlFjTqJO40sJFhcQ==
-  dependencies:
-    "@graphql-tools/utils" "6.0.10"
-    apollo-link "1.2.14"
-    apollo-upload-client "13.0.0"
-    cross-fetch "3.0.4"
-    form-data "3.0.0"
     tslib "~2.0.0"
 
 "@graphql-tools/links@6.0.8":
@@ -1635,15 +1551,6 @@
     form-data "3.0.0"
     tslib "~2.0.0"
 
-"@graphql-tools/load-files@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/load-files/-/load-files-6.0.10.tgz#dd99ab5a67ef8da80d155adb2860d6e2b796f397"
-  integrity sha512-hB6os27RVAy01SI05krvmTP13xsIjzx151DlTaL5HnskzeDpjBWjYlfiKMhdWpx5ORVniyPtFSYzQxJEIr5/NA==
-  dependencies:
-    fs-extra "9.0.1"
-    globby "11.0.1"
-    unixify "1.0.0"
-
 "@graphql-tools/load-files@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/load-files/-/load-files-6.0.8.tgz#91b20b8c2cb06d1dbdd5fafffa5e8c7ab36a080a"
@@ -1652,21 +1559,6 @@
     fs-extra "9.0.1"
     globby "11.0.1"
     unixify "1.0.0"
-
-"@graphql-tools/load@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-6.0.10.tgz#a3cf10d4c64829cc7292606ad8161a470fce6524"
-  integrity sha512-/Q07DuSvhRTu7iYr+iZDXuXLjQJ/0uZEadjC4uKthD4gX6x4bvV49GLdqka+J1zq02C5U5mAOdDT7+lHIrEBFg==
-  dependencies:
-    "@graphql-tools/merge" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    globby "11.0.1"
-    import-from "3.0.0"
-    is-glob "4.0.1"
-    p-limit "3.0.1"
-    tslib "~2.0.0"
-    unixify "1.0.0"
-    valid-url "1.0.9"
 
 "@graphql-tools/load@6.0.8":
   version "6.0.8"
@@ -1683,15 +1575,6 @@
     unixify "1.0.0"
     valid-url "1.0.9"
 
-"@graphql-tools/merge@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-6.0.10.tgz#f9b9f1e8d59cffdf8ef8c7ce7d065a7d179f216a"
-  integrity sha512-fnz9h5vdA8LXc9TvmhnRXykwFZWZ4FdBeo4g3R1KqcQCp65ByCMcBuCJtYf4VxPrcgTLGlWtVOHrItCi0kdioA==
-  dependencies:
-    "@graphql-tools/schema" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    tslib "~2.0.0"
-
 "@graphql-tools/merge@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-6.0.8.tgz#e62cf3438a0864f9adbb65f795315c83cf59f897"
@@ -1699,15 +1582,6 @@
   dependencies:
     "@graphql-tools/schema" "6.0.8"
     "@graphql-tools/utils" "6.0.8"
-    tslib "~2.0.0"
-
-"@graphql-tools/mock@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-6.0.10.tgz#f1ccea09ec7244d93147a69e58cc44d808fafcd4"
-  integrity sha512-RA+FExqDeSSgYHrLxSxF2El+0aG2Bw/KRfCHeJ54x9wrnA7gn/bC98K1EoGHolZ1b/YVUFkukaj3nooBzt9p0w==
-  dependencies:
-    "@graphql-tools/schema" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
     tslib "~2.0.0"
 
 "@graphql-tools/mock@6.0.8":
@@ -1719,14 +1593,6 @@
     "@graphql-tools/utils" "6.0.8"
     tslib "~2.0.0"
 
-"@graphql-tools/module-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/module-loader/-/module-loader-6.0.10.tgz#0c96004afa9ed6e659649c5ea6d02ffb5df00824"
-  integrity sha512-dLZ+JB7F/8OKYhi+1SucHaNGN0UBEWgahUaPUI0L2zuGZakuvUvLMSOQTZ5rF8oipU9p2b0ZzzpDjesABru7Ag==
-  dependencies:
-    "@graphql-tools/utils" "6.0.10"
-    tslib "~2.0.0"
-
 "@graphql-tools/module-loader@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/module-loader/-/module-loader-6.0.8.tgz#0ae79b79ce7dd5ff5d855e98cd12ba1724a0b85f"
@@ -1734,14 +1600,6 @@
   dependencies:
     "@graphql-tools/utils" "6.0.8"
     tslib "~2.0.0"
-
-"@graphql-tools/relay-operation-optimizer@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/relay-operation-optimizer/-/relay-operation-optimizer-6.0.10.tgz#aaf8a49bb8ab9993276c76bd8c3e8f09f0f7b2f7"
-  integrity sha512-u8GavLgpIoOLDfFSvpAmpfp56mfN1YiqDpY+goGcOQudtR4IULqr6Mj5KPstKUMMnMtuFQ0OMcYRvWxN3jP4lQ==
-  dependencies:
-    "@graphql-tools/utils" "6.0.10"
-    relay-compiler "9.1.0"
 
 "@graphql-tools/relay-operation-optimizer@6.0.8":
   version "6.0.8"
@@ -1751,14 +1609,6 @@
     "@graphql-tools/utils" "6.0.8"
     relay-compiler "9.1.0"
 
-"@graphql-tools/resolvers-composition@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/resolvers-composition/-/resolvers-composition-6.0.10.tgz#4e5ebfb32ff146f4efbd842991ccfe21cf69fb6c"
-  integrity sha512-MNeQOxwrCBaBxnvPdbg8LTd6RhPV2q8MfHvQ8nMKrO68ab3G3bJZOL/kXu70Ajy+jPPJmgPVbevBOMJ7wkCwUQ==
-  dependencies:
-    "@graphql-tools/utils" "6.0.10"
-    lodash "4.17.15"
-
 "@graphql-tools/resolvers-composition@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@graphql-tools/resolvers-composition/-/resolvers-composition-6.0.8.tgz#41f57e3d60ad12a06dfcfee8f5ac05ed6911474a"
@@ -1766,14 +1616,6 @@
   dependencies:
     "@graphql-tools/utils" "6.0.8"
     lodash "4.17.15"
-
-"@graphql-tools/schema@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-6.0.10.tgz#69b36fad35ea5780f8539c92e776f9e83d929575"
-  integrity sha512-g8iy36dgf/Cpyz7bHSE2axkE8PdM5VYdS2tntmytLvPaN3Krb8IxBpZBJhmiICwyAAkruQE7OjDfYr8vP8jY4A==
-  dependencies:
-    "@graphql-tools/utils" "6.0.10"
-    tslib "~2.0.0"
 
 "@graphql-tools/schema@6.0.8":
   version "6.0.8"
@@ -1783,16 +1625,12 @@
     "@graphql-tools/utils" "6.0.8"
     tslib "~2.0.0"
 
-"@graphql-tools/stitch@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/stitch/-/stitch-6.0.10.tgz#d688eb768565dcc016262f9f1288fb373e8d271e"
-  integrity sha512-45xgk/ggXEkj6Ys4Hf1sV0ngzzvPhcGvA23/NG6E5LSkt4GM0TjtRpqwWMMoKJps9+1JX9/RSbHBAchC+zZj3w==
+"@graphql-tools/schema@^6.0.11":
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-6.0.11.tgz#4623c3662a8843822e36139855504ef8d7d89088"
+  integrity sha512-Zl9LTwOnkMaNtgs1+LJEYtklywtn602kRbxkRFeA7nFGaDmFPFHZnfQqcLsfhaPA8S0jNCQnbucHERCz8pRUYA==
   dependencies:
-    "@graphql-tools/delegate" "6.0.10"
-    "@graphql-tools/merge" "6.0.10"
-    "@graphql-tools/schema" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    "@graphql-tools/wrap" "6.0.10"
+    "@graphql-tools/utils" "6.0.11"
     tslib "~2.0.0"
 
 "@graphql-tools/stitch@6.0.8":
@@ -1805,21 +1643,6 @@
     "@graphql-tools/utils" "6.0.8"
     "@graphql-tools/wrap" "6.0.8"
     tslib "~2.0.0"
-
-"@graphql-tools/url-loader@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-6.0.10.tgz#aa66e8b7ad117beb5538af4dab225ae6f7828601"
-  integrity sha512-iaXtj/Rthf1omhFmaA7V+Np3lyEeBiFI6SZ89Pb84NLkgI51ENCaboecFrAW0hwNqAcqfSdCTMv09n/Fx2vXGg==
-  dependencies:
-    "@graphql-tools/delegate" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    "@graphql-tools/wrap" "6.0.10"
-    "@types/websocket" "1.0.0"
-    cross-fetch "3.0.4"
-    subscriptions-transport-ws "0.9.16"
-    tslib "~2.0.0"
-    valid-url "1.0.9"
-    websocket "1.0.31"
 
 "@graphql-tools/url-loader@6.0.8":
   version "6.0.8"
@@ -1836,12 +1659,12 @@
     valid-url "1.0.9"
     websocket "1.0.31"
 
-"@graphql-tools/utils@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.10.tgz#ed15110a20acc5474a8dda5c0b99f970ba696c75"
-  integrity sha512-1s3vBnYUIDLBGEaV1VF3lv1Xq54lT8Oz7tNNypv7K7cv3auKX7idRtjP8RM6hKpGod46JNZgu3NNOshMUEyEyA==
+"@graphql-tools/utils@6.0.11", "@graphql-tools/utils@^6.0.11":
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.11.tgz#c394201c992dbc8f3644b9ad71411fdd55832f2d"
+  integrity sha512-BK6HO73FbB/Ufac6XX5H0O2q4tEZi//HaQ7DgmHFoda53GZSZ/ZckJ59wh/tUvHykEaSFUSmMBVQxKbXBhGhyg==
   dependencies:
-    aggregate-error "3.0.1"
+    "@ardatan/aggregate-error" "0.0.1"
     camel-case "4.1.1"
 
 "@graphql-tools/utils@6.0.8":
@@ -1850,17 +1673,6 @@
   integrity sha512-1Idtq70pocuivrFUV2E+7o3ikyEUvES9i+YzQcNRoC04J29NWIiqJawjaWyLUt3z3/xdb6BEDpCwEy2Spu0CFQ==
   dependencies:
     camel-case "4.1.1"
-
-"@graphql-tools/wrap@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-6.0.10.tgz#89eb3310eac661e6aaa7ad9c7bbe0ec9108be194"
-  integrity sha512-260f+eks3pSltokwueFJXQSwf7QdsjccphXINBIa0hwPyF8mPanyJlqd5GxkkG+C2K/oOXm8qaxc6pp7lpaomQ==
-  dependencies:
-    "@graphql-tools/delegate" "6.0.10"
-    "@graphql-tools/schema" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    aggregate-error "3.0.1"
-    tslib "~2.0.0"
 
 "@graphql-tools/wrap@6.0.8":
   version "6.0.8"
@@ -3240,7 +3052,7 @@ after@0.8.2:
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
   integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
 
-aggregate-error@3.0.1, aggregate-error@^3.0.0:
+aggregate-error@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-3.0.1.tgz#db2fe7246e536f40d9b5442a39e117d7dd6a24e0"
   integrity sha512-quoaXsZ9/BLNae5yiNoUz+Nhkwz83GhWwtYFglcjEQB2NDHCIpApbqXxIFnm4Pq/Nvhrsq5sYJFyohrrxnTGAA==
@@ -7475,13 +7287,12 @@ gatsby-cli@^2.12.44:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
-gatsby-cli@^2.12.51:
-  version "2.12.51"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.51.tgz#342b5c28ac5cb39809bb826929ab48775cf1322e"
-  integrity sha512-a16mc3Ldu7gK/D9uJipgm85WguRU+f4XxxuHjsyNQek5tRh82Nh38mbdjoFziv1SvgvVfpeBjqha+D+2IN1sGA==
+gatsby-cli@^2.12.54:
+  version "2.12.54"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.54.tgz#e67af331a5587fb95ede9c40ad97f265bf49e667"
+  integrity sha512-gL3IWjHApXc0FM2Ia5OpXE4io8MXgrMnquIhDxvfWZ5Uysr53eR4uqetIMeMCOQZE66yPtnhX+AhLG6uGqmFfg==
   dependencies:
     "@babel/code-frame" "^7.10.3"
-    "@babel/runtime" "^7.10.3"
     "@hapi/joi" "^15.1.1"
     "@types/common-tags" "^1.8.0"
     better-opn "^1.0.0"
@@ -7496,9 +7307,9 @@ gatsby-cli@^2.12.51:
     execa "^3.4.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.8"
-    gatsby-recipes "^0.1.43"
-    gatsby-telemetry "^1.3.14"
+    gatsby-core-utils "^1.3.10"
+    gatsby-recipes "^0.1.46"
+    gatsby-telemetry "^1.3.16"
     hosted-git-info "^3.0.4"
     ink "^2.7.1"
     ink-spinner "^3.1.0"
@@ -7524,6 +7335,18 @@ gatsby-cli@^2.12.51:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
+gatsby-core-utils@^1.3.10:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.10.tgz#f283b9c0c5281e678d3b8b77cf46ef3992971d3f"
+  integrity sha512-JtGP7lrbJanatO1j04mECRP7CHlnlexhS3KYUROQdcwxBvyIikkHYOt4FqS4FAQ6y6MqOvM1/uvpkbQbBx154Q==
+  dependencies:
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fs-extra "^8.1.0"
+    node-object-hash "^2.0.0"
+    proper-lockfile "^4.1.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-core-utils@^1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.4.tgz#a3adc461dc90e55b8aef03d9c4440c2018f7e06c"
@@ -7540,18 +7363,6 @@ gatsby-core-utils@^1.3.5:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.5.tgz#3c8f2dc940cec6570d1317f02ba028f327d1e773"
   integrity sha512-kbwJ5BeQ8OixJVuBb1AGRL6vdkFz9nFBa6gXqjQ6AAXHhYDrjOYrRMIENT1QLoabWo6tlh0Hyl1agfWaQwW8lg==
-  dependencies:
-    ci-info "2.0.0"
-    configstore "^5.0.1"
-    fs-extra "^8.1.0"
-    node-object-hash "^2.0.0"
-    proper-lockfile "^4.1.1"
-    xdg-basedir "^4.0.0"
-
-gatsby-core-utils@^1.3.8:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.8.tgz#e6d15d8cb24fa7e16a0af01a5e262ac9c4f31913"
-  integrity sha512-wVUqF8/DQMhiCyIKxVKjeDp4aN8x4/f+e/gS78sgaU0fleUpMMbQmeV+ASLh0Kk11yFs0fl4+EWWLFCHY2sWmg==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -7840,10 +7651,10 @@ gatsby-recipes@^0.1.38:
     ws "^7.3.0"
     xstate "^4.10.0"
 
-gatsby-recipes@^0.1.43:
-  version "0.1.43"
-  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.1.43.tgz#7bdc274c9544c939386c8d15d40308be9ddbf07f"
-  integrity sha512-YfuLUn6JGz+GB+EnMRMy2htt3aVqOWdLm/9S9YX/mztAvf7etcBXZbap1YUdPgjD7jMsIOHtzb+cIsJ+oj0lNg==
+gatsby-recipes@^0.1.46:
+  version "0.1.46"
+  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.1.46.tgz#8ee8c446f10f8503665da0fbce928eaf898b7cfc"
+  integrity sha512-gFwd7ZkXBK33D8qCQN2S5vQD3NvNOiZzxUCgenUHqyOCT9qtcw4ohz043p8pgji2/ZE0+mJ5ifsk4MYRSskHtg==
   dependencies:
     "@babel/core" "^7.10.3"
     "@babel/generator" "^7.10.3"
@@ -7852,6 +7663,8 @@ gatsby-recipes@^0.1.43:
     "@babel/standalone" "^7.10.3"
     "@babel/template" "^7.10.3"
     "@babel/types" "^7.10.3"
+    "@graphql-tools/schema" "^6.0.11"
+    "@graphql-tools/utils" "^6.0.11"
     "@hapi/hoek" "8.x"
     "@hapi/joi" "^15.1.1"
     "@mdx-js/mdx" "^1.6.6"
@@ -7866,13 +7679,12 @@ gatsby-recipes@^0.1.43:
     express "^4.17.1"
     express-graphql "^0.9.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.8"
-    gatsby-telemetry "^1.3.14"
+    gatsby-core-utils "^1.3.10"
+    gatsby-telemetry "^1.3.16"
     glob "^7.1.6"
     graphql "^14.6.0"
     graphql-compose "^6.3.8"
     graphql-subscriptions "^1.1.0"
-    graphql-tools "^6.0.10"
     graphql-type-json "^0.3.2"
     hicat "^0.7.0"
     html-tag-names "^1.1.5"
@@ -7967,10 +7779,10 @@ gatsby-telemetry@^1.3.10:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-telemetry@^1.3.14:
-  version "1.3.14"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.3.14.tgz#4c53deccbac753e19052ddd50dff818ebaac8575"
-  integrity sha512-0dtZHJOm0PcO6Wj+Q68W+JTxXXfkX9p2jd9O29ggxcSnfdndIorFSER1V8biv9Nm/ERBiab4ChZC+tUC6I6FlA==
+gatsby-telemetry@^1.3.16:
+  version "1.3.16"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.3.16.tgz#92f6ee00f7f112b16894ef7db58e09f5801d8f67"
+  integrity sha512-lPtecQ47StGgHfK71utfx+thzjgnsctJhU0wCq1ezhdSeQdg5zBbUkbr09xYCXqb+CjkbTTdjxBTGJnebOJODQ==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/runtime" "^7.10.3"
@@ -7979,7 +7791,7 @@ gatsby-telemetry@^1.3.14:
     configstore "^5.0.1"
     envinfo "^7.5.1"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.8"
+    gatsby-core-utils "^1.3.10"
     git-up "4.0.1"
     is-docker "2.0.0"
     lodash "^4.17.15"
@@ -8547,33 +8359,6 @@ graphql-tools@^5.0.0:
     node-fetch "^2.6.0"
     tslib "^1.11.1"
     uuid "^7.0.3"
-
-graphql-tools@^6.0.10:
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-6.0.10.tgz#fc13d0cf438ac21e2860a49af1f63aada1135c4e"
-  integrity sha512-2cKAl+jMvLYfsYlmbVasbRZTvNNSBum1JFM/fYYoiKJfDbTzSceJerzxGPidfKFfThWe+msa5w7OWlXOCCnP8g==
-  dependencies:
-    "@graphql-tools/code-file-loader" "6.0.10"
-    "@graphql-tools/delegate" "6.0.10"
-    "@graphql-tools/git-loader" "6.0.10"
-    "@graphql-tools/github-loader" "6.0.10"
-    "@graphql-tools/graphql-file-loader" "6.0.10"
-    "@graphql-tools/graphql-tag-pluck" "6.0.10"
-    "@graphql-tools/import" "6.0.10"
-    "@graphql-tools/json-file-loader" "6.0.10"
-    "@graphql-tools/links" "6.0.10"
-    "@graphql-tools/load" "6.0.10"
-    "@graphql-tools/load-files" "6.0.10"
-    "@graphql-tools/merge" "6.0.10"
-    "@graphql-tools/mock" "6.0.10"
-    "@graphql-tools/module-loader" "6.0.10"
-    "@graphql-tools/relay-operation-optimizer" "6.0.10"
-    "@graphql-tools/resolvers-composition" "6.0.10"
-    "@graphql-tools/schema" "6.0.10"
-    "@graphql-tools/stitch" "6.0.10"
-    "@graphql-tools/url-loader" "6.0.10"
-    "@graphql-tools/utils" "6.0.10"
-    "@graphql-tools/wrap" "6.0.10"
 
 graphql-tools@^6.0.5:
   version "6.0.8"
@@ -11675,13 +11460,6 @@ p-limit@2.3.0, p-limit@^2.0.0, p-limit@^2.2.0:
   dependencies:
     p-try "^2.0.0"
 
-p-limit@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-3.0.1.tgz#584784ac0722d1aed09f19f90ed2999af6ce2839"
-  integrity sha512-mw/p92EyOzl2MhauKodw54Rx5ZK4624rNfgNaBguFZkHzyUG9WsDzFF5/yQVEJinbJDdP4jEfMN+uBquiGnaLg==
-  dependencies:
-    p-try "^2.0.0"
-
 p-limit@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-1.3.0.tgz#b86bd5f0c25690911c7590fcbfc2010d54b3ccb8"
@@ -14116,11 +13894,6 @@ simple-git@2.5.0:
   dependencies:
     "@kwsites/exec-p" "^0.4.0"
     debug "^4.0.1"
-
-simple-git@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-2.6.0.tgz#04b554d1038e6036af2ae4d67a30bc5fd75f4fcd"
-  integrity sha512-eplWRfu6RTfoAzGl7I0+g06MvYauXaNpjeuhFiOYZO9hevnH54RkkStOkEevWwqBWfdzWNO9ocffbdtxFzBqXQ==
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
