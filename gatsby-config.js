@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-background-image-es5`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

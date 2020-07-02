@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import SEO from "../components/seo"
+import BackgroundImage from "gatsby-background-image-es5"
 
 
 import "./global-style.scss"
