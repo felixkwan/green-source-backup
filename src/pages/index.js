@@ -229,7 +229,11 @@ const IndexPage = () => (
                   <div className="container case">
                     <div className="case-content-wrapper">
                       <div className="case-content">
-                        <h3 className="case-title">School</h3>
+                        <div
+                          className="case-thumb case-college"
+                          >
+                        </div>
+                        <h3 className="case-title">College</h3>
                         <div className="case-info">
                           <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
                         </div>
@@ -246,7 +250,11 @@ const IndexPage = () => (
                   <div className="container case">
                     <div className="case-content-wrapper">
                       <div className="case-content">
-                        <h3 className="case-title">School</h3>
+                        <div
+                          className="case-thumb case-college"
+                          >
+                        </div>
+                        <h3 className="case-title">College</h3>
                         <div className="case-info">
                           <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
                         </div>
@@ -263,7 +271,11 @@ const IndexPage = () => (
                   <div className="container case">
                     <div className="case-content-wrapper">
                       <div className="case-content">
-                        <h3 className="case-title">School</h3>
+                        <div
+                          className="case-thumb case-college"
+                          >
+                        </div>
+                        <h3 className="case-title">College</h3>
                         <div className="case-info">
                           <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
                         </div>
@@ -280,7 +292,11 @@ const IndexPage = () => (
                   <div className="container case">
                     <div className="case-content-wrapper">
                       <div className="case-content">
-                        <h3 className="case-title">School</h3>
+                        <div
+                          className="case-thumb case-college"
+                          >
+                        </div>
+                        <h3 className="case-title">College</h3>
                         <div className="case-info">
                           <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
                         </div>
@@ -289,23 +305,24 @@ const IndexPage = () => (
                   </div>
                 </div>
               </div>
-            </div>
-    
-            <div  data-sal="slide-up"
+
+              <div  data-sal="slide-up"
                   data-sal-duration="350"
                   data-sal-delay="450"
                   data-sal-easing="ease"  
                   className="container text-wrapper">
-              <article>
-                <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-              </article>
-            </div>
+                <article>
+                  <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                </article>
+              </div>
     
-            <AniLink fade data-sal="fade"
-                  data-sal-duration="350"
-                  data-sal-delay="500"
-                  data-sal-easing="ease" 
-                  to="/client/" className="primary-button button-centered view-more-button">View More</AniLink>
+              <AniLink fade data-sal="fade"
+                    data-sal-duration="350"
+                    data-sal-delay="500"
+                    data-sal-easing="ease" 
+                    to="/client/" className="primary-button button-centered view-more-button">View More</AniLink>
+            </div>
+
           </div>
         </Layout>
       )

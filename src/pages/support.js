@@ -9,9 +9,30 @@ const Support = () => {
 
   const data = useStaticQuery(graphql`
     query {
+      officeImage: file(relativePath: { eq: "bk-office-2-768.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, maxHeight:640) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      deployImage: file(relativePath: { eq: "dirt-640.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, maxHeight:640) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      equipImage: file(relativePath: { eq: "equip-1024.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 640, maxHeight:640) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
       vehicleImage: file(relativePath: { eq: "santa-low.png" }) {
         childImageSharp {
-          fluid(maxWidth: 640) {
+          fluid(maxWidth: 640, maxHeight:640) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -58,7 +79,7 @@ const Support = () => {
                       <Img className="support-img" fluid={data.vehicleImage.childImageSharp.fluid} />
                     </div>
 
-                    <div className="column support-content vehicle-img">
+                    <div className="column support-content">
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon vehicle-icon"></div>
@@ -81,10 +102,10 @@ const Support = () => {
               <div className="hero-body">
                 <div className="columns">
                     <div className="column is-one-third">
-                      <Img className="support-img" fluid={data.vehicleImage.childImageSharp.fluid} />
+                      <Img className="support-img" fluid={data.equipImage.childImageSharp.fluid} />
                     </div>
 
-                    <div className="column support-content vehicle-img">
+                    <div className="column support-content">
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon equip-icon"></div>
@@ -107,10 +128,10 @@ const Support = () => {
               <div className="hero-body">
                 <div className="columns">
                     <div className="column is-one-third">
-                      <Img className="support-img" fluid={data.vehicleImage.childImageSharp.fluid} />
+                      <Img className="support-img" fluid={data.deployImage.childImageSharp.fluid} />
                     </div>
 
-                    <div className="column support-content vehicle-img">
+                    <div className="column support-content">
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon deploy-icon"></div>
@@ -133,10 +154,10 @@ const Support = () => {
               <div className="hero-body">
                 <div className="columns">
                     <div className="column is-one-third">
-                      <Img className="support-img" fluid={data.vehicleImage.childImageSharp.fluid} />
+                      <Img className="support-img" fluid={data.officeImage.childImageSharp.fluid} />
                     </div>
 
-                    <div className="column support-content vehicle-img">
+                    <div className="column support-content">
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon society-icon"></div>

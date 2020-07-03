@@ -688,7 +688,6 @@ button.navbar-burger {
 .service-content {
   padding: 0;
   margin: 1rem auto;
-  max-width: 1024px;
 }
 
 .service-title {
@@ -697,23 +696,21 @@ button.navbar-burger {
 }
 
 .block-service .service-content .text-wrapper {
-  background: $light-green;
-  padding: 2.5rem;
+  background: white;
+  padding: 4rem;
 }
 
 //block-case
 
 .showcase {
   max-width: 1366px;
-  margin: 0 auto;
+  margin: 0 auto 6rem;
 }
 
 .case {
-  min-height: 320px;
+  min-height: 480px;
   display: flex;
-  background-image: url("../images/service-1440.jpg");
-  background-position: center;
-  background-size: cover;
+  background: transparent;
 }
 
 
@@ -728,26 +725,32 @@ button.navbar-burger {
   padding: 2rem;
   background: white;
 
+  .case-thumb {
+    height: 256px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+  }
+
+  .case-thumb.case-college {
+    background-image: url("../images/bk-college-768.png");
+  }
+  .case-thumb.case-office {
+    background-image: url("../images/bk-office-2-768.png");
+  }
+
   .case-info {
     margin-top: 1rem;
+    margin-right: 2.5rem;
   }
 
   .case-title {
-    color: $dark-blue-green;
+    color: $dark-blue;
   }
 }
 
-@media #{$wide-device} {
-  .case-content-wrapper {
-    opacity: 0;
-    transition: all .25s ease-in-out;
-  }
-
-  .case:hover > .case-content-wrapper {
-    opacity: 1;
-    transition: all .25s ease-in-out;
-  }
-}
 .block-case {
   .text-wrapper {
     padding: 1rem;
@@ -1064,8 +1067,10 @@ button.navbar-burger {
 
 .support-content {
   position: inherit;
-  display: block;
-  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 
     .section-title {
       padding-left: 3.5rem;
@@ -1087,17 +1092,13 @@ button.navbar-burger {
 }
 
 .section-row {
-  padding: 1rem 1rem;
+  padding: 0 2rem;
 }
 
 
 @media #{$desktop-device} {
   .support-content {
     margin-left: 1.5rem;
-  }
-
-  .section-row {
-    padding: 3rem 0;
   }
 }
 
@@ -1141,17 +1142,9 @@ button.navbar-burger {
   background-image: url("../images/icons8-smart-card-64.png");
 }
 
-@media #{$wide-device} {
-  .support-img {
-    margin-top: -8rem;
-    margin-left: -3rem;
-  }  
-}
-
 //client page
 
 .client-wrapper {
-  padding-bottom: 2.5rem;
 
   .section-text {
     font-weight: 500;

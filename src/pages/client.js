@@ -17,22 +17,20 @@ const Clients = () => (
     </div>
 
     <div className="pages-wrapper client-wrapper container">
-
-    <div className="paragraph section-text">
-          <div className="container">
-            <article>
-              <p>
+      <div className="paragraph section-text">
+        <div className="container">
+          <article>
+            <p>
               たくさんのこだわりと人の手をかけた我が家のアスパラガス。
-    香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
-    一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
-    ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
-              </p>
-            </article>
-          </div>
+              香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
+              一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
+              ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
+            </p>
+          </article>
         </div>
-
-       <Cases></Cases>
+      </div>
     </div>
+    <Cases></Cases>
 
   </Layout>
 )
