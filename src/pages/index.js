@@ -214,7 +214,7 @@ const IndexPage = () => (
                   data-sal-delay="250"
                   data-sal-easing="ease"  
                   className="container block-title">
-              <h4 className="section-subtitle">Showcases</h4>
+              <h4 className="section-subtitle">Clients</h4>
               <h2 className="section-title">About Our Garden</h2>
               <div className="divider"></div>
             </div>

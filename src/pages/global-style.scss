@@ -721,7 +721,6 @@ button.navbar-burger {
 
 .case-content {
   height: 100%;
-  width: 100%;
   padding: 2rem;
   background: white;
 
@@ -1023,7 +1022,7 @@ button.navbar-burger {
   }
 
   .service-content {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -1168,47 +1167,8 @@ button.navbar-burger {
 }
 
 .client-list {
-  padding-bottom: 2.5rem;
-}
-
-.client-thumb {
-  display: block;
-  height: 280px;
-  margin: 0 1rem;
-  background-image: url("../images/service-1440.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-@media #{$wide-device} {
-  .client-thumb {
-    margin: 0;
-    height: 200px;
-  }
-}
-
-@media #{$ultra-wide-device} {
-  .client-thumb {
-    margin: 0;
-    height: 320px;
-  }
-}
-
-.client-content {
-  margin-top: -2.5rem;
-  padding: 2.5rem;
-  background: white;
-  max-width: 75%;
-}
-
-.client-title {
-  margin-bottom: .5rem;
-}
-
-@media only screen and (max-width: 1023px) {
-  .client-wrapper {
-    padding-bottom: 0;
-  }
+  margin-top: 6rem;
+  margin-bottom: 6rem; 
 }
 
 //sustain page
