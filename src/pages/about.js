@@ -2,6 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faEnvelopeOpen, faGlobeAsia } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => (
   <Layout>
@@ -43,37 +45,37 @@ const About = () => (
               <tbody>
               <tr>
                 <th className="table-title">Company</th>
-                <td className="table-icon"><i className="fi fi-asterisk"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faGlobeAsia} /></td>
                 <td>Green Source Gardening Art Co.LTD</td>
               </tr>
               <tr>
                 <th className="table-title">Address</th>
-                <td className="table-icon"><i className="fi fi-map"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></td>
                 <td>G/f, No.8, Wilson Road, Jardine's Lookout </td>
               </tr>
               <tr>
                 <th className="table-title">Tel</th>
-                <td className="table-icon"><i className="fi fi-phone"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faPhoneAlt} /></td>
                 <td>2670 0378 / 2697 6456</td>
               </tr>
               <tr>
                 <th className="table-title">Fax</th>
-                <td className="table-icon"><i className="fi fi-export"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faFax} /></td>
                 <td>2696 9016</td>
               </tr>
               <tr>
                 <th className="table-title">Manager</th>
-                <td className="table-icon"><i className="fi fi-person"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faAddressCard} /></td>
                 <td>Nic Yip</td>
               </tr>
               <tr>
                 <th className="table-title">Mobile</th>
-                <td className="table-icon"><i className="fi fi-mobile-alt"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faMobile} /></td>
                 <td>9585 3845</td>
               </tr>
               <tr>
                 <th className="table-title">Mail</th>
-                <td className="table-icon"><i className="fi fi-comments"></i></td>
+                <td className="table-icon"><FontAwesomeIcon icon={faEnvelopeOpen} /></td>
                 <td>GreenSource@artiuminfo.com</td>
               </tr>
 
