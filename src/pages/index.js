@@ -40,7 +40,7 @@ const IndexPage = () => (
             <BackgroundImage
                 fluid={imageData}
                 className="header-wrapper index-header">
-              <div className="hero is-medium">
+              <div className="hero">
                   <div className="hero-body">
                     <h1 data-sal="fade"
                         data-sal-duration="250"
@@ -226,20 +226,10 @@ const IndexPage = () => (
                       data-sal-delay="300"
                       data-sal-easing="ease" 
                       className="column is-half">
-                  <div className="container case">
-                    <div className="case-content-wrapper">
-                      <div className="case-content">
                         <div
                           className="case-thumb case-college"
                           >
                         </div>
-                        <h3 className="case-title">College</h3>
-                        <div className="case-info">
-                          <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 
                 <div  data-sal="fade"
@@ -249,58 +239,26 @@ const IndexPage = () => (
                       className="column is-half">
                   <div className="container case">
                     <div className="case-content-wrapper">
-                      <div className="case-content">
-                        <div
-                          className="case-thumb case-college"
-                          >
-                        </div>
-                        <h3 className="case-title">College</h3>
-                        <div className="case-info">
-                          <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div  data-sal="fade"
-                      data-sal-duration="350"
-                      data-sal-delay="400"
-                      data-sal-easing="ease" 
-                      className="column is-half">
-                  <div className="container case">
-                    <div className="case-content-wrapper">
-                      <div className="case-content">
-                        <div
-                          className="case-thumb case-college"
-                          >
-                        </div>
-                        <h3 className="case-title">College</h3>
-                        <div className="case-info">
-                          <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div  data-sal="fade"
-                      data-sal-duration="350"
-                      data-sal-delay="450"
-                      data-sal-easing="ease" 
-                      className="column is-half">
-                  <div className="container case">
-                    <div className="case-content-wrapper">
-                      <div className="case-content">
-                        <div
-                          className="case-thumb case-college"
-                          >
-                        </div>
-                        <h3 className="case-title">College</h3>
-                        <div className="case-info">
-                          <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
-                        </div>
-                      </div>
+                      <ul className="case-content">
+                        <li>
+                          <h3 className="case-title">College</h3>
+                          <div className="case-info">
+                            <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                          </div>
+                        </li>
+                        <li>
+                          <h3 className="case-title">College</h3>
+                          <div className="case-info">
+                            <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                          </div>
+                        </li>
+                        <li>
+                          <h3 className="case-title">College</h3>
+                          <div className="case-info">
+                            <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>

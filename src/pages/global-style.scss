@@ -460,7 +460,7 @@ button.navbar-burger {
 }
 
 .blocks {
-  margin: 3rem auto;
+  margin: 5rem auto;
   padding: 1.5rem 0;
 }
 
@@ -704,7 +704,7 @@ button.navbar-burger {
 
 .showcase {
   max-width: 1366px;
-  margin: 0 auto 6rem;
+  margin: -3rem auto 6rem;
 }
 
 .case {
@@ -725,30 +725,39 @@ button.navbar-burger {
   padding: 2rem;
   background: white;
 
-  .case-thumb {
-    height: 256px;
-    width: 100%;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 1rem;
-  }
-
-  .case-thumb.case-college {
-    background-image: url("../images/bk-college-768.png");
-  }
-  .case-thumb.case-office {
-    background-image: url("../images/bk-office-2-768.png");
-  }
-
   .case-info {
     margin-top: 1rem;
-    margin-right: 2.5rem;
   }
 
   .case-title {
     color: $dark-blue;
   }
+
+  li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsl(0, 0%, 96%);
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.case-thumb {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+.case-thumb.case-college {
+  background-image: url("../images/bk-college-768.png");
+}
+.case-thumb.case-office {
+  background-image: url("../images/bk-office-2-768.png");
 }
 
 .block-case {
