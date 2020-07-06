@@ -702,17 +702,19 @@ button.navbar-burger {
 
 //block-case
 
-.showcase {
-  max-width: 1366px;
-  margin: -3rem auto 6rem;
-}
+.block-case {
+  .case {
+    min-height: 480px;
+    display: flex;
+    background: transparent;
+  }
 
-.case {
-  min-height: 480px;
-  display: flex;
-  background: transparent;
+  .showcase {
+    max-width: 1366px;
+    margin: -3rem auto 6rem;
+  }
+  
 }
-
 
 .case-content-wrapper {
   margin: 2rem;
@@ -744,12 +746,12 @@ button.navbar-burger {
 }
 
 .case-thumb {
+  min-height: 512px;
   height: 100%;
   width: auto;
   overflow: hidden;
   background-position: center;
   background-size: cover;
-  margin-bottom: 1rem;
 }
 
 .case-thumb.case-college {
@@ -1167,8 +1169,40 @@ button.navbar-burger {
 }
 
 .client-list {
-  margin-top: 6rem;
-  margin-bottom: 6rem; 
+  max-width: 1366px;
+  margin: 0 auto;
+
+  .case {
+    background-color: $tea-green;
+    background-position: center;
+    background-size: cover;
+    min-height: 480px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  #case1 {
+    background-image: url("../images/dirt-640.jpg");
+  }
+
+  #case2 {
+    background-image: url("../images/dirt-640.jpg");
+  }
+
+  #case3 {
+    background-image: url("../images/dirt-640.jpg");
+  }
+
+  #case4 {
+    background-image: url("../images/dirt-640.jpg");
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .client-list {
+    margin: 0 auto 3rem;
+  }
 }
 
 //sustain page

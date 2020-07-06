@@ -119,7 +119,6 @@ const IndexPage = () => (
                 </div>
                 <div className="container space column is-half"></div>
               </div>
-    
             </div>
     
             <div className="info-content info info-2">
