@@ -707,6 +707,7 @@ button.navbar-burger {
     min-height: 480px;
     display: flex;
     background: transparent;
+    height: 100%;
   }
 
   .showcase {
@@ -754,17 +755,10 @@ button.navbar-burger {
   background-size: cover;
 }
 
-.case-thumb.case-college {
-  background-image: url("../images/bk-college-768.png");
-}
-.case-thumb.case-office {
-  background-image: url("../images/bk-office-2-768.png");
-}
-
 .block-case {
   .text-wrapper {
-    padding: 1rem;
-    margin: 1.5rem auto 0;
+    padding: 1.5rem;
+    margin: 0 auto;
     text-align: center;
     max-width: 768px;
   }
@@ -1414,6 +1408,24 @@ table {
         padding: 1.25rem .75rem;
       }
     }
+  }
+}
+
+//flickity
+
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+
+.flickity-viewport {
+  transition: height 0.2s;
+}
+
+@media screen and ( min-width: 768px ) and (max-width: 1152px) {
+  /* disable Flickity for large devices */
+  .carousel:after {
+    content: '';
   }
 }
 
