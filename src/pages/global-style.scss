@@ -1203,6 +1203,9 @@ button.navbar-burger {
 
 //sustain page
 
+.tab-wrapper {
+  margin-top: -3rem;
+}
 
 .sustain-tabs {
   display: none;
@@ -1272,11 +1275,13 @@ button.tab-list-item.tab-list-active {
 .paragraph-img {
   position: inherit;
   display: block;
+  height: 100%;
   min-height: 560px;
   max-width: 1024px;
   background-position: center;
-  background-size: cover;
-  margin: 0 auto .5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .ppl-img {
@@ -1302,27 +1307,17 @@ button.tab-list-item.tab-list-active {
   text-align: center;
 }
 
-.sustain-img {
-  position: inherit;
-  display: block;
-  min-height: 440px;
-  background-position: center;
-  background-size: cover;
-}
-
-.sustain-img-1 {
-  background-image: url("../images/ppl-640.jpg");
-}
-
-.sustain-img-2 {
-  background-image: url("../images/dirt-640.jpg");
-}
-
-.sustain-img-3 {
-  background-image: url("../images/water-640.jpg");
-}
-
 @media only screen and (max-width: 1023px) {
+  .paragraph-img {
+    min-height: 480px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .paragraph-img {
+    min-height: 320px;
+  }
+
   .tab-content .left-space {
     display: none;
   }
