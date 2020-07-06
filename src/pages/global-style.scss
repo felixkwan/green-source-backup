@@ -703,23 +703,27 @@ button.navbar-burger {
 //block-case
 
 .block-case {
+
+  .showcase {
+    max-width: 1366px;
+    margin: -3rem auto 6rem;
+  }
+
   .case {
     min-height: 480px;
     display: flex;
     background: transparent;
     height: 100%;
-  }
 
-  .showcase {
-    max-width: 1366px;
-    margin: -3rem auto 6rem;
+    .case-content {
+      padding: 0 2rem 2rem 2rem;
+    }
   }
   
 }
 
 .case-content-wrapper {
   margin: 2rem;
-  width: 100%;
 }
 
 .case-content {
@@ -747,9 +751,7 @@ button.navbar-burger {
 }
 
 .case-thumb {
-  min-height: 512px;
   height: 100%;
-  width: auto;
   overflow: hidden;
   background-position: center;
   background-size: cover;
