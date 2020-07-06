@@ -8,6 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 import Header from "./header"
 import Contact from "./contact"
@@ -15,7 +17,6 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   
-
   return (
     <>
     <Helmet>
@@ -35,9 +36,9 @@ const Layout = ({ children }) => {
               </div>
               <div className="column is-half">
                 <ul className="social-list">
-                  <li><span ><i className="fi fi-instagram"></i></span></li>
-                  <li><span ><i className="fi fi-whatsapp"></i></span></li>
-                  <li><span ><i className="fi fi-facebook"></i></span></li>
+                  <li><FontAwesomeIcon icon={faTwitter} /></li>
+                  <li><FontAwesomeIcon icon={faInstagram} /></li>
+                  <li class="facebook"><FontAwesomeIcon icon={faFacebookF} /></li>
                 </ul>
               </div>            
             </div>

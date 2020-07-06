@@ -939,7 +939,7 @@ button.navbar-burger {
 
    small {
      font-size: 1rem;
-     line-height: 1.8;
+     line-height: 2.4;
    }
 }
 
@@ -964,9 +964,15 @@ button.navbar-burger {
   }
 }
 
-.footer .social-list span {
+.footer .social-list li {
   color: white;
   font-size: 1.25rem;
+  padding: .25rem .5rem;
+  background: transparent;
+}
+
+.footer .social-list .facebook {
+  padding: .25rem .95rem;
 }
 
 //pages-wrapper
