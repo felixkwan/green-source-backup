@@ -54,11 +54,7 @@ const IndexPage = () => (
           </div>
     
           <div className="block-main blocks">
-            <div  data-sal="fade"
-                  data-sal-duration="250"
-                  data-sal-delay="250"
-                  data-sal-easing="ease" 
-                  className="container block-title">
+            <div className="container block-title">
               <h4 className="section-subtitle">Showcases</h4>
               <h2 className="section-title">About Our Garden</h2>
               <div className="divider"></div>
