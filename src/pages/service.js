@@ -8,9 +8,9 @@ import SEO from "../components/seo"
 const Service = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "service-1440.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "water-640.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1366) {
+          fluid(quality: 100, maxWidth: 512, maxHeight: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -29,46 +29,54 @@ const Service = () => {
         </div>
       </div>
 
-      <div className="pages-wrapper service-wrapper container clearfix">
-        <div className="service-content">
+      <div className="pages-wrapper service-wrapper mt-4 py-4 container clearfix">
+        <div className="service-content my-5 pb-5 is-clearfix">
+          <div className="container service-details">
+            <div className="service-details-wrapper">
+              <div className="columns">
+                <div className="column is-half is-hidden-tablet">
+                  <div className="service-img-thumb px-4">
+                    <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                  </div>
+                </div>
+
+                <div className="column is-half">
+                  <div className="container text-wrapper mt-4 px-4">
+                    <h5 className="service-tag mb-2">Gardening</h5>
+                    <h2 className="service-title">Maintenance</h2>
+                    <article>
+                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                    </article>
+                  </div>
+                </div>
+                
+                <div className="column is-half is-hidden-mobile">
+                  <div className="service-img-thumb px-4">
+                    <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="service-content my-5 pb-5 is-clearfix">
           <div className="container service-details">
             <div className="service-details-wrapper">
               <div className="columns is-multiline">
                 <div className="column is-half">
-                  <div id="item-1" className="container">
-                    <h2 className="service-title">Design & Build</h2>
-                    <div className="container service-detail-img">
+                  <div className="container">
+                    <div className="container service-img-tumb px-4">
                       <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                    </div>
-                    <div className="container text-wrapper">
-                      <article>
-                        <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-                      </article>
                     </div>
                   </div>
                 </div>
                 
                 <div className="column is-half">
-                  <div id="item-2" className="container">
-                  <h2 className="service-title">Maintenance</h2>
-                    <div className="tile is-ancestor">
-                      <div className="tile is-vertical">
-                        <div className="tile is-parent">
-                          <div className="tile is-child">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                          </div>
-                        </div>
-                        <div className="tile is-parent">
-                          <div className="tile is-child">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                          </div>
-                          <div className="tile is-child">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="container text-wrapper">
+                  <div className="container">  
+                    <div className="container text-wrapper mt-4 px-4">
+                      <h5 className="service-tag mb-2">Gardening</h5>
+                      <h2 className="service-title">Maintenance</h2>
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
                       </article>
@@ -80,58 +88,53 @@ const Service = () => {
           </div>
         </div>
 
-        <div className="service-content">
+        <div className="service-content my-5 pb-5 is-clearfix">
           <div className="container service-details">
             <div className="service-details-wrapper">
               <div className="columns">
+                <div className="column is-half is-hidden-tablet">
+                  <div className="service-img-thumb px-4">
+                    <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                  </div>
+                </div>
+                
                 <div className="column is-half">
-                  <div id="item-3" className="container">
-                    <h2 className="service-title">Water Management</h2>
-                    <div className="container service-detail-img">
-                        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                    </div>
-                    <div className="container text-wrapper">
-                      <article>
-                        <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-                      </article>
-                    </div>
+                  <div className="container text-wrapper mt-4 px-4">
+                    <h5 className="service-tag mb-2">Gardening</h5>
+                    <h2 className="service-title">Maintenance</h2>
+                    <article>
+                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                    </article>
                   </div>
-
-                  <div id="item-3-1" className="container sub-item">
-                    <h3 className="service-title">Water Flow Method 1</h3>
-                    <div className="container text-wrapper">
-                      <article>
-                        <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-                      </article>
-                    </div>
+                </div>
+                
+                <div className="column is-half is-hidden-mobile">
+                  <div className="service-img-thumb px-4">
+                    <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  <div id="item-3-2" className="container sub-item">
-                    <h3 className="service-title">Water Flow Method 2</h3>
-                    <div className="container text-wrapper">
-                      <article>
-                        <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-                      </article>
+        <div className="service-content my-5 pb-5 is-clearfix">
+          <div className="container service-details">
+            <div className="service-details-wrapper">
+              <div className="columns is-multiline">
+                <div className="column is-half">
+                  <div className="container">
+                    <div className="container service-img-thumb px-4">
+                      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
                   </div>
                 </div>
-
+                
                 <div className="column is-half">
-                  <div id="item-4" className="container">
-                    <h2 className="service-title">Water Tanks and Irrigation Systems</h2>
-                    <div className="container service-detail-img">
-                        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                    </div>
-                    <div className="container text-wrapper">
-                      <article>
-                        <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-                      </article>
-                    </div>
-                  </div>
-
-                  <div id="item-4-1" className="container sub-item">
-                    <h3 className="service-title">System 1</h3>
-                    <div className="container text-wrapper">
+                  <div className="container">  
+                    <div className="container text-wrapper mt-4 px-4">
+                      <h5 className="service-tag mb-2">Gardening</h5>
+                      <h2 className="service-title">Maintenance</h2>
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
                       </article>
@@ -142,6 +145,7 @@ const Service = () => {
             </div>
           </div>
         </div>
+
       </div>
 
     </Layout>

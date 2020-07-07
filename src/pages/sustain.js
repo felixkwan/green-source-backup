@@ -41,9 +41,7 @@ const Sustainability = () => (
                 <div className="paragraph-img ppl-img"></div>
             </div> 
             <div className="columns tap-content-inner">
-              <div className="column left-space">
-              </div>
-              <div className="column is-two-thirds">
+              <div className="column is-offset-4 is-8">
                 <div className="tab-title">
                   <h2>個人發展</h2>
                 </div>
@@ -68,9 +66,7 @@ const Sustainability = () => (
               <div className="paragraph-img health-img"></div>
             </div>
             <div className="columns tap-content-inner">
-              <div className="column left-space">
-              </div>
-              <div className="column is-two-thirds">
+              <div className="column is-offset-4 is-8">
                 <div className="tab-title">
                   <h2 className="health-title">健康與安全</h2>
                 </div>
@@ -95,9 +91,7 @@ const Sustainability = () => (
                 <div className="paragraph-img society-img"></div>
               </div>
               <div className="columns tap-content-inner">
-                <div className="column left-space">
-                </div>
-                <div className="column is-two-thirds">
+                <div className="column is-offset-4 is-8">
                   <div className="tab-title">
                     <h2>社會責任</h2>
                   </div>
