@@ -37,7 +37,26 @@ const About = () => {
       <div className="about-wrapper pages-wrapper container">
 
         <div className="about-content my-5 pb-5 is-clearfix">
-
+            <div className="columns is-multiline mb-6">
+              <div className="column is-12">
+                <div className="container mt-2 px-3 py-3 section-text">
+                  <h2 className="about-title mb-5">Green Source Gardening Art Co.LTD</h2>
+                    <article class="mb-3">
+                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                    </article>
+                </div>
+              </div>
+              <div className="column is-half">
+                <div className="about-img-thumb px-4">
+                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                </div>
+              </div>
+              <div className="column is-half">
+                <div className="about-img-thumb px-4">
+                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                </div>
+              </div>
+            </div>
         </div>
       
         <div className="about-content my-5 pb-5 is-clearfix">
@@ -51,9 +70,13 @@ const About = () => {
                 </div>
                 <div className="column is-half">
                   <div className="container text-wrapper mt-4 px-4">
-                    <h2 className="about-title mb-4">Maintenance</h2>
+                    <h2 className="about-title mb-5">Hong Kong</h2>
+                    <div className="columns is-mobile address is-gapless mb-2">
+                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></div>
+                      <div className="column is-10">G/f, No.8, Wilson Road, Jardine's Lookout </div>
+                    </div>
                     <article class="mb-5">
-                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
                     </article>
                     <Link to="https://www.google.com" className="contact-link py-2" >
                       GreenSource@artiuminfo.com 
@@ -70,16 +93,6 @@ const About = () => {
             <div className="container py-5 px-5 mb-6">
               <table className="table contact-table is-striped">
                 <tbody>
-                <tr>
-                  <th className="table-title">Company</th>
-                  <td className="table-icon"><FontAwesomeIcon icon={faGlobeAsia} /></td>
-                  <td>Green Source Gardening Art Co.LTD</td>
-                </tr>
-                <tr>
-                  <th className="table-title">Address</th>
-                  <td className="table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></td>
-                  <td>G/f, No.8, Wilson Road, Jardine's Lookout </td>
-                </tr>
                 <tr>
                   <th className="table-title">Tel</th>
                   <td className="table-icon"><FontAwesomeIcon icon={faPhoneAlt} /></td>

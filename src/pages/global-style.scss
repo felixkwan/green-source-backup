@@ -464,6 +464,14 @@ button.navbar-burger {
   padding: 1.5rem 0;
 }
 
+@media only screen and (max-width: 1023px) {
+  .header-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3.25rem;
+  }
+}
+
 //block-main
 
 .block-main {
@@ -1242,6 +1250,10 @@ button.tab-list-item.tab-list-active {
 
 //About page
 
+.address {
+  font-size: 1.15rem;
+}
+
 .contact-link {
   font-weight: 500;
   color: $primary-color;
@@ -1257,64 +1269,15 @@ button.tab-list-item.tab-list-active {
   }
 }
 
-table {
+.table {
   overflow-wrap: anywhere;
-}
+  font-size: 1.15rem;
+  border: none;
 
-.about-wrapper {
-
-  .table {
-    font-size: 1.35rem;
-
-    td, th{
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      color: $dark-blue;
-      border: none;
-    }
-
-    .table-icon {
-      padding: 1.5rem .5rem 1.5rem .5rem;
-      text-align: center;
-    }
-  }
-}
-
-.table td, .table th {
-  border-color: $tea-green;
-}
-
-.table.is-striped tbody tr:not(.is-selected):nth-child(even) {
-  background: $light-green;
-}
-
-@media only screen and (max-width: 1023px) {
-  .header-wrapper {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 3.25rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .about-wrapper {
-
-    .table {
-      font-size: 1rem;
-
-      .table-title {
-        display: none;
-      }
-
-      td, th{
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-      }
-
-      .table-icon {
-        padding: 1.25rem .75rem;
-      }
-    }
+  td, th{
+    color: $dark-blue;
+    border: none;
+    font-size: 1.25rem;
   }
 }
 
