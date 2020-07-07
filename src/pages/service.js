@@ -8,9 +8,9 @@ import SEO from "../components/seo"
 const Service = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "water-640.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "flower-1920.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 512, maxHeight: 300) {
+          fluid(quality: 100, maxWidth: 512) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -42,7 +42,7 @@ const Service = () => {
 
                 <div className="column is-half">
                   <div className="container text-wrapper mt-4 px-4">
-                    <h5 className="service-tag mb-2">Gardening</h5>
+                    <h6 className="service-tag mb-1">Gardening</h6>
                     <h2 className="service-title">Maintenance</h2>
                     <article>
                       <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
@@ -75,7 +75,7 @@ const Service = () => {
                 <div className="column is-half">
                   <div className="container">  
                     <div className="container text-wrapper mt-4 px-4">
-                      <h5 className="service-tag mb-2">Gardening</h5>
+                      <h6 className="service-tag mb-1">Gardening</h6>
                       <h2 className="service-title">Maintenance</h2>
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
@@ -100,7 +100,7 @@ const Service = () => {
                 
                 <div className="column is-half">
                   <div className="container text-wrapper mt-4 px-4">
-                    <h5 className="service-tag mb-2">Gardening</h5>
+                    <h6 className="service-tag mb-1">Gardening</h6>
                     <h2 className="service-title">Maintenance</h2>
                     <article>
                       <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
@@ -133,7 +133,7 @@ const Service = () => {
                 <div className="column is-half">
                   <div className="container">  
                     <div className="container text-wrapper mt-4 px-4">
-                      <h5 className="service-tag mb-2">Gardening</h5>
+                      <h6 className="service-tag mb-1">Gardening</h6>
                       <h2 className="service-title">Maintenance</h2>
                       <article>
                         <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>

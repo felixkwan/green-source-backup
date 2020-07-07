@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelopeOpen, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 class Contact extends Component {
 
@@ -18,8 +20,9 @@ class Contact extends Component {
                         </div>
                         <div className="contact-item contact-mail">
                             <a href="/">
-                                <span><i className="fi fi-email"></i>Send us a mail</span>
-                                <span><i className="fi fi-angle-right"></i></span>
+                                <FontAwesomeIcon icon={faEnvelopeOpen} className="mx-5 mt-1" />
+                                Send us a mail
+                                <FontAwesomeIcon icon={faCaretRight} className="arrow mr-5" />
                             </a>
                         </div>
                     </div>

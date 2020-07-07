@@ -838,34 +838,14 @@ button.navbar-burger {
     color: $dark-blue;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 1.5rem 0;
     background: white;
     margin-top: 1.5rem;
     overflow: hidden;
     border-radius: .5rem;
+    line-height: 1.6;
     transition: all .25s ease-in-out;
-
-    span:first-child() {
-      display: flex;
-      flex-direction: row;
-      line-height: 1.5;
-
-      i {
-        margin: 0 1.25rem;
-        font-size: 1.5rem;
-        margin-top: .25rem;
-        padding-right: 1rem;
-      }
-    }
-
-    span:last-child {
-      i {
-        font-size: 1.25rem;
-        margin-top: .35rem;
-        margin-right: 1.5rem;
-      }
-    }
   }
 
   a:hover {
@@ -878,6 +858,11 @@ button.navbar-burger {
     background: $dark-blue;
     color: white;
     transition: all .25s ease-in-out;
+  }
+
+  .arrow {
+    font-size: 1.85rem;
+    margin-left: auto;
   }
 }
 
@@ -1008,8 +993,7 @@ button.navbar-burger {
 }
 
 .service-img-thumb {
-  height: 100%;
-  min-height: 320px;
+  height: auto;
   width: 100%;
 }
 
@@ -1095,17 +1079,6 @@ button.navbar-burger {
 //client page
 
 .client-wrapper {
-
-  .section-text {
-    font-weight: 500;
-    text-align: left;
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-
-    article p {
-      font-size: 1.35rem;
-    }
-  }
 }
 
 .client-list {
@@ -1269,27 +1242,26 @@ button.tab-list-item.tab-list-active {
 
 //About page
 
+.contact-link {
+  font-weight: 500;
+  color: $primary-color;
+  font-size: 1.15rem;
+
+  &:hover,
+  &:focus {
+    color: $dark-blue;
+  }
+  
+  .arrow {
+    font-size: 1.3rem;
+  }
+}
+
 table {
   overflow-wrap: anywhere;
 }
 
 .about-wrapper {
-  .section-text {
-    font-weight: 500;
-    text-align: left;
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-
-    article p {
-      font-size: 1.35rem;
-    }
-  }
-
-  .contact-list {
-    max-width: 768px;
-    margin: 2.5rem auto;
-    padding: 1.5rem;
-  }
 
   .table {
     font-size: 1.35rem;
@@ -1321,12 +1293,6 @@ table {
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 3.25rem;
-  }
-
-  .about-wrapper {
-    .table {
-      font-size: 1.15rem;
-    }
   }
 }
 
