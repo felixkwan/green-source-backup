@@ -220,9 +220,9 @@ const IndexPage = () => (
                       data-sal-duration="350"
                       data-sal-delay="300"
                       data-sal-easing="ease" 
-                      className="column is-half">
+                      className="column is-half case-slider">
                         <div
-                          className="case-thumb case-college"
+                          className="case-thumb slider"
                           >
                             <Carousel />
                         </div>

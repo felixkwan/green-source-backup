@@ -720,14 +720,12 @@ button.navbar-burger {
   .case {
     min-height: 480px;
     display: flex;
-    background: transparent;
+    background: white;
     height: 100%;
-
-    .case-content {
-      padding: 0 2rem 2rem 2rem;
-    }
+    z-index: -1;
+    
   }
-  
+
 }
 
 .case-content-wrapper {
@@ -737,7 +735,7 @@ button.navbar-burger {
 .case-content {
   height: 100%;
   padding: 2rem;
-  background: white;
+  background: transparent;
 
   .case-info {
     margin-top: 1rem;
@@ -756,13 +754,6 @@ button.navbar-burger {
       margin-bottom: 0;
     }
   }
-}
-
-.case-thumb {
-  height: 100%;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
 }
 
 .block-case {
