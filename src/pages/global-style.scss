@@ -1250,10 +1250,6 @@ button.tab-list-item.tab-list-active {
 
 //About page
 
-.address {
-  font-size: 1.15rem;
-}
-
 .contact-link {
   font-weight: 500;
   color: $primary-color;
@@ -1266,18 +1262,6 @@ button.tab-list-item.tab-list-active {
   
   .arrow {
     font-size: 1.3rem;
-  }
-}
-
-.table {
-  overflow-wrap: anywhere;
-  font-size: 1.15rem;
-  border: none;
-
-  td, th{
-    color: $dark-blue;
-    border: none;
-    font-size: 1.25rem;
   }
 }
 

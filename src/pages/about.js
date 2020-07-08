@@ -13,9 +13,16 @@ const About = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "flower-1920.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "water-640-2.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 512) {
+          fluid(quality: 100, maxWidth: 768) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      aboutImage: file(relativePath: { eq: "plants-1024.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1024) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -46,20 +53,31 @@ const About = () => {
                     </article>
                 </div>
               </div>
-              <div className="column is-half">
+              <div className="column is-12">
                 <div className="about-img-thumb px-4">
-                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                  <Img fluid={data.aboutImage.childImageSharp.fluid} />
                 </div>
               </div>
               <div className="column is-half">
-                <div className="about-img-thumb px-4">
-                  <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                <div className="about-details-wrapper px-4 py-4">
+                  <h5 className="about-title mb-5">Green Source Gardening Art Co.LTD</h5>
+                  <article class="mb-3">
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                  </article>
+                </div>
+              </div>
+              <div className="column is-half">
+                <div className="about-details-wrapper px-4 py-4">
+                  <h5 className="about-title mb-5">Green Source Gardening Art Co.LTD</h5>
+                  <article class="mb-3">
+                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                  </article>
                 </div>
               </div>
             </div>
         </div>
       
-        <div className="about-content my-5 pb-5 is-clearfix">
+        <div className="about-content my-5 pb-6 is-clearfix">
           <div className="container contact-details">
             <div className="about-details-wrapper">
              <div className="columns">
@@ -71,13 +89,32 @@ const About = () => {
                 <div className="column is-half">
                   <div className="container text-wrapper mt-4 px-4">
                     <h2 className="about-title mb-5">Hong Kong</h2>
+                    <article class="mb-5 pr-6">
+                      <p>Contact our client team to talk about Gardening products and services.</p>
+                    </article>
                     <div className="columns is-mobile address is-gapless mb-2">
                       <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></div>
                       <div className="column is-10">G/f, No.8, Wilson Road, Jardine's Lookout </div>
                     </div>
-                    <article class="mb-5">
-                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
-                    </article>
+                    <div className="columns is-mobile tel is-gapless mb-2">
+                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faPhoneAlt} /></div>
+                      <div className="column is-10">2670 0378 / 2697 6456</div>
+                    </div>
+                    <div className="columns is-mobile fax is-gapless mb-2 pb-2">
+                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faFax} /></div>
+                      <div className="column is-10">2696 9016</div>
+                    </div>
+
+                    <div className="columns is-mobile manager is-gapless mb-2">
+                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faAddressCard} /></div>
+                      <div className="column is-10">Nic Yip</div>
+                    </div>
+
+                    <div className="columns is-mobile mobile is-gapless mb-2 pb-2">
+                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMobile} /></div>
+                      <div className="column is-10">9585 3845</div>
+                    </div>
+
                     <Link to="https://www.google.com" className="contact-link py-2" >
                       GreenSource@artiuminfo.com 
                       <FontAwesomeIcon icon={faChevronRight} className="arrow ml-1 pt-1" />
@@ -88,35 +125,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-          <div className="contact-list">
-            <div className="container py-5 px-5 mb-6">
-              <table className="table contact-table is-striped">
-                <tbody>
-                <tr>
-                  <th className="table-title">Tel</th>
-                  <td className="table-icon"><FontAwesomeIcon icon={faPhoneAlt} /></td>
-                  <td>2670 0378 / 2697 6456</td>
-                </tr>
-                <tr>
-                  <th className="table-title">Fax</th>
-                  <td className="table-icon"><FontAwesomeIcon icon={faFax} /></td>
-                  <td>2696 9016</td>
-                </tr>
-                <tr>
-                  <th className="table-title">Manager</th>
-                  <td className="table-icon"><FontAwesomeIcon icon={faAddressCard} /></td>
-                  <td>Nic Yip</td>
-                </tr>
-                <tr>
-                  <th className="table-title">Mobile</th>
-                  <td className="table-icon"><FontAwesomeIcon icon={faMobile} /></td>
-                  <td>9585 3845</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>   
-          </div>
 
       </div>
 
