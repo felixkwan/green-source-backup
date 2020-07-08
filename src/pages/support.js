@@ -9,7 +9,7 @@ const Support = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      officeImage: file(relativePath: { eq: "bk-office-2-768.png" }) {
+      officeImage: file(relativePath: { eq: "ppl-2-768.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 640, maxHeight:640) {
             ...GatsbyImageSharpFluid
