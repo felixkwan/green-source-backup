@@ -726,43 +726,17 @@ button.navbar-burger {
     
   }
 
-}
-
-.case-content-wrapper {
-  margin: 2rem;
-}
-
-.case-content {
-  height: 100%;
-  padding: 2rem;
-  background: transparent;
-
-  .case-info {
-    margin-top: 1rem;
-  }
-
-  .case-title {
-    color: $dark-blue;
-  }
-
-  li {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid hsl(0, 0%, 96%);
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.block-case {
   .text-wrapper {
     padding: 1.5rem;
     margin: 0 auto;
     text-align: center;
     max-width: 768px;
   }
+
+}
+
+.case-content-wrapper {
+  margin: 2rem;
 }
 
 //block-contact
@@ -1103,6 +1077,30 @@ button.navbar-burger {
 
   #case4 {
     background-image: url("../images/dirt-640.jpg");
+  }
+}
+
+.case-content {
+  height: 100%;
+  padding: 2rem;
+  background: white;
+
+  .case-info {
+    margin-top: 1rem;
+  }
+
+  .case-title {
+    color: $dark-blue;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsl(0, 0%, 96%);
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
