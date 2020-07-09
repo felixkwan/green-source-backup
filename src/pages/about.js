@@ -1,5 +1,5 @@
 import React from "react"
-import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -95,7 +95,7 @@ const About = () => {
                     </article>
                     <div className="columns is-mobile address is-gapless mb-2 pb-2">
                       <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></div>
-                      <div className="column is-10">G/f, No.8, Wilson Road, Jardine's Lookout </div>
+                      <div className="column is-10">{intl.formatMessage({ id: "compayn.address" })}</div>
                     </div>
                     <div className="columns is-mobile tel is-gapless mb-2 pb-2">
                       <div className="column is-1 table-icon"><FontAwesomeIcon icon={faPhoneAlt} /></div>
@@ -108,7 +108,7 @@ const About = () => {
 
                     <div className="columns is-mobile manager is-gapless mb-2 pb-2">
                       <div className="column is-1 table-icon"><FontAwesomeIcon icon={faAddressCard} /></div>
-                      <div className="column is-10">Nic Yip</div>
+                      <div className="column is-10">{intl.formatMessage({ id: "compayn.contact" })}</div>
                     </div>
 
                     <div className="columns is-mobile mobile is-gapless mb-2 pb-2">

@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 
 const NotFoundPage = () => {
   const intl = useIntl();

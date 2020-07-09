@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
