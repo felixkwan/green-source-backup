@@ -1,9 +1,8 @@
 import React, { Component } from "react"
-import { useIntl } from "gatsby-plugin-intl"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 class Cases extends Component {
     render() {
-        const intl = useIntl();
         return (
           <>
             <div className="client-list">
@@ -12,9 +11,9 @@ class Cases extends Component {
                         <div id="case1" className="container case">
                             <div className="case-content-wrapper">
                                 <div className="case-content">
-                                    <h3 className="case-title">{intl.formatMessage({ id: "client.cases.case1" })}</h3>
+                                    <h3 className="case-title"><FormattedMessage id="client.cases.case1" /></h3>
                                     <div className="case-info">
-                                        <p>{intl.formatMessage({ id: "client.cases.case1-desc" })}</p>
+                                        <p><FormattedMessage id="client.cases.case1-des" /></p>
                                     </div>
                                 </div>
                             </div>
