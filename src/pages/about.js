@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,9 +9,9 @@ import Link from "gatsby-plugin-transition-link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faEnvelopeOpen, faGlobeAsia, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
+
 const About = () => {
-
-
+  const intl = useIntl();
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "water-640-2.jpg" }) {
@@ -32,11 +33,11 @@ const About = () => {
   
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO title={intl.formatMessage({ id: "about.title" })} />
       <div className="header-bk top">
         <div className="header-wrapper contact-header">
           <div className="section">
-            <h1 className="heading-title">About Us</h1>
+            <h1 className="heading-title">{intl.formatMessage({ id: "about.header" })}</h1>
           </div>
         </div>
       </div>
@@ -47,9 +48,9 @@ const About = () => {
             <div className="columns is-multiline mb-6">
               <div className="column is-12">
                 <div className="container mt-2 px-3 py-3 section-text">
-                  <h2 className="about-title mb-5">Green Source Gardening Art Co.LTD</h2>
+                  <h2 className="about-title mb-5">{intl.formatMessage({ id: "company.name" })}</h2>
                     <article class="mb-3">
-                      <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                      <p>{intl.formatMessage({ id: "company.desc" })}</p>
                     </article>
                 </div>
               </div>
@@ -60,17 +61,17 @@ const About = () => {
               </div>
               <div className="column is-half">
                 <div className="about-details-wrapper mx-2 px-4 py-4">
-                  <h3 className="about-title mb-5">What we make</h3>
+                  <h3 className="about-title mb-5">{intl.formatMessage({ id: "about.whatwemake" })}</h3>
                   <article class="mb-3">
-                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                    <p>{intl.formatMessage({ id: "about.whatwemake-desc" })}</p>
                   </article>
                 </div>
               </div>
               <div className="column is-half">
                 <div className="about-details-wrapper mx-2 px-4 py-4">
-                  <h3 className="about-title mb-5">What gardening means</h3>
+                  <h3 className="about-title mb-5">{intl.formatMessage({ id: "about.means" })}</h3>
                   <article class="mb-3">
-                    <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                    <p>{intl.formatMessage({ id: "about.means-desc" })}</p>
                   </article>
                 </div>
               </div>
@@ -88,9 +89,9 @@ const About = () => {
                 </div>
                 <div className="column is-half">
                   <div className="container text-wrapper mx-2 mt-4 px-4">
-                    <h2 className="about-title mb-5">Hong Kong</h2>
+                    <h2 className="about-title mb-5">{intl.formatMessage({ id: "about.hk" })}</h2>
                     <article class="mb-5 pr-6">
-                      <p>Contact our client team to talk about Gardening products and services.</p>
+                      <p>{intl.formatMessage({ id: "about.hk-desc" })}</p>
                     </article>
                     <div className="columns is-mobile address is-gapless mb-2 pb-2">
                       <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></div>

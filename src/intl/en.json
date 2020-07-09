@@ -1,0 +1,21 @@
+{
+    "company":{
+        "name": "Green Source Gardening Art Co.LTD",
+        "desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。"
+    },
+    "notfound":{
+        "title": "404: Not found",
+        "header": "NOT FOUND",
+        "desc": "You just hit a route that doesn&#39;t exist... the sadness."
+    },
+    "about":{
+        "title": "About",
+        "header": "About Us",
+        "whatwemake": "What we make",
+        "whatwemake-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。",
+        "means": "What gardening means",
+        "means-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。",
+        "hk": "Hong Kong",
+        "hk-desc": "Contact our client team to talk about Gardening products and services."
+    }
+}
