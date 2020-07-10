@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -28,6 +29,7 @@ const IndexPage = () => (
     render={data => {
       // Set ImageData.
       const imageData = data.indexHeader.childImageSharp.fluid
+      
       return (
 
         <Layout>
@@ -47,7 +49,7 @@ const IndexPage = () => (
                         data-sal-duration="250"
                         data-sal-delay="500"
                         data-sal-easing="ease" 
-                        className="heading-title">Create and maintain a Clean & Green environment for the society</h1>
+                        className="heading-title">Heading</h1>
                   </div>
               </div>
             </BackgroundImage>

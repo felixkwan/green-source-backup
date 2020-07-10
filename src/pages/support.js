@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -6,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Support = () => {
-
+  const intl = useIntl();
   const data = useStaticQuery(graphql`
     query {
       officeImage: file(relativePath: { eq: "ppl-2-768.jpg" }) {
@@ -43,11 +44,11 @@ const Support = () => {
   return (
 
   <Layout>
-    <SEO title="Support" />
+    <SEO title={intl.formatMessage({ id: "support.title" })} />
     <div className="header-bk top">
       <div className="header-wrapper sustain-header">
         <div className="section">
-          <h1 className="heading-title">Support</h1>
+          <h1 className="heading-title">{intl.formatMessage({ id: "support.header" })}</h1>
         </div>
       </div>
     </div>
@@ -56,15 +57,10 @@ const Support = () => {
       <div className="container">
 
         <div className="container block-title">
-          <h2 className="section-title sustain-footer-title">Equipment Support</h2>
+          <h2 className="section-title sustain-footer-title">{intl.formatMessage({ id: "support.equipment-support" })}</h2>
           <div className="paragraph section-text">
                 <article>
-                  <p>
-                  たくさんのこだわりと人の手をかけた我が家のアスパラガス。
-                  香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
-                  一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
-                  ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
-                  </p>
+                  <p>{intl.formatMessage({ id: "support.equipment-support-desc" })}</p>
                 </article>
           </div>
           <div className="divider"></div>
@@ -83,10 +79,10 @@ const Support = () => {
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon vehicle-icon"></div>
-                          <h3 className="section-title align-left">Vehicles</h3>
+                          <h3 className="section-title align-left">{intl.formatMessage({ id: "support.vehicles" })}</h3>
                           <article>
                             <p>
-                              高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
+                              {intl.formatMessage({ id: "support.vehicles-desc" })}
                             </p>
                           </article>
                         </div>
@@ -109,10 +105,10 @@ const Support = () => {
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon equip-icon"></div>
-                          <h3 className="section-title align-left">Equipment</h3>
+                          <h3 className="section-title align-left">{intl.formatMessage({ id: "support.equipment" })}</h3>
                           <article>
                             <p>
-                              高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
+                              {intl.formatMessage({ id: "support.equipment-desc" })}
                             </p>
                           </article>
                         </div>
@@ -135,11 +131,9 @@ const Support = () => {
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon deploy-icon"></div>
-                          <h3 className="section-title align-left">Deploy</h3>
+                          <h3 className="section-title align-left">{intl.formatMessage({ id: "support.deploy" })}</h3>
                           <article>
-                            <p>
-                              高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
-                            </p>
+                            <p>{intl.formatMessage({ id: "support.deploy-desc" })}</p>
                           </article>
                         </div>
                       </div>
@@ -161,11 +155,9 @@ const Support = () => {
                       <div className="support-content-text">
                         <div className="container">
                           <div className="bk-icon society-icon"></div>
-                          <h3 className="section-title align-left">Human Resources</h3>
+                          <h3 className="section-title align-left">{intl.formatMessage({ id: "support.hr" })}</h3>
                           <article>
-                            <p>
-                              高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
-                            </p>
+                            <p>{intl.formatMessage({ id: "support.hr-desc" })}</p>
                           </article>
                         </div>
                       </div>

@@ -27,7 +27,20 @@ module.exports = {
           rootMargin: '0% 50%', // Corresponds to root's bounding box margin
           enterEventName: 'sal:in', // Enter event name
           exitEventName: 'sal:out', // Exit event name
-      }
+      },
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `zh-hk`],
+        // language file path
+        defaultLanguage: `en`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: true,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,

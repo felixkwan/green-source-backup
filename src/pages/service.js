@@ -1,11 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Service = () => {
+  const intl = useIntl();
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "flower-1920.jpg" }) {
@@ -20,11 +22,11 @@ const Service = () => {
 
   return (
     <Layout>
-      <SEO title="Service" />
+      <SEO title={intl.formatMessage({ id: "service.title" })} />
       <div className="header-bk top">
         <div className="header-wrapper service-header">
           <div className="section">
-            <h1 className="heading-title">Services</h1>
+            <h1 className="heading-title">{intl.formatMessage({ id: "service.header" })}</h1>
           </div>
         </div>
       </div>
@@ -32,15 +34,10 @@ const Service = () => {
       <div className="pages-wrapper service-wrapper container clearfix">
 
         <div className="container block-title">
-          <h2 className="section-title sustain-footer-title">Combine 3 Elements</h2>
+          <h2 className="section-title sustain-footer-title">{intl.formatMessage({ id: "service.subheader" })}</h2>
           <div className="paragraph section-text">
               <article>
-                <p>
-                  たくさんのこだわりと人の手をかけた我が家のアスパラガス。
-                  香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。
-                  一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。
-                  ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。
-                </p>
+                <p>{intl.formatMessage({ id: "service.subheader-desc" })}</p>
               </article>
           </div>
           <div className="divider"></div>

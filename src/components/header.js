@@ -3,6 +3,10 @@ import React, { Component } from "react"
 import { StaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Link from "gatsby-plugin-transition-link"
+import { FormattedMessage } from "gatsby-plugin-intl"
+
+import Language from "./language"
+
 
 class Header extends Component {
   state = {
@@ -53,7 +57,7 @@ class Header extends Component {
               <div className={this.state.toggle ? "navbar-menu is-active" : "navbar-menu"}>
                 <div className="navbar-end">
                   <div className="navbar-item">
-                    <Link to="/service/">Service</Link>
+                    <Link to="/service/"><FormattedMessage id="header.service" /></Link>
                   </div>
                   <div className="navbar-item">
                     <AniLink
@@ -69,25 +73,26 @@ class Header extends Component {
                         content-box      /* clip */
                         white            /* color */
                       " to="/client/">
-                      Clients
+                      <FormattedMessage id="header.clients" />
                     </AniLink>
                   </div>
       
                     <div className="navbar-item has-dropdown is-hoverable">
                       <span className="navbar-link">
-                        Support
+                        <FormattedMessage id="header.support" />
                       </span>
       
                       <div className="navbar-dropdown">
-                        <Link to="/support#vehicles" className="navbar-item">Vehicles</Link>
-                        <Link to="/support#equipment" className="navbar-item">Equipment</Link>
-                        <Link to="/support#deploy" className="navbar-item">Deploy</Link>
-                        <Link to="/support#human-resource" className="navbar-item">Human Resources</Link>
+                        <Link to="/support#vehicles" className="navbar-item"><FormattedMessage id="support.vehicles" /></Link>
+                        <Link to="/support#equipment" className="navbar-item"><FormattedMessage id="support.equipment" /></Link>
+                        <Link to="/support#deploy" className="navbar-item"><FormattedMessage id="support.deploy" /></Link>
+                        <Link to="/support#human-resource" className="navbar-item"><FormattedMessage id="support.hr" /></Link>
                       </div>
                     </div>
 
-                  <div className="navbar-item"><Link to="/sustain/">Sustainability</Link></div>
-                  <div className="navbar-item"><Link to="/about/">About</Link></div>
+                  <div className="navbar-item"><Link to="/sustain/"><FormattedMessage id="header.sustain" /></Link></div>
+                  <div className="navbar-item"><Link to="/about/"><FormattedMessage id="header.about" /></Link></div>
+                  <div className="navbar-item"><Language /></div>
                 </div>
               </div>
 
