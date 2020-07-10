@@ -1,5 +1,5 @@
 import React from "react"
-import { useIntl } from "gatsby-plugin-intl"
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -11,7 +11,7 @@ import BackgroundImage from "gatsby-background-image-es5"
 
 import "./global-style.scss"
 
-const IndexPage = () => (
+const IndexPage = ({intl}) => (
 
   <StaticQuery
     query={graphql`
@@ -49,7 +49,7 @@ const IndexPage = () => (
                         data-sal-duration="250"
                         data-sal-delay="500"
                         data-sal-easing="ease" 
-                        className="heading-title">Heading</h1>
+                        className="heading-title">{intl.formatMessage({ id: "index.heading" })}</h1>
                   </div>
               </div>
             </BackgroundImage>
@@ -286,4 +286,4 @@ const IndexPage = () => (
   />
 )
 
-export default IndexPage
+export default injectIntl(IndexPage)
