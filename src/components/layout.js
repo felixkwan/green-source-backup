@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
                 <ul className="social-list">
                   <li><FontAwesomeIcon icon={faTwitter} /></li>
                   <li><FontAwesomeIcon icon={faInstagram} /></li>
-                  <li class="facebook"><FontAwesomeIcon icon={faFacebookF} /></li>
+                  <li className="facebook"><FontAwesomeIcon icon={faFacebookF} /></li>
                 </ul>
               </div>            
             </div>

@@ -5,6 +5,13 @@
         "address": "G/f, No.8, Wilson Road, Jardine's Lookout",
         "contact": "Nic Yip"
     },
+    "header":{
+        "service": "Services",
+        "clients": "Clients",
+        "support": "Support",
+        "sustain": "Sustainability",
+        "about": "About"
+    },
     "notfound":{
         "title": "404: Not found",
         "header": "NOT FOUND",
