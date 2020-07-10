@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Link from "gatsby-plugin-transition-link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faEnvelopeOpen, faGlobeAsia, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 
 const About = () => {
