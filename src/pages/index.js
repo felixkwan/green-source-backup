@@ -1,5 +1,5 @@
 import React from "react"
-import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -57,8 +57,8 @@ const IndexPage = ({intl}) => (
     
           <div className="block-main blocks">
             <div className="container block-title">
-              <h4 className="section-subtitle">Showcases</h4>
-              <h2 className="section-title">About Our Garden</h2>
+              <h4 className="section-subtitle">{intl.formatMessage({ id: "blockMain.subtitle" })}</h4>
+              <h2 className="section-title">{intl.formatMessage({ id: "blockMain.title" })}</h2>
               <div className="divider"></div>
             </div>
     
@@ -73,7 +73,7 @@ const IndexPage = ({intl}) => (
                     data-sal-delay="200"
                     data-sal-easing="ease"
                     className="container text-wrapper">
-                <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
+                <p>{intl.formatMessage({ id: "blockMain.article" })}</p>
               </div>
             </div>
     
@@ -86,8 +86,8 @@ const IndexPage = ({intl}) => (
                   data-sal-delay="100"
                   data-sal-easing="ease" 
                   className="container block-title">
-              <h4 className="section-subtitle">Info</h4>
-              <h2 className="section-title">How We Create</h2>
+              <h4 className="section-subtitle">{intl.formatMessage({ id: "blockInfo.subtitle" })}</h4>
+              <h2 className="section-title">{intl.formatMessage({ id: "blockInfo.title" })}</h2>
               <div className="divider"></div>
             </div>
     
@@ -107,11 +107,11 @@ const IndexPage = ({intl}) => (
                   <div className="text-wrapper">
                     <div className="info-title">
                       <div className="title-number"><h2>01.</h2></div>
-                      <div className="title-text"><h3>Our Land</h3></div>
+                      <div className="title-text"><h3>{intl.formatMessage({ id: "blockInfo.character1" })}</h3></div>
                     </div>
                     <article>
                       <p>
-                        高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
+                        {intl.formatMessage({ id: "blockInfo.article1" })}
                       </p>
                     </article>
                   </div>      
@@ -135,11 +135,11 @@ const IndexPage = ({intl}) => (
                   <div className="text-wrapper">
                     <div className="info-title">
                       <div className="title-number"><h2>02.</h2></div>
-                      <div className="title-text"><h3>Water</h3></div>
+                      <div className="title-text"><h3>{intl.formatMessage({ id: "blockInfo.character2" })}</h3></div>
                     </div>
                     <article>
                       <p>
-                        高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
+                        {intl.formatMessage({ id: "blockInfo.article2" })}
                       </p>
                     </article>
                   </div>
@@ -155,8 +155,8 @@ const IndexPage = ({intl}) => (
                   data-sal-delay="100"
                   data-sal-easing="ease"  
                   className="container block-title">
-              <h4 className="section-subtitle">自然意向</h4>
-              <h2 className="section-title">新的園藝樣貌出現</h2>
+              <h4 className="section-subtitle">{intl.formatMessage({ id: "blockService.subtitle" })}</h4>
+              <h2 className="section-title">{intl.formatMessage({ id: "blockService.title" })}</h2>
               <div className="divider"></div>
             </div>
     
@@ -175,12 +175,12 @@ const IndexPage = ({intl}) => (
     
                   <div className="text-wrapper">
                     <div className="service-title">
-                      <h4>四季有著截然不同的風情</h4>
+                      <h4>{intl.formatMessage({ id: "blockService.character" })}</h4>
                     </div>
                     <div className="container">
                       <article>
                         <p>
-                          高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。
+                          {intl.formatMessage({ id: "blockService.article" })}
                         </p>
                       </article>
                     </div>
@@ -197,7 +197,7 @@ const IndexPage = ({intl}) => (
                           content-box      /* clip */
                           white            /* color */
                         "
-                    to="/service/" className="primary-button">Check Our Services</AniLink>
+                    to="/service/" className="primary-button">{intl.formatMessage({ id: "index.btnService" })}</AniLink>
                   </div>    
                 
                 </div>
@@ -211,8 +211,8 @@ const IndexPage = ({intl}) => (
                   data-sal-delay="250"
                   data-sal-easing="ease"  
                   className="container block-title">
-              <h4 className="section-subtitle">Clients</h4>
-              <h2 className="section-title">About Our Garden</h2>
+              <h4 className="section-subtitle">{intl.formatMessage({ id: "blockCase.subtitle" })}</h4>
+              <h2 className="section-title">{intl.formatMessage({ id: "blockCase.title" })}</h2>
               <div className="divider"></div>
             </div>
             
@@ -239,21 +239,21 @@ const IndexPage = ({intl}) => (
                     <div className="case-content-wrapper">
                       <ul className="case-content">
                         <li>
-                          <h3 className="case-title">College</h3>
+                          <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case1" })}</h3>
                           <div className="case-info">
-                            <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                            <p>{intl.formatMessage({ id: "blockCase.case1-desc" })}</p>
                           </div>
                         </li>
                         <li>
-                          <h3 className="case-title">College</h3>
+                          <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case2" })}</h3>
                           <div className="case-info">
-                            <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                            <p>{intl.formatMessage({ id: "blockCase.case2-desc" })}</p>
                           </div>
                         </li>
                         <li>
-                          <h3 className="case-title">College</h3>
+                          <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case3" })}</h3>
                           <div className="case-info">
-                            <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。</p>
+                            <p>{intl.formatMessage({ id: "blockCase.case3-desc" })}</p>
                           </div>
                         </li>
                       </ul>
@@ -276,7 +276,7 @@ const IndexPage = ({intl}) => (
                     data-sal-duration="350"
                     data-sal-delay="500"
                     data-sal-easing="ease" 
-                    to="/client/" className="primary-button button-centered view-more-button">View More</AniLink>
+                    to="/client/" className="primary-button button-centered view-more-button">{intl.formatMessage({ id: "blockCase.btnViewMore" })}</AniLink>
             </div>
 
           </div>

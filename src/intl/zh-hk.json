@@ -10,7 +10,8 @@
         "clients": "客戶",
         "support": "資源",
         "sustain": "可持續發展",
-        "about": "關於我們"
+        "about": "關於我們",
+        "language": "語言"
     },
     "notfound":{
         "title": "404: Not found",
@@ -18,23 +19,55 @@
         "desc": "You just hit a route that doesn&#39;t exist... the sadness."
     },
     "index":{
-        "heading": "致力打造及修護"
+        "heading": "肩負社會負責、致力為社會締造綠與淨的環境",
+        "btnService": "遊覽我們的服務"
+    },
+    "blockMain": {
+        "title": "從另一角度出發",
+        "subtitle": "園藝及創作",
+        "article": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard."
+    },
+    "blockInfo": {
+        "title": "Bring A Different Dimension",
+        "subtitle": "Art & Ideas",
+        "article": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard.",
+        "character1" : "Deploy",
+        "article1": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard.",
+        "character2" : "Deploy",
+        "article2": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard."
+    },
+    "blockService": {
+        "title": "新的園藝樣貌出現",
+        "subtitle": "自然意向",
+        "character" : "四季有著截然不同的風情",
+        "article": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard."
+    },
+    "blockCase": {
+        "title": "精選案例",
+        "subtitle": "客戶",
+        "case1": "學院 1",
+        "case1-desc": "This garden sphere is made from wine barrel hoops, and has a complete tutorial on how to make your own.",
+        "case2": "學院 2",
+        "case2-desc": "This garden sphere is made from wine barrel hoops, and has a complete tutorial on how to make your own.",
+        "case3": "學院 3",
+        "case3-desc": "This garden sphere is made from wine barrel hoops, and has a complete tutorial on how to make your own.",
+        "btnViewMore": "觀看更多"
     },
     "about":{
         "title": "關於我們",
         "header": "關於我們",
         "whatwemake": "我們為你建造",
         "whatwemake-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。",
-        "means": "綠源園藝藝術",
+        "means": "園藝的意義",
         "means-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。",
-        "hk": "Hong Kong",
+        "hk": "香港",
         "hk-desc": "與我們的客戶團隊聯繫以討論園藝產品和服務。"
     },
     "client":{
         "title": "客戶",
         "header": "客戶",
         "subheader": "為不同客戶精心設計",
-        "subheader-desc": "たくさんのこだわりと人の手をかけた我が家のアスパラガス。香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。",
+        "subheader-desc": "服務過或現任的客戶遍及社會各界別，無論是家庭、大型企業、以至香港特區政府均是我們的客戶，當中主要為跨國企業、半官方機構和政府各部門。",
         "cases":{
             "case1": "公司",
             "case1-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。"
@@ -44,7 +77,7 @@
         "title": "服務",
         "header": "服務",
         "subheader": "高品質園藝服務",
-        "subheader-desc": "たくさんのこだわりと人の手をかけた我が家のアスパラガス。香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。"
+        "subheader-desc": "我們的服務對象包括：住宅樓宇、屋苑和康樂休憩處等，提供的服務包括：園藝保養、園林景觀設計、樹木調查記錄、樹木培植、綠化工程及供應植物和園林的基礎設施，服務方式能以合約形式或單次提供。"
     },
     "support":{
         "title": "資源",

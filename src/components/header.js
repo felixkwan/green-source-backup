@@ -92,7 +92,16 @@ class Header extends Component {
 
                   <div className="navbar-item"><Link to="/sustain/"><FormattedMessage id="header.sustain" /></Link></div>
                   <div className="navbar-item"><Link to="/about/"><FormattedMessage id="header.about" /></Link></div>
-                  <div className="navbar-item"><Language /></div>
+                  <div className="navbar-item has-dropdown is-hoverable">
+                      <span className="navbar-link">
+                        <FormattedMessage id="header.language" />
+                      </span>
+      
+                      <div className="navbar-dropdown navbar-lang">
+                        <Language />
+                      </div>
+                    </div>
+
                 </div>
               </div>
 

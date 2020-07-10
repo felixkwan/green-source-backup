@@ -10,7 +10,8 @@
         "clients": "Clients",
         "support": "Support",
         "sustain": "Sustainability",
-        "about": "About"
+        "about": "About",
+        "language": "Language"
     },
     "notfound":{
         "title": "404: Not found",
@@ -18,15 +19,47 @@
         "desc": "You just hit a route that doesn&#39;t exist... the sadness."
     },
     "index":{
-        "heading": "Create and maintain a Clean & Green environment for the society"
+        "heading": "Create & Maintain Garden",
+        "btnService": "Check Our Service"
+    },
+    "blockMain": {
+        "title": "Bring A Different Dimension",
+        "subtitle": "Art & Ideas",
+        "article": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard."
+    },
+    "blockInfo": {
+        "title": "Bring A Different Dimension",
+        "subtitle": "Art & Ideas",
+        "article": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard.",
+        "character1" : "Deploy",
+        "article1": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard.",
+        "character2" : "Deploy",
+        "article2": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard."
+    },
+    "blockService": {
+        "title": "Bring A Different Dimension",
+        "subtitle": "Art & Ideas",
+        "character" : "Deploy",
+        "article": "After all, nature is our best art inspiration. Since your garden is already such a wonderful expression of self, use the opportunity to create DIY garden decor and art for your yard."
+    },
+    "blockCase": {
+        "title": "Showcases",
+        "subtitle": "Client",
+        "case1": "College 1",
+        "case1-desc": "This garden sphere is made from wine barrel hoops, and has a complete tutorial on how to make your own.",
+        "case2": "College 2",
+        "case2-desc": "This garden sphere is made from wine barrel hoops, and has a complete tutorial on how to make your own.",
+        "case3": "College 3",
+        "case3-desc": "This garden sphere is made from wine barrel hoops, and has a complete tutorial on how to make your own.",
+        "btnViewMore": "View More"
     },
     "about":{
         "title": "About",
         "header": "About Us",
         "whatwemake": "What we make",
-        "whatwemake-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。",
-        "means": "What gardening means",
-        "means-desc": "高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。",
+        "whatwemake-desc": "We're deeply invested in our workforce, our community, and our planet.",
+        "means": "What gardening means to us",
+        "means-desc": "Gardener’s Supply is in business to spread the joys and rewards of gardening, because gardening nourishes the body, elevates the spirit, builds community, and makes the world a better place.",
         "hk": "Hong Kong",
         "hk-desc": "Contact our client team to talk about Gardening products and services."
     },
@@ -44,7 +77,7 @@
         "title": "Services",
         "header": "Services",
         "subheader": "High Quality Gardening",
-        "subheader-desc": "たくさんのこだわりと人の手をかけた我が家のアスパラガス。香り高いアスパラガスはシャキシャキと歯ざわりがよく、噛むほどに甘みが広がります。一本そのまま茹でるだけでも美味しくお召し上がりいただける自信作です。ぜひご賞味ください。ひとつひとつ人の手で選別し、丁寧に包装して皆さんの食卓にお届けします。"
+        "subheader-desc": "From solutions for most every gardening challenge to friendly, knowledgeable advice—we're at your service. We design and develop innovative products, manage test gardens, maintain an extensive how-to library, and have a team of down-to-earth gardeners ready to tackle your every question."
     },
     "support":{
         "title": "Support",
