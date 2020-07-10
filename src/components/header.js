@@ -2,8 +2,8 @@ import React, { Component } from "react"
 
 import { StaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-// import Link from "gatsby-plugin-transition-link"
-import { FormattedMessage, Link } from "gatsby-plugin-intl"
+import Link from "gatsby-plugin-transition-link"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 import Language from "./language"
 
