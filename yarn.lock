@@ -6651,6 +6651,7 @@ gatsby-plugin-google-analytics@^2.3.6:
 gatsby-plugin-intl@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-intl/-/gatsby-plugin-intl-0.3.3.tgz#3a0e55e6641bfcb09fae20215b8f72e2a0ec3de4"
+  integrity sha512-VPugNJv3GDkT6RcOBfncZPw3Eqh98RyvChsXfX7VuMQ8mBVoNB6XyNSIiEGG/atxFrpSp/r3WUKpnzpLLpY5dg==
   dependencies:
     "@babel/runtime" "^7.8.4"
     "@formatjs/intl-pluralrules" "^1.5.2"
