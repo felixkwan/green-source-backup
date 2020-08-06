@@ -204,7 +204,6 @@ const IndexPage = ({intl}) => (
                   className="container block-title">
               <h4 className="section-subtitle">{intl.formatMessage({ id: "blockCase.subtitle" })}</h4>
               <h2 className="section-title">{intl.formatMessage({ id: "blockCase.title" })}</h2>
-              <div className="divider"></div>
             </div>
             
             <div className="showcase">
