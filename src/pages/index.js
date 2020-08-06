@@ -2,17 +2,16 @@ import React from "react"
 import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Link from "gatsby-plugin-transition-link"
 import SEO from "../components/seo"
 import Carousel from "../components/carousel"
 import { graphql, StaticQuery } from 'gatsby'
-
 import BackgroundImage from "gatsby-background-image-es5"
 
 import "./global-style.scss"
 
 const IndexPage = ({intl}) => (
-
+  
   <StaticQuery
     query={graphql`
       query {
@@ -28,8 +27,8 @@ const IndexPage = ({intl}) => (
 
     render={data => {
       // Set ImageData.
-      const imageData = data.indexHeader.childImageSharp.fluid
-      
+      const imageData = data.indexHeader.childImageSharp.fluid;
+
       return (
 
         <Layout>
@@ -43,7 +42,7 @@ const IndexPage = ({intl}) => (
             <BackgroundImage
                 fluid={imageData}
                 className="header-wrapper index-header">
-              <div className="hero">
+              <div className="hero is-medium">
                   <div className="hero-body">
                     <h1 data-sal="fade"
                         data-sal-duration="250"
@@ -56,7 +55,11 @@ const IndexPage = ({intl}) => (
           </div>
     
           <div className="block-main blocks">
-            <div className="container block-title">
+            <div  data-sal="fade"
+                  data-sal-delay="150"
+                  data-sal-ease="ease"
+                  data-sal-duration="250"
+                  className="container block-title">
               <h4 className="section-subtitle">{intl.formatMessage({ id: "blockMain.subtitle" })}</h4>
               <h2 className="section-title">{intl.formatMessage({ id: "blockMain.title" })}</h2>
               <div className="divider"></div>
@@ -184,20 +187,8 @@ const IndexPage = ({intl}) => (
                         </p>
                       </article>
                     </div>
-                    <AniLink 
-                        cover
-                        to="/"
-                        direction="down"
-                        duration={1.5}
-                        bg="
-                          center / cover   /* position / size */
-                          no-repeat        /* repeat */
-                          fixed            /* attachment */
-                          padding-box      /* origin */
-                          content-box      /* clip */
-                          white            /* color */
-                        "
-                    to="/service/" className="primary-button">{intl.formatMessage({ id: "index.btnService" })}</AniLink>
+                    <Link 
+                    to="/service/" className="primary-button">{intl.formatMessage({ id: "index.btnService" })}</Link>
                   </div>    
                 
                 </div>
@@ -222,10 +213,8 @@ const IndexPage = ({intl}) => (
                       data-sal-duration="350"
                       data-sal-delay="300"
                       data-sal-easing="ease" 
-                      className="column is-half case-slider">
-                        <div
-                          className="case-thumb slider"
-                          >
+                      className="column is-full case-slider">
+                        <div className="case-thumb slider">
                             <Carousel />
                         </div>
                 </div>
@@ -234,29 +223,29 @@ const IndexPage = ({intl}) => (
                       data-sal-duration="350"
                       data-sal-delay="350"
                       data-sal-easing="ease" 
-                      className="column is-half">
+                      className="column is-full">
                   <div className="container case">
                     <div className="case-content-wrapper">
-                      <ul className="case-content">
-                        <li>
+                      <div className="case-content columns">
+                        <div className="column is-one-third">
                           <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case1" })}</h3>
                           <div className="case-info">
                             <p>{intl.formatMessage({ id: "blockCase.case1-desc" })}</p>
                           </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div className="column is-one-third">
                           <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case2" })}</h3>
                           <div className="case-info">
                             <p>{intl.formatMessage({ id: "blockCase.case2-desc" })}</p>
                           </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div className="column is-one-third">
                           <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case3" })}</h3>
                           <div className="case-info">
                             <p>{intl.formatMessage({ id: "blockCase.case3-desc" })}</p>
                           </div>
-                        </li>
-                      </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -272,11 +261,11 @@ const IndexPage = ({intl}) => (
                 </article>
               </div>
     
-              <AniLink fade data-sal="fade"
+              <Link data-sal="fade"
                     data-sal-duration="350"
                     data-sal-delay="500"
                     data-sal-easing="ease" 
-                    to="/client/" className="primary-button button-centered view-more-button">{intl.formatMessage({ id: "blockCase.btnViewMore" })}</AniLink>
+                    to="/client/" className="primary-button button-centered view-more-button">{intl.formatMessage({ id: "blockCase.btnViewMore" })}</Link>
             </div>
 
           </div>
@@ -285,5 +274,6 @@ const IndexPage = ({intl}) => (
     }}
   />
 )
+
 
 export default injectIntl(IndexPage)

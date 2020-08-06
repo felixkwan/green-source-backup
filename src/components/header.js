@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 
 import { StaticQuery, graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Link from "gatsby-plugin-transition-link"
 import { FormattedMessage } from "gatsby-plugin-intl"
 
@@ -33,20 +32,9 @@ class Header extends Component {
           <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
             <div className="container">
               <div className="navbar-brand">
-                <AniLink  cover
-                          to="/"
-                          direction="down"
-                          duration={1.5}
-                          bg="
-                            center / cover   /* position / size */
-                            no-repeat        /* repeat */
-                            fixed            /* attachment */
-                            padding-box      /* origin */
-                            content-box      /* clip */
-                            white            /* color */
-                          "
+                <Link
                           className="navbar-item" to="/">
-                            {data.site.siteMetadata.title}</AniLink>
+                            {data.site.siteMetadata.title}</Link>
                 <button onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
@@ -60,21 +48,10 @@ class Header extends Component {
                     <Link to="/service/"><FormattedMessage id="header.service" /></Link>
                   </div>
                   <div className="navbar-item">
-                    <AniLink
-                      cover
-                      to="/"
-                      direction="down"
-                      duration={1.5}
-                      bg="
-                        center / cover   /* position / size */
-                        no-repeat        /* repeat */
-                        fixed            /* attachment */
-                        padding-box      /* origin */
-                        content-box      /* clip */
-                        white            /* color */
-                      " to="/client/">
+                    <Link
+                       to="/client/">
                       <FormattedMessage id="header.clients" />
-                    </AniLink>
+                    </Link>
                   </div>
       
                     <div className="navbar-item has-dropdown is-hoverable">

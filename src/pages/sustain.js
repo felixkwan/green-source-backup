@@ -1,9 +1,8 @@
 import React from "react"
 import { useIntl } from "gatsby-plugin-intl"
-
+import Link from "gatsby-plugin-transition-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 
 const Sustainability = () => {
@@ -100,20 +99,9 @@ const Sustainability = () => {
                   </article>
                 </div>
               </div>
-              <AniLink cover
-                    to="/"
-                    direction="down"
-                    duration={1.5}
-                    bg="
-                      center / cover   /* position / size */
-                      no-repeat        /* repeat */
-                      fixed            /* attachment */
-                      padding-box      /* origin */
-                      content-box      /* clip */
-                      white            /* color */
-                    "
+              <Link
                     to="/service"
-                    className="primary-button button-centered">{intl.formatMessage({ id: "sustain.check-btn" })}</AniLink>
+                    className="primary-button button-centered">{intl.formatMessage({ id: "sustain.check-btn" })}</Link>
             </div>
         </div>
 

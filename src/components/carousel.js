@@ -6,11 +6,6 @@ import Image3 from '../images/bk-deploy-768.png';
 
 import "flickity/css/flickity.css";
 
-
-const flickityOptions = {
-    initialIndex: 2
-}
-
 function Carousel() {
   return (
     <Flickity
@@ -19,17 +14,23 @@ function Carousel() {
       options={{
         autoPlay: 2500,
         pauseAutoPlayOnHover: true,
-        adaptiveHeight: true,
         prevNextButtons: false,
         watchCSS: true,
+        initialIndex: 0
         }} // takes flickity options {}
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false
       static // default false
     >
-      <img src={Image1} alt="college"/>
-      <img src={Image2} alt="office"/>
-      <img src={Image3} alt="deploy"/>
+        <div className="carousel-cell">
+          <img src={Image1} alt="college"/>
+        </div>
+        <div className="carousel-cell">
+          <img src={Image2} alt="office"/>
+        </div>
+        <div className="carousel-cell">
+          <img src={Image3} alt="deploy"/>
+        </div>
     </Flickity>
   )
 }
