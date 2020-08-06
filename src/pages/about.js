@@ -3,9 +3,9 @@ import { useIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Link from "gatsby-plugin-transition-link"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 

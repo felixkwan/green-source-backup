@@ -731,6 +731,17 @@ button.navbar-burger {
   background-image: url("../images/bk-shape-1280.png");
   background-position: center;
   background-size: cover;
+
+  .service-content {
+    padding: 0;
+    margin: 1rem auto;
+  
+    .text-wrapper {
+      background: white;
+      padding: 3rem;
+      height: 100%;
+    }
+  }
 }
 
 .service-img {
@@ -740,17 +751,6 @@ button.navbar-burger {
   background-position: center;
   background-size: cover;
   min-height: 380px;
-}
-
-.service-content {
-  padding: 0;
-  margin: 1rem auto;
-
-  .text-wrapper {
-    background: white;
-    padding: 3rem;
-    height: 100%;
-  }
 }
 
 .service-title {
@@ -763,9 +763,11 @@ button.navbar-burger {
     padding: 0 1rem;
   }
 
-  .service-content {
-    .text-wrapper {
-      padding: 2rem;
+  .block-service {
+    .service-content {
+      .text-wrapper {
+        padding: 2rem;
+      }
     }
   }
 }
@@ -1090,10 +1092,6 @@ button.navbar-burger {
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
-}
-
-.vehicle-icon {
-  background-image: url("../images/icons8-field-and-tractor-64.png");
 }
 
 .deploy-icon {

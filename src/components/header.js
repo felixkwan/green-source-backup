@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 
-import { StaticQuery, graphql } from "gatsby"
-import Link from "gatsby-plugin-transition-link"
+import { StaticQuery, graphql, Link } from "gatsby"
 import { FormattedMessage } from "gatsby-plugin-intl"
 
 import Language from "./language"
@@ -60,7 +59,6 @@ class Header extends Component {
                       </span>
       
                       <div className="navbar-dropdown">
-                        <Link to="/support#vehicles" className="navbar-item"><FormattedMessage id="support.vehicles" /></Link>
                         <Link to="/support#equipment" className="navbar-item"><FormattedMessage id="support.equipment" /></Link>
                         <Link to="/support#deploy" className="navbar-item"><FormattedMessage id="support.deploy" /></Link>
                         <Link to="/support#human-resource" className="navbar-item"><FormattedMessage id="support.hr" /></Link>

@@ -30,13 +30,6 @@ const Support = () => {
             ...GatsbyImageSharpFluid
           }
         }
-      },
-      vehicleImage: file(relativePath: { eq: "santa-low.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 640, maxHeight:640) {
-            ...GatsbyImageSharpFluid
-          }
-        }
       }
     }
   `)
@@ -65,33 +58,6 @@ const Support = () => {
           </div>
           <div className="divider"></div>
          </div>
-
-
-          <div id="vehicles" className="section section-row row-1">
-            <div className="hero">
-              <div className="hero-body">
-                <div className="columns">
-                    <div className="column is-one-third">
-                      <Img className="support-img" fluid={data.vehicleImage.childImageSharp.fluid} />
-                    </div>
-
-                    <div className="column support-content">
-                      <div className="support-content-text">
-                        <div className="container">
-                          <div className="bk-icon vehicle-icon"></div>
-                          <h3 className="section-title align-left">{intl.formatMessage({ id: "support.vehicles" })}</h3>
-                          <article>
-                            <p>
-                              {intl.formatMessage({ id: "support.vehicles-desc" })}
-                            </p>
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div id="equipment" className="section section-row row-2">
             <div className="hero">

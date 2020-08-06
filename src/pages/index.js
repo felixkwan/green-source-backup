@@ -2,10 +2,10 @@ import React from "react"
 import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
-import Link from "gatsby-plugin-transition-link"
+
 import SEO from "../components/seo"
 import Carousel from "../components/carousel"
-import { graphql, StaticQuery } from 'gatsby'
+import { StaticQuery, graphql, Link } from "gatsby"
 import BackgroundImage from "gatsby-background-image-es5"
 
 import "./global-style.scss"
