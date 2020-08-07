@@ -41,7 +41,7 @@ const IndexPage = ({intl}) => (
                 className="header-bk top">
             <BackgroundImage
                 fluid={imageData}
-                className="header-wrapper index-header">
+                className="header-wrapper index-header clearfix">
               <div className="hero is-medium">
                   <div className="hero-body">
                     <h1 data-sal="fade"
@@ -54,7 +54,7 @@ const IndexPage = ({intl}) => (
             </BackgroundImage>
           </div>
     
-          <div className="block-main blocks">
+          <div className="block-main blocks clearfix">
             <div  data-sal="fade"
                   data-sal-delay="150"
                   data-sal-ease="ease"
@@ -82,7 +82,7 @@ const IndexPage = ({intl}) => (
     
           </div>
     
-          <div className="block-info blocks container">
+          <div className="block-info blocks container clearfix">
     
             <div  data-sal="fade"
                   data-sal-duration="250"
@@ -152,7 +152,7 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
     
-          <div className="block-service blocks container">
+          <div className="block-service blocks container clearfix">
             <div  data-sal="fade"
                   data-sal-duration="250"
                   data-sal-delay="100"
@@ -197,7 +197,7 @@ const IndexPage = ({intl}) => (
     
           </div>
     
-          <div className="block-case section blocks">
+          <div className="block-case section blocks clearfix">
             <div  data-sal="fade"
                   data-sal-delay="250"
                   data-sal-easing="ease"  
@@ -206,13 +206,12 @@ const IndexPage = ({intl}) => (
               <h2 className="section-title">{intl.formatMessage({ id: "blockCase.title" })}</h2>
             </div>
             
-            <div className="showcase">
-              <div className="columns is-multiline is-gapless">
+            <div className="showcase clearfix">
                 <div  data-sal="fade"
                       data-sal-duration="350"
                       data-sal-delay="300"
                       data-sal-easing="ease" 
-                      className="column is-full case-slider">
+                      className="container case-slider">
                         <div className="case-thumb slider">
                             <Carousel />
                         </div>
@@ -222,10 +221,10 @@ const IndexPage = ({intl}) => (
                       data-sal-duration="350"
                       data-sal-delay="350"
                       data-sal-easing="ease" 
-                      className="column is-full">
+                      className="container">
                   <div className="container case">
                     <div className="case-content-wrapper">
-                      <div className="case-content columns is-3 is-multiline">
+                      <div className="case-content columns is-4 is-multiline">
                         <div className="column is-one-third">
                           <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case1" })}</h3>
                           <div className="case-info">
@@ -248,7 +247,6 @@ const IndexPage = ({intl}) => (
                     </div>
                   </div>
                 </div>
-              </div>
 
               <div  data-sal="slide-up"
                   data-sal-duration="350"

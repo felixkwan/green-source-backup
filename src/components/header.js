@@ -28,7 +28,7 @@ class Header extends Component {
           }
         `}
         render={data => (
-          <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
+          <nav id="navbar" className="navbar clearfix" role="navigation" aria-label="main navigation">
             <div className="container">
               <div className="navbar-brand">
                 <Link
