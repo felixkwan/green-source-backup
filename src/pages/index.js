@@ -225,7 +225,7 @@ const IndexPage = ({intl}) => (
                       className="column is-full">
                   <div className="container case">
                     <div className="case-content-wrapper">
-                      <div className="case-content columns">
+                      <div className="case-content columns is-3 is-multiline">
                         <div className="column is-one-third">
                           <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case1" })}</h3>
                           <div className="case-info">
