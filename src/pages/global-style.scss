@@ -1294,6 +1294,10 @@ button.tab-list-item.tab-list-active {
 
 //flickity
 
+.carousel {
+  box-sizing: border-box;
+}
+
 .carousel:after {
   content: 'flickity';
   display: none; /* hide :after */
