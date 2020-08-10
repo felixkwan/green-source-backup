@@ -161,6 +161,12 @@ article p {
   font-size: 1.15rem;
 }
 
+@media only screen and (min-width: 1440px) {
+  article p {
+    font-size: 1.25rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .heading-title {
     font-size: 2.5rem;
@@ -550,12 +556,11 @@ button.navbar-burger {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 2rem;
-}
 
-@media only screen and (min-width: 1366px) {
-  .info-content {
-    min-height: 620px;
-    margin-bottom: 3.5rem;
+  .text-wrapper {
+    background: white;
+    padding: 2rem;
+    margin: auto 0;
   }
 }
 
@@ -618,12 +623,6 @@ button.navbar-burger {
   background-image: url("../images/flower-1920.jpg");
 }
 
-.info-content .text-wrapper {
-  background: white;
-  padding: 2rem 2rem;
-  margin: auto 0;
-}
-
 .info-title {
   margin-bottom: 1rem;
   display: flex;
@@ -633,6 +632,18 @@ button.navbar-burger {
 
 .title-text {
   margin: .25rem .5rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .info-content {
+    min-height: 620px;
+    margin-bottom: 3.5rem;
+
+    .text-wrapper {
+      padding: 3rem;
+      font-size: 1.25rem;
+    }
+  }
 }
 
 @media #{$wide-device} {
@@ -668,10 +679,6 @@ button.navbar-burger {
 @media #{$desktop-device} {
   .img-wrapper {
     width: 60%;
-  }
-
-  .info-content .text-wrapper {
-    padding: 2.5rem 2rem;
   }
 
   .info-1 {

@@ -90,19 +90,6 @@ const Sustainability = () => {
                 </div>
               </div>
             </div>
-
-            <div className="container sustain-footer">
-              <div className="paragraph section-text">
-                <div className="container">
-                  <article>
-                    <p>{intl.formatMessage({ id: "sustain.desc" })}</p>
-                  </article>
-                </div>
-              </div>
-              <Link
-                    to="/service"
-                    className="primary-button button-centered">{intl.formatMessage({ id: "sustain.check-btn" })}</Link>
-            </div>
         </div>
 
       </div>
