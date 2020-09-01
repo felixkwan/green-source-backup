@@ -47,7 +47,7 @@ const About = () => {
         <div className="about-content my-5 pb-5 is-clearfix">
             <div className="columns is-multiline mb-6">
               <div className="column is-12">
-                <div className="container mt-2 px-3 py-3 section-text">
+                <div className="container mt-2 px-4 py-3 section-text">
                   <h2 className="about-title mb-5">{intl.formatMessage({ id: "company.name" })}</h2>
                     <article className="mb-3">
                       <p>{intl.formatMessage({ id: "company.desc" })}</p>
