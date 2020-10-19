@@ -3,9 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { useIntl } from "gatsby-plugin-intl"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 const Service = () => {
   const intl = useIntl();
   const data = useStaticQuery(graphql`
@@ -21,10 +18,7 @@ const Service = () => {
   `)
 
   return (
-    <Layout>
-      <SEO title={intl.formatMessage({ id: "service.title" })} />
-
-    </Layout>
+    <p>Hello world.</p>
   )
 }
 

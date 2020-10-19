@@ -4,7 +4,6 @@ import { useIntl } from "gatsby-plugin-intl"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const Support = () => {
   const intl = useIntl();
