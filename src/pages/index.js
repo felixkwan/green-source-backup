@@ -34,24 +34,29 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
           
-          <div  data-sal="zoom-in"
-                data-sal-duration="450"
-                data-sal-delay="150"
-                data-sal-easing="ease"  
-                className="header-bk top">
-            <BackgroundImage
-                fluid={imageData}
-                className="header-wrapper index-header clearfix">
-              <div className="hero is-medium">
-                  <div className="hero-body">
-                    <h1 data-sal="fade"
-                        data-sal-duration="250"
-                        data-sal-delay="500"
-                        data-sal-easing="ease" 
-                        className="heading-title">{intl.formatMessage({ id: "index.heading" })}</h1>
+          <div id="home" className="header top">
+            <div className="hero is-large">
+              <div className="hero-body">
+                <div className="container">
+                  <div className="columns is-gapless is-desktop">
+                    <div className="column is-half">
+                      <h2 className="sub-heading">
+                        為你提供專業、全面、高品質園藝服務。
+                      </h2>
+                      <h1 className="heading">
+                        Professional,Wide Range, High Quality Services.
+                      </h1>
+                    </div>
+                    <div className="column is-half">
+                    <BackgroundImage
+                      fluid={imageData}
+                      className="index-header clearfix">
+                    </BackgroundImage>
+                    </div>
                   </div>
+                </div>
               </div>
-            </BackgroundImage>
+            </div>
           </div>
       
           <div className="block-info blocks container clearfix">

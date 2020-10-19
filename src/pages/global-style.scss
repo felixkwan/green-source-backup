@@ -76,42 +76,6 @@ img {
   overflow: hidden;
 }
 
-.header-wrapper {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background: url("../images/header-bk-1920.png") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.index-header {
-  backdrop-filter: brightness(120%);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.heading-title {
-  max-width: 640px;
-  color: $dark-blue;
-  z-index: 2;
-  text-align: center;
-  margin: .5rem auto;
-  font-size: 3rem;
-}
-
-.service-header,
-.client-header,
-.contact-header {
-  background-color: $light-green;
-
-  h1 {
-    color: $dark-blue;
-  }
-}
-
 
 //button
 
@@ -223,15 +187,9 @@ article p {
 
 .navbar {
   z-index: 999;
-  margin: auto;
   background: transparent;
   height: 3.25rem;
   transition: all .25s ease-in-out;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
   a {
     font-weight: 500;
     font-size: 1rem;
@@ -499,14 +457,6 @@ button.navbar-burger {
 @media only screen and (min-width: 1024px) {
   .blocks {
     margin: 3.5rem auto;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  .header-wrapper {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 3.25rem;
   }
 }
 
