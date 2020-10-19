@@ -7,7 +7,7 @@ const Service = () => {
   const intl = useIntl();
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "flower-1920.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 512) {
             ...GatsbyImageSharpFluid

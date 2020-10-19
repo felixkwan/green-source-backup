@@ -13,14 +13,14 @@ import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faChevronRi
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "water-640-2.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "ppl-1200.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 768) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      aboutImage: file(relativePath: { eq: "hongkong-1920-21-9.jpg" }) {
+      aboutImage: file(relativePath: { eq: "health-1200.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1280) {
             ...GatsbyImageSharpFluid

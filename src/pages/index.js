@@ -16,9 +16,9 @@ const IndexPage = ({intl}) => (
   <StaticQuery
     query={graphql`
       query {
-        indexHeader: file(relativePath: { eq: "bk-heading-1920.jpg" }) {
+        indexHeader: file(relativePath: { eq: "home-bk.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1920) {
+            fluid(quality: 100, maxHeight: 1600) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -142,15 +142,13 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-message blocks clearfix">    
+          <div className="block-message blocks">    
             <div className="container">
               <div className="message-wrap">
                 <div className="msg-heading">
                   <h2>Our Commit</h2>
                 </div>
-                <div className="message">
                   <h3>信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
-                </div>
               </div>
             </div>
     
