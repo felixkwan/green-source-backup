@@ -104,7 +104,6 @@ img {
 
 .service-header,
 .client-header,
-.sustain-header,
 .contact-header {
   background-color: $light-green;
 
@@ -1152,127 +1151,6 @@ button.navbar-burger {
   }
 }
 
-//sustain page
-
-.tab-wrapper {
-  margin-top: -3rem;
-}
-
-.sustain-tabs {
-  display: none;
-}
-
-.tabs-container {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.tab-list {
-  color: $dark-blue;
-}
-
-.tabs ul {
-  border: none;
-}
-
-button.tab-list-item {
-  margin-left: .5rem;
-  margin-right: .5rem;
-  padding: 0.5rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.15rem;
-  border: none;
-  outline: none;
-  border-radius: 2.5rem;
-  color: $dark-blue;
-  background: #e2f4ea;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-button.tab-list-item.tab-list-active {
-  background-color: $primary-color;
-  outline: none;
-  color: white;
-}
-
-.tab-content {
-  white-space: normal;
-  padding: 0 1.5rem 1.5rem;
-  overflow: hidden;
-  margin-bottom: 3rem;
-}
-
-.tap-content-inner {
-  max-width: 1024px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.tab-title {
-  color: $dark-blue;
-
-  h2 {
-    margin: 1rem 0 1rem;
-  }
-}
-
-.paragraph {
-  margin-bottom: 1.5rem;
-}
-
-.paragraph-img {
-  position: inherit;
-  display: block;
-  height: 100%;
-  min-height: 560px;
-  max-width: 1024px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-
-.ppl-img {
-  background-image: url("../images/ppl-1200.png");
-}
-
-.health-img {
-  background-image: url("../images/health-1200.png");
-}
-
-.society-img {
-  background-image: url("../images/society-1200.png");
-}
-
-.sustain-footer-title {
-  color: $primary-color;
-  margin-top: 4.5rem;
-}
-
-.sustain-footer {
-  padding-top: 1.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-}
-
-@media only screen and (max-width: 1023px) {
-  .paragraph-img {
-    min-height: 480px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .paragraph-img {
-    min-height: 320px;
-  }
-
-  .tab-content .left-space {
-    display: none;
-  }
-}
 
 //About page
 
