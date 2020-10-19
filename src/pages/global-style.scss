@@ -6,6 +6,9 @@ $dark-blue-green: hsl(158, 91%, 27%);
 $dark-blue: hsl(187, 100%, 9%);
 $text-color: hsl(0, 0%, 22%);
 
+//hero
+$hero-body-padding: 0;
+
 //navbar
 $navbar-item-img-max-height: 3.25rem;
 $navbar-height: 6.25rem;
@@ -92,17 +95,6 @@ img {
   max-width: max-content;
   transition: all .25s ease-in-out;
   border-radius: .25rem;
-
-  &:hover {
-    background-color: $dark-blue;
-    color: white;
-    transition: all .25s ease-in-out;
-  }
-  &:focus {
-    background-color: $dark-blue;
-    color: white;
-    transition: all .25s ease-in-out;
-  }
 }
 
 .button-centered {
@@ -122,38 +114,12 @@ img {
   text-align: center;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  color: $space-grey;
+  color: $dark-grey;
   overflow: hidden;
 }
 
 .section-subtitle {
   color: $primary-color;
-}
-
-.section-text {
-  text-align: center;
-  max-width: 768px;
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 1rem 1.5rem 0;
-}
-
-.divider {
-  display: block;
-  text-align: center;
-  height: 45px;
-  margin: 1.5rem auto;
-  background: hsl(0, 0, 14.8%);
-  width: 1px;
-  mix-blend-mode: multiply;
-  z-index: 10;
-}
-
-.notes {
-  font-size: 0.75rem;
-  color: $dark-blue;
-  padding: 0 1rem;
-  margin: 3rem auto;
 }
 
 //navbar
@@ -222,14 +188,17 @@ button.navbar-burger {
   overflow-x: hidden;
 }
 
-.blocks {
-  margin: 0 auto;
-  padding: 1.5rem 0;
-}
-
 //header
 
 .header {
+  .header-body {
+    padding: 1rem 0 0;
+
+    .img-wrapper {
+      overflow: hidden;
+      height: calc(100vh - 7.25rem);
+    }
+  }
   .heading-us {
     color: $dark-grey;
   }
@@ -237,7 +206,6 @@ button.navbar-burger {
   .heading-chin {
     color: $dark-grey;
   }
-
 }
 
 //block-message
@@ -254,8 +222,6 @@ button.navbar-burger {
 .block-info {
 
   .info-content {
-    padding: 0;
-    margin: 1rem auto;
   
     .text-wrapper {
       background: white;

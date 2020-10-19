@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 import Carousel from "../components/carousel"
 import { StaticQuery, graphql, Link } from "gatsby"
-import BackgroundImage from "gatsby-background-image-es5"
+import Img from "gatsby-image"
 
 import "./global-style.scss"
 
@@ -16,10 +16,10 @@ const IndexPage = ({intl}) => (
   <StaticQuery
     query={graphql`
       query {
-        indexHeader: file(relativePath: { eq: "home-bk.png" }) {
+        headerImage: file(relativePath: { eq: "home-bk.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxHeight: 1600) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(quality: 100, maxHeight: 720) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -28,40 +28,48 @@ const IndexPage = ({intl}) => (
 
     render={data => {
       // Set ImageData.
-      const imageData = data.indexHeader.childImageSharp.fluid;
+      const imageData = data.headerImage.childImageSharp.fluid;
 
       return (
 
         <Layout>
           <SEO title="Home" />
-          
           <div id="home" className="header">
             <div className="hero is-fullheight-with-navbar">
               <div className="hero-head">
                 <Header />
               </div>
-              <div className="hero-body">
-                <div className="container">
-                  <div className="columns is-gapless is-desktop">
+              <div className="hero-body header-body">
+                <div className="container is-fullhd">
+                  <div className="columns is-gapless is-widescreen">
                     <div className="column is-half is-hidden-tablet">
-                      <BackgroundImage
-                        fluid={imageData}
-                        className="index-header clearfix">
-                      </BackgroundImage>
+                      <div className="img-wrapper">
+                          <Img
+                            fluid={imageData}
+                            className="index-header"
+                          />
+                      </div>
                     </div>
                     <div className="column is-half">
-                      <h2 className="heading-chin">
-                        為你提供專業、全面、高品質園藝服務。
-                      </h2>
-                      <h1 className="heading-us">
-                        Professional,Wide Range, High Quality Services.
-                      </h1>
+                      <div className="container header-content">
+                        <h2 className="heading-chin">
+                          為你提供專業、全面、高品質園藝服務。
+                        </h2>
+                        <h1 className="heading-us">
+                          Professional,Wide Range, High Quality Services.
+                        </h1>
+                        <button className="view-more">
+                          <h4>了解更多</h4>
+                        </button>
+                      </div>
                     </div>
                     <div className="column is-half is-hidden-mobile">
-                      <BackgroundImage
-                        fluid={imageData}
-                        className="index-header clearfix">
-                      </BackgroundImage>
+                      <div className="img-wrapper">
+                        <Img
+                          fluid={imageData}
+                          className="index-header"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -69,7 +77,10 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-service blocks">
+          <div className="block-service">
+            <div className="hero is-fullHeight">
+
+            </div>
             <div className="service-content container">
               <h5 className="section-subtitle">Four Lines, For Life</h5>
               <h3 className="section-title">
@@ -81,8 +92,8 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-info blocks">
-            <div className="info-content">
+          <div className="block-info">
+            <div className="container is-fullhd info-content">
               <div className="columns is-gapless is-multiline is-desktop">
                 <div className="info-1-img column is-half"></div>
                 <div className="column is-half">
@@ -116,7 +127,7 @@ const IndexPage = ({intl}) => (
     
           </div>
 
-          <div className="block-client blocks">
+          <div className="block-client">
             <div className="container">
               <h5 className="section-subtitle">Our Clients</h5>
               <h3 className="section-title">
@@ -142,7 +153,7 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-message blocks">    
+          <div className="block-message">    
             <div className="container">
               <div className="message-wrap">
                 <div className="msg-heading">
