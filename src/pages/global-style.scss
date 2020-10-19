@@ -66,10 +66,6 @@ h6 {
   font-size: 0.95rem;
 }
 
-article {
-  margin-bottom: 1rem;
-}
-
 th {
   font-weight: 600;
 }
@@ -120,14 +116,6 @@ img {
 }
 
 //Heading & text
-
-.align-left {
-  text-align: left !important;
-}
-
-article p {
-  font-size: 1.15rem;
-}
 
 .section-title,
 .section-subtitle {
@@ -261,14 +249,11 @@ button.navbar-burger {
   max-width: 1344px;
 }
 
-//block-service
+//block-info
 
-.block-service {
-  background-image: url("../images/bk-shape-1280.png");
-  background-position: center;
-  background-size: cover;
+.block-info {
 
-  .service-content {
+  .info-content {
     padding: 0;
     margin: 1rem auto;
   
@@ -280,7 +265,7 @@ button.navbar-burger {
   }
 }
 
-.service-img {
+.info-img {
   background-color: $primary-color;
   display: block;
   background-image: url("../images/garden-1920.jpg");
@@ -289,9 +274,8 @@ button.navbar-burger {
   min-height: 380px;
 }
 
-.service-title {
+.info-title {
   margin-bottom: 1rem;
-  color: $primary-color;
 }
 
 //block-contact
