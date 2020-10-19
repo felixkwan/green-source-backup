@@ -53,35 +53,7 @@ const IndexPage = ({intl}) => (
               </div>
             </BackgroundImage>
           </div>
-    
-          <div className="block-main blocks clearfix">
-            <div  data-sal="fade"
-                  data-sal-delay="150"
-                  data-sal-ease="ease"
-                  data-sal-duration="250"
-                  className="container block-title">
-              <h4 className="section-subtitle">{intl.formatMessage({ id: "blockMain.subtitle" })}</h4>
-              <h2 className="section-title">{intl.formatMessage({ id: "blockMain.title" })}</h2>
-              <div className="divider"></div>
-            </div>
-    
-            <div className="container main-content">
-              <div  data-sal="fade"
-                    data-sal-duration="350"
-                    data-sal-delay="300"
-                    data-sal-easing="ease"
-                    className="main-img"></div>
-              <div  data-sal="slide-up"
-                    data-sal-duration="350"
-                    data-sal-delay="200"
-                    data-sal-easing="ease"
-                    className="container text-wrapper">
-                <p>{intl.formatMessage({ id: "blockMain.article" })}</p>
-              </div>
-            </div>
-    
-          </div>
-    
+      
           <div className="block-info blocks container clearfix">
     
             <div  data-sal="fade"
@@ -196,76 +168,24 @@ const IndexPage = ({intl}) => (
             </div>
     
           </div>
-    
-          <div className="block-case section blocks clearfix">
-            <div  data-sal="fade"
-                  data-sal-delay="250"
-                  data-sal-easing="ease"  
-                  className="container block-title">
-              <h4 className="section-subtitle">{intl.formatMessage({ id: "blockCase.subtitle" })}</h4>
-              <h2 className="section-title">{intl.formatMessage({ id: "blockCase.title" })}</h2>
-            </div>
-            
-            <div className="showcase clearfix">
-                <div  data-sal="fade"
-                      data-sal-duration="350"
-                      data-sal-delay="300"
-                      data-sal-easing="ease" 
-                      className="container case-slider">
-                        <div className="case-thumb slider">
-                            <Carousel />
-                        </div>
-                </div>
-                
-                <div  data-sal="fade"
-                      data-sal-duration="350"
-                      data-sal-delay="350"
-                      data-sal-easing="ease" 
-                      className="container">
-                  <div className="container case">
-                    <div className="case-content-wrapper">
-                      <div className="case-content columns is-4 is-multiline">
-                        <div className="column is-one-third">
-                          <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case1" })}</h3>
-                          <div className="case-info">
-                            <p>{intl.formatMessage({ id: "blockCase.case1-desc" })}</p>
-                          </div>
-                        </div>
-                        <div className="column is-one-third">
-                          <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case2" })}</h3>
-                          <div className="case-info">
-                            <p>{intl.formatMessage({ id: "blockCase.case2-desc" })}</p>
-                          </div>
-                        </div>
-                        <div className="column is-one-third">
-                          <h3 className="case-title">{intl.formatMessage({ id: "blockCase.case3" })}</h3>
-                          <div className="case-info">
-                            <p>{intl.formatMessage({ id: "blockCase.case3-desc" })}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-              <div  data-sal="slide-up"
-                  data-sal-duration="350"
-                  data-sal-delay="450"
-                  data-sal-easing="ease"  
-                  className="container text-wrapper">
-                <article>
-                  <p>高品質のアスパラガスをたくさんつくるためには広大な土地、そして丁寧な収穫や選別を行なう「人の手」があります。真面目にアスパラガスと向き合うのは、それぞれライフスタイルが異なるたくさんのスタッフ。おいしいアスパラガスをつくることは地域で雇用を生み出すことにもつながりました。</p>
-                </article>
+          <div className="block-message blocks clearfix">    
+            <div className="container message-wrap">
+              <div className="block-heading">
+                <h2>Our Commit</h2>
               </div>
-    
-              <Link data-sal="fade"
+              <div  data-sal="slide-up"
                     data-sal-duration="350"
-                    data-sal-delay="500"
-                    data-sal-easing="ease" 
-                    to="/client/" className="primary-button button-centered view-more-button">{intl.formatMessage({ id: "blockCase.btnViewMore" })}</Link>
+                    data-sal-delay="200"
+                    data-sal-easing="ease"
+                    className="container text-wrapper">
+                <h3>信譽第一,品質至上,追求完美,不斷創新,為客戶提供高端的品質服務。</h3>
+              </div>
             </div>
-
+    
           </div>
+    
+      
         </Layout>
       )
     }}

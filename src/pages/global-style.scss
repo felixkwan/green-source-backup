@@ -237,10 +237,14 @@ article p {
     font-size: 1rem;
   }
 
-  .navbar-brand a {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.2;
+  .navbar-brand {
+    .navbar-item {
+      img {
+        max-height: 3.25rem;
+        margin: 0;
+
+      }
+    }
   }
 }
 
@@ -336,7 +340,6 @@ button.navbar-burger {
 
 @media #{$desktop-device} {
   .navbar {
-    padding: 0 .5rem;
     min-height: 85px;
 
     .navbar-brand {
@@ -507,220 +510,13 @@ button.navbar-burger {
   }
 }
 
-//block-main
+//block-message
 
-.block-main {
+.block-message {
   text-align: center;
   margin: 3rem auto;
   padding: 1.5rem;
   max-width: 1344px;
-}
-
-@media #{$wide-device} {
-  .block-main {
-    padding: 0;
-    margin: 6rem auto;
-    background-image: url("../images/bk-shape-2-1280.png");
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.block-main .main-img {
-  position: inherit;
-  display: block;
-  max-width: 1024px;
-  min-height: 520px;
-  background-image: url("../images/plants-1024.jpg");
-  background-position: center;
-  background-size: cover;
-  margin: -3rem auto 1.5rem;
-  z-index: -1;
-}
-
-.block-main .text-wrapper {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.25rem;
-  padding-bottom: 1.5rem;
-}
-
-//block-info
-
-.info-content {
-  padding: 1.5rem;
-  position: relative;
-  min-height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 2rem;
-
-  .text-wrapper {
-    background: white;
-    padding: 2rem;
-    margin: auto 0;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .info-1,
-  .info-2 {
-    position: relative;
-  }
-
-  .info-1 {
-    margin-bottom: 6rem;
-
-    &:after {
-      display: block;
-      width: 440px;
-      height: 100%;
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-color: #d0f0c0;
-      z-index: -2;
-      opacity: .25;
-    }
-  }
-
-  .info-2 {
-
-    &:after {
-      display: block;
-      width: 440px;
-      height: 100%;
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      background-color: #d0f0c0;
-      z-index: -2;
-      opacity: .25;
-    }
-  }
-}
-
-.img-wrapper {
-  position: inherit;
-  display: block;
-  width: 100%;
-  height: 480px;
-  background-position: center;
-  background-size: cover;
-  background-color: $primary-color;
-  z-index: -1;
-}
-
-.img-wrapper.on-right {
-  background-image: url("../images/food-1920.jpg");
-}
-
-.img-wrapper.on-left {
-  background-image: url("../images/flower-1920.jpg");
-}
-
-.info-title {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.title-text {
-  margin: .25rem .5rem;
-}
-
-@media only screen and (min-width: 1440px) {
-  .info-content {
-    min-height: 620px;
-    margin-bottom: 3.5rem;
-
-    .text-wrapper {
-      padding: 3rem;
-      font-size: 1.25rem;
-    }
-  }
-}
-
-@media #{$wide-device} {
-  .img-wrapper {
-    background-color: $primary-color;
-    display: block;
-    padding: 0;
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-image: url("../images/service-1440.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-
-  .img-wrapper.on-right {
-    right: 0;
-  }
-
-  .img-wrapper.on-left {
-    left: 0;
-  }
-
-}
-
-@media only screen and (width: 1024px) {
-  .info-content {
-    padding: 2.5rem 1.5rem;
-  }
-}
-
-@media #{$desktop-device} {
-  .img-wrapper {
-    width: 60%;
-  }
-
-  .info-1 {
-    &:after {
-      margin-left: 25%;
-    }
-  }
-
-  .info-2 {
-    &:after {
-      margin-right: 25%;
-    }
-  }
-}
-
-@media only screen and (width: 768px) {
-  .block-info .info-content .text-wrapper {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  .info-1 {
-    &:after {
-      left: 0;
-      top: 0;
-      padding-bottom: 1rem;
-    }
-  }
-
-  .info-2 {
-    &:after {
-      right: 0;
-      top: 0;
-      padding-bottom: 1rem;
-    }
-  }
-
-  .space {
-    display: none;
-  }
 }
 
 //block-service
@@ -767,33 +563,6 @@ button.navbar-burger {
         padding: 2rem;
       }
     }
-  }
-}
-
-//block-case
-
-.block-case {
-
-  .showcase {
-    max-width: 1366px;
-    margin: 2.5rem auto 6rem;
-  }
-
-  .case {
-    display: flex;
-    background: white;
-    height: 100%;
-  }
-
-  .text-wrapper {
-    padding: 1.5rem;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 768px;
-  }
-
-  .case-content-wrapper {
-    margin: 2rem 0;
   }
 }
 
