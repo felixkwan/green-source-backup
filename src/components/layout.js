@@ -22,7 +22,6 @@ const Layout = ({ children }) => {
     <Helmet>
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     </Helmet>
-      <Header />
             <main>{children}</main>
             <Contact></Contact>
         <footer className="footer">
@@ -35,11 +34,7 @@ const Layout = ({ children }) => {
                 </small>
               </div>
               <div className="column is-half">
-                <ul className="social-list">
-                  <li><FontAwesomeIcon icon={faTwitter} /></li>
-                  <li><FontAwesomeIcon icon={faInstagram} /></li>
-                  <li className="facebook"><FontAwesomeIcon icon={faFacebookF} /></li>
-                </ul>
+                
               </div>            
             </div>
           </div>

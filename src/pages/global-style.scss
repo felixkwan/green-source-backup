@@ -1,19 +1,23 @@
 // If need, change your variables before importing Bulma
 $primary-color: hsl(143, 45%, 50%);
-$light-green: hsl(150, 43%, 97%);
-$light-grey-green: hsl(148, 44%, 92%);
-$grey-green: hsl(148, 43%, 73%);
-$tea-green: hsl(100, 62%, 85%);
+$space-grey: #3c3c3c;
+$dark-grey: hsl(120,1.8%,10.8%);
 $dark-blue-green: hsl(158, 91%, 27%);
 $dark-blue: hsl(187, 100%, 9%);
 $text-color: hsl(0, 0%, 22%);
-$wide-device: "only screen and (min-width : 768px)";
-$desktop-device: "only screen and (min-width : 1024px)";
-$ultra-wide-device: "only screen and (min-width : 1216px)";
-$iPad-Pro-screen: "only screen and (width: 1024px)";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+//navbar
+$navbar-item-img-max-height: 3.25rem;
+$navbar-height: 6.25rem;
+$navbar-background-color: transparent;
+$navbar-item-color: $space-grey;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-hover-color: $dark-grey;
+$navbar-dropdown-border-top: 2px solid $primary-color;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import "~bulma/bulma.sass";
 
 html {
@@ -25,12 +29,12 @@ html {
 
 body {
   font-family: 'Inter','Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  color: $dark-blue;
+  color: $space-grey;
   overflow-x: hidden;
 }
 
 a {
-  color: $dark-blue;
+  color: $space-grey;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,6 +78,7 @@ th {
 
 img {
   overflow: hidden;
+  margin: 0;
 }
 
 
@@ -114,7 +119,7 @@ img {
   margin-top: 0;
 }
 
-//text
+//Heading & text
 
 .align-left {
   text-align: left !important;
@@ -124,24 +129,12 @@ article p {
   font-size: 1.15rem;
 }
 
-@media only screen and (min-width: 1440px) {
-  article p {
-    font-size: 1.25rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .heading-title {
-    font-size: 2.5rem;
-  }
-}
-
 .section-title,
 .section-subtitle {
   text-align: center;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  color: $dark-blue;
+  color: $space-grey;
   overflow: hidden;
 }
 
@@ -155,14 +148,6 @@ article p {
   font-size: 1rem;
   margin: 0 auto;
   padding: 1rem 1.5rem 0;
-}
-
-.title-number {
-  color: $dark-blue;
-}
-
-.title-text {
-  color: $dark-blue;
 }
 
 .divider {
@@ -186,63 +171,16 @@ article p {
 //navbar
 
 .navbar {
-  z-index: 999;
   background: transparent;
-  height: 3.25rem;
   transition: all .25s ease-in-out;
   a {
     font-weight: 500;
     font-size: 1rem;
   }
-
-  .navbar-brand {
-    .navbar-item {
-      img {
-        max-height: 3.25rem;
-        margin: 0;
-
-      }
-    }
-  }
 }
-
-.navbar-link:not(.is-arrowless)::after {
-  border-color: $dark-blue;
-}
-
-.navbar-item.has-dropdown:hover .navbar-link {
-  color: $primary-color;
-  background-color: transparent;
-}
-
-.navbar-end a:hover {
-  color: $primary-color;
-}
-
 .navbar-link {
-  color: $dark-blue;
   font-size: 1rem;
   font-weight: 500;
-}
-
-.navbar-lang {
-  
-  button {
-    font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-    color: $dark-blue;
-    background: transparent;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    outline: none;
-    white-space: nowrap;
-
-    :focus {
-      border: none;
-      outline: none;
-    }
-  }
-
 }
 
 button.navbar-burger {
@@ -261,7 +199,7 @@ button.navbar-burger {
 
 .navbar-burger {
   background: transparent;
-  color: white;
+  color: $space-grey;
 
   span {
     width: 20px;
@@ -290,163 +228,10 @@ button.navbar-burger {
 
 //navbar responsive
 
-@media #{$iPad-Pro-screen} {
-  .navbar {
-    height: 86px;
-  }
-}
-
-@media #{$desktop-device} {
-  .navbar {
-    min-height: 85px;
-
-    .navbar-brand {
-      a {
-        color: $dark-blue;
-      }
-    }
-  }
-
-  .navbar-link:not(.is-arrowless)::after {
-    border-color: $primary-color;
-  }
-
-  .navbar-dropdown {
-    border: none;
-    background-color: white;
-    border-radius: 0;
-    padding: .75rem .75rem ;
-    border-radius: .5rem;
-
-    &:hover {
-      transition: all .25s ease-in-out;
-    }
-
-    a.navbar-item {
-      color: $dark-blue;
-      padding: .5rem 3.25rem .5rem 1rem;
-
-      &:hover {
-        color: $dark-blue;
-        background-color: $light-green;
-      }
-      &:focus {
-        color: $dark-blue;
-        background-color: $light-green;
-      }
-    }
-  }
-}
-
-@media only screen and (width: 1024px) {
-  .navbar {
-    a {
-      font-size: 1rem;
-    }
-
-    .navbar-brand  {
-      a {
-        font-size: 1.35rem;
-        line-height: 1;
-      }
-    }
-    .navbar-link {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  .navbar {
-    background: $dark-blue;
-    border: none;
-
-    .navbar-brand  {
-      a {
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-
-      a:hover {
-        color: white;
-      }
-
-      a:focus {
-        color: white;
-      } 
-    }
-
-    a {
-      font-size: 1rem;
-      color: white;
-    }
-
-    .navbar-menu {
-      background: $dark-blue;
-      border-radius: 0 0 1.5rem 1.5rem;
-      padding: 1rem;
-    }
-
-    .navbar-lang {
-  
-      button {
-        background: transparent;
-        font-size: 1rem;
-        font-weight: 500;
-        outline: none;
-    
-        :focus {
-          outline: none;
-        }
-      }
-    
-    }
-  }
-
-  .navbar-dropdown a:hover {
-    background: transparent;
-  }
-
-  .navbar-link:not(.is-arrowless)::after {
-    border-color: $primary-color;
-  }
-
-  .navbar-link {
-    color: #46b972;
-    background-color: transparent;
-    margin: .5rem 0 .25rem 0;
-    border-radius: .5rem;
-    font-size: 1rem;
-    color: $primary-color;
-
-    &:active {
-      color: $dark-blue;
-    }
-    &:hover {
-      color: $dark-blue;
-    }
-    &:focus {
-      color: $dark-blue;
-    }
-  }
-}
-
 //main
 
 .wrapper {
   overflow-x: hidden;
-}
-
-@media #{$desktop-device} {
-  .wrapper {
-    margin-top: 85px;
-  }
-}
-
-@media #{$iPad-Pro-screen} {
-  .wrapper {
-    margin-top: 86px;
-  }
 }
 
 .blocks {
@@ -454,10 +239,17 @@ button.navbar-burger {
   padding: 1.5rem 0;
 }
 
-@media only screen and (min-width: 1024px) {
-  .blocks {
-    margin: 3.5rem auto;
+//header
+
+.header {
+  .heading-us {
+    color: $dark-grey;
   }
+
+  .heading-chin {
+    color: $dark-grey;
+  }
+
 }
 
 //block-message
@@ -502,167 +294,7 @@ button.navbar-burger {
   color: $primary-color;
 }
 
-@media only screen and (max-width: 767px) {
-  .block-title {
-    padding: 0 1rem;
-  }
-
-  .block-service {
-    .service-content {
-      .text-wrapper {
-        padding: 2rem;
-      }
-    }
-  }
-}
-
-.case-content-wrapper {
-  margin: 2rem;
-}
-
 //block-contact
-
-.block-contact {
-  background-color: $light-green;
-  padding: 3rem 0;
-  color: $dark-blue;
-  background: url("../images/bk-contact-1440.png") no-repeat center center;
-  background-size: cover;
-}
-
-.contact-content-wrapper {
-  padding: 1rem 2.5rem;
-  max-width: 768px;
-  margin: 0 auto;
-}
-
-@media #{$wide-device} {
-  .contact-content-wrapper {
-    padding: 1rem 2rem;
-  }
-}
-
-@media #{$desktop-device} {
-  .contact-content-wrapper {
-    padding: 1rem 1.5rem;
-  }
-}
-
-.contact-item {
-  font-size: 1.15rem;
-
-  h2 {
-    font-weight: 600;
-    margin-bottom: .5rem;
-  }
-}
-
-.contact-item.contact-number {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 1rem;
-
-  h5 {
-    margin-right: 1rem;
-    padding: .75rem 1.25rem .75rem 1.25rem;
-    background: $light-grey-green;
-    color: $dark-blue;
-    border-radius: .5rem;
-  }
-
-  h4 {
-    padding: .75rem 0;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  .contact-item.contact-number {
-    h5 {
-      padding: .75rem 1rem;
-      margin-right: 1.15rem;
-    }
-  }
-}
-
-.contact-item.contact-mail {
-
-  a {
-    font-size: 1.25rem;
-    color: $dark-blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 1.5rem 0;
-    background: white;
-    margin-top: 1.5rem;
-    overflow: hidden;
-    border-radius: .5rem;
-    line-height: 1.6;
-    transition: all .25s ease-in-out;
-  }
-
-  a:hover {
-    background: $dark-blue;
-    color: white;
-    transition: all .25s ease-in-out;
-  }
-
-  a:focus {
-    background: $dark-blue;
-    color: white;
-    transition: all .25s ease-in-out;
-  }
-
-  .arrow {
-    font-size: 1.85rem;
-    margin-left: auto;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .contact-item.contact-number {
-
-    h5 {
-      padding: .75rem .75rem;
-      font-size: 1rem;
-      max-width: 60px;
-      margin-right: .75rem;
-    }
-
-    h4 {
-      padding: .75rem 0;
-      font-size: 1rem;
-    }
-  }
-
-  .contact-item.contact-mail {
-
-    a {
-      span:first-child() {
-        display: flex;
-        flex-direction: row;
-        line-height: 1.5;
-        font-size: 1.15rem;
-  
-        i {
-          margin: 0 1rem;
-          font-size: 1.25rem;
-          padding-top: .25rem;
-          padding-right: .25rem;
-        }
-      }
-  
-      span:last-child {
-        i {
-          font-size: 1rem;
-          margin-top: .15rem;
-          margin-right: 1.25rem;
-        }
-      }
-    }
-  }
-}
 
 //footer
 
@@ -670,8 +302,8 @@ button.navbar-burger {
   width: 100%;
    padding: 2.5rem 2rem;
    margin-bottom: 0;
-   color: white;
-   background: $dark-blue;
+   color: $space-grey;
+   background: #efefef;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -682,88 +314,7 @@ button.navbar-burger {
    }
 }
 
-.footer .social-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-
-.footer .social-list li {
-  margin-left: 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .footer .social-list {
-    justify-content: flex-start;
-  }
-
-  .footer .social-list li:first-child {
-    margin-left: 0;
-  }
-}
-
-.footer .social-list li {
-  color: white;
-  font-size: 1.25rem;
-  padding: .25rem .5rem;
-  background: transparent;
-}
-
-.footer .social-list .facebook {
-  padding: .25rem 0 .25rem .95rem;
-}
-
-//pages-wrapper
-
 //client page
-
-.client-list {
-  .case {
-    background-color: $tea-green;
-    background-position: center;
-    background-size: cover;
-    min-height: 480px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-  }
-
-  #case1 {
-    background-image: url("../images/dirt-640.jpg");
-  }
-
-  #case2 {
-    background-image: url("../images/dirt-640.jpg");
-  }
-
-  #case3 {
-    background-image: url("../images/dirt-640.jpg");
-  }
-
-  #case4 {
-    background-image: url("../images/dirt-640.jpg");
-  }
-}
-
-.case-content {
-  padding: 2rem;
-  background: white;
-
-  .case-info {
-    margin-top: 1rem;
-  }
-
-  .case-title {
-    color: $dark-blue;
-  }
-}
-
-@media only screen and (min-width: 1366px) {
-  .client-list {
-    margin: 0 auto 3rem;
-  }
-}
 
 
 //About page
@@ -780,33 +331,6 @@ button.navbar-burger {
   
   .arrow {
     font-size: 1.3rem;
-  }
-}
-
-//flickity
-
-.carousel {
-  box-sizing: border-box;
-}
-
-.carousel:after {
-  content: 'flickity';
-  display: none; /* hide :after */
-}
-
-.flickity-viewport {
-  transition: height 0.2s;
-}
-
-.carousel-cell {
-  width: 100%; /* full width */
-  margin-right: 10px;
-}
-
-@media screen and ( min-width: 768px ) and (max-width: 1152px) {
-  /* disable Flickity for large devices */
-  .carousel:after {
-    content: '';
   }
 }
 
