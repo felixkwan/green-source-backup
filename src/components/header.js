@@ -47,41 +47,42 @@ class Header extends Component {
                 <div className="navbar-end">
                     <div className="navbar-item has-dropdown is-hoverable">
                       <span className="navbar-link">
-                        Services
+                        服務項目
                       </span>
       
                       <div className="navbar-dropdown">
-                        <Link to="/services/category1" className="navbar-item">Category1</Link>
-                        <Link to="/services/category1" className="navbar-item">Category1</Link>
-                        <Link to="/services/category1" className="navbar-item">Category1</Link>
+                        <Link to="/services/category1" className="navbar-item">園藝保養</Link>
+                        <Link to="/services/category1" className="navbar-item">樹木移除</Link>
+                        <Link to="/services/category1" className="navbar-item">草坪工程</Link>
+                        <Link to="/services/category1" className="navbar-item">綠化工程</Link>
                       </div>
                     </div>
 
                     <div className="navbar-item">
                       <Link
                         to="/client/">
-                        <FormattedMessage id="header.clients" />
+                        客戶
                       </Link>
                     </div>
 
                     <div className="navbar-item">
                       <Link
                         to="/recruit/">
-                        Recruit
+                        人才招聘
                       </Link>
                     </div>
 
                     <div className="navbar-item">
                       <Link
                         to="/contact/">
-                        Contact Us
+                        聯絡我們
                       </Link>
                     </div>
 
                     <div className="navbar-item whatsapp-btn">
                       <Link
                         to="https://wa.me/85269965240">
-                        Whatsapp
+                        立即查詢
                       </Link>
                     </div>
                 </div>

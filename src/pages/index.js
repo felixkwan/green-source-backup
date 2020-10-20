@@ -84,7 +84,7 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-service">
+          <div id="service" className="block-service">
             <div className="hero is-fullHeight">
               <div className="hero-body">
                 <div className="service-content container">

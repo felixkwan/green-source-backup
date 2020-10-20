@@ -5,9 +5,6 @@ import Header from "../../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressCard, faMobile, faFax, faPhoneAlt, faMapMarkedAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-
 
 const Category1 = () => {
   const data = useStaticQuery(graphql`
@@ -49,12 +46,10 @@ const Category1 = () => {
 
       <div className="page-body mt-6 container">
 
-        <nav class="breadcrumb px-3" aria-label="breadcrumbs">
+        <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
           <ul>
-            <li><a href="#">Bulma</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Components</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li className="is-active"><Link to="/services/category1" aria-current="page">Service 1</Link></li>
           </ul>
         </nav>
 
@@ -64,7 +59,8 @@ const Category1 = () => {
                 <div className="service-thumb">
                   <Img fluid={data.aboutImage.childImageSharp.fluid} />
                 </div>
-                <div className="container mt-2 px-4 py-3 section-text">
+                <div className="container mt-2 px-4 py-3">
+                  <h6 className="service-number">01</h6>
                   <h2 className="service-title mb-5">Service 1</h2>
                     <article className="mb-3">
                       <p>Hello world</p>
@@ -76,7 +72,8 @@ const Category1 = () => {
                 <div className="service-thumb">
                   <Img fluid={data.aboutImage.childImageSharp.fluid} />
                 </div>
-                <div className="container mt-2 px-4 py-3 section-text">
+                <div className="container mt-2 px-4 py-3">
+                  <h6 className="service-number">01</h6>
                   <h2 className="service-title mb-5">Service 1</h2>
                     <article className="mb-3">
                       <p>Hello world</p>
@@ -88,28 +85,57 @@ const Category1 = () => {
                 <div className="service-thumb">
                   <Img fluid={data.aboutImage.childImageSharp.fluid} />
                 </div>
-                <div className="container mt-2 px-4 py-3 section-text">
+                <div className="container mt-2 px-4 py-3">
+                  <h6 className="service-number">01</h6>
                   <h2 className="service-title mb-5">Service 1</h2>
                     <article className="mb-3">
                       <p>Hello world</p>
                     </article>
                 </div>
               </div>
-              
+            </div>
+
+            <div className="tile is-ancestor">
+
+              <div className="tile is-3 is-parent is-vertical">
+                <article className="tile is-child">
+                  <figure className="image">
+                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                  </figure>
+                  <p className="title">Thumbnail</p>
+                </article>
+              </div>
+
+              <div className="tile is-3 is-parent is-vertical">
+                <article className="tile is-child">
+                  <figure className="image">
+                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                  </figure>
+                  <p className="title">Thumbnail</p>
+                </article>
+              </div>
+
+              <div className="tile is-3 is-parent is-vertical">
+                <article className="tile is-child">
+                  <figure className="image">
+                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                  </figure>
+                  <p className="title">Thumbnail</p>
+                </article>
+              </div>
+
+              <div className="tile is-3 is-parent is-vertical">
+                <article className="tile is-child">
+                  <figure className="image">
+                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                  </figure>
+                  <p className="title">Thumbnail</p>
+                </article>
+              </div>
+
             </div>
         </div>
       
-        <div className="about-content my-5 pb-6 is-clearfix">
-          <div className="container contact-details">
-            <div className="">
-                    <Link to="https://www.google.com" className="contact-link py-5" >
-                      GreenSource@artiuminfo.com 
-                      <FontAwesomeIcon icon={faChevronRight} className="arrow ml-1 pt-1" />
-                    </Link>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </Layout>
