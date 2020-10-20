@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import Header from "../components/header"
-import Carousel from "../components/carousel"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -22,6 +21,13 @@ const IndexPage = ({intl}) => (
               ...GatsbyImageSharpFluid
             }
           }
+        },
+        ser1Image: file(relativePath: { eq: "icons8-tree-planting-64.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 64) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     `}
@@ -29,6 +35,7 @@ const IndexPage = ({intl}) => (
     render={data => {
       // Set ImageData.
       const imageData = data.headerImage.childImageSharp.fluid;
+      const serIcon1 = data.ser1Image.childImageSharp.fluid;
 
       return (
 
@@ -79,16 +86,98 @@ const IndexPage = ({intl}) => (
 
           <div className="block-service">
             <div className="hero is-fullHeight">
-
+              <div className="hero-body">
+                <div className="service-content container">
+                  <h5 className="section-subtitle">Four Lines, For Life</h5>
+                  <h3 className="section-title">
+                    Experienced, Skilful Teams.
+                  </h3>
+                  <h2 className="section-title">
+                    綠源擁有專業技術顧問及施工團隊, 如樹藝師, 攀樹師,園林設計師,保養技工等等。
+                  </h2>
+                  <div className="columns service-list">
+                    <div className="column is-one-quarter-tablet">
+                      <Img
+                            fluid={serIcon1}
+                            className="index-header"
+                      />
+                      <div className="divider"></div>
+                      <h3 className="category-title">Hello World.</h3>
+                      <article className="category-content">
+                        <p>Hello World</p>
+                      </article>
+                      <button className="read-more">Read more.</button>
+                    </div>
+                    <div className="column is-one-quarter-tablet">
+                      <Img
+                            fluid={serIcon1}
+                            className="index-header"
+                      />
+                      <div className="divider"></div>
+                      <h3 className="category-title">Hello World.</h3>
+                      <article className="category-content">
+                        <p>Hello World</p>
+                      </article>
+                      <button className="read-more">Read more.</button>
+                    </div>
+                    <div className="column is-one-quarter-tablet">
+                      <Img
+                            fluid={serIcon1}
+                            className="index-header"
+                      />
+                      <div className="divider"></div>
+                      <h3 className="category-title">Hello World.</h3>
+                      <article className="category-content">
+                        <p>Hello World</p>
+                      </article>
+                      <button className="read-more">Read more.</button>
+                    </div>
+                    <div className="column is-one-quarter-tablet">
+                      <Img
+                            fluid={serIcon1}
+                            className="index-header"
+                      />
+                      <div className="divider"></div>
+                      <h3 className="category-title">Hello World.</h3>
+                      <article className="category-content">
+                        <p>Hello World</p>
+                      </article>
+                      <button className="read-more">Read more.</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
-            <div className="service-content container">
-              <h5 className="section-subtitle">Four Lines, For Life</h5>
+          </div>
+
+          <div className="block-client">
+            <div className="container">
+              <h5 className="section-subtitle">Our Clients</h5>
               <h3 className="section-title">
                 Serve the best, Make you the best.
               </h3>
               <h2 className="section-title">
                 我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
               </h2>
+              <div className="client-list columns is-multiline is-2 is-desktop">
+                <div className="column is-half-tablet is-one-quarter-widescreen">
+                  <Img
+                            fluid={serIcon1}
+                            className="index-header"
+                      />
+                  <h5 className="client-title">HKU</h5>
+                </div>
+                <div className="column is-half-tablet is-one-quarter-widescreen">
+                  <h5 className="client-title">HKU</h5>
+                </div>
+                <div className="column is-half-tablet is-one-quarter-widescreen">
+                  <h5 className="client-title">HKU</h5>
+                </div>
+                <div className="column is-half-tablet is-one-quarter-widescreen">
+                  <h5 className="client-title">HKU</h5>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -124,34 +213,8 @@ const IndexPage = ({intl}) => (
 
               </div>
             </div>
-    
           </div>
 
-          <div className="block-client">
-            <div className="container">
-              <h5 className="section-subtitle">Our Clients</h5>
-              <h3 className="section-title">
-                Serve the best, Make you the best.
-              </h3>
-              <h2 className="section-title">
-                我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
-              </h2>
-              <div className="client-list columns is-multiline is-2 is-desktop">
-                <div className="column is-half-tablet is-one-quarter-widescreen">
-                  <h5 className="client-title">HKU</h5>
-                </div>
-                <div className="column is-half-tablet is-one-quarter-widescreen">
-                  <h5 className="client-title">HKU</h5>
-                </div>
-                <div className="column is-half-tablet is-one-quarter-widescreen">
-                  <h5 className="client-title">HKU</h5>
-                </div>
-                <div className="column is-half-tablet is-one-quarter-widescreen">
-                  <h5 className="client-title">HKU</h5>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div className="block-message">    
             <div className="container">
