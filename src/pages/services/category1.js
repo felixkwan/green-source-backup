@@ -32,95 +32,76 @@ const Category1 = () => {
   
   return (
     <Layout>
-      <div className="header-bk top">
-        <div className="header-wrapper contact-header">
-          <div className="section">
-            <h1 className="page-title">Service</h1>
+      <div className="container">
+        <div className="page-header">
+          <div className="hero is-medium">
+            <div className="hero-body">
+              <h1 className="page-title">Service</h1>
+              <h3>信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="about-wrapper pages-wrapper mt-6 container">
+      <div className="page-body mt-6 container">
 
-        <div className="about-content my-5 pb-5 is-clearfix">
-            <div className="columns is-multiline mb-6">
-              <div className="column is-12">
+        <nav class="breadcrumb px-3" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Bulma</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Components</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+          </ul>
+        </nav>
+
+        <div className="service-content pb-5 is-clearfix">
+            <div className="columns is-3 is-multiline">
+              <div className="column is-half-tablet is-one-third-widescreen">
+                <div className="service-thumb">
+                  <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                </div>
                 <div className="container mt-2 px-4 py-3 section-text">
-                  <h2 className="about-title mb-5">{intl.formatMessage({ id: "company.name" })}</h2>
+                  <h2 className="service-title mb-5">Service 1</h2>
                     <article className="mb-3">
-                      <p>{intl.formatMessage({ id: "company.desc" })}</p>
+                      <p>Hello world</p>
                     </article>
                 </div>
               </div>
-              <div className="column is-12">
-                <div className="about-img-thumb mx-2 px-4">
+
+              <div className="column is-half-tablet is-one-third-widescreen">
+                <div className="service-thumb">
                   <Img fluid={data.aboutImage.childImageSharp.fluid} />
                 </div>
-              </div>
-              <div className="column is-half">
-                <div className="about-details-wrapper mx-2 px-4 py-4">
-                  <h3 className="about-title mb-5">{intl.formatMessage({ id: "about.whatwemake" })}</h3>
-                  <article className="mb-3">
-                    <p>{intl.formatMessage({ id: "about.whatwemake-desc" })}</p>
-                  </article>
+                <div className="container mt-2 px-4 py-3 section-text">
+                  <h2 className="service-title mb-5">Service 1</h2>
+                    <article className="mb-3">
+                      <p>Hello world</p>
+                    </article>
                 </div>
               </div>
-              <div className="column is-half">
-                <div className="about-details-wrapper mx-2 px-4 py-4">
-                  <h3 className="about-title mb-5">{intl.formatMessage({ id: "about.means" })}</h3>
-                  <article className="mb-3">
-                    <p>{intl.formatMessage({ id: "about.means-desc" })}</p>
-                  </article>
+
+              <div className="column is-half-tablet is-one-third-widescreen">
+                <div className="service-thumb">
+                  <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                </div>
+                <div className="container mt-2 px-4 py-3 section-text">
+                  <h2 className="service-title mb-5">Service 1</h2>
+                    <article className="mb-3">
+                      <p>Hello world</p>
+                    </article>
                 </div>
               </div>
+              
             </div>
         </div>
       
         <div className="about-content my-5 pb-6 is-clearfix">
           <div className="container contact-details">
-            <div className="about-details-wrapper">
-             <div className="columns">
-                <div className="column is-half">
-                  <div className="about-img-thumb mx-2 px-4">
-                    <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-                  </div>
-                </div>
-                <div className="column is-half">
-                  <div className="container text-wrapper mx-2 mt-4 px-4">
-                    <h2 className="about-title mb-5">{intl.formatMessage({ id: "about.hk" })}</h2>
-                    <article className="mb-5 pr-6">
-                      <p>{intl.formatMessage({ id: "about.hk-desc" })}</p>
-                    </article>
-                    <div className="columns is-mobile address is-gapless mb-2 pb-2">
-                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMapMarkedAlt} /></div>
-                      <div className="column is-10">{intl.formatMessage({ id: "company.address" })}</div>
-                    </div>
-                    <div className="columns is-mobile tel is-gapless mb-2 pb-2">
-                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faPhoneAlt} /></div>
-                      <div className="column is-10">2670 0378 / 2697 6456</div>
-                    </div>
-                    <div className="columns is-mobile fax is-gapless mb-2 pb-2">
-                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faFax} /></div>
-                      <div className="column is-10">2696 9016</div>
-                    </div>
-
-                    <div className="columns is-mobile manager is-gapless mb-2 pb-2">
-                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faAddressCard} /></div>
-                      <div className="column is-10">{intl.formatMessage({ id: "company.contact" })}</div>
-                    </div>
-
-                    <div className="columns is-mobile mobile is-gapless mb-2 pb-2">
-                      <div className="column is-1 table-icon"><FontAwesomeIcon icon={faMobile} /></div>
-                      <div className="column is-10">9585 3845</div>
-                    </div>
-
+            <div className="">
                     <Link to="https://www.google.com" className="contact-link py-5" >
                       GreenSource@artiuminfo.com 
                       <FontAwesomeIcon icon={faChevronRight} className="arrow ml-1 pt-1" />
                     </Link>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
