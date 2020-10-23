@@ -63,7 +63,7 @@ const IndexPage = ({intl}) => (
                         <h2 className="heading-chin chin">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
-                        <h1 className="heading-us">
+                        <h1 className="heading-us eng">
                           Professional,Wide Range, High Quality Services.
                         </h1>
                         <button className="view-more">
@@ -85,17 +85,20 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div id="service" className="block-service">
+          <div id="service" className="block-service py-6">
             <div className="hero is-fullHeight">
               <div className="hero-body">
-                <div className="service-content container">
-                  <h5 className="section-subtitle">Four Lines, For Life</h5>
-                  <h3 className="section-title">
-                    Experienced, Skilful Teams.
-                  </h3>
-                  <h2 className="section-title">
-                    綠源擁有專業技術顧問及施工團隊, 如樹藝師, 攀樹師,園林設計師,保養技工等等。
-                  </h2>
+                <div className="container">
+                  <div className="block-heading has-text-centered mb-4">
+                    <h5 className="eng mb-4">Four Lines, For Life</h5>
+                    <h3 className="eng mb-2">
+                      Experienced, Skilful Teams.
+                    </h3>
+                    <h2>
+                      綠源擁有專業技術顧問及施工團隊, 如樹藝師, 攀樹師,園林設計師,保養技工等等。
+                    </h2>
+                  </div>
+                  
                   <div className="columns service-list">
                     <div className="column is-one-quarter-tablet">
                       <Img
@@ -103,7 +106,7 @@ const IndexPage = ({intl}) => (
                             className="index-header"
                       />
                       <div className="divider"></div>
-                      <h3 className="category-title">Hello World.</h3>
+                      <h3 className="category-title">園藝保養</h3>
                       <article className="category-content">
                         <p>Hello World</p>
                       </article>
@@ -115,7 +118,19 @@ const IndexPage = ({intl}) => (
                             className="index-header"
                       />
                       <div className="divider"></div>
-                      <h3 className="category-title">Hello World.</h3>
+                      <h3 className="category-title">樹木移除</h3>
+                      <article className="category-content eng">
+                        <p>Hello World</p>
+                      </article>
+                      <button className="read-more">Read more.</button>
+                    </div>
+                    <div className="column is-one-quarter-tablet">
+                      <Img
+                            fluid={serIcon1}
+                            className="index-header"
+                      />
+                      <div className="divider"></div>
+                      <h3 className="category-title">草坪工程</h3>
                       <article className="category-content">
                         <p>Hello World</p>
                       </article>
@@ -127,19 +142,7 @@ const IndexPage = ({intl}) => (
                             className="index-header"
                       />
                       <div className="divider"></div>
-                      <h3 className="category-title">Hello World.</h3>
-                      <article className="category-content">
-                        <p>Hello World</p>
-                      </article>
-                      <button className="read-more">Read more.</button>
-                    </div>
-                    <div className="column is-one-quarter-tablet">
-                      <Img
-                            fluid={serIcon1}
-                            className="index-header"
-                      />
-                      <div className="divider"></div>
-                      <h3 className="category-title">Hello World.</h3>
+                      <h3 className="category-title">綠化工程</h3>
                       <article className="category-content">
                         <p>Hello World</p>
                       </article>
@@ -152,15 +155,18 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-client">
+          <div className="block-client my-6">
             <div className="container">
-              <h5 className="section-subtitle">Our Clients</h5>
-              <h3 className="section-title">
-                Serve the best, Make you the best.
-              </h3>
-              <h2 className="section-title">
-                我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
-              </h2>
+              <div className="block-heading has-text-centered mb-4">
+                <h5 className="eng mb-4">Our Clients</h5>
+                <h3 className="eng mb-2">
+                  Serve the best, Make you the best.
+                </h3>
+                <h2>
+                  我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
+                </h2>
+              </div>
+              
               <div className="client-list columns is-multiline is-2 is-desktop">
                 <div className="column is-half-tablet is-one-quarter-widescreen">
                   <Img
@@ -184,15 +190,15 @@ const IndexPage = ({intl}) => (
 
           <div className="block-info">
             <div className="container is-fullhd info-content">
-              <div className="columns is-gapless is-multiline is-desktop">
+              <div className="columns is-gapless is-multiline is-tablet">
                 <div className="info-1-img column is-half"></div>
                 <div className="column is-half">
                   <div className="text-wrapper info-1">
                     <div className="info-title">
-                      <h4>Shape Safety</h4>
+                      <h4 className="eng">Shape Safety</h4>
                     </div>
                     <div className="container">
-                      <h1>Maintain every details in your garden.</h1>
+                      <h1 className="eng">Maintain every details in your garden.</h1>
                       <h2>提供安全可靠綠化環境,遠離隱藏危險。</h2>
                     </div>
                   </div>
@@ -202,10 +208,10 @@ const IndexPage = ({intl}) => (
                 <div className="column is-half">
                   <div className="text-wrapper info-1">
                     <div className="info-title">
-                      <h4>Shape Safety</h4>
+                      <h4 className="eng">Live Green</h4>
                     </div>
                     <div className="container">
-                      <h1>Maintain every details in your garden.</h1>
+                      <h1 className="eng">Maintain every details in your garden.</h1>
                       <h2>提供安全可靠綠化環境,遠離隱藏危險。</h2>
                     </div>
                   </div>
@@ -222,7 +228,7 @@ const IndexPage = ({intl}) => (
               <div className="message-wrap">
                 <div className="msg-heading">
                   <h1 className="eng">Our Commit</h1>
-                  <h3 className="heading-chin chin">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+                  <h3 className="heading-chin">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
                 </div> 
               </div>
             </div>

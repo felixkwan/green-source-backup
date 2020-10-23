@@ -12,17 +12,16 @@ class Contact extends Component {
             <>
                 <div className="block-contact">
                     <div className="container contact-content-wrapper">
-                        <h5 className="Eng block-title has-text-centered is-size-5">
+                        <h5 className="eng block-title has-text-centered is-size-5">
                             Contact
                         </h5>
                         <div className="columns is-tablet">
                             <div className="column is-half">
                                 <div className="contact-item">
-                                    <h6>Contact</h6>
-                                    <p>Let's get to work. If you are thinking about a new garden.</p>
+                                    <h6 className="eng">Contact</h6>
                                 </div>
                                 <div className="contact-item contact-number">
-                                    <h5>Tel</h5>
+                                    <h5>電話聯絡方法</h5>
                                     <h4>2670 0378 / 2697 6456</h4>
                                 </div>
                                 <div className="contact-item contact-mail">
@@ -36,7 +35,7 @@ class Contact extends Component {
 
                             <div className="column is-half">
                                 <div className="contact-item">
-                                    <h6>Contact</h6>
+                                    <h6 className="eng">Email</h6>
                                     <p>Let's get to work. If you are thinking about a new garden.</p>
                                 </div>
                                 <div className="contact-item contact-number">
