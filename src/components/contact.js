@@ -12,7 +12,7 @@ class Contact extends Component {
 
         return (
             <>
-                <div className="block-contact has-background-light">
+                <div className="block-contact pb-4 has-background-white-ter">
                     <div className="container is-fullhd contact-content is-clearfix">
                         <div className="container is-max-desktop py-6">
                             <div className="columns is-4 is-multiline is-desktop">

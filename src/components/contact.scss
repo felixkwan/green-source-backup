@@ -1,5 +1,10 @@
 // block-contact
 
+.block-contact {
+    background: rgb(252,252,252);
+    background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(244,244,244,0.5) 100%);
+}
+
 .contact-btn {
     border-radius: 2.5rem;
     border: none;
