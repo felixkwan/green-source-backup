@@ -33,29 +33,35 @@ const Category1 = () => {
         <div className="page-header">
           <div className="hero is-medium">
             <div className="hero-body">
-              <h1 className="page-sub-heading">Garden Maintenance</h1>
-              <h3 className="page-heading chin">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
-              <p>保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園</p>
+              <h4 className="page-sub-heading eng mb-3">Maintenance</h4>
+              <h1 className="page-heading">園藝保養</h1>
+              <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
             </div>
           </div>
         </div>
-        <div className="page-title">
-          <span>Services</span>
-        </div>
+      </div>
+
+      <div className="container is-fullhd page-title">
+          <span className="text is-size-1">Services</span>
       </div>
 
       <div className="page-body mt-6 container">
 
         <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li className="is-active"><Link to="/services/category1" aria-current="page">Service 1</Link></li>
+            <li><Link to="/">主頁</Link></li>
+            <li className="is-active"><Link to="/services/category1" aria-current="page">園藝保養</Link></li>
           </ul>
         </nav>
 
         <div className="service-content pb-5 is-clearfix">
             <div className="columns is-3 is-multiline">
               <div className="column is-half-tablet is-one-third-widescreen">
+                <div className="card">
+                  <div className="card-image">
+
+                  </div>
+                </div>
                 <div className="service-thumb">
                   <Img fluid={data.aboutImage.childImageSharp.fluid} />
                 </div>

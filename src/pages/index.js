@@ -270,7 +270,7 @@ const IndexPage = ({intl}) => (
                     </div>
                     <div className="container">
                       <h1 className="eng mb-3">Maintain every details in your garden.</h1>
-                      <h2>提供安全可靠綠化環境, 遠離隱藏危險。</h2>
+                      <h2>提供安全可靠綠化環境，遠離隱藏危險。</h2>
                     </div>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ const IndexPage = ({intl}) => (
                     </div>
                     <div className="container">
                       <h1 className="eng mb-3">Build healthy working &amp; learning place.</h1>
-                      <h2>建造更優質的環境, 塑造更健康的生活。</h2>
+                      <h2>建造更優質的環境，塑造更健康的生活。</h2>
                     </div>
                   </div>
                 </div>
