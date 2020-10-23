@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeOpen, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
+import "./contact.scss"
+
 class Contact extends Component {
 
     render() {
@@ -10,7 +12,7 @@ class Contact extends Component {
             <>
                 <div className="block-contact">
                     <div className="container contact-content-wrapper">
-                        <h5 className="block-title">
+                        <h5 className="Eng block-title has-text-centered is-size-5">
                             Contact
                         </h5>
                         <div className="columns is-tablet">

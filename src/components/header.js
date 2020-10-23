@@ -74,7 +74,7 @@ class Header extends Component {
 
                     <div className="navbar-item">
                       <Link
-                        to="/contact/">
+                        to="/contactUs/">
                         聯絡我們
                       </Link>
                     </div>

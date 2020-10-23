@@ -9,6 +9,7 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import "./global-style.scss"
+import "./index.scss"
 
 const IndexPage = ({intl}) => (
   
@@ -59,7 +60,7 @@ const IndexPage = ({intl}) => (
                     </div>
                     <div className="column is-half">
                       <div className="container header-content">
-                        <h2 className="heading-chin">
+                        <h2 className="heading-chin chin">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
                         <h1 className="heading-us">
@@ -220,9 +221,9 @@ const IndexPage = ({intl}) => (
             <div className="container">
               <div className="message-wrap">
                 <div className="msg-heading">
-                  <h2>Our Commit</h2>
-                </div>
-                  <h3>信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+                  <h1 className="eng">Our Commit</h1>
+                  <h3 className="heading-chin chin">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+                </div> 
               </div>
             </div>
     
