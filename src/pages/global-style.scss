@@ -125,15 +125,6 @@ img {
   margin-right: auto;
 }
 
-.view-more-button {
-  min-width: 180px;
-  margin-top: 0;
-}
-
-.section-subtitle {
-  color: $primary-color;
-}
-
 //navbar
 
 .navbar {
@@ -258,22 +249,6 @@ button.navbar-burger {
 //block-contact
 
 //footer
-
-.footer {
-  width: 100%;
-   padding: 2.5rem 2rem;
-   margin-bottom: 0;
-   color: $space-grey;
-   background: #efefef;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-
-   small {
-     font-size: 1rem;
-     line-height: 2.4;
-   }
-}
 
 //service page
 .page-header{
