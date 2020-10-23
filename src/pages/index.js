@@ -71,11 +71,11 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
           <div id="home" className="header">
-            <div className="hero is-fullheight-with-navbar">
+            <section className="hero is-fullheight">
               <div className="hero-head">
                 <Header />
               </div>
-              <div className="hero-body header-body">
+              <div className="hero-body">
                 <div className="container is-fullhd">
                   <div className="columns is-gapless is-widescreen">
                     <div className="column is-half is-hidden-tablet">
@@ -100,17 +100,12 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
                     <div className="column is-half is-hidden-mobile">
-                      <div className="img-wrapper">
-                        <Img
-                          fluid={imageData}
-                          className="index-header"
-                        />
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
 
           <div id="service" className="block-service mb-5">
@@ -235,30 +230,30 @@ const IndexPage = ({intl}) => (
                 </h3>
               </div>
               
-              <div className="client-list columns is-multiline is-2 is-desktop has-text-centered">
-                <div className="column is-half-tablet is-one-quarter-widescreen">
+              <div className="client-list columns is-multiline is-2 is-mobile has-text-centered">
+                <div className="column is-half-mobile is-one-quarter-widescreen">
                   <img src={hkuSVG}
                       className="image is-128x128 logo"
                   />
-                  <h5 className="client-title mt-3">香港大學</h5>
+                  <h5 className="client-title my-3">香港大學</h5>
                 </div>
-                <div className="column is-half-tablet is-one-quarter-widescreen">
+                <div className="column is-half-mobile is-one-quarter-widescreen">
                   <img src={jllSVG}
                       className="image is-128x128 logo"
                   />
-                  <h5 className="client-title mt-3">仲量聯行</h5>
+                  <h5 className="client-title my-3">仲量聯行</h5>
                 </div>
-                <div className="column is-half-tablet is-one-quarter-widescreen">
+                <div className="column is-half-mobile is-one-quarter-widescreen">
                   <img src={cbreSVG}
                       className="image is-128x128 logo"
                   />
-                  <h5 className="client-title mt-3">世邦魏理仕</h5>
+                  <h5 className="client-title my-3">世邦魏理仕</h5>
                 </div>
-                <div className="column is-half-tablet is-one-quarter-widescreen">
+                <div className="column is-half-mobile is-one-quarter-widescreen">
                   <img src={issSVG}
                       className="image is-128x128 logo"
                   />
-                  <h5 className="client-title mt-3">置邦物業管理</h5>
+                  <h5 className="client-title my-3">置邦物業管理</h5>
                 </div>
               </div>
             </div>

@@ -1,13 +1,15 @@
 // main
 
 .block-heading {
-    padding: .5rem 5.5rem;
+    padding: .5rem 6.5rem;
 }
 
 // block-service
 
 .block-service {
-    padding: 4rem 0 3.5rem;
+    padding: 4rem 0 5.5rem;
+    background: rgb(255,255,243);
+    background: linear-gradient(135deg, rgba(255,255,243,1) 0%, rgba(214,255,226,1) 100%);
 }
 
 // block-client
