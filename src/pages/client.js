@@ -2,7 +2,9 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Header from "../components/header"
+import Clients from "../components/clients"
 import { useStaticQuery, graphql, Link } from "gatsby"
+
 import Img from "gatsby-image"
 
 
@@ -33,19 +35,29 @@ const Client = () => {
             <div className="page-header">
             <div className="hero is-medium">
                 <div className="hero-body">
-                <h1 className="page-sub-heading">For Our Society</h1>
-                <h3 className="page-heading chin">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
-                <p>保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園</p>
+                <h3 className="page-sub-heading eng mb-3">For Our Society</h3>
+                <h1 className="page-heading">客戶</h1>
+                <p className="is-size-5 service-des">公司客戶包括仲量聯行 ,香港大學,世邦魏理仕有限公司 ,置邦物業管理有限公司 , 富城物業管理有限公司 和記黃埔及眾多屋苑,院校 提供園藝服務。</p>
                 </div>
             </div>
             </div>
-            <div className="page-title">
-            <span>Connect</span>
-            </div>
         </div>
 
-        <div className="page-body mt-6 container">
-        
+        <div className="page-title">
+            <span>Connect</span>
+        </div>
+
+        <div className="page-body container is-fullhd">
+          <div className="container is-widescreen">
+            <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
+              <ul>
+                <li><Link to="/">主頁</Link></li>
+                <li className="is-active"><Link to="/client" aria-current="page">客戶</Link></li>
+              </ul>
+            </nav>
+
+            <Clients/>
+          </div>
         </div>
 
     </Layout>

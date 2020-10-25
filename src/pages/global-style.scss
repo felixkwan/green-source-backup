@@ -19,6 +19,7 @@ $navbar-dropdown-border-top: 2px solid $primary-color;
 $card-radius: 2.72rem;
 $card-shadow: none;
 $card-color: hsl(120,1.8%,10.8%);
+$card-footer-border-top: none;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap');
@@ -255,6 +256,25 @@ button.navbar-burger {
 .service-des {
   max-width: 360px;
   padding-left: 0.05rem;
+}
+
+.service-navbar {
+  margin-top: 3.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.service-icon {
+  margin: 0 auto;
+}
+
+.service-nav-item {
+  border-radius: 2rem;
+  padding: 1.75rem 0;
+  box-shadow: 0px 12px 28px 0px rgba(209,209,209,0.25);
+
+  &.is-active {
+    border: $primary-color .25rem solid;
+  }
 }
 
 //client page

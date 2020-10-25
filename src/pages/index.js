@@ -5,12 +5,9 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import Header from "../components/header"
+import Clients from "../components/clients"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import hkuSVG from "../images/logo-hku.svg"
-import jllSVG from "../images/logo-jll.svg"
-import cbreSVG from "../images/logo-cbre.svg"
-import issSVG from "../images/logo-iss.svg"
 
 import "./global-style.scss"
 import "./index.scss"
@@ -83,6 +80,7 @@ const IndexPage = ({intl}) => (
                           <Img
                             fluid={imageData}
                             className="index-header"
+                            alt=""
                           />
                       </div>
                     </div>
@@ -130,6 +128,7 @@ const IndexPage = ({intl}) => (
                             <Img
                                   fluid={serIcon1}
                                   className="image is-64x64"
+                                  alt=""
                             />
                           </p>
                         </header>
@@ -152,6 +151,7 @@ const IndexPage = ({intl}) => (
                             <Img
                                   fluid={serIcon2}
                                   className="image is-64x64"
+                                  alt=""
                             />
                           </p>
                         </header>
@@ -174,6 +174,7 @@ const IndexPage = ({intl}) => (
                             <Img
                                   fluid={serIcon3}
                                   className="image is-64x64"
+                                  alt=""
                             />
                           </p>
                         </header>
@@ -196,6 +197,7 @@ const IndexPage = ({intl}) => (
                             <Img
                                   fluid={serIcon4}
                                   className="image is-64x64"
+                                  alt=""
                             />
                           </p>
                         </header>
@@ -218,46 +220,7 @@ const IndexPage = ({intl}) => (
             </div>
           </div>
 
-          <div className="block-client my-6">
-            <div className="container is-max-desktop">
-              <div className="block-heading has-text-centered mb-6">
-                <h4 className="eng mb-4">Our Clients</h4>
-                <h1 className="eng mb-2">
-                  Serve the best, Make you the best.
-                </h1>
-                <h3 className="px-6">
-                  我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
-                </h3>
-              </div>
-              
-              <div className="client-list columns is-multiline is-2 is-mobile has-text-centered">
-                <div className="column is-half-mobile is-one-quarter-widescreen">
-                  <img src={hkuSVG}
-                      className="image is-128x128 logo"
-                  />
-                  <h5 className="client-title my-3">香港大學</h5>
-                </div>
-                <div className="column is-half-mobile is-one-quarter-widescreen">
-                  <img src={jllSVG}
-                      className="image is-128x128 logo"
-                  />
-                  <h5 className="client-title my-3">仲量聯行</h5>
-                </div>
-                <div className="column is-half-mobile is-one-quarter-widescreen">
-                  <img src={cbreSVG}
-                      className="image is-128x128 logo"
-                  />
-                  <h5 className="client-title my-3">世邦魏理仕</h5>
-                </div>
-                <div className="column is-half-mobile is-one-quarter-widescreen">
-                  <img src={issSVG}
-                      className="image is-128x128 logo"
-                  />
-                  <h5 className="client-title my-3">置邦物業管理</h5>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Clients/>
 
           <div className="block-info">
             <div className="container is-fullhd info-content">

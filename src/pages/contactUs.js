@@ -30,18 +30,19 @@ const ContactUs = () => {
     <Layout>
       <Header/>
         <div className="container">
-            <div className="page-header">
+          <div className="page-header">
             <div className="hero is-medium">
-                <div className="hero-body">
-                <h1 className="page-sub-heading">Recuit</h1>
-                <h3 className="page-heading chin">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
-                <p>保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園</p>
-                </div>
+              <div className="hero-body">
+                <h4 className="page-sub-heading eng mb-3">Maintenance</h4>
+                <h1 className="page-heading">園藝保養</h1>
+                <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
+              </div>
             </div>
-            </div>
-            <div className="page-title">
-            <span>Opportunities</span>
-            </div>
+          </div>
+        </div>
+
+        <div className="page-title">
+            <span>Connect</span>
         </div>
 
         <div className="page-body contact-body container">

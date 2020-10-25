@@ -45,7 +45,7 @@ class Header extends Component {
     
               <div className={this.state.toggle ? "navbar-menu is-active" : "navbar-menu"}>
                 <div className="navbar-end">
-                    <div className="navbar-item has-dropdown is-hoverable">
+                    <div className="navbar-item has-dropdown is-hoverable is-hidden-touch">
                       <span className="navbar-link">
                         服務項目
                       </span>

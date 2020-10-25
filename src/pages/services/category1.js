@@ -4,18 +4,12 @@ import Layout from "../../components/layout"
 import Header from "../../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import ser1Icon from "../../images/icons8-tree-planting-64.png"
 
 
 const Category1 = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "ppl-1200.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 768) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
       aboutImage: file(relativePath: { eq: "health-1200.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1280) {
@@ -45,103 +39,126 @@ const Category1 = () => {
           <span className="text is-size-1">Services</span>
       </div>
 
-      <div className="page-body mt-6 container">
+      <div className="page-body container is-fullhd has-background-white-bis py-6">
+        <div className="container is-widescreen">
+          <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
+            <ul>
+              <li><Link to="/">主頁</Link></li>
+              <li className="is-active"><Link to="/services/category1" aria-current="page">園藝保養</Link></li>
+            </ul>
+          </nav>
 
-        <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
-          <ul>
-            <li><Link to="/">主頁</Link></li>
-            <li className="is-active"><Link to="/services/category1" aria-current="page">園藝保養</Link></li>
-          </ul>
-        </nav>
+          <div className="service-content is-clearfix">
+              <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
+                <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="card pb-4">
+                    <div className="card-image">
+                      <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                    </div>
 
-        <div className="service-content pb-5 is-clearfix">
-            <div className="columns is-3 is-multiline">
-              <div className="column is-half-tablet is-one-third-widescreen">
-                <div className="card">
-                  <div className="card-image">
+                    <div className="card-content">
+                      <h2 className="service-title px-4">園林設計</h2>
+                        <article className="content px-4">
+                          <p>為客戶創造更好的綠化環境。</p>
+                        </article>
+                    </div>
 
+                    <div className="card-footer"></div>
                   </div>
                 </div>
-                <div className="service-thumb">
-                  <Img fluid={data.aboutImage.childImageSharp.fluid} />
-                </div>
-                <div className="container mt-2 px-4 py-3">
-                  <h6 className="service-number">01</h6>
-                  <h2 className="service-title mb-5">Service 1</h2>
-                    <article className="mb-3">
-                      <p>Hello world</p>
-                    </article>
-                </div>
-              </div>
 
-              <div className="column is-half-tablet is-one-third-widescreen">
-                <div className="service-thumb">
-                  <Img fluid={data.aboutImage.childImageSharp.fluid} />
-                </div>
-                <div className="container mt-2 px-4 py-3">
-                  <h6 className="service-number">01</h6>
-                  <h2 className="service-title mb-5">Service 1</h2>
-                    <article className="mb-3">
-                      <p>Hello world</p>
-                    </article>
-                </div>
-              </div>
+                <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="card pb-4">
+                    <div className="card-image">
+                      <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                    </div>
 
-              <div className="column is-half-tablet is-one-third-widescreen">
-                <div className="service-thumb">
-                  <Img fluid={data.aboutImage.childImageSharp.fluid} />
+                    <div className="card-content">
+                      <h2 className="service-title px-4">種植及修剪</h2>
+                        <article className="content px-4">
+                          <p>擁有多名經驗豐富的人員，負責種植植物及修剪，為各戶提供綠化保養。</p>
+                        </article>
+                    </div>
+
+                    <div className="card-footer"></div>
+                  </div>
                 </div>
-                <div className="container mt-2 px-4 py-3">
-                  <h6 className="service-number">01</h6>
-                  <h2 className="service-title mb-5">Service 1</h2>
-                    <article className="mb-3">
-                      <p>Hello world</p>
-                    </article>
+
+                <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="card pb-2">
+                    <div className="card-image">
+                      <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                    </div>
+
+                    <div className="card-content">
+                      <h2 className="service-title px-4">清理渠道</h2>
+                        <article className="content px-4">
+                          <p>清潔團隊專門負責清理由泥土、枯枝及枯葉造成的堵塞問題，以保持環境潔淨及渠道暢通。</p>
+                        </article>
+                    </div>
+                    <div className="card-footer"></div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tile is-ancestor">
+              <div className="container is-widescreen service-navbar">
 
-              <div className="tile is-3 is-parent is-vertical">
-                <article className="tile is-child">
-                  <figure className="image">
-                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
-                  </figure>
-                  <p className="title">Thumbnail</p>
-                </article>
+                <div className="columns is-desktop is-8 is-centered is-vcentered is-hidden-touch">
+                  <div className="column is-one-quarter">
+                    <div className="service-nav-item has-background-white is-active">
+                      <Link to="/services/category1" className="has-text-centered" aria-current="page">
+                        <figure>
+                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                        </figure>
+                        <div className="divider"></div>
+                        <h5 className="">園藝保養</h5>
+                      </Link>
+                    </div>
+                  </div>
+                  
+                  <div className="column is-one-quarter">
+                    <div className="service-nav-item has-background-white">
+                      <Link to="/services/category1" className="has-text-centered">
+                        <figure>
+                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                        </figure>
+                        <div className="divider"></div>
+                        <h5 className="">園藝保養</h5>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="column is-one-quarter">
+                    <div className="service-nav-item has-background-white">
+                      <Link to="/services/category1" className="has-text-centered">
+                        <figure>
+                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                        </figure>
+                        <div className="divider"></div>
+                        <h5 className="">園藝保養</h5>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="column is-one-quarter">
+                    <div className="service-nav-item has-background-white">
+                      <Link to="/services/category1" className="has-text-centered">
+                        <figure>
+                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                        </figure>
+                        <div className="divider"></div>
+                        <h5 className="">園藝保養</h5>
+                      </Link>
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
+              
 
-              <div className="tile is-3 is-parent is-vertical">
-                <article className="tile is-child">
-                  <figure className="image">
-                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
-                  </figure>
-                  <p className="title">Thumbnail</p>
-                </article>
-              </div>
-
-              <div className="tile is-3 is-parent is-vertical">
-                <article className="tile is-child">
-                  <figure className="image">
-                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
-                  </figure>
-                  <p className="title">Thumbnail</p>
-                </article>
-              </div>
-
-              <div className="tile is-3 is-parent is-vertical">
-                <article className="tile is-child">
-                  <figure className="image">
-                    <Img fluid={data.aboutImage.childImageSharp.fluid} />
-                  </figure>
-                  <p className="title">Thumbnail</p>
-                </article>
-              </div>
-
-            </div>
+          </div>
         </div>
-      
       </div>
 
     </Layout>
