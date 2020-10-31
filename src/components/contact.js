@@ -14,10 +14,10 @@ class Contact extends Component {
             <>
                 <div className="block-contact pb-4">
                     <div className="container is-fullhd contact-content is-clearfix">
-                        <div className="container is-max-desktop py-6">
+                        <div className="container py-6">
                             <div className="columns is-4 is-multiline is-desktop">
-                                <div className="column is-half-desktop contact-tel has-text-centered-touch">
-                                    <div className="mx-4">
+                                <div className="column is-half-desktop contact-tel has-text-centered-touch pr-5">
+                                    <div className="is-clearfix">
                                         <div className="contact-item">
                                             <h6 className="eng mb-4">Contact</h6>
                                         </div>
@@ -31,8 +31,8 @@ class Contact extends Component {
                                     </div> 
                                 </div>
 
-                                <div className="column is-half-desktop has-text-centered-touch">
-                                    <div className="mx-4">
+                                <div className="column is-half-desktop has-text-centered-touch pl-5">
+                                    <div className="is-clearfix">
                                         <div className="contact-item">
                                             <h6 className="eng mb-4">Email</h6>
                                         </div>

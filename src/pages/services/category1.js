@@ -39,124 +39,126 @@ const Category1 = () => {
           <span className="text is-size-1">Services</span>
       </div>
 
-      <div className="page-body container is-fullhd has-background-white-bis py-6">
-        <div className="container is-widescreen">
-          <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
-            <ul>
-              <li><Link to="/">主頁</Link></li>
-              <li className="is-active"><Link to="/services/category1" aria-current="page">園藝保養</Link></li>
-            </ul>
-          </nav>
+      <div className="page-body has-background-white-bis">
+        <div className="container">
+          <div className="container is-fullhd py-6">
+            <nav className="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><Link to="/">主頁</Link></li>
+                <li className="is-active"><Link to="/services/category1" aria-current="page">園藝保養</Link></li>
+              </ul>
+            </nav>
 
-          <div className="service-content is-clearfix">
-              <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
-                <div className="column is-half-tablet is-one-third-widescreen">
-                  <div className="card pb-4">
-                    <div className="card-image">
-                      <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+            <div className="service-content is-clearfix">
+                <div className="columns is-variable is-3-mobile is-4-tablet is-multiline is-clearfix">
+                  <div className="column is-half-tablet is-one-third-widescreen">
+                    <div className="card pb-4">
+                      <div className="card-image">
+                        <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                      </div>
+
+                      <div className="card-content">
+                        <h2 className="service-title px-4 mb-2">園林設計</h2>
+                          <article className="content px-4">
+                            <p>為客戶創造更好的綠化環境。</p>
+                          </article>
+                      </div>
+
+                      <div className="card-footer"></div>
                     </div>
+                  </div>
 
-                    <div className="card-content">
-                      <h2 className="service-title px-4">園林設計</h2>
-                        <article className="content px-4">
-                          <p>為客戶創造更好的綠化環境。</p>
-                        </article>
+                  <div className="column is-half-tablet is-one-third-widescreen">
+                    <div className="card pb-4">
+                      <div className="card-image">
+                        <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                      </div>
+
+                      <div className="card-content">
+                        <h2 className="service-title px-4 mb-2">種植及修剪</h2>
+                          <article className="content px-4">
+                            <p>擁有多名經驗豐富的人員，負責種植植物及修剪，為各戶提供綠化保養。</p>
+                          </article>
+                      </div>
+
+                      <div className="card-footer"></div>
                     </div>
+                  </div>
 
-                    <div className="card-footer"></div>
+                  <div className="column is-half-tablet is-one-third-widescreen">
+                    <div className="card pb-2">
+                      <div className="card-image">
+                        <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                      </div>
+
+                      <div className="card-content">
+                        <h2 className="service-title px-4 mb-2">清理渠道</h2>
+                          <article className="content px-4">
+                            <p>清潔團隊專門負責清理由泥土、枯枝及枯葉造成的堵塞問題，以保持環境潔淨及渠道暢通。</p>
+                          </article>
+                      </div>
+                      <div className="card-footer"></div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="column is-half-tablet is-one-third-widescreen">
-                  <div className="card pb-4">
-                    <div className="card-image">
-                      <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                <div className="container is-widescreen service-navbar">
+
+                  <div className="columns is-desktop is-8 is-centered is-vcentered is-hidden-touch">
+                    <div className="column is-one-quarter">
+                      <div className="service-nav-item has-background-white is-active">
+                        <Link to="/services/category1" className="has-text-centered" aria-current="page">
+                          <figure>
+                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                          </figure>
+                          <div className="divider"></div>
+                          <h5 className="">園藝保養</h5>
+                        </Link>
+                      </div>
+                    </div>
+                    
+                    <div className="column is-one-quarter">
+                      <div className="service-nav-item has-background-white">
+                        <Link to="/services/category1" className="has-text-centered">
+                          <figure>
+                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                          </figure>
+                          <div className="divider"></div>
+                          <h5 className="">樹木移除</h5>
+                        </Link>
+                      </div>
                     </div>
 
-                    <div className="card-content">
-                      <h2 className="service-title px-4">種植及修剪</h2>
-                        <article className="content px-4">
-                          <p>擁有多名經驗豐富的人員，負責種植植物及修剪，為各戶提供綠化保養。</p>
-                        </article>
+                    <div className="column is-one-quarter">
+                      <div className="service-nav-item has-background-white">
+                        <Link to="/services/category1" className="has-text-centered">
+                          <figure>
+                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                          </figure>
+                          <div className="divider"></div>
+                          <h5 className="">草坪工程</h5>
+                        </Link>
+                      </div>
                     </div>
 
-                    <div className="card-footer"></div>
-                  </div>
-                </div>
-
-                <div className="column is-half-tablet is-one-third-widescreen">
-                  <div className="card pb-2">
-                    <div className="card-image">
-                      <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                    <div className="column is-one-quarter">
+                      <div className="service-nav-item has-background-white">
+                        <Link to="/services/category1" className="has-text-centered">
+                          <figure>
+                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                          </figure>
+                          <div className="divider"></div>
+                          <h5 className="">綠化工程</h5>
+                        </Link>
+                      </div>
                     </div>
 
-                    <div className="card-content">
-                      <h2 className="service-title px-4">清理渠道</h2>
-                        <article className="content px-4">
-                          <p>清潔團隊專門負責清理由泥土、枯枝及枯葉造成的堵塞問題，以保持環境潔淨及渠道暢通。</p>
-                        </article>
-                    </div>
-                    <div className="card-footer"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="container is-widescreen service-navbar">
-
-                <div className="columns is-desktop is-8 is-centered is-vcentered is-hidden-touch">
-                  <div className="column is-one-quarter">
-                    <div className="service-nav-item has-background-white is-active">
-                      <Link to="/services/category1" className="has-text-centered" aria-current="page">
-                        <figure>
-                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
-                        </figure>
-                        <div className="divider"></div>
-                        <h5 className="">園藝保養</h5>
-                      </Link>
-                    </div>
-                  </div>
-                  
-                  <div className="column is-one-quarter">
-                    <div className="service-nav-item has-background-white">
-                      <Link to="/services/category1" className="has-text-centered">
-                        <figure>
-                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
-                        </figure>
-                        <div className="divider"></div>
-                        <h5 className="">園藝保養</h5>
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="column is-one-quarter">
-                    <div className="service-nav-item has-background-white">
-                      <Link to="/services/category1" className="has-text-centered">
-                        <figure>
-                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
-                        </figure>
-                        <div className="divider"></div>
-                        <h5 className="">園藝保養</h5>
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="column is-one-quarter">
-                    <div className="service-nav-item has-background-white">
-                      <Link to="/services/category1" className="has-text-centered">
-                        <figure>
-                          <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
-                        </figure>
-                        <div className="divider"></div>
-                        <h5 className="">園藝保養</h5>
-                      </Link>
-                    </div>
                   </div>
 
                 </div>
+                
 
-              </div>
-              
-
+            </div>
           </div>
         </div>
       </div>
