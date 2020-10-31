@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
@@ -19,7 +20,7 @@ const IndexPage = ({intl}) => (
       query {
         headerImage: file(relativePath: { eq: "home-bk.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxHeight: 720) {
+            fluid(quality: 100, maxWidth: 1080) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -73,28 +74,28 @@ const IndexPage = ({intl}) => (
                 <Header />
               </div>
               <div className="hero-body">
+
                 <div className="container is-fullhd">
-                  <div className="columns is-gapless is-widescreen">
+                  <div className="columns is-gapless-widescreen is-1-mobile is-widescreen">
                     <div className="column is-half is-hidden-tablet">
                       <div className="img-wrapper">
                           <Img
                             fluid={imageData}
-                            className="index-header"
+                            className="index-header image has-ratio"
                             alt=""
                           />
                       </div>
                     </div>
                     <div className="column is-half">
-                      <div className="container is-max-desktop header-content px-4 mx-2">
-                        <h2 className="heading-chin is-size-3">
+                      <div className="header-content is-flex-wrap-wrap">
+                        <h2 className="heading-chin is-size-3-widescreen is-size-4-mobile">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
-                        <h1 className="heading-us eng mt-2 mb-6">
+                        <h1 className="heading-us eng mt-2 mb-6 is-size-3-mobile">
                           Professional,Wide Range, High Quality Services.
                         </h1>
-                        <button className="view-more">
-                          <h4>了解更多</h4>
-                        </button>
+
+                        <button onClick={() => scrollTo('#service')} className="view-more is-clickable is-size-5 has-text-weight-normal">了解更多</button>
                       </div>
                     </div>
                     <div className="column is-half is-hidden-mobile">
@@ -102,6 +103,8 @@ const IndexPage = ({intl}) => (
                     </div>
                   </div>
                 </div>
+                
+
               </div>
             </section>
           </div>
@@ -110,18 +113,18 @@ const IndexPage = ({intl}) => (
             <div className="hero is-fullHeight">
               <div className="hero-body">
                 <div className="container">
-                  <div className="block-heading is-max-desktop has-text-centered mb-6">
-                    <h4 className="eng mb-4">Four Lines, For Life</h4>
-                    <h1 className="eng mb-2">
+                  <div className="block-heading is-max-widescreen has-text-centered-tablet mb-6">
+                    <h4 className="eng mb-4 px-1">Four Lines, For Life</h4>
+                    <h1 className="eng mb-2 px-1">
                       Experienced, Skilful Teams.
                     </h1>
-                    <h3 className="px-6">
+                    <h3 className="px-1">
                       綠源擁有專業技術顧問及施工團隊, 如樹藝師, 攀樹師,園林設計師,保養技工等等。
                     </h3>
                   </div>
                   
                   <div className="columns is-multiline is-8">
-                    <div className="column is-one-quarter-widescreen is-half-tablet">
+                    <div className="column is-one-quarter-tablet">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -144,7 +147,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
 
-                    <div className="column is-one-quarter-widescreen is-half-tablet">
+                    <div className="column is-one-quarter-tablet">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -167,7 +170,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
 
-                    <div className="column is-one-quarter-widescreen is-half-tablet">
+                    <div className="column is-one-quarter-tablet">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -190,7 +193,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
 
-                    <div className="column is-one-quarter-widescreen is-half-tablet">
+                    <div className="column is-one-quarter-tablet">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -259,10 +262,10 @@ const IndexPage = ({intl}) => (
 
           <div className="block-message">    
             <div className="container is-max-desktop">
-              <div className="message-wrap">
+              <div className="message-wrap has-text-centered">
                 <div className="msg-heading">
-                  <h1 className="eng">Our Commit</h1>
-                  <h3 className="heading-chin px-5">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+                  <h1 className="eng is-size-3-mobile">Our Commit</h1>
+                  <h3 className="heading-chin px-2 is-size-5-mobile">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
                 </div> 
               </div>
             </div>

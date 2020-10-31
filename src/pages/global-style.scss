@@ -30,12 +30,14 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 1rem;
+  min-width: 375px;
 }
 
 body {
   font-family: 'Inter','Noto Sans TC', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   color: $dark-grey;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -214,15 +216,6 @@ button.navbar-burger {
   }
 }
 
-//block-message
-
-.block-message {
-  text-align: center;
-  margin: 3rem auto;
-  padding: 1.5rem;
-  max-width: 1344px;
-}
-
 //block-info
 
 .info-img {
@@ -274,6 +267,12 @@ button.navbar-burger {
 
   &.is-active {
     border: $primary-color .25rem solid;
+  }
+}
+
+.service-content {
+  .card {
+    height: 100%;
   }
 }
 

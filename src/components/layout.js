@@ -27,19 +27,30 @@ const Layout = ({ children }) => {
         <footer className="footer has-background-white-ter">
           <div className="container">
             <div className="container is-fullhd">
-              <div className="columns is-tables-multline">
+              <div className="columns is-touch is-gapless">
+
+              <div className="column is-half is-hidden-tablet">
+                  <ul className="footer-navbar is-flex is-flex-direction-row is-align-items-end">
+                      <li className="mr-4">Terms</li>
+                      <li className="mr-2">Privacy</li>
+                  </ul>
+                </div>
+
                 <div className="column is-half">
                   <small className="is-flex-wrap-wrap">
                   © {new Date().getFullYear()} Green Source Gardening Art Co.Ltd
                   {` `}
                   </small>
                 </div>
-                <div className="column is-half">
+                <div className="column is-half is-hidden-mobile">
                   <ul className="footer-navbar is-pulled-right is-flex is-flex-direction-row is-align-items-end">
                       <li className="mr-4">Terms</li>
                       <li className="mr-2">Privacy</li>
                   </ul>
-                </div>            
+                </div>
+
+                
+
               </div>
             </div>
           </div>

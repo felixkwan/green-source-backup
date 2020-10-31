@@ -52,9 +52,9 @@ class Header extends Component {
       
                       <div className="navbar-dropdown">
                         <Link to="/services/category1" className="navbar-item">園藝保養</Link>
-                        <Link to="/services/category1" className="navbar-item">樹木移除</Link>
-                        <Link to="/services/category1" className="navbar-item">草坪工程</Link>
-                        <Link to="/services/category1" className="navbar-item">綠化工程</Link>
+                        <Link to="/services/category2" className="navbar-item">樹木移除</Link>
+                        <Link to="/services/category3" className="navbar-item">草坪工程</Link>
+                        <Link to="/services/category4" className="navbar-item">綠化工程</Link>
                       </div>
                     </div>
 

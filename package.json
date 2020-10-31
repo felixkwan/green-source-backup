@@ -27,6 +27,7 @@
     "gatsby-plugin-sass": "^2.3.3",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^2.6.9",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-sharp": "^2.5.3",
     "global": "^4.4.0",

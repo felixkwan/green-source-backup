@@ -10,15 +10,20 @@ const Clients = () => {
         <>
             <div className="block-client my-6">
                 <div className="container is-max-desktop">
-                <div className="block-heading has-text-centered mb-6">
-                    <h4 className="eng mb-4">Our Clients</h4>
-                    <h1 className="eng mb-2">
-                    Serve the best, Make you the best.
-                    </h1>
-                    <h3 className="px-6">
-                    我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
-                    </h3>
-                </div>
+                    <div className="hero">
+                        <div className="hero-body">
+                            <div className="block-heading has-text-centered-tablet mb-6">
+                                <h4 className="eng mb-4 px-1">Our Clients</h4>
+                                <h1 className="eng mb-2 px-1">
+                                    Serve the best, Make you the best.
+                                </h1>
+                                <h3 className="px-1">
+                                    我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                
                 
                 <div className="client-list columns is-multiline is-2 is-mobile has-text-centered">
                     <div className="column is-half-mobile is-one-quarter-widescreen">
