@@ -8,7 +8,7 @@ import issSVG from "../images/logo-iss.svg"
 const Clients = () => {
     return (
         <>
-            <div className="block-client my-6">
+            <div className="block-client">
                 <div className="container is-max-desktop">
                     <div className="hero">
                         <div className="hero-body">

@@ -24,6 +24,7 @@
 
 .block-service {
     padding: 4rem 0 5.5rem;
+    margin-bottom: 5rem;
     background: rgb(255,255,243);
     background: linear-gradient(135deg, rgba(255,255,243,1) 0%, rgba(214,255,226,1) 100%);
 }
@@ -32,12 +33,19 @@
 // block-client
 
 .block-client {
-    padding: 5rem 0;
+    padding-bottom: 5rem;
 }
 
 .logo {
     margin: 0 auto;
     padding-bottom: 1.25rem;
+}
+
+//block-info
+
+.block-info {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 // block-message

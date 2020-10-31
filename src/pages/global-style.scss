@@ -21,6 +21,12 @@ $card-shadow: none;
 $card-color: hsl(120,1.8%,10.8%);
 $card-footer-border-top: none;
 
+//table
+$table-cell-padding: .75rem 1.75rem;
+$table-head-cell-border-width: 0 0 0;
+$table-foot-cell-border-width: 0 0 0;
+$table-cell-border: none;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap');
 @import "~bulma/bulma.sass";
@@ -31,6 +37,7 @@ html {
   overflow-y: scroll;
   font-size: 1rem;
   min-width: 375px;
+  box-sizing: border-box;
 }
 
 body {
@@ -125,9 +132,13 @@ img {
   border-radius: .25rem;
 }
 
-.button-centered {
-  margin-left: auto;
-  margin-right: auto;
+.recruit-btn {
+  border: none;
+  background: #eee;
+  color: $dark-grey;
+  border-radius: 2.5rem;
+  padding-top: .35rem;
+  padding-bottom: .45rem;
 }
 
 //navbar
@@ -278,8 +289,36 @@ button.navbar-burger {
 
 //client page
 
+//recruit page
 
-//About page
+.table-title {
+  margin-bottom: -1.95rem;
+
+  h3 {
+    background: white;
+    padding: .5rem 2.5rem;
+    border-radius: 2rem;
+  }
+}
+
+.table-section {
+  margin-bottom: 5rem;
+
+  .hero-body {
+    background: white;
+    box-shadow: 0px 12px 28px 0px rgba(209,209,209,0.35);
+    border-radius: 1.58rem;
+    z-index: -1;
+  }
+}
+
+.table-bottom {
+  padding: .5rem;
+  margin-top: -2rem;
+}
+
+
+//contact page
 
 .contact-link {
   font-weight: 500;

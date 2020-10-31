@@ -87,7 +87,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
                     <div className="column is-half">
-                      <div className="header-content is-flex-wrap-wrap">
+                      <div className="header-content">
                         <h2 className="heading-chin is-size-3-widescreen is-size-4-mobile">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
@@ -109,7 +109,7 @@ const IndexPage = ({intl}) => (
             </section>
           </div>
 
-          <div id="service" className="block-service mb-5">
+          <div id="service" className="block-service">
             <div className="hero is-fullHeight">
               <div className="hero-body">
                 <div className="container">

@@ -33,62 +33,112 @@ const ContactUs = () => {
           <div className="page-header">
             <div className="hero is-medium">
               <div className="hero-body">
-                <h4 className="page-sub-heading eng mb-3">Maintenance</h4>
-                <h1 className="page-heading">園藝保養</h1>
-                <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
+                <div className="header-content">
+                    <h4 className="heading-chin has-text-weight-semibold">
+                      品質至上，
+                    </h4>
+                    <h4 className="heading-chin has-text-weight-semibold">
+                      提供安全、綠化環境。
+                    </h4>
+                    <h1 className="heading-us eng mt-2 is-size-3-mobile">
+                        Professional,
+                    </h1>
+                    <h1 className="heading-us eng mt-2 is-size-3-mobile">
+                      Feel Safe,Live Green.
+                    </h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="page-title">
-            <span>Connect</span>
+        <div className="container is-fullhd page-title">
+          <span className="text is-size-1">Contact</span>
         </div>
 
         <div className="page-body contact-body container">
-          <div className="table-title">
-            <h3>Company Info</h3>
+
+          <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
+            <ul>
+              <li><Link to="/">主頁</Link></li>
+              <li className="is-active"><Link to="/contactUs" aria-current="page">聯絡我們</Link></li>
+            </ul>
+          </nav>
+     
+          <div className="table-section">
+            <div className="table-title px-3 py-2 has-text-centered">
+              <h3 className="eng is-inline-block">Company Information</h3>
+            </div>
+            <section className="hero">
+              <div className="hero-body">
+                <table className="table is-fullwidth">
+                  <thead>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Address Chinese</th>
+                      <td className="is-hidden-mobile">Team</td>
+                    </tr>
+                    <tr className="is-hidden-tablet">
+                      <td>Team</td>
+                    </tr>
+                    <tr>
+                      <th>Address English</th>
+                      <td className="is-hidden-mobile">Maintenance</td>
+                    </tr>
+                    <tr className="is-hidden-tablet">
+                      <td>Maintenance</td>
+                    </tr>
+                    <tr>
+                      <th>Contact</th>
+                      <td>Nic Yip</td>
+                      <th className="is-hidden-mobile">Number</th>
+                      <td className="is-hidden-mobile">9585-3845</td>
+                    </tr>
+                    <tr className="is-hidden-tablet">
+                      <th>Number</th>
+                      <td>9585-3845</td>
+                    </tr>
+                    <tr>
+                      <th>Contact</th>
+                      <td>Jay Cheung</td>
+                      <th className="is-hidden-mobile">Number</th>
+                      <td className="is-hidden-mobile">6996-5240</td>
+                    </tr>
+                    <tr className="is-hidden-tablet">
+                      <th>Number</th>
+                      <td>6996-5240</td>
+                    </tr>
+                   
+                    <tr>
+                      <th>Mail</th>
+                      <td className="is-hidden-mobile">gsgardening@yahoo.com</td>
+                    </tr>
+                    <tr className="is-hidden-tablet">
+                      <td>gsgardening@yahoo.com</td>
+                    </tr>
+
+                    <tr>
+                      <th>Tel</th>
+                      <td>2670-0378</td>
+                      <th className="is-hidden-mobile">Fax</th>
+                      <td className="is-hidden-mobile">2670-9016</td>
+                    </tr>
+                    <tr className="is-hidden-tablet">
+                      <th>Fax</th>
+                      <td>2670-9016</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
+            <div className="table-bottom has-text-centered">
+              <button className="recruit-btn is-size-5 has-text-weight-medium px-5">Apply Now</button>
+            </div>
           </div>
-          <table className="table is-fullwidth">
-            <tbody>
-              <tr>
-                <th><abbr title="AddressChin">Address Chinese</abbr></th>
-                <td>Team</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-              <th><abbr title="AddressEng">Address English</abbr></th>
-                <td>Team</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><abbr title="Contact1">Contact</abbr></th>
-                <td>Nic Yip</td>
-                <th><abbr title="Number1">Number</abbr></th>
-                <td>9585-3845</td>
-              </tr>
-              <tr>
-                <th><abbr title="Contact2">Contact</abbr></th>
-                <td>Jay Cheung</td>
-                <th><abbr title="Number2">Number</abbr></th>
-                <td>6996-5240</td>
-              </tr>
-              <tr>
-                <th><abbr title="Mail">Mail</abbr></th>
-                <td>gsgardening@yahoo.com</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><abbr title="Tel">Tel</abbr></th>
-                <td>2670-0378</td>
-                <th><abbr title="Fax">Fax</abbr></th>
-                <td>2670-9016</td>
-              </tr>
-            </tbody>
-          </table>
+
         </div>
 
     </Layout>

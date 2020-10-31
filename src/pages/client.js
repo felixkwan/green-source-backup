@@ -43,8 +43,8 @@ const Client = () => {
             </div>
         </div>
 
-        <div className="page-title">
-            <span>Connect</span>
+        <div className="container is-fullhd page-title">
+          <span className="text is-size-1">Connect</span>
         </div>
 
         <div className="page-body container is-fullhd">
