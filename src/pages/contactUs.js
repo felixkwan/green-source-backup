@@ -53,7 +53,7 @@ const ContactUs = () => {
         </div>
 
         <div className="container is-fullhd page-title">
-          <span className="text is-size-1">Contact</span>
+          <span className="page-title-text has-text-weight-bold">Contact</span>
         </div>
 
         <div className="page-body contact-body container">
@@ -129,14 +129,9 @@ const ContactUs = () => {
                       <td>2670-9016</td>
                     </tr>
                   </tbody>
-                  <tfoot>
-                  </tfoot>
                 </table>
               </div>
             </section>
-            <div className="table-bottom has-text-centered">
-              <button className="recruit-btn is-size-5 has-text-weight-medium px-5">Apply Now</button>
-            </div>
           </div>
 
         </div>

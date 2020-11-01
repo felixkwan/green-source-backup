@@ -30,19 +30,19 @@ const Recruit = () => {
     <Layout>
       <Header/>
       <div className="container">
-            <div className="page-header">
-            <div className="hero is-medium">
-                <div className="hero-body">
-                <h3 className="page-sub-heading eng mb-3">Recruit</h3>
-                <h1 className="page-heading">人才招聘</h1>
-                <p className="is-size-5 service-des">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入</p>
-                </div>
-            </div>
-            </div>
+        <div className="page-header">
+          <div className="hero is-medium">
+              <div className="hero-body">
+              <h3 className="page-sub-heading eng mb-3">Recruit</h3>
+              <h1 className="page-heading">人才招聘</h1>
+              <p className="is-size-5 service-des">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入</p>
+              </div>
+          </div>
         </div>
+      </div>
 
-        <div className="container is-fullhd page-title">
-          <span className="text is-size-1">Opportunities</span>
+        <div className="container is-fullhd page-title ">
+          <span className="page-title-text has-text-weight-bold">Opportunities</span>
         </div>
 
         <div className="page-body recruit-body container">

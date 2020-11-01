@@ -71,6 +71,14 @@
     
 }
 
+//responsive widescreen
+
+@media only screen and (min-width: 1280px) {
+    .category-content {
+        min-height: 135px;
+    }
+}
+
 //responsive desktop
 
 @media only screen and (min-width: 1024px) {
@@ -84,11 +92,12 @@
         .card {
             height: 100%;
         }
-
-        .category-content {
-            min-height: 135px;
-        }
     }
+
+    .category-content {
+        min-height: 165px;
+    }
+
 }
 
 //responsive tablet
@@ -108,5 +117,19 @@
 
     .msg-heading {
         padding: 3.5rem 1.5rem;
+    }
+
+    .category-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+//responsive mobile
+
+@media only screen and (max-width: 767px) {
+    .category-content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }

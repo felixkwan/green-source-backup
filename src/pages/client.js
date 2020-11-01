@@ -44,8 +44,8 @@ const Client = () => {
         </div>
 
         <div className="container is-fullhd page-title">
-          <span className="text is-size-1">Connect</span>
-        </div>
+          <span className="page-title-text has-text-weight-bold">Connect</span>
+      </div>
 
         <div className="page-body container is-fullhd">
           <div className="container is-widescreen">

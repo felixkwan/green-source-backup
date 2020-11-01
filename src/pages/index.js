@@ -123,8 +123,8 @@ const IndexPage = ({intl}) => (
                     </h3>
                   </div>
                   
-                  <div className="columns is-multiline is-8">
-                    <div className="column is-one-quarter-tablet">
+                  <div className="columns is-multiline is-8 is-tablet">
+                    <div className="column is-one-quarter-desktop is-half">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -147,7 +147,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
 
-                    <div className="column is-one-quarter-tablet">
+                    <div className="column is-one-quarter-desktop is-half">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -170,7 +170,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
 
-                    <div className="column is-one-quarter-tablet">
+                    <div className="column is-one-quarter-desktop is-half">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">
@@ -193,7 +193,7 @@ const IndexPage = ({intl}) => (
                       </div>
                     </div>
 
-                    <div className="column is-one-quarter-tablet">
+                    <div className="column is-one-quarter-desktop is-half">
                       <div className="card">
                         <header className="card-header-title is-centered">
                           <p className="py-3">

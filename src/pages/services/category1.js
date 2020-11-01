@@ -36,7 +36,7 @@ const Category1 = () => {
       </div>
 
       <div className="container is-fullhd page-title">
-          <span className="text is-size-1">Services</span>
+          <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
       <div className="page-body has-background-white-bis">

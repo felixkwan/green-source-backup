@@ -207,6 +207,22 @@ button.navbar-burger {
   overflow-x: hidden;
 }
 
+.page-title {
+  margin-bottom: -5.5rem;
+  margin-left: -1.5rem;
+}
+
+.page-title-text {
+  letter-spacing: -5px;
+  font-size: 8rem;
+  color: $white-ter;
+}
+.page-body {
+  .breadcrumb {
+    margin-top: 3.5rem;
+  }
+}
+
 //header
 
 .header {
@@ -226,6 +242,7 @@ button.navbar-burger {
     color: $dark-grey;
   }
 }
+
 
 //block-info
 
@@ -275,6 +292,14 @@ button.navbar-burger {
   border-radius: 2rem;
   padding: 1.75rem 0;
   box-shadow: 0px 12px 28px 0px rgba(209,209,209,0.25);
+
+  &:hover {
+    border: $grey-lighter .25rem solid;
+  }
+
+  &:focus {
+    border: $grey-lighter .25rem solid;
+  }
 
   &.is-active {
     border: $primary-color .25rem solid;
