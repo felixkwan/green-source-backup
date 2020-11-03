@@ -9,6 +9,7 @@ import Header from "../components/header"
 import Clients from "../components/clients"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image-es5'
 
 import "./global-style.scss"
 import "./index.scss"
@@ -18,6 +19,13 @@ const IndexPage = ({intl}) => (
   <StaticQuery
     query={graphql`
       query {
+        desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        },
         ser1Image: file(relativePath: { eq: "icons8-tree-planting-64.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 64) {
@@ -51,6 +59,7 @@ const IndexPage = ({intl}) => (
 
     render={data => {
       // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid;
       const serIcon1 = data.ser1Image.childImageSharp.fluid;
       const serIcon2 = data.ser2Image.childImageSharp.fluid;
       const serIcon3 = data.ser3Image.childImageSharp.fluid;
@@ -61,7 +70,7 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
           <div id="home" className="header">
-            <section className="hero is-medium has-background-desktop">
+            <BackgroundImage className="hero is-medium has-background-desktop" fluid={imageData}>
               <div className="hero-head">
                 <Header />
               </div>
@@ -98,7 +107,7 @@ const IndexPage = ({intl}) => (
                 
 
               </div>
-            </section>
+            </BackgroundImage>
           </div>
           
 
@@ -136,7 +145,7 @@ const IndexPage = ({intl}) => (
                             <p>保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
                           </article>
                         </div>
-                        <Link to="/category1"><h5 className="read-more p-3 has-text-centered mb-5">了解細項</h5></Link>
+                        <Link to="/services/category1"><h5 className="read-more px-3 py-2 has-text-centered mb-5 mx-5">了解細項</h5></Link>
                       </div>
                     </div>
 
@@ -159,7 +168,7 @@ const IndexPage = ({intl}) => (
                             <p>擁有樹藝師及攀樹師，專門進行任何類型的樹木工程，並配備高空工作平台、專用車輛、安全裝備及機械設備。</p>
                           </article>
                         </div>
-                        <Link to="/category1"><h5 className="read-more p-3 has-text-centered mb-5">了解細項</h5></Link>
+                        <Link to="/services/category2"><h5 className="read-more px-3 py-2 has-text-centered mb-5 mx-5">了解細項</h5></Link>
                       </div>
                     </div>
 
@@ -182,7 +191,7 @@ const IndexPage = ({intl}) => (
                             <p>多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
                           </article>
                         </div>
-                        <Link to="/category1"><h5 className="read-more p-3 has-text-centered mb-5">了解細項</h5></Link>
+                        <Link to="/"><h5 className="read-more px-3 py-2 has-text-centered mb-5 mx-5">了解細項</h5></Link>
                       </div>
                     </div>
 
@@ -205,7 +214,7 @@ const IndexPage = ({intl}) => (
                             <p>我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>
                           </article>
                         </div>
-                        <Link to="/category1"><h5 className="read-more p-3 has-text-centered mb-5">了解細項</h5></Link>
+                        <Link to="/"><h5 className="read-more px-3 py-2  has-text-centered mb-5 mx-5">了解細項</h5></Link>
                       </div>
                     </div>
                     
@@ -222,10 +231,10 @@ const IndexPage = ({intl}) => (
             <div className="container is-fullhd info-content">
               <div className="columns is-gapless is-multiline is-tablet">
                 <div className="info-1-img column is-half"></div>
-                <div className="column is-half">
-                  <div className="container is-max-desktop info-1 p-6">
+                <div className="column is-half info-1-text">
+                  <div className="container is-max-desktop info-1">
                     <div className="info-title">
-                      <h4 className="eng">Shape Safety</h4>
+                      <h4 className="eng eng-label">Shape Safety</h4>
                     </div>
                     <div className="container">
                       <h1 className="eng mb-3">Maintain every details in your garden.</h1>
@@ -235,10 +244,10 @@ const IndexPage = ({intl}) => (
                 </div>
 
                 <div className="info-2-img column is-half is-hidden-tablet"></div>
-                <div className="column is-half">
-                  <div className="container is-max-desktop info-2 p-6">
+                <div className="column is-half info-2-text">
+                  <div className="container is-max-desktop info-2">
                     <div className="info-title">
-                      <h4 className="eng">Live Green</h4>
+                      <h4 className="eng eng-label">Live Green</h4>
                     </div>
                     <div className="container">
                       <h1 className="eng mb-3">Build healthy working &amp; learning place.</h1>

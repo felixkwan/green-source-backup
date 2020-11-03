@@ -13,7 +13,7 @@ const Clients = () => {
                     <div className="hero">
                         <div className="hero-body">
                             <div className="block-heading has-text-centered-tablet mb-6">
-                                <h4 className="eng mb-4 px-1">Our Clients</h4>
+                                <h4 className="eng mb-4 px-1 eng-label">Our Clients</h4>
                                 <h1 className="eng mb-2 px-1">
                                     Serve the best, Make you the best.
                                 </h1>

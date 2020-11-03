@@ -5,15 +5,19 @@ import Header from "../../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import ser1Icon from "../../images/icons8-tree-planting-64.png"
+import BackgroundImage from 'gatsby-background-image-es5'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 
 const Category1 = () => {
   const data = useStaticQuery(graphql`
     query {
-      aboutImage: file(relativePath: { eq: "health-1200.png" }) {
+      desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1280) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -22,29 +26,33 @@ const Category1 = () => {
   
   return (
     <Layout>
-      <Header/>
-      <div className="container">
-        <div className="page-header">
-          <div className="hero is-medium">
-            <div className="hero-body">
+
+      <div id="cate1" className="header page-header">
+        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.desktop.childImageSharp.fluid}>
+          <div className="hero-head">
+            <Header />
+          </div>
+          <div className="hero-body">
+            <div className="container">
               <h4 className="page-sub-heading eng mb-3">Maintenance</h4>
               <h1 className="page-heading">園藝保養</h1>
               <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
             </div>
-          </div>
-        </div>
+          </div>     
+        </BackgroundImage>
       </div>
+
+      <div className="page-body has-background-white-bis">
 
       <div className="container is-widescreen page-title">
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
-      <div className="page-body has-background-white-bis">
         <div className="container">
-          <div className="container is-max-widescreen py-6">
+          <div className="container py-6">
             <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
-                <li><Link to="/">主頁</Link></li>
+                <li><FontAwesomeIcon icon={faHome} className="mr-2" /><Link to="/">主頁</Link></li>
                 <li className="is-active"><Link to="/services/category1" aria-current="page">園藝保養</Link></li>
               </ul>
             </nav>
@@ -54,7 +62,7 @@ const Category1 = () => {
                   <div className="column is-half-tablet is-one-third-widescreen">
                     <div className="card pb-4">
                       <div className="card-image">
-                        <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.desktop.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
@@ -71,7 +79,7 @@ const Category1 = () => {
                   <div className="column is-half-tablet is-one-third-widescreen">
                     <div className="card pb-4">
                       <div className="card-image">
-                        <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.desktop.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
@@ -88,7 +96,7 @@ const Category1 = () => {
                   <div className="column is-half-tablet is-one-third-widescreen">
                     <div className="card pb-2">
                       <div className="card-image">
-                        <Img fluid={data.aboutImage.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.desktop.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">

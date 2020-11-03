@@ -7,6 +7,9 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Img from "gatsby-image"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 const Client = () => {
   const data = useStaticQuery(graphql`
@@ -51,7 +54,7 @@ const Client = () => {
           <div className="container is-widescreen">
             <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
               <ul>
-                <li><Link to="/">主頁</Link></li>
+                <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>
                 <li className="is-active"><Link to="/client" aria-current="page">客戶</Link></li>
               </ul>
             </nav>

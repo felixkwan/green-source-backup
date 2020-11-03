@@ -19,7 +19,7 @@ class Contact extends Component {
                                 <div className="column is-half-desktop contact-tel has-text-centered-touch">
                                     <div className="is-clearfix">
                                         <div className="contact-item">
-                                            <h6 className="eng mb-4">Contact</h6>
+                                            <h6 className="eng mb-4 eng-label">Contact</h6>
                                         </div>
                                         <div className="contact-item">
                                             <h5>電話聯絡方法</h5>
@@ -34,7 +34,7 @@ class Contact extends Component {
                                 <div className="column is-half-desktop has-text-centered-touch">
                                     <div className="is-clearfix">
                                         <div className="contact-item">
-                                            <h6 className="eng mb-4">Email</h6>
+                                            <h6 className="eng mb-4 eng-label">Email</h6>
                                         </div>
                                         <div className="contact-item">
                                             <h5 className="mb-1">以電郵形式搵我地</h5>

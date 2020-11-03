@@ -6,6 +6,9 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import ser1Icon from "../../images/icons8-tree-planting-64.png"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 const Category2 = () => {
   const data = useStaticQuery(graphql`
@@ -41,11 +44,11 @@ const Category2 = () => {
 
       <div className="page-body has-background-white-bis">
         <div className="container">
-          <div className="container is-fullhd py-6">
-            <nav className="breadcrumb" aria-label="breadcrumbs">
+          <div className="container py-6">
+          <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
-                <li><Link to="/">主頁</Link></li>
-                <li className="is-active"><Link to="/services/category2" aria-current="page">樹木移除</Link></li>
+                <li><FontAwesomeIcon icon={faHome} className="mr-2" /><Link to="/">主頁</Link></li>
+                <li className="is-active"><Link to="/services/category1" aria-current="page">樹木移除</Link></li>
               </ul>
             </nav>
 

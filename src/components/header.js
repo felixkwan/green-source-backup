@@ -78,9 +78,9 @@ class Header extends Component {
                     </div>
 
                     <div className="navbar-item">
-                      <Link className="whatsapp-btn"
+                      <Link className="whatsapp-btn is-size-6"
                         to="https://wa.me/85269965240">
-                          <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-2 mt-1" />
+                          <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-2 is-size-5" />
                         立即查詢
                       </Link>
                     </div>

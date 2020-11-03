@@ -5,6 +5,9 @@ import Header from "../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 const ContactUs = () => {
   const data = useStaticQuery(graphql`
@@ -60,7 +63,7 @@ const ContactUs = () => {
 
           <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
             <ul>
-              <li><Link to="/">主頁</Link></li>
+              <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>
               <li className="is-active"><Link to="/contactUs" aria-current="page">聯絡我們</Link></li>
             </ul>
           </nav>
