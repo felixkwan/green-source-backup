@@ -196,6 +196,19 @@ img {
     padding: 0 1.55rem;
     border-radius: 1.75rem;
   }
+
+  img.image.is-hidden-desktop {
+    max-height: 2.35rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 1.25rem 1rem;
+    .container {
+      padding: 0 .55rem;
+    }
+  }
 }
 
 .navbar-link {

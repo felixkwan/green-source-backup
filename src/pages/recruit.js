@@ -3,7 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+
+import BackgroundImage from 'gatsby-background-image-es5'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -12,17 +13,10 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Recruit = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "ppl-1200.png" }) {
+      desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 768) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      aboutImage: file(relativePath: { eq: "health-1200.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1280) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -31,17 +25,20 @@ const Recruit = () => {
   
   return (
     <Layout>
-      <Header/>
-      <div className="container">
-        <div className="page-header">
-          <div className="hero is-medium">
-              <div className="hero-body">
+
+      <div id="recruit" className="header page-header">
+        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.desktop.childImageSharp.fluid}>
+          <div className="hero-head">
+            <Header />
+          </div>
+          <div className="hero-body">
+            <div className="container">
               <h3 className="page-sub-heading eng mb-3">Recruit</h3>
               <h1 className="page-heading">人才招聘</h1>
-              <p className="is-size-5 service-des">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入</p>
-              </div>
-          </div>
-        </div>
+              <p className="is-size-5 service-des">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入。</p>
+            </div>
+          </div>     
+        </BackgroundImage>
       </div>
 
         <div className="container is-widescreen page-title">
@@ -116,7 +113,7 @@ const Recruit = () => {
               </div>
             </section>
             <div className="table-bottom has-text-centered">
-              <button className="recruit-btn is-size-5 has-text-weight-medium px-5">Apply Now</button>
+              <button className="recruit-btn is-size-5 has-text-weight-bold px-5">馬上應徵</button>
             </div>
           </div>  
         </div>

@@ -87,6 +87,10 @@
         background-size: cover;
     }
 
+    .block-info {
+        padding-bottom: 0;
+    }
+
     .block-message {
         margin: 0;
         
@@ -95,11 +99,10 @@
     .message-wrap {
         border-radius: 0;
         padding: 2.5rem 0;
-        margin-top: 2.5rem;
     }
 
     .msg-heading {
-        padding: 3.5rem 1.5rem;
+        padding: 4.5rem 2.5rem;
     }
 
     .category-content {
