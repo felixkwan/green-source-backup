@@ -1,11 +1,7 @@
 import React, { Component } from "react"
 
 import { StaticQuery, graphql, Link } from "gatsby"
-import { FormattedMessage } from "gatsby-plugin-intl"
-import Img from "gatsby-image";
 import brandLogo from "../images/logo-gs-fine.svg";
-
-import Language from "./language"
 
 
 class Header extends Component {
@@ -31,7 +27,7 @@ class Header extends Component {
         `}
         render={data => (
           <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
-            <div className="container">
+            <div className="container is-max-widescreen">
               <div className="navbar-brand">
                 <Link className="navbar-item" to="/">
                   <img src={brandLogo} alt="" />

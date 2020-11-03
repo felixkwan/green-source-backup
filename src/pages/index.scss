@@ -1,3 +1,12 @@
+// header background
+
+.has-background-desktop {
+    background-image: url('../images/manson-yim-6yS7w6HN8hY-unsplash.jpg');
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 // button
 
 .view-more {
@@ -103,6 +112,10 @@
 //responsive tablet
 
 @media only screen and (max-width: 1023px) {
+
+    .has-background-desktop {
+        background-size: cover;
+    }
 
     .block-message {
         margin: 0;

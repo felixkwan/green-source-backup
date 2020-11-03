@@ -18,13 +18,6 @@ const IndexPage = ({intl}) => (
   <StaticQuery
     query={graphql`
       query {
-        headerImage: file(relativePath: { eq: "home-bk.png" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 1080) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        },
         ser1Image: file(relativePath: { eq: "icons8-tree-planting-64.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 64) {
@@ -58,7 +51,6 @@ const IndexPage = ({intl}) => (
 
     render={data => {
       // Set ImageData.
-      const imageData = data.headerImage.childImageSharp.fluid;
       const serIcon1 = data.ser1Image.childImageSharp.fluid;
       const serIcon2 = data.ser2Image.childImageSharp.fluid;
       const serIcon3 = data.ser3Image.childImageSharp.fluid;
@@ -69,29 +61,29 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
           <div id="home" className="header">
-            <section className="hero is-fullheight">
+            <section className="hero is-fullheight has-background-desktop">
               <div className="hero-head">
                 <Header />
               </div>
               <div className="hero-body">
 
-                <div className="container is-fullhd">
+                <div className="container is-max-widescreen">
                   <div className="columns is-gapless-widescreen is-1-mobile is-widescreen">
                     <div className="column is-half is-hidden-tablet">
-                      <div className="img-wrapper">
-                          <Img
-                            fluid={imageData}
-                            className="index-header image has-ratio"
-                            alt=""
-                          />
-                      </div>
+                     
                     </div>
                     <div className="column is-half">
                       <div className="header-content">
-                        <h2 className="heading-chin is-size-3-widescreen is-size-4-mobile">
+                        <h2 className="heading-chin is-size-3-widescreen is-hidden-touch">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
-                        <h1 className="heading-us eng mt-2 mb-6 is-size-3-mobile">
+                        <h2 className="heading-chin is-size-4-mobile is-hidden-desktop has-text-white">
+                          為你提供專業、全面、高品質園藝服務。
+                        </h2>
+                        <h1 className="heading-us eng mt-2 mb-6 is-hidden-touch">
+                          Professional,Wide Range, High Quality Services.
+                        </h1>
+                        <h1 className="heading-us eng mt-2 mb-6 is-size-3-mobile is-hidden-desktop has-text-white">
                           Professional,Wide Range, High Quality Services.
                         </h1>
 

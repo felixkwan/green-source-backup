@@ -9,7 +9,6 @@ $text-color: hsl(0, 0%, 22%);
 //navbar
 $navbar-item-img-max-height: 3.25rem;
 $navbar-height: 6.25rem;
-$navbar-background-color: transparent;
 $navbar-item-color: $space-grey;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
@@ -146,7 +145,6 @@ img {
 //navbar
 
 .navbar {
-  background: transparent;
   transition: all .25s ease-in-out;
   a {
     font-weight: 500;
@@ -201,7 +199,11 @@ button.navbar-burger {
   }
 }
 
-//navbar responsive
+@media only screen and (max-width: 1023px) {
+  .hero .navbar {
+    background: white;
+  }
+}
 
 //main
 

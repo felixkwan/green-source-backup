@@ -41,7 +41,7 @@ class Contact extends Component {
                                             <p>除左電話之外, 可以電郵到以下地址。</p>
                                         </div>
                                         <Link to="/">
-                                                <h5 className="contact-btn mt-4 px-6 py-4 has-background-white is-size-7-mobile"> <FontAwesomeIcon icon={faEnvelopeOpen} className="ml-2 mr-5 mt-1" />gsgaderning@yahoo.com</h5>
+                                                <h5 className="contact-btn mt-4 px-6 py-4 has-background-white is-size-6-mobile"> <FontAwesomeIcon icon={faEnvelopeOpen} className="ml-2 mr-5 mt-1" />gsgaderning@yahoo.com</h5>
                                         </Link>
                                     </div>
                                 </div>
