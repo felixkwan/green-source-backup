@@ -44,7 +44,7 @@ const Category2 = () => {
 
       <div className="page-body has-background-white-bis">
         <div className="container">
-          <div className="container py-6">
+          <div className="container pb-6">
           <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
                 <li><FontAwesomeIcon icon={faHome} className="mr-2" /><Link to="/">主頁</Link></li>
