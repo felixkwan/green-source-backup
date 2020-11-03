@@ -2,6 +2,8 @@ import React, { Component } from "react"
 
 import { StaticQuery, graphql, Link } from "gatsby"
 import brandLogo from "../images/logo-gs-fine.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
 class Header extends Component {
@@ -27,7 +29,7 @@ class Header extends Component {
         `}
         render={data => (
           <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
-            <div className="container is-max-widescreen">
+            <div className="container">
               <div className="navbar-brand">
                 <Link className="navbar-item" to="/">
                   <img src={brandLogo} alt="" />
@@ -75,9 +77,10 @@ class Header extends Component {
                       </Link>
                     </div>
 
-                    <div className="navbar-item whatsapp-btn">
-                      <Link
+                    <div className="navbar-item">
+                      <Link className="whatsapp-btn"
                         to="https://wa.me/85269965240">
+                          <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-2 mt-1" />
                         立即查詢
                       </Link>
                     </div>

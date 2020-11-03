@@ -61,13 +61,13 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
           <div id="home" className="header">
-            <section className="hero is-fullheight has-background-desktop">
+            <section className="hero is-medium has-background-desktop">
               <div className="hero-head">
                 <Header />
               </div>
               <div className="hero-body">
 
-                <div className="container is-max-widescreen">
+                <div className="container">
                   <div className="columns is-gapless-widescreen is-1-mobile is-widescreen">
                     <div className="column is-half is-hidden-tablet">
                      
@@ -83,11 +83,11 @@ const IndexPage = ({intl}) => (
                         <h1 className="heading-us eng mt-2 mb-6 is-hidden-touch">
                           Professional,Wide Range, High Quality Services.
                         </h1>
-                        <h1 className="heading-us eng mt-2 mb-6 is-size-3-mobile is-hidden-desktop has-text-white">
+                        <h1 className="heading-us eng mt-2 mb-6 is-size-2-mobile is-hidden-desktop has-text-white">
                           Professional,Wide Range, High Quality Services.
                         </h1>
 
-                        <button onClick={() => scrollTo('#service')} className="view-more is-clickable is-size-5 has-text-weight-normal">了解更多</button>
+                        <button onClick={() => scrollTo('#service')} className="view-more is-clickable is-size-6-widescreen is-size-7-mobile has-text-weight-normal">了解更多</button>
                       </div>
                     </div>
                     <div className="column is-half is-hidden-mobile">
@@ -100,6 +100,7 @@ const IndexPage = ({intl}) => (
               </div>
             </section>
           </div>
+          
 
           <div id="service" className="block-service">
             <div className="hero is-fullHeight">

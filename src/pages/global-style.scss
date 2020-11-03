@@ -7,8 +7,9 @@ $dark-blue: hsl(187, 100%, 9%);
 $text-color: hsl(0, 0%, 22%);
 
 //navbar
+$navbar-background-color: white;
 $navbar-item-img-max-height: 3.25rem;
-$navbar-height: 6.25rem;
+$navbar-height: 5.55rem;
 $navbar-item-color: $space-grey;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
@@ -145,12 +146,20 @@ img {
 //navbar
 
 .navbar {
+  padding: 2rem 1.25rem;
   transition: all .25s ease-in-out;
+
   a {
     font-weight: 500;
     font-size: 1rem;
   }
+  .container {
+    background: white;
+    padding: 0 1.55rem;
+    border-radius: 1.75rem;
+  }
 }
+
 .navbar-link {
   font-size: 1rem;
   font-weight: 500;
@@ -199,12 +208,6 @@ button.navbar-burger {
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  .hero .navbar {
-    background: white;
-  }
-}
-
 //main
 
 .wrapper {
@@ -213,17 +216,44 @@ button.navbar-burger {
 
 .page-title {
   margin-bottom: -5.5rem;
-  margin-left: -1.5rem;
 }
 
 .page-title-text {
   letter-spacing: -5px;
   font-size: 8rem;
   color: $white-ter;
+  margin-left: -3.75rem;
 }
+
 .page-body {
   .breadcrumb {
     margin-top: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .page-title-text {
+    font-size: 7.5rem;
+    margin-left: -3rem;
+  }
+
+  .page-body {
+    .breadcrumb {
+      margin-top: 5.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-title-text {
+    font-size: 4.5rem;
+    margin-left: -2.5rem;
+  }
+
+  .page-body {
+    .breadcrumb {
+      margin-top: 5.5rem;
+    }
   }
 }
 
