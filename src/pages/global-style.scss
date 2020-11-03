@@ -134,11 +134,13 @@ img {
 
 .recruit-btn {
   border: none;
-  background: #eee;
+  letter-spacing: 1.2px;
   color: $dark-grey;
   border-radius: 2.5rem;
   padding-top: .35rem;
   padding-bottom: .45rem;
+  background: rgb(255,255,243);
+  background: linear-gradient(135deg, rgba(255,255,243,1) 0%, rgba(214,255,226,1) 100%);
 }
 
 //navbar
@@ -339,7 +341,7 @@ button.navbar-burger {
 
 .table-bottom {
   padding: .5rem;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
 }
 
 

@@ -41,7 +41,7 @@ const Recruit = () => {
         </div>
       </div>
 
-        <div className="container is-fullhd page-title ">
+        <div className="container is-widescreen page-title ">
           <span className="page-title-text has-text-weight-bold">Opportunities</span>
         </div>
 
@@ -113,7 +113,7 @@ const Recruit = () => {
               </div>
             </section>
             <div className="table-bottom has-text-centered">
-              <button className="recruit-btn is-size-5 has-text-weight-medium px-5">Apply Now</button>
+              <Link to="" className="recruit-btn is-size-5 has-text-weight-bold px-5 is-clickable">馬上應徵</Link>
             </div>
           </div>  
         </div>

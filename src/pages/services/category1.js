@@ -35,13 +35,13 @@ const Category1 = () => {
         </div>
       </div>
 
-      <div className="container is-fullhd page-title">
+      <div className="container is-widescreen page-title">
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
       <div className="page-body has-background-white-bis">
         <div className="container">
-          <div className="container is-fullhd py-6">
+          <div className="container is-max-widescreen py-6">
             <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
                 <li><Link to="/">主頁</Link></li>
