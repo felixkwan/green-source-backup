@@ -33,9 +33,9 @@ const Recruit = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3">Recruit</h3>
-              <h1 className="page-heading">人才招聘</h1>
-              <p className="is-size-5 service-des">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入。</p>
+              <h3 className="page-sub-heading eng mb-3 has-text-white">Recruit</h3>
+              <h1 className="page-heading has-text-white">人才招聘</h1>
+              <p className="is-size-5 service-des has-text-white">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入。</p>
             </div>
           </div>     
         </BackgroundImage>

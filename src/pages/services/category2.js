@@ -5,6 +5,9 @@ import Header from "../../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import ser1Icon from "../../images/icons8-tree-planting-64.png"
+import ser2Icon from "../../images/icons8-worker-64.png"
+import ser3Icon from "../../images/icons8-wheelbarrow-64.png"
+import ser4Icon from "../../images/icons8-lotus-64.png"
 import BackgroundImage from 'gatsby-background-image-es5'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -158,7 +161,7 @@ const Category2 = () => {
 
                   <div className="columns is-desktop is-8 is-centered is-vcentered is-hidden-touch">
                     <div className="column is-one-quarter">
-                      <div className="service-nav-item has-background-white">
+                      <div className="service-nav-item has-background-white is-active">
                         <Link to="/services/category1" className="has-text-centered" aria-current="page">
                           <figure>
                             <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
@@ -170,10 +173,10 @@ const Category2 = () => {
                     </div>
                     
                     <div className="column is-one-quarter">
-                      <div className="service-nav-item has-background-white is-active">
-                        <Link to="/services/category2" className="has-text-centered">
+                      <div className="service-nav-item has-background-white">
+                        <Link to="/services/category1" className="has-text-centered">
                           <figure>
-                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                            <img src={ser2Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
                           <div className="divider"></div>
                           <h5 className="">樹木移除</h5>
@@ -183,9 +186,9 @@ const Category2 = () => {
 
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
-                        <Link to="/services/category1" className="has-text-centered">
+                        <Link to="/services/category3" className="has-text-centered">
                           <figure>
-                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                            <img src={ser3Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
                           <div className="divider"></div>
                           <h5 className="">草坪工程</h5>
@@ -195,9 +198,9 @@ const Category2 = () => {
 
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
-                        <Link to="/services/category1" className="has-text-centered">
+                        <Link to="/services/category4" className="has-text-centered">
                           <figure>
-                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                            <img src={ser4Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
                           <div className="divider"></div>
                           <h5 className="">綠化工程</h5>

@@ -105,7 +105,7 @@ const IndexPage = ({intl}) => (
                         <h2 className="heading-chin is-size-4-mobile is-hidden-desktop has-text-white">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
-                        <h1 className="heading-us eng mt-2 mb-6 has-text-white is-hidden-touch">
+                        <h1 className="heading-us eng mt-2 mb-6 is-size-1 has-text-white is-hidden-touch">
                           Professional,Wide Range, High Quality Services.
                         </h1>
                         <h1 className="heading-us eng mt-2 mb-6 is-size-2-mobile is-hidden-desktop has-text-white">
@@ -153,9 +153,9 @@ const IndexPage = ({intl}) => (
                             />
                           </p>
                         </header>
-
+                        <div className="divider"></div>
                         <div className="card-content has-text-centered">
-                          <div className="divider"></div>
+                          
                           <h3 className="category-title">園藝保養</h3>
                           <article className="category-content mb-3">
                             <p>保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
@@ -176,9 +176,9 @@ const IndexPage = ({intl}) => (
                             />
                           </p>
                         </header>
-
+                        <div className="divider"></div>
                         <div className="card-content has-text-centered">
-                          <div className="divider"></div>
+                      
                           <h3 className="category-title">樹木移除</h3>
                           <article className="category-content mb-3">
                             <p>擁有樹藝師及攀樹師，專門進行任何類型的樹木工程，並配備高空工作平台、專用車輛、安全裝備及機械設備。</p>
@@ -199,9 +199,9 @@ const IndexPage = ({intl}) => (
                             />
                           </p>
                         </header>
-
+                        <div className="divider"></div>
                         <div className="card-content has-text-centered">
-                          <div className="divider"></div>
+                          
                           <h3 className="category-title">草坪工程</h3>
                           <article className="category-content mb-3">
                             <p>多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
@@ -222,9 +222,9 @@ const IndexPage = ({intl}) => (
                             />
                           </p>
                         </header>
-
+                        <div className="divider"></div>
                         <div className="card-content has-text-centered">
-                          <div className="divider"></div>
+                          
                           <h3 className="category-title">綠化工程</h3>
                           <article className="category-content mb-3">
                             <p>我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>

@@ -14,31 +14,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 
-const Category3 = () => {
+const Category4 = () => {
   const data = useStaticQuery(graphql`
     query {
-      heading: file(relativePath: { eq: "cate3-bk.webp" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      s1Image: file(relativePath: { eq: "cate3-s1.webp" }) {
+      heading: file(relativePath: { eq: "cate4-bk.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      s2Image: file(relativePath: { eq: "cate3-s2.webp" }) {
+      s1Image: file(relativePath: { eq: "cate4-s1.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      s3Image: file(relativePath: { eq: "cate3-s3.webp" }) {
+      s2Image: file(relativePath: { eq: "cate4-s2.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      s3Image: file(relativePath: { eq: "cate4-s3.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      s4Image: file(relativePath: { eq: "cate4-s4.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -57,9 +64,9 @@ const Category3 = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 has-text-white">Grass Pitch, Slope</h3>
-              <h1 className="page-heading has-text-white">草坪工程</h1>
-              <p className="is-size-5 service-des has-text-white">多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
+              <h3 className="page-sub-heading eng mb-3">Green Project</h3>
+              <h1 className="page-heading">綠化工程</h1>
+              <p className="is-size-5 service-des">我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>
             </div>
           </div>     
         </BackgroundImage>
@@ -76,7 +83,7 @@ const Category3 = () => {
           <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
                 <li><FontAwesomeIcon icon={faHome} className="mr-2" /><Link to="/">主頁</Link></li>
-                <li className="is-active"><Link to="/services/category1" aria-current="page">草坪工程</Link></li>
+                <li className="is-active"><Link to="/services/category1" aria-current="page">綠化工程</Link></li>
               </ul>
             </nav>
 
@@ -89,9 +96,9 @@ const Category3 = () => {
                       </div>
 
                       <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">草地修剪</h2>
+                        <h2 className="service-title px-4 mb-2">綠化牆</h2>
                           <article className="content px-4">
-                            <p>配備相關工具及安全設施，如剪草機及護面罩，為客戶以最快捷又安全的情況進行草地修剪。</p>
+                            <p>美化生活環境，提供更優質的生活質素。</p>
                           </article>
                       </div>
 
@@ -106,9 +113,9 @@ const Category3 = () => {
                       </div>
 
                       <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">舖設草皮</h2>
+                        <h2 className="service-title px-4 mb-2">植樹</h2>
                           <article className="content px-4">
-                            <p>網球場，足球場，公園，各類大小型花園等由具經驗技工使用相關專門設備進行架設。</p>
+                            <p>幫助客戶移除舊有枯樹及種植樹苗，並且設有數月的保養期。</p>
                           </article>
                       </div>
 
@@ -123,9 +130,25 @@ const Category3 = () => {
                       </div>
 
                       <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">斜坡割草</h2>
+                        <h2 className="service-title px-4 mb-2">灌溉系統</h2>
                           <article className="content px-4">
-                            <p>具經驗且配備安全設備的專業人員，專為客戶在陡峭斜坡上進行除草。</p>
+                            <p>有專業的工程人員負責鋪設植物灌溉系統，以幫助客戶解決植物灌溉的問題。</p>
+                          </article>
+                      </div>
+                      <div className="card-footer"></div>
+                    </div>
+                  </div>
+
+                  <div className="column is-half-tablet is-one-third-desktop">
+                    <div className="card pb-2">
+                      <div className="card-image">
+                        <Img fluid={data.s4Image.childImageSharp.fluid} className="" alt=""/>
+                      </div>
+
+                      <div className="card-content">
+                        <h2 className="service-title px-4 mb-2">零售</h2>
+                          <article className="content px-4">
+                            <p>為客戶供應各類時花、植物、籬笆及各種園藝裝飾。</p>
                           </article>
                       </div>
                       <div className="card-footer"></div>
@@ -199,4 +222,4 @@ const Category3 = () => {
   )
 }
 
-export default Category3
+export default Category4

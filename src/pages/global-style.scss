@@ -14,6 +14,7 @@ $navbar-item-color: $space-grey;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
 $navbar-dropdown-border-top: 2px solid $primary-color;
+$navbar-dropdown-arrow: hsl(143, 45%, 50%);;
 
 //card
 $card-radius: 2.55rem;
@@ -265,19 +266,23 @@ button.navbar-burger {
   overflow-x: hidden;
 }
 
+.page-title {
+  z-index: 1;
+}
+
 .page-title-text {
-  color: white;
+  color: #efefef;
   font-size: 2.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
   .page-title {
-    margin-top: -6.75rem;
+    margin-top: -4rem;
   }
 
   .page-title-text {
     letter-spacing: -5px;
-    font-size: 8rem;
+    font-size: 8.5rem;
     margin-left: -3.75rem;
   }
 }
@@ -329,22 +334,16 @@ button.navbar-burger {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  backdrop-filter: blur(2px);
+  z-index: 2;
 }
 
 .has-background-desktop {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 2;
 }
-
-@media only screen and (max-width: 1023px) {
-
-  .has-background-desktop {
-      background-size: cover;
-  }
-
-}
-
 
 //footer
 
@@ -389,6 +388,23 @@ button.navbar-burger {
 .service-content {
   .card {
     height: 100%;
+  }
+}
+
+.divider {
+  position: relative;
+  padding: .75rem 0;
+  width: 16px;
+  margin: 0 auto;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 16px;
+    left: 0;
+    height: 2px;
+    background: $primary-color;
   }
 }
 

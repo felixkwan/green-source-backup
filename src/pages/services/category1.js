@@ -5,6 +5,9 @@ import Header from "../../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import ser1Icon from "../../images/icons8-tree-planting-64.png"
+import ser2Icon from "../../images/icons8-worker-64.png"
+import ser3Icon from "../../images/icons8-wheelbarrow-64.png"
+import ser4Icon from "../../images/icons8-lotus-64.png"
 import BackgroundImage from 'gatsby-background-image-es5'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,10 +17,31 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Category1 = () => {
   const data = useStaticQuery(graphql`
     query {
-      desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
+      heading: file(relativePath: { eq: "cate1-bk.webp" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1200) {
             ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      },
+      s1Image: file(relativePath: { eq: "cate1-s1.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      s2Image: file(relativePath: { eq: "cate1-s2.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      s3Image: file(relativePath: { eq: "cate1-s3.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -28,15 +52,15 @@ const Category1 = () => {
     <Layout>
 
       <div id="cate1" className="header page-header">
-        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.desktop.childImageSharp.fluid}>
+        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.heading.childImageSharp.fluid}>
           <div className="hero-head">
             <Header />
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3">Maintenance</h3>
-              <h1 className="page-heading">園藝保養</h1>
-              <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
+              <h3 className="page-sub-heading eng mb-3 has-text-white">Maintenance</h3>
+              <h1 className="page-heading has-text-white">園藝保養</h1>
+              <p className="is-size-5 service-des has-text-white">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
             </div>
           </div>     
         </BackgroundImage>
@@ -62,7 +86,7 @@ const Category1 = () => {
                   <div className="column is-half-tablet is-one-third-widescreen">
                     <div className="card pb-4">
                       <div className="card-image">
-                        <Img fluid={data.desktop.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
@@ -79,7 +103,7 @@ const Category1 = () => {
                   <div className="column is-half-tablet is-one-third-widescreen">
                     <div className="card pb-4">
                       <div className="card-image">
-                        <Img fluid={data.desktop.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
@@ -96,7 +120,7 @@ const Category1 = () => {
                   <div className="column is-half-tablet is-one-third-widescreen">
                     <div className="card pb-2">
                       <div className="card-image">
-                        <Img fluid={data.desktop.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
@@ -129,7 +153,7 @@ const Category1 = () => {
                       <div className="service-nav-item has-background-white">
                         <Link to="/services/category1" className="has-text-centered">
                           <figure>
-                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                            <img src={ser2Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
                           <div className="divider"></div>
                           <h5 className="">樹木移除</h5>
@@ -139,9 +163,9 @@ const Category1 = () => {
 
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
-                        <Link to="/services/category1" className="has-text-centered">
+                        <Link to="/services/category3" className="has-text-centered">
                           <figure>
-                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                            <img src={ser3Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
                           <div className="divider"></div>
                           <h5 className="">草坪工程</h5>
@@ -151,9 +175,9 @@ const Category1 = () => {
 
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
-                        <Link to="/services/category1" className="has-text-centered">
+                        <Link to="/services/category4" className="has-text-centered">
                           <figure>
-                            <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
+                            <img src={ser4Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
                           <div className="divider"></div>
                           <h5 className="">綠化工程</h5>
