@@ -41,11 +41,11 @@ const Recruit = () => {
         </BackgroundImage>
       </div>
 
-        <div className="container is-widescreen page-title">
+        <div className="page-body recruit-body container">
+
+        <div className="container page-title">
           <span className="page-title-text has-text-weight-bold">Opportunities</span>
         </div>
-
-        <div className="page-body recruit-body container">
 
           <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
             <ul>
