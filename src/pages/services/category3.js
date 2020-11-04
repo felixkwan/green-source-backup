@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 
-const Category2 = () => {
+const Category3 = () => {
   const data = useStaticQuery(graphql`
     query {
       heading: file(relativePath: { eq: "cate2-bk.webp" }) {
@@ -212,4 +212,4 @@ const Category2 = () => {
   )
 }
 
-export default Category2
+export default Category3

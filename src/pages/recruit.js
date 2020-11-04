@@ -13,9 +13,9 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Recruit = () => {
   const data = useStaticQuery(graphql`
     query {
-      desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
+      desktop: file(relativePath: { eq: "recruit-bk.webp" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1200) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

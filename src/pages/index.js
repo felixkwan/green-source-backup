@@ -19,9 +19,9 @@ const IndexPage = ({intl}) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
+        desktop: file(relativePath: { eq: "desktop.webp" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 90, maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -54,14 +54,14 @@ const IndexPage = ({intl}) => (
             }
           }
         },
-        info1Image: file(relativePath: { eq: "info-1-img.png" }) {
+        info1Image: file(relativePath: { eq: "info-1-img.webp" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
         },
-        info2Image: file(relativePath: { eq: "info-2-img.png" }) {
+        info2Image: file(relativePath: { eq: "info-2-img.webp" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1200) {
               ...GatsbyImageSharpFluid
@@ -73,7 +73,7 @@ const IndexPage = ({intl}) => (
 
     render={data => {
       // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid;
+      const desktop = data.desktop.childImageSharp.fluid;
       const serIcon1 = data.ser1Image.childImageSharp.fluid;
       const serIcon2 = data.ser2Image.childImageSharp.fluid;
       const serIcon3 = data.ser3Image.childImageSharp.fluid;
@@ -86,7 +86,7 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
           <div id="home" className="header">
-            <BackgroundImage className="hero is-medium has-background-desktop" fluid={imageData}>
+            <BackgroundImage className="hero is-medium has-background-desktop" fluid={desktop}>
               <div className="hero-head">
                 <Header />
               </div>
@@ -99,13 +99,13 @@ const IndexPage = ({intl}) => (
                     </div>
                     <div className="column is-half">
                       <div className="header-content">
-                        <h2 className="heading-chin is-size-3-widescreen is-hidden-touch">
+                        <h2 className="heading-chin is-size-3-widescreen has-text-white is-hidden-touch">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
                         <h2 className="heading-chin is-size-4-mobile is-hidden-desktop has-text-white">
                           為你提供專業、全面、高品質園藝服務。
                         </h2>
-                        <h1 className="heading-us eng mt-2 mb-6 is-hidden-touch">
+                        <h1 className="heading-us eng mt-2 mb-6 has-text-white is-hidden-touch">
                           Professional,Wide Range, High Quality Services.
                         </h1>
                         <h1 className="heading-us eng mt-2 mb-6 is-size-2-mobile is-hidden-desktop has-text-white">
