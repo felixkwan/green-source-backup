@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image-es5'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -12,16 +12,9 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const ContactUs = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "ppl-1200.png" }) {
+      desktop: file(relativePath: { eq: "contact-bk.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 768) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      aboutImage: file(relativePath: { eq: "health-1200.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1280) {
+          fluid(quality: 100, maxWidth: 1440) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,13 +24,15 @@ const ContactUs = () => {
   
   return (
     <Layout>
-      <Header/>
-        <div className="container">
-          <div className="page-header">
-            <div className="hero is-medium">
-              <div className="hero-body">
-                <div className="header-content">
-                    <h4 className="heading-chin has-text-weight-semibold">
+      
+      <div id="contactUs" className="header contact-header">
+        <BackgroundImage className="hero is-medium has-background-contact" fluid={data.desktop.childImageSharp.fluid}>
+          <div className="hero-head">
+            <Header />
+          </div>
+          <div className="hero-body">
+            <div className="container header-content">
+            <h4 className="heading-chin has-text-weight-semibold">
                       品質至上，
                     </h4>
                     <h4 className="heading-chin has-text-weight-semibold">
@@ -49,18 +44,16 @@ const ContactUs = () => {
                     <h1 className="heading-us eng mt-2 is-size-3-mobile">
                       Feel Safe,Live Green.
                     </h1>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
+          </div>     
+        </BackgroundImage>
+      </div>
 
         <div className="container is-widescreen page-title">
           <span className="page-title-text has-text-weight-bold">Contact</span>
         </div>
 
         <div className="page-body contact-body container">
-
           <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
             <ul>
               <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>

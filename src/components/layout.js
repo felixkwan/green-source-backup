@@ -8,10 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
-import Header from "./header"
 import Contact from "./contact"
 import "./layout.css"
 

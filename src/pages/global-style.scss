@@ -198,7 +198,7 @@ img {
   }
 
   img.image.is-hidden-desktop {
-    max-height: 2.35rem;
+    max-height: 2.75rem;
   }
 }
 
@@ -286,6 +286,18 @@ button.navbar-burger {
   color: $primary-color;
 }
 
+@media only screen and (max-width: 1024px) {
+  .page-body {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-body {
+    padding: 0 1.5rem;
+  }
+}
+
 //header
 
 .header {
@@ -308,6 +320,17 @@ button.navbar-burger {
 
 // header background
 
+.header.contact-header {
+  background: rgb(255,255,239);
+  background: linear-gradient(151deg, rgba(255,255,239,1) 0%, rgba(195,255,212,1) 100%);
+}
+
+.has-background-contact {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
 .has-background-desktop {
   background-position: center top;
   background-size: cover;
@@ -322,51 +345,10 @@ button.navbar-burger {
 
 }
 
-//block-info
-
-.info-img {
-  background-color: $primary-color;
-  display: block;
-  background-position: center;
-  background-size: cover;
-  min-height: 380px;
-}
-
-.info-title {
-  margin-bottom: 1rem;
-}
-
-.info-1,
-.info-2 {
-  padding: 4.5rem 3rem;
-}
-
-.info-1-text {
-  background: hsl(46.4,100%,95.7%);
-}
-
-.info-2-text {
-  background: hsl(90,54.5%,95.7%);
-}
-
-.info-1 {
-  .eng-label {
-    color: hsl(48.4,95.8%,53.3%);
-  }
-}
-
 
 //footer
 
 //service page
-.page-header{
-  .hero{
-    background-image: url("../images/health-1200.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: contain;
-  }
-}
 
 .page-sub-heading {
   padding-left: 0.15rem;

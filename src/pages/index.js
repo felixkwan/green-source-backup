@@ -53,6 +53,20 @@ const IndexPage = ({intl}) => (
               ...GatsbyImageSharpFluid
             }
           }
+        },
+        info1Image: file(relativePath: { eq: "info-1-img.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        },
+        info2Image: file(relativePath: { eq: "info-2-img.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     `}
@@ -64,6 +78,8 @@ const IndexPage = ({intl}) => (
       const serIcon2 = data.ser2Image.childImageSharp.fluid;
       const serIcon3 = data.ser3Image.childImageSharp.fluid;
       const serIcon4 = data.ser4Image.childImageSharp.fluid;
+      const info1 = data.info1Image.childImageSharp.fluid;
+      const info2 = data.info2Image.childImageSharp.fluid;
 
       return (
 
@@ -230,9 +246,15 @@ const IndexPage = ({intl}) => (
           <div className="block-info">
             <div className="container is-fullhd info-content">
               <div className="columns is-gapless is-multiline is-tablet">
-                <div className="info-1-img column is-half"></div>
-                <div className="column is-half info-1-text">
-                  <div className="container is-max-desktop info-1">
+                <div className="info-1-img column is-half">
+                <Img
+                      fluid={info1}
+                      className="image"
+                      alt=""
+                />
+                </div>
+                <div className="column is-half info-1-text is-flex">
+                  <div className="container is-max-desktop info-1 is-align-self-center">
                     <div className="info-title">
                       <h4 className="eng eng-label">Shape Safety</h4>
                     </div>
@@ -243,9 +265,15 @@ const IndexPage = ({intl}) => (
                   </div>
                 </div>
 
-                <div className="info-2-img column is-half is-hidden-tablet"></div>
-                <div className="column is-half info-2-text">
-                  <div className="container is-max-desktop info-2">
+                <div className="info-2-img column is-half is-hidden-tablet">
+                <Img
+                      fluid={info2}
+                      className="image"
+                      alt=""
+                />
+                </div>
+                <div className="column is-half info-2-text is-flex">
+                  <div className="container is-max-desktop info-2 is-align-self-center">
                     <div className="info-title">
                       <h4 className="eng eng-label">Live Green</h4>
                     </div>
@@ -255,7 +283,13 @@ const IndexPage = ({intl}) => (
                     </div>
                   </div>
                 </div>
-                <div className="info-2-img column is-half is-hidden-mobile"></div>
+                <div className="info-2-img column is-half is-hidden-mobile">
+                <Img
+                      fluid={info2}
+                      className="image"
+                      alt=""
+                />
+                </div>
 
               </div>
             </div>

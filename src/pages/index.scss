@@ -1,3 +1,5 @@
+$primary-color: hsl(143, 45%, 50%);
+
 
 // block-service
 
@@ -26,6 +28,37 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
+
+.info-img {
+    background-color: $primary-color;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    min-height: 380px;
+  }
+  
+  .info-title {
+    margin-bottom: 1rem;
+  }
+  
+  .info-1,
+  .info-2 {
+    padding: 4.5rem 3rem;
+  }
+  
+  .info-1-text {
+    background: hsl(46.4,100%,95.7%);
+  }
+  
+  .info-2-text {
+    background: hsl(90,54.5%,95.7%);
+  }
+  
+  .info-1 {
+    .eng-label {
+      color: hsl(48.4,95.8%,53.3%);
+    }
+  }
 
 // block-message
 

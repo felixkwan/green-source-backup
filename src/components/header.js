@@ -32,7 +32,7 @@ class Header extends Component {
             <div className="container">
               <div className="navbar-brand">
                 <Link className="navbar-item" to="/">
-                  <img src={brandLogo} className="image is-hidden-mobile" alt="" />
+                  <img src={brandLogo} className="image is-hidden-touch" alt="" />
                   <img src={brandLogo} className="image is-hidden-desktop" alt="" />
                 </Link>
                 <button onClick={this.Toggle} className={this.state.toggle ? "burger navbar-burger is-active" : "burger navbar-burger"} aria-label="menu" aria-expanded="false">

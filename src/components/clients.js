@@ -9,7 +9,7 @@ const Clients = () => {
     return (
         <>
             <div className="block-client">
-                <div className="container is-max-desktop">
+                <div className="container is-max-widescreen">
                     <div className="hero">
                         <div className="hero-body">
                             <div className="block-heading has-text-centered-tablet mb-6">
