@@ -41,6 +41,13 @@ const Category2 = () => {
             ...GatsbyImageSharpFluid
           }
         }
+      },
+      s4Image: file(relativePath: { eq: "cate2-s4.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
   `)
@@ -79,7 +86,7 @@ const Category2 = () => {
 
             <div className="service-content is-clearfix">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline is-clearfix">
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-4">
                       <div className="card-image">
                         <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
@@ -96,7 +103,7 @@ const Category2 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-4">
                       <div className="card-image">
                         <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
@@ -113,7 +120,7 @@ const Category2 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-2">
                       <div className="card-image">
                         <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
@@ -129,10 +136,10 @@ const Category2 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-2">
                       <div className="card-image">
-                        <Img fluid={data.heading.childImageSharp.fluid} className="" alt=""/>
+                        <Img fluid={data.s4Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">

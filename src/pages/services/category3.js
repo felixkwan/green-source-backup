@@ -14,28 +14,28 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Category3 = () => {
   const data = useStaticQuery(graphql`
     query {
-      heading: file(relativePath: { eq: "cate2-bk.webp" }) {
+      heading: file(relativePath: { eq: "cate3-bk.webp" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      s1Image: file(relativePath: { eq: "cate3-s1.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      s1Image: file(relativePath: { eq: "cate2-s1.webp" }) {
+      s2Image: file(relativePath: { eq: "cate3-s2.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       },
-      s2Image: file(relativePath: { eq: "cate2-s2.webp" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      s3Image: file(relativePath: { eq: "cate2-s3.webp" }) {
+      s3Image: file(relativePath: { eq: "cate3-s3.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -54,9 +54,9 @@ const Category3 = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 has-text-white">Cleaning</h3>
-              <h1 className="page-heading has-text-white">樹木移除</h1>
-              <p className="is-size-5 service-des has-text-white">擁有樹藝師及攀樹師，專門進行任何類型的樹木工程，並配備高空工作平台、專用車輛、安全裝備及機械設備。</p>
+              <h3 className="page-sub-heading eng mb-3 has-text-white">Grass Pitch, Slope</h3>
+              <h1 className="page-heading has-text-white">草坪工程</h1>
+              <p className="is-size-5 service-des has-text-white">多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
             </div>
           </div>     
         </BackgroundImage>
@@ -73,22 +73,22 @@ const Category3 = () => {
           <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
                 <li><FontAwesomeIcon icon={faHome} className="mr-2" /><Link to="/">主頁</Link></li>
-                <li className="is-active"><Link to="/services/category1" aria-current="page">樹木移除</Link></li>
+                <li className="is-active"><Link to="/services/category1" aria-current="page">草坪工程</Link></li>
               </ul>
             </nav>
 
             <div className="service-content is-clearfix">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline is-clearfix">
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-4">
                       <div className="card-image">
                         <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">危樹移除</h2>
+                        <h2 className="service-title px-4 mb-2">草地修剪</h2>
                           <article className="content px-4">
-                            <p>經驗豐富的專業人員，並配備相關的機械設備專門負責移除危險樹木。</p>
+                            <p>配備相關工具及安全設施，如剪草機及護面罩，為客戶以最快捷又安全的情況進行草地修剪。</p>
                           </article>
                       </div>
 
@@ -96,16 +96,16 @@ const Category3 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-4">
                       <div className="card-image">
                         <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">林木保養</h2>
+                        <h2 className="service-title px-4 mb-2">舖設草皮</h2>
                           <article className="content px-4">
-                            <p>定期為樹木修剪樹冠及疏枝，令其勻稱得宜、外觀自然優美。</p>
+                            <p>網球場，足球場，公園，各類大小型花園等由具經驗技工使用相關專門設備進行架設。</p>
                           </article>
                       </div>
 
@@ -113,32 +113,16 @@ const Category3 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-2">
                       <div className="card-image">
                         <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
                       </div>
 
                       <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">高空砍伐</h2>
+                        <h2 className="service-title px-4 mb-2">斜坡割草</h2>
                           <article className="content px-4">
-                            <p>使用高空工作台、升降車等器具處理較高林木。除外，亦有專業而富有經驗的攀樹師負責高空伐樹。</p>
-                          </article>
-                      </div>
-                      <div className="card-footer"></div>
-                    </div>
-                  </div>
-
-                  <div className="column is-half-tablet is-one-third-widescreen">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.heading.childImageSharp.fluid} className="" alt=""/>
-                      </div>
-
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">樹木評估</h2>
-                          <article className="content px-4">
-                            <p>配備評估樹木相關的儀器和工具，為客戶測量及為樹木進行專業評估。</p>
+                            <p>具經驗且配備安全設備的專業人員，專為客戶在陡峭斜坡上進行除草。</p>
                           </article>
                       </div>
                       <div className="card-footer"></div>
@@ -163,7 +147,7 @@ const Category3 = () => {
                     </div>
                     
                     <div className="column is-one-quarter">
-                      <div className="service-nav-item has-background-white is-active">
+                      <div className="service-nav-item has-background-white">
                         <Link to="/services/category2" className="has-text-centered">
                           <figure>
                             <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
@@ -175,7 +159,7 @@ const Category3 = () => {
                     </div>
 
                     <div className="column is-one-quarter">
-                      <div className="service-nav-item has-background-white">
+                      <div className="service-nav-item has-background-white is-active">
                         <Link to="/services/category1" className="has-text-centered">
                           <figure>
                             <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
