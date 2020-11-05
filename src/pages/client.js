@@ -42,7 +42,7 @@ const Client = () => {
         </section>
       </div>
 
-        <div className="container is-fullhd page-title">
+        <div className="container is-fullhd page-title is-hidden-touch">
           <span className="page-title-text has-text-weight-bold">Connect</span>
         </div>
 

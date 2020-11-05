@@ -88,8 +88,8 @@ const Category4 = () => {
               </ul>
             </nav>
 
-            <div className="service-content is-clearfix">
-                <div className="columns is-variable is-3-mobile is-4-tablet is-multiline is-clearfix">
+            <div className="service-content">
+                <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
                   <div className="column is-half-tablet is-one-third-desktop">
                     <div className="card pb-4">
                       <div className="card-image">
@@ -158,9 +158,8 @@ const Category4 = () => {
 
                 </div>
 
-                <div className="container is-widescreen service-navbar">
-
-                  <div className="columns is-desktop is-8 is-centered is-vcentered is-hidden-touch">
+                <div className="container is-widescreen service-navbar is-hidden-touch">
+                  <div className="columns is-desktop is-8 is-centered is-vcentered">
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
                         <Link to="/services/category1" className="has-text-centered" aria-current="page">

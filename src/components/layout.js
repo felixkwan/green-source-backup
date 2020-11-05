@@ -61,16 +61,16 @@ const Layout = ({ children }) => {
         <nav className="navbar-bottom is-hidden-desktop">
           <div className="container is-flex is-flex-wrap-wrap is-flex-direction-row is-justify-content-space-between">
             <Link to="/services/category1" className="navbar-item has-text-centered">
-              <img src={ser1Icon} className="image is-48x48 service-icon" alt="" />
+              <img src={ser1Icon} className="image is-48x48-tablet is-24x24-mobile service-icon" alt="" />
               園藝保養</Link>
             <Link to="/services/category2" className="navbar-item has-text-centered">
-              <img src={ser2Icon} className="image is-48x48 service-icon" alt="" />
+              <img src={ser2Icon} className="image is-48x48-tablet is-24x24-mobile service-icon" alt="" />
               樹木移除</Link>
             <Link to="/services/category3" className="navbar-item has-text-centered">
-              <img src={ser3Icon} className="image is-48x48 service-icon" alt="" />
+              <img src={ser3Icon} className="image is-48x48-tablet is-24x24-mobile service-icon" alt="" />
               草坪工程</Link>
             <Link to="/services/category4" className="navbar-item has-text-centered">
-              <img src={ser4Icon} className="image is-48x48 service-icon" alt="" />
+              <img src={ser4Icon} className="image is-48x48-tablet is-24x24-mobile service-icon" alt="" />
               綠化工程</Link>
           </div>
         </nav>

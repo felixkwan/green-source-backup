@@ -310,6 +310,25 @@ button.navbar-burger {
   img {
     margin-bottom: .5rem;
   }
+
+  a {
+    font-size: .85rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .is-48x48-tablet {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .is-24x24-mobile {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 //main
