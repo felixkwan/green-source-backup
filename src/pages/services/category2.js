@@ -57,19 +57,21 @@ const Category2 = () => {
   
   return (
     <Layout>
+
       <div id="cate2" className="header page-header">
-        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.heading.childImageSharp.fluid}>
+        <section className="hero is-medium is-relative">
+          <Img className="header-bk" fluid={data.heading.childImageSharp.fluid}></Img>
           <div className="hero-head">
             <Header />
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 has-text-white">Cleaning</h3>
-              <h1 className="page-heading has-text-white">樹木移除</h1>
-              <p className="is-size-5 service-des has-text-white">擁有樹藝師及攀樹師，專門進行任何類型的樹木工程，並配備高空工作平台、專用車輛、安全裝備及機械設備。</p>
+              <h3 className="page-sub-heading eng mb-3 ">Cleaning</h3>
+              <h1 className="page-heading">樹木移除</h1>
+              <p className="is-size-5 service-des">擁有樹藝師及攀樹師，專門進行任何類型的樹木工程，並配備高空工作平台、專用車輛、安全裝備及機械設備。</p>
             </div>
-          </div>     
-        </BackgroundImage>
+          </div> 
+        </section>
       </div>
 
       <div className="page-body has-background-white-bis">
@@ -78,7 +80,7 @@ const Category2 = () => {
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
-        <div className="container">
+        <div className="container page-content">
           <div className="container pb-6">
           <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
