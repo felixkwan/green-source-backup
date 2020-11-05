@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 
 import Contact from "./contact"
 import "./layout.css"
@@ -19,8 +20,8 @@ const Layout = ({ children }) => {
     <Helmet>
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     </Helmet>
-            <main>{children}</main>
-            <Contact></Contact>
+        <main>{children}</main>
+        <Contact></Contact>
         <footer className="footer has-background-white-ter">
           <div className="container">
             <div className="container is-fullhd">
@@ -52,6 +53,14 @@ const Layout = ({ children }) => {
             </div>
           </div>
         </footer>
+        <nav className="navbar navbar-bottom is-hidden-desktop">
+          <div className="container">
+            <Link to="/services/category1" className="navbar-item">園藝保養</Link>
+            <Link to="/services/category2" className="navbar-item">樹木移除</Link>
+            <Link to="/services/category3" className="navbar-item">草坪工程</Link>
+            <Link to="/services/category4" className="navbar-item">綠化工程</Link>
+          </div>
+        </nav>
     </>
   )
 }

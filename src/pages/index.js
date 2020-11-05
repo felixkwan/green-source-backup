@@ -236,6 +236,8 @@ const IndexPage = ({intl}) => (
                 <Img
                       fluid={info1}
                       className="image"
+                      imgStyle={{ objectFit: 'cover' }}
+                      style={{ height: '100%'}}
                       alt=""
                 />
                 </div>
@@ -255,6 +257,8 @@ const IndexPage = ({intl}) => (
                 <Img
                       fluid={info2}
                       className="image"
+                      style={{ height: '100%'}}
+                      imgStyle={{ objectFit: 'cover' }}
                       alt=""
                 />
                 </div>
@@ -273,6 +277,8 @@ const IndexPage = ({intl}) => (
                 <Img
                       fluid={info2}
                       className="image"
+                      imgStyle={{ objectFit: 'cover' }}
+                      style={{ height: '100%'}}
                       alt=""
                 />
                 </div>

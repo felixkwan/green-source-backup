@@ -31,19 +31,19 @@ const ContactUs = () => {
             <Header />
           </div>
           <div className="hero-body">
-            <div className="container header-content">
+            <div className="container">
             <h4 className="heading-chin has-text-weight-semibold">
-                      品質至上，
-                    </h4>
-                    <h4 className="heading-chin has-text-weight-semibold">
-                      提供安全、綠化環境。
-                    </h4>
-                    <h1 className="heading-us eng mt-2 is-size-3-mobile">
-                        Professional,
-                    </h1>
-                    <h1 className="heading-us eng mt-2 is-size-3-mobile">
-                      Feel Safe,Live Green.
-                    </h1>
+              品質至上，
+            </h4>
+            <h4 className="heading-chin has-text-weight-semibold">
+              提供安全、綠化環境。
+            </h4>
+            <h1 className="heading-us eng mt-2 is-size-3-mobile">
+                Professional,
+            </h1>
+            <h1 className="heading-us eng mt-2 is-size-3-mobile">
+              Feel Safe,Live Green.
+            </h1>
             </div>
           </div>     
         </BackgroundImage>

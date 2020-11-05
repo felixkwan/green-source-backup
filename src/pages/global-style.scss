@@ -15,7 +15,6 @@ $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
 $navbar-dropdown-border-top: 2px solid $primary-color;
 $navbar-dropdown-arrow: hsl(143, 45%, 50%);
-$navbar-dropdown-boxed-shadow: 0px 12px 28px 0px rgba(209,209,209,0.25);
 
 //hero
 $hero-body-padding-medium: 6.5rem 1.5rem 10.5rem;
@@ -57,12 +56,7 @@ body {
   scroll-behavior: smooth;
 }
 
-a {
-  color: $space-grey;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  color: $dark-grey;
   letter-spacing: 0.1rem;
   line-height: 1.6;
 }
@@ -70,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 .eng {
   letter-spacing: -0.075rem;
   line-height: 1.2;
+}
+
+a {
+  color: $dark-grey;
 }
 
 h1 {
@@ -209,6 +207,7 @@ img {
   a {
     font-weight: 500;
     font-size: 1rem;
+    color: $dark-grey;
   }
   .container {
     background: white;
@@ -222,11 +221,12 @@ img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .navbar {
     padding: 1.25rem 1rem;
+
     .container {
-      padding: 0 .5rem;
+      padding: 0 .15rem;
     }
   }
 }
@@ -288,10 +288,20 @@ button.navbar-burger {
       right: 0;
       position: absolute;
       box-shadow: none;
-      padding: 1.5rem .25rem .5rem;
+      padding: 1rem .25rem;
       margin-top: .5rem;
       border-radius: 1.25rem;
   }
+}
+
+//navbar-bottom
+
+.navbar-bottom {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  bottom: 0;
+  left: 0;
 }
 
 //main
@@ -357,6 +367,17 @@ button.navbar-burger {
   }
 }
 
+.heading-des {
+  max-width: 360px;
+  padding-left: 0.05rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .header {
+    color: white;
+  }
+}
+
 
 // header background
 
@@ -371,7 +392,7 @@ button.navbar-burger {
 }
 
 @media only screen and (max-width: 1023px) {
-  .header-bk.top-header-bk {
+  .header-bk {
     width: 100%;
     object-fit: cover;
   }
@@ -400,11 +421,6 @@ button.navbar-burger {
 
 .page-sub-heading {
   padding-left: 0.15rem;
-}
-
-.service-des {
-  max-width: 360px;
-  padding-left: 0.05rem;
 }
 
 .service-navbar {
@@ -456,8 +472,6 @@ button.navbar-burger {
     background: $primary-color;
   }
 }
-
-//client page
 
 //recruit page
 

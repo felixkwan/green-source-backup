@@ -34,9 +34,9 @@ const Client = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 ">For Our Society</h3>
+              <h3 className="page-sub-heading eng mb-3">For Our Society</h3>
               <h1 className="page-heading">客戶</h1>
-              <p className="is-size-5 service-des">公司客戶包括仲量聯行 ,香港大學,世邦魏理仕有限公司 ,置邦物業管理有限公司 , 富城物業管理有限公司 和記黃埔及眾多屋苑,院校 提供園藝服務。</p>
+              <p className="is-size-5 heading-des">公司客戶包括仲量聯行 ,香港大學,世邦魏理仕有限公司 ,置邦物業管理有限公司 , 富城物業管理有限公司 和記黃埔及眾多屋苑,院校 提供園藝服務。</p>
             </div>
           </div> 
         </section>

@@ -57,9 +57,9 @@ const Category3 = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 ">Grass Pitch, Slope</h3>
+              <h3 className="page-sub-heading eng mb-3">Grass Pitch, Slope</h3>
               <h1 className="page-heading">草坪工程</h1>
-              <p className="is-size-5 service-des">多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
+              <p className="is-size-5 heading-des">多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
             </div>
           </div> 
         </section>

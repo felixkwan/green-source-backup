@@ -58,9 +58,9 @@ const Category1 = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 ">Maintenance</h3>
+              <h3 className="page-sub-heading eng mb-3">Maintenance</h3>
               <h1 className="page-heading">園藝保養</h1>
-              <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
+              <p className="is-size-5 heading-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
             </div>
           </div> 
         </section>

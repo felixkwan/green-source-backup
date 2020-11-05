@@ -65,9 +65,9 @@ const Category4 = () => {
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 ">Green Project</h3>
+              <h3 className="page-sub-heading eng mb-3">Green Project</h3>
               <h1 className="page-heading">綠化工程</h1>
-              <p className="is-size-5 service-des">我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>
+              <p className="is-size-5 heading-des">我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>
             </div>
           </div> 
         </section>
