@@ -50,19 +50,20 @@ const Category3 = () => {
   
   return (
     <Layout>
-      <div id="cate2" className="header page-header">
-        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.heading.childImageSharp.fluid}>
+      <div id="cate3" className="header page-header">
+        <section className="hero is-medium is-relative">
+          <Img className="header-bk" fluid={data.heading.childImageSharp.fluid}></Img>
           <div className="hero-head">
             <Header />
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 has-text-white">Grass Pitch, Slope</h3>
-              <h1 className="page-heading has-text-white">草坪工程</h1>
-              <p className="is-size-5 service-des has-text-white">多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
+              <h3 className="page-sub-heading eng mb-3 ">Grass Pitch, Slope</h3>
+              <h1 className="page-heading">草坪工程</h1>
+              <p className="is-size-5 service-des">多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
             </div>
-          </div>     
-        </BackgroundImage>
+          </div> 
+        </section>
       </div>
 
       <div className="page-body has-background-white-bis">
@@ -71,7 +72,7 @@ const Category3 = () => {
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
-        <div className="container">
+        <div className="container page-content">
           <div className="container pb-6">
           <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>

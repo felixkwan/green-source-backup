@@ -60,7 +60,11 @@ const Category2 = () => {
 
       <div id="cate2" className="header page-header">
         <section className="hero is-medium is-relative">
+<<<<<<< HEAD
           <Img className="header-bk" fluid={data.heading.childImageSharp.fluid}></Img>
+=======
+          <Img className="header-bk is-clipped" fluid={data.heading.childImageSharp.fluid}></Img>
+>>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
           <div className="hero-head">
             <Header />
           </div>
