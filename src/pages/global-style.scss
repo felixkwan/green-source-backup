@@ -14,7 +14,10 @@ $navbar-item-color: $space-grey;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
 $navbar-dropdown-border-top: 2px solid $primary-color;
-$navbar-dropdown-arrow: hsl(143, 45%, 50%);;
+$navbar-dropdown-arrow: hsl(143, 45%, 50%);
+
+//hero
+$hero-body-padding-medium: 6.5rem 1.5rem 10.5rem;
 
 //card
 $card-radius: 2.55rem;
@@ -270,6 +273,7 @@ button.navbar-burger {
 .page-content {
   z-index: 1;
   padding-top: 5.5rem;
+  padding-bottom: 2rem;
 }
 
 .page-title {
@@ -432,7 +436,7 @@ button.navbar-burger {
 }
 
 .table-section {
-  margin-bottom: 5rem;
+  margin-bottom: 1.5rem;
 
   .hero-body {
     background: white;

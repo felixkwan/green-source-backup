@@ -42,13 +42,10 @@ const Client = () => {
         </section>
       </div>
 
+        <div className="container is-fullhd page-title">
+          <span className="page-title-text has-text-weight-bold">Connect</span>
+        </div>
 
-      <div className="container page-title">
-        <span className="page-title-text has-text-weight-bold">Connect</span>
-      </div>
-
-
-        
         <div className="page-body container">
       
           <div className="page-content">

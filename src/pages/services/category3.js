@@ -66,11 +66,11 @@ const Category3 = () => {
         </section>
       </div>
 
-      <div className="page-body has-background-white-bis">
-
-      <div className="container page-title">
+      <div className="container is-fullhd page-title">
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
+
+      <div className="page-body has-background-white-bis">
 
         <div className="container page-content">
           <div className="container pb-6">

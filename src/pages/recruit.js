@@ -3,8 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import { useStaticQuery, graphql, Link } from "gatsby"
-
-import BackgroundImage from 'gatsby-background-image-es5'
+import Img from "gatsby-image"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -27,26 +26,26 @@ const Recruit = () => {
     <Layout>
 
       <div id="recruit" className="header page-header">
-        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.desktop.childImageSharp.fluid}>
+        <section className="hero is-medium is-relative">
+          <Img className="header-bk" fluid={data.desktop.childImageSharp.fluid}></Img>
           <div className="hero-head">
             <Header />
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3 has-text-white">Recruit</h3>
-              <h1 className="page-heading has-text-white">人才招聘</h1>
-              <p className="is-size-5 service-des has-text-white">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入。</p>
+              <h3 className="page-sub-heading eng mb-3 ">Recruit</h3>
+              <h1 className="page-heading">人才招聘</h1>
+              <p className="is-size-5 service-des">綠源園藝有限公司成立多年；積極尋找專業技術顧問及施工人才。期待你的加入。</p>
             </div>
-          </div>     
-        </BackgroundImage>
+          </div> 
+        </section>
       </div>
 
-        
-        <div className="page-body container">
-
-          <div className="container page-title">
+        <div className="container is-fullhd page-title">
             <span className="page-title-text has-text-weight-bold">Opportunities</span>
-          </div>
+        </div>
+ 
+        <div className="page-body container">
 
           <div className="page-content">
             <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
@@ -117,7 +116,12 @@ const Recruit = () => {
               <div className="table-bottom has-text-centered">
                 <button className="recruit-btn is-size-5 has-text-weight-bold px-5">馬上應徵</button>
               </div>
-            </div>  
+            </div>
+
+            <section className="container caption">
+              <small className="has-text-grey">所有個人資料只會用於招聘用途。</small>
+            </section>
+
           </div>
         </div>
 
