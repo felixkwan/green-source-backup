@@ -38,39 +38,19 @@ const Client = () => {
               <h1 className="page-heading">客戶</h1>
               <p className="is-size-5 service-des">公司客戶包括仲量聯行 ,香港大學,世邦魏理仕有限公司 ,置邦物業管理有限公司 , 富城物業管理有限公司 和記黃埔及眾多屋苑,院校 提供園藝服務。</p>
             </div>
-<<<<<<< HEAD
           </div> 
         </section>
       </div>
-=======
-          </div>     
-        </BackgroundImage>
+
+
+      <div className="container page-title">
+        <span className="page-title-text has-text-weight-bold">Connect</span>
       </div>
 
-      
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
 
         
         <div className="page-body container">
-<<<<<<< HEAD
-          
-        <div className="container is-widescreen page-title">
-          <span className="page-title-text has-text-weight-bold">Connect</span>
-        </div>
-
-          <div className="container page-content">
-
-            <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
-              <ul>
-                <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>
-                <li className="is-active"><Link to="/client" aria-current="page">客戶</Link></li>
-              </ul>
-            </nav>
-=======
-          <div className="container page-title">
-            <span className="page-title-text has-text-weight-bold">Connect</span>
-          </div>
-
+      
           <div className="page-content">
             <div className="container">
               <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
@@ -79,7 +59,6 @@ const Client = () => {
                   <li className="is-active"><Link to="/client" aria-current="page">客戶</Link></li>
                 </ul>
               </nav>
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
 
               <Clients/>
             </div>

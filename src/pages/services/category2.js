@@ -8,7 +8,6 @@ import ser1Icon from "../../images/icons8-tree-planting-64.png"
 import ser2Icon from "../../images/icons8-worker-64.png"
 import ser3Icon from "../../images/icons8-wheelbarrow-64.png"
 import ser4Icon from "../../images/icons8-lotus-64.png"
-import BackgroundImage from 'gatsby-background-image-es5'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -60,11 +59,7 @@ const Category2 = () => {
 
       <div id="cate2" className="header page-header">
         <section className="hero is-medium is-relative">
-<<<<<<< HEAD
           <Img className="header-bk" fluid={data.heading.childImageSharp.fluid}></Img>
-=======
-          <Img className="header-bk is-clipped" fluid={data.heading.childImageSharp.fluid}></Img>
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
           <div className="hero-head">
             <Header />
           </div>

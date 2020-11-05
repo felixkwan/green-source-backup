@@ -268,22 +268,6 @@ button.navbar-burger {
 
 .page-content {
   z-index: 1;
-<<<<<<< HEAD
-  margin-top: 4.5rem;
-}
-
-.page-title {
-  z-index: 0;
-}
-
-.page-title-text {
-  color: #efefef;
-  letter-spacing: -5px;
-  font-size: 8.5rem;
-  margin-left: -4rem;
-}
-
-=======
   padding-top: 4rem;
 }
 
@@ -299,7 +283,6 @@ button.navbar-burger {
   position: absolute;
   color: #efefef;
 }
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
 
 .eng-label {
   color: $primary-color;
@@ -344,22 +327,12 @@ button.navbar-burger {
 // header background
 
 .header-bk {
-<<<<<<< HEAD
-  position: absolute !important;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  content: "";
-  overflow: hidden;
-=======
   content: "";
   position: absolute !important;
   width: 50%;
   height: 100%;
   right: 0;
   top: 0;
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
   object-fit: contain;
 }
 
@@ -372,20 +345,12 @@ button.navbar-burger {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-<<<<<<< HEAD
-=======
-  backdrop-filter: blur(2px);
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
 }
 
 .has-background-desktop {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< HEAD
-
-=======
->>>>>>> de1c9a98603dc224fa8bf7429fb9259a56e3b3de
 }
 
 //footer

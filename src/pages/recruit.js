@@ -41,12 +41,14 @@ const Recruit = () => {
         </BackgroundImage>
       </div>
 
-        <div className="container page-title">
-          <span className="page-title-text has-text-weight-bold">Opportunities</span>
-        </div>
+        
+        <div className="page-body container">
 
-        <div className="page-content">
-          <div className="page-body container">
+          <div className="container page-title">
+            <span className="page-title-text has-text-weight-bold">Opportunities</span>
+          </div>
+
+          <div className="page-content">
             <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
               <ul>
                 <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>
