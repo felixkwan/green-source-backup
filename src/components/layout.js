@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     </Helmet>
         <main>{children}</main>
         <Contact></Contact>
-        <footer className="footer has-background-white-ter">
+        <footer className="footer">
           <div className="container">
             <div className="container is-fullhd">
               <div className="columns is-touch is-gapless">

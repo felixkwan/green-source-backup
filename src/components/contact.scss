@@ -1,16 +1,41 @@
 // block-contact
 
 .block-contact {
-    background: rgb(252,252,252);
-    background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(244,244,244,0.5) 100%);
+    background: hsl(140,15.8%,96.3%);
 }
 
 .contact-btn {
     border-radius: 1.35rem;
     border: none;
     outline: none;
-    box-shadow: 0px 28px 48px 0px rgba(209,209,209,0.55);
-    margin-right: 3.5rem;
+}
+
+.contact-item {
+    .eng-label {
+        color: hsl(134.5,23.6%,24.1%);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .block-contact {
+        background: rgb(229,236,232);
+        background: linear-gradient(90deg, rgba(229,236,232,1) 50%, rgba(236,241,238,1) 50%);
+    
+        .column:last-child {
+            padding-left: 2.5rem;
+        }
+    }
+    
+    .contact-btn-r {
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .contact-btn-l {
+        margin-top: 1.75rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

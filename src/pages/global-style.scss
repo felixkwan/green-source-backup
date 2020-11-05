@@ -1,16 +1,14 @@
 // If need, change your variables before importing Bulma
 $primary-color: hsl(143, 45%, 50%);
-$space-grey: #3c3c3c;
 $dark-grey: hsl(120,1.8%,10.8%);
-$dark-blue-green: hsl(158, 91%, 27%);
-$dark-blue: hsl(187, 100%, 9%);
 $text-color: hsl(0, 0%, 22%);
+$dark-green: hsl(134.5,23.6%,24.1%);
 
 //navbar
 $navbar-background-color: white;
 $navbar-item-img-max-height: 3.25rem;
 $navbar-height: 4.55rem;
-$navbar-item-color: $space-grey;
+$navbar-item-color: $dark-grey;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
 $navbar-dropdown-border-top: 2px solid $primary-color;
@@ -35,6 +33,9 @@ $table-cell-padding: .75rem 1.75rem;
 $table-head-cell-border-width: 0 0 0;
 $table-foot-cell-border-width: 0 0 0;
 $table-cell-border: none;
+
+//footer 
+$footer-background-color: hsl(140,15.8%,96.3%);
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap');
@@ -252,7 +253,7 @@ button.navbar-burger {
 
 .navbar-burger {
   background: transparent;
-  color: $space-grey;
+  color: $dark-grey;
 
   span {
     width: 20px;
@@ -532,28 +533,4 @@ button.navbar-burger {
 .table-bottom {
   padding: .5rem;
   margin-top: -2rem;
-}
-
-
-//contact page
-
-.contact-link {
-  font-weight: 500;
-  color: $primary-color;
-  font-size: 1.15rem;
-
-  &:hover,
-  &:focus {
-    color: $dark-blue;
-  }
-  
-  .arrow {
-    font-size: 1.3rem;
-  }
-}
-
-//animation
-
-[data-sal=zoom-in] {
-  transform: scale(.95);
 }
