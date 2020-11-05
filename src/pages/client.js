@@ -41,23 +41,27 @@ const Client = () => {
         </BackgroundImage>
       </div>
 
-      <div className="container is-widescreen page-title">
-        <span className="page-title-text has-text-weight-bold">Connect</span>
-      </div>
+      
 
+        
         <div className="page-body container">
-          <div className="container">
-            <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
-              <ul>
-                <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>
-                <li className="is-active"><Link to="/client" aria-current="page">客戶</Link></li>
-              </ul>
-            </nav>
+          <div className="container page-title">
+            <span className="page-title-text has-text-weight-bold">Connect</span>
+          </div>
 
-            <Clients/>
+          <div className="page-content">
+            <div className="container">
+              <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
+                <ul>
+                  <li><Link to="/"><FontAwesomeIcon icon={faHome} className="mr-2" />主頁</Link></li>
+                  <li className="is-active"><Link to="/client" aria-current="page">客戶</Link></li>
+                </ul>
+              </nav>
+
+              <Clients/>
+            </div>
           </div>
         </div>
-
     </Layout>
   )
 }

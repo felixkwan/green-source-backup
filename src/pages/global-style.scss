@@ -9,7 +9,7 @@ $text-color: hsl(0, 0%, 22%);
 //navbar
 $navbar-background-color: white;
 $navbar-item-img-max-height: 3.25rem;
-$navbar-height: 5.55rem;
+$navbar-height: 4.55rem;
 $navbar-item-color: $space-grey;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
@@ -135,7 +135,7 @@ img {
   text-align: center;
   max-width: max-content;
   transition: all .25s ease-in-out;
-  border-radius: .25rem;
+  border-radius: .45rem;
 }
 
 .recruit-btn {
@@ -194,8 +194,8 @@ img {
   }
   .container {
     background: white;
-    padding: 0 1.55rem;
-    border-radius: 1.75rem;
+    padding: 0 .75rem;
+    border-radius: 1.45rem;
   }
 
   img.image.is-hidden-desktop {
@@ -266,25 +266,22 @@ button.navbar-burger {
   overflow-x: hidden;
 }
 
-.page-title {
+.page-content {
   z-index: 1;
+  padding-top: 4rem;
+}
+
+.page-title {
+  z-index: 0;
 }
 
 .page-title-text {
+  letter-spacing: -5px;
+  font-size: 8.5rem;
+  margin-left: -3rem;
+  margin-top: -7.25rem;
+  position: absolute;
   color: #efefef;
-  font-size: 2.5rem;
-}
-
-@media only screen and (min-width: 1024px) {
-  .page-title {
-    margin-top: -4rem;
-  }
-
-  .page-title-text {
-    letter-spacing: -5px;
-    font-size: 8.5rem;
-    margin-left: -3.75rem;
-  }
 }
 
 .eng-label {
@@ -300,6 +297,10 @@ button.navbar-burger {
 @media only screen and (max-width: 767px) {
   .page-body {
     padding: 0 1.5rem;
+  }
+
+  .page-title-text  {
+    display: none;
   }
 }
 
@@ -325,6 +326,16 @@ button.navbar-burger {
 
 // header background
 
+.header-bk {
+  content: "";
+  position: absolute !important;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  object-fit: contain;
+}
+
 .header.contact-header {
   background: rgb(255,255,239);
   background: linear-gradient(151deg, rgba(255,255,239,1) 0%, rgba(195,255,212,1) 100%);
@@ -335,14 +346,12 @@ button.navbar-burger {
   background-repeat: no-repeat;
   background-position: center bottom;
   backdrop-filter: blur(2px);
-  z-index: 2;
 }
 
 .has-background-desktop {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 2;
 }
 
 //footer
@@ -435,7 +444,7 @@ button.navbar-burger {
 
 .table-bottom {
   padding: .5rem;
-  margin-top: -1.5rem;
+  margin-top: -2rem;
 }
 
 
