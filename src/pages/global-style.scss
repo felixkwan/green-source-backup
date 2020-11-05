@@ -196,6 +196,7 @@ img {
     background: white;
     padding: 0 .75rem;
     border-radius: 1.45rem;
+    box-shadow: 0px 12px 28px 0px rgba(209,209,209,0.25);
   }
 
   img.image.is-hidden-desktop {
@@ -268,7 +269,7 @@ button.navbar-burger {
 
 .page-content {
   z-index: 1;
-  padding-top: 4rem;
+  padding-top: 5.5rem;
 }
 
 .page-title {
