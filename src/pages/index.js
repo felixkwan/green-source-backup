@@ -9,8 +9,6 @@ import Header from "../components/header"
 import Clients from "../components/clients"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import BackgroundImage from 'gatsby-background-image-es5'
-
 import "./global-style.scss"
 import "./index.scss"
 
@@ -85,47 +83,35 @@ const IndexPage = ({intl}) => (
 
         <Layout>
           <SEO title="Home" />
+
           <div id="home" className="header">
-            <BackgroundImage className="hero is-medium has-background-desktop" fluid={desktop}>
+            <section className="hero is-medium is-relative">
+              <Img className="top-header-bk header-bk" fluid={desktop}></Img>
               <div className="hero-head">
                 <Header />
               </div>
               <div className="hero-body">
-
                 <div className="container">
-                  <div className="columns is-gapless-widescreen is-1-mobile is-widescreen">
-                    <div className="column is-half is-hidden-tablet">
-                     
-                    </div>
-                    <div className="column is-half">
-                      <div className="header-content">
-                        <h2 className="heading-chin is-size-3-widescreen has-text-white is-hidden-touch">
-                          為你提供專業、全面、高品質園藝服務。
-                        </h2>
-                        <h2 className="heading-chin is-size-4-mobile is-hidden-desktop has-text-white">
-                          為你提供專業、全面、高品質園藝服務。
-                        </h2>
-                        <h1 className="heading-us eng mt-2 mb-6 is-size-1 has-text-white is-hidden-touch">
-                          Professional,Wide Range, High Quality Services.
-                        </h1>
-                        <h1 className="heading-us eng mt-2 mb-6 is-size-2-mobile is-hidden-desktop has-text-white">
-                          Professional,Wide Range, High Quality Services.
-                        </h1>
-
-                        <button onClick={() => scrollTo('#service')} className="view-more is-clickable is-size-6-widescreen is-size-7-mobile has-text-weight-normal">了解更多</button>
-                      </div>
-                    </div>
-                    <div className="column is-half is-hidden-mobile">
-                      
-                    </div>
+                  <div className="header-content">
+                    <h2 className="heading-chin is-size-3-widescreen is-hidden-touch">
+                      為你提供專業、全面、高品質園藝服務。
+                    </h2>
+                    <h2 className="heading-chin is-size-4-mobile is-hidden-desktop has-text-white">
+                      為你提供專業、全面、高品質園藝服務。
+                    </h2>
+                    <h1 className="heading-us eng mt-2 mb-6 is-size-1 is-hidden-touch">
+                      Professional,Wide Range, High Quality Services.
+                    </h1>
+                    <h1 className="heading-us eng mt-2 mb-6 is-size-2-mobile is-hidden-desktop has-text-white">
+                      Professional,Wide Range, High Quality Services.
+                    </h1>
+                    <button onClick={() => scrollTo('#service')} className="view-more is-clickable is-size-6 has-text-weight-normal">了解更多</button>
                   </div>
+                  
                 </div>
-                
-
-              </div>
-            </BackgroundImage>
-          </div>
-          
+              </div> 
+            </section>
+          </div>        
 
           <div id="service" className="block-service">
             <div className="hero is-fullHeight">

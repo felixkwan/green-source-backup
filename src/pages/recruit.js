@@ -119,7 +119,7 @@ const Recruit = () => {
             </div>
 
             <section className="container caption">
-              <small className="has-text-grey">所有個人資料只會用於招聘用途。</small>
+              <small className="has-text-grey pl-5">&#10040; 所有個人資料只會用於招聘用途。</small>
             </section>
 
           </div>

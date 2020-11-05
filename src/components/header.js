@@ -29,7 +29,7 @@ class Header extends Component {
         `}
         render={data => (
           <nav id="navbar" className="navbar" role="navigation" aria-label="main navigation">
-            <div className="container">
+            <div className="container is-relative">
               <div className="navbar-brand">
                 <Link className="navbar-item" to="/">
                   <img src={brandLogo} className="image is-hidden-touch" alt="" />
@@ -40,6 +40,12 @@ class Header extends Component {
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                 </button>
+                <div className="navbar-item is-hidden-desktop has-text-centered">
+                  <Link className="whatsapp-btn-m is-size-6"
+                    to="https://wa.me/85269965240">
+                      <FontAwesomeIcon icon={faWhatsapp} className="mx-2 is-size-5" />
+                  </Link>
+                </div>
               </div>
     
               <div className={this.state.toggle ? "navbar-menu is-active" : "navbar-menu"}>
@@ -78,7 +84,7 @@ class Header extends Component {
                       </Link>
                     </div>
 
-                    <div className="navbar-item">
+                    <div className="navbar-item is-hidden-touch">
                       <Link className="whatsapp-btn is-size-6"
                         to="https://wa.me/85269965240">
                           <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-2 is-size-5" />

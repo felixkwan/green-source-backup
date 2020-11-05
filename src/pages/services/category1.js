@@ -8,7 +8,6 @@ import ser1Icon from "../../images/icons8-tree-planting-64.png"
 import ser2Icon from "../../images/icons8-worker-64.png"
 import ser3Icon from "../../images/icons8-wheelbarrow-64.png"
 import ser4Icon from "../../images/icons8-lotus-64.png"
-import BackgroundImage from 'gatsby-background-image-es5'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -67,7 +66,7 @@ const Category1 = () => {
         </section>
       </div>
 
-      <div className="container is-widescreen page-title">
+      <div className="container is-fullhd page-title">
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
