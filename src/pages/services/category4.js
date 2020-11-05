@@ -57,19 +57,21 @@ const Category4 = () => {
   
   return (
     <Layout>
-      <div id="cate2" className="header page-header">
-        <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.heading.childImageSharp.fluid}>
+
+      <div id="cate4" className="header page-header">
+        <section className="hero is-medium is-relative">
+          <Img className="header-bk" fluid={data.heading.childImageSharp.fluid}></Img>
           <div className="hero-head">
             <Header />
           </div>
           <div className="hero-body">
             <div className="container">
-              <h3 className="page-sub-heading eng mb-3">Green Project</h3>
+              <h3 className="page-sub-heading eng mb-3 ">Green Project</h3>
               <h1 className="page-heading">綠化工程</h1>
               <p className="is-size-5 service-des">我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>
             </div>
-          </div>     
-        </BackgroundImage>
+          </div> 
+        </section>
       </div>
 
       <div className="page-body has-background-white-bis">
@@ -78,7 +80,7 @@ const Category4 = () => {
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
-        <div className="container">
+        <div className="container page-content">
           <div className="container pb-6">
           <nav className="breadcrumb" aria-label="breadcrumbs">
               <ul>
