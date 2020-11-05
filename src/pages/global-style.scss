@@ -325,6 +325,16 @@ button.navbar-burger {
 
 // header background
 
+.header-bk {
+  content: "";
+  position: absolute !important;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  object-fit: contain;
+}
+
 .header.contact-header {
   background: rgb(255,255,239);
   background: linear-gradient(151deg, rgba(255,255,239,1) 0%, rgba(195,255,212,1) 100%);

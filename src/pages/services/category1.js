@@ -51,6 +51,22 @@ const Category1 = () => {
   return (
     <Layout>
 
+      <div id="test-header" className="header page-header">
+        <section className="hero is-medium is-relative">
+          <Img className="header-bk" fluid={data.heading.childImageSharp.fluid}></Img>
+          <div className="hero-head">
+            <Header />
+          </div>
+          <div className="hero-body">
+            <div className="container">
+              <h3 className="page-sub-heading eng mb-3 ">Maintenance</h3>
+              <h1 className="page-heading">園藝保養</h1>
+              <p className="is-size-5 service-des">保養服隊由多名專業及有經驗的人員組成，服務對象涵蓋屋苑，校園，公私營機構，公園。</p>
+            </div>
+          </div> 
+        </section>
+      </div>
+
       <div id="cate1" className="header page-header">
         <BackgroundImage className="hero is-medium has-background-desktop" fluid={data.heading.childImageSharp.fluid}>
           <div className="hero-head">
