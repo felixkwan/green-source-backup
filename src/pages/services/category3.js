@@ -138,7 +138,7 @@ const Category3 = () => {
 
                   <div className="columns is-desktop is-8 is-centered is-vcentered is-hidden-touch">
                     <div className="column is-one-quarter">
-                      <div className="service-nav-item has-background-white is-active">
+                      <div className="service-nav-item has-background-white">
                         <Link to="/services/category1" className="has-text-centered" aria-current="page">
                           <figure>
                             <img src={ser1Icon} className="image is-64x64 service-icon" alt="" />
@@ -151,7 +151,7 @@ const Category3 = () => {
                     
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
-                        <Link to="/services/category1" className="has-text-centered">
+                        <Link to="/services/category2" className="has-text-centered">
                           <figure>
                             <img src={ser2Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
@@ -162,7 +162,7 @@ const Category3 = () => {
                     </div>
 
                     <div className="column is-one-quarter">
-                      <div className="service-nav-item has-background-white">
+                      <div className="service-nav-item has-background-white is-active">
                         <Link to="/services/category3" className="has-text-centered">
                           <figure>
                             <img src={ser3Icon} className="image is-64x64 service-icon" alt="" />

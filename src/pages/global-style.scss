@@ -300,8 +300,16 @@ button.navbar-burger {
   position: fixed;
   width: 100%;
   height: fit-content;
+  padding: 1rem 1.5rem;
   bottom: 0;
   left: 0;
+  background: white;
+  z-index: 40;
+  border-radius: 2.25rem 2.25rem 0 0;
+
+  img {
+    margin-bottom: .5rem;
+  }
 }
 
 //main
@@ -416,6 +424,12 @@ button.navbar-burger {
 }
 
 //footer
+
+@media only screen and (max-width: 1023px) {
+  .footer {
+    padding-bottom: 12rem;
+  }
+}
 
 //service page
 

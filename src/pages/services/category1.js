@@ -151,7 +151,7 @@ const Category1 = () => {
                     
                     <div className="column is-one-quarter">
                       <div className="service-nav-item has-background-white">
-                        <Link to="/services/category1" className="has-text-centered">
+                        <Link to="/services/category2" className="has-text-centered">
                           <figure>
                             <img src={ser2Icon} className="image is-64x64 service-icon" alt="" />
                           </figure>
