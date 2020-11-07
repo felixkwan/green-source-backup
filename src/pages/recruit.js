@@ -114,7 +114,7 @@ const Recruit = () => {
                 </div>
               </section>
               <div className="table-bottom has-text-centered">
-                <button className="recruit-btn is-size-5 has-text-weight-bold px-5">馬上應徵</button>
+                <Link to="https://wa.me/85269965240" className="recruit-btn is-size-5 has-text-weight-bold px-5">馬上應徵</Link>
               </div>
             </div>
 

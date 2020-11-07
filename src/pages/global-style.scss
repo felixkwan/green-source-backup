@@ -358,7 +358,7 @@ button.navbar-burger {
   margin-left: -3rem;
   margin-top: -7.25rem;
   position: absolute;
-  color: #efefef;
+  color: hsl(141.7,28.6%,24.7%);
 }
 
 .eng-label {
@@ -476,11 +476,11 @@ button.navbar-burger {
   box-shadow: 0px 12px 28px 0px rgba(209,209,209,0.25);
 
   &:hover {
-    border: $grey-lighter .25rem solid;
+    border: hsl(140,28%,85.3%) .25rem solid;
   }
 
   &:focus {
-    border: $grey-lighter .25rem solid;
+    border: hsl(140,28%,85.3%) .25rem solid;
   }
 
   &.is-active {

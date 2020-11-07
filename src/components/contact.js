@@ -40,9 +40,9 @@ class Contact extends Component {
                                             <h5 className="mb-1">以電郵形式搵我地</h5>
                                             <p>除左電話之外, 可以電郵到以下地址。</p>
                                         </div>
-                                        <Link to="/">
+                                        <a href="mailto:gsgaderning@yahoo.com">
                                                 <h5 className="contact-btn-l contact-btn py-4 pl-5 is-size-6-mobile has-text-left-desktop"> <FontAwesomeIcon icon={faEnvelopeOpen} className="ml-2 mr-5 mt-1 is-svg" />gsgaderning@yahoo.com</h5>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
 
