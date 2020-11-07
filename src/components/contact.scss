@@ -1,7 +1,7 @@
 // block-contact
 
 .block-contact {
-    background: hsl(142.5,36.4%,95.7%);
+    background: hsl(140,27.3%,95.7%);
 }
 
 .contact-btn {
@@ -14,17 +14,17 @@
 
 .contact-item {
     .eng-label {
-        color: hsl(120,1.8%,10.8%);
+        color: hsl(163.4,69.7%,28.4%);
     }
 }
 
 .is-svg {
-    color: hsl(143,45.1%,50%);
+    color: hsl(120,1.8%,10.8%);
 }
 
 @media only screen and (min-width: 1024px) {
     .block-contact {
-        background: hsl(142.5,36.4%,95.7%);
+        background: hsl(140,27.3%,95.7%);
     
         .column:last-child {
             padding-left: 2.5rem;

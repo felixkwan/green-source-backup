@@ -77,7 +77,7 @@ const Category2 = () => {
           <span className="page-title-text has-text-weight-bold">Service</span>
       </div>
 
-      <div className="page-body has-background-white-bis">
+      <div className="page-body">
 
         <div className="container page-content">
           <div className="container pb-6">

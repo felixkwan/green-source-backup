@@ -21,6 +21,7 @@ $card-radius: 2.55rem;
 $card-shadow: none;
 $card-color: hsl(120,1.8%,10.8%);
 $card-footer-border-top: none;
+$card-shadow: 0px 12px 38px 0px rgba(209,209,209,0.15);
 
 //breadcrumb
 $breadcrumb-item-color: hsl(120,1.8%,10.8%);
@@ -337,6 +338,10 @@ button.navbar-burger {
   overflow-x: hidden;
 }
 
+.page-body {
+  background: hsl(140,27.3%,97.8%);
+}
+
 .page-content {
   z-index: 1;
   padding-top: 5.5rem;
@@ -357,7 +362,7 @@ button.navbar-burger {
 }
 
 .eng-label {
-  color: hsl(141.7,51.3%,55.7%);
+  color: hsl(163.4,69.7%,28.4%);
 }
 
 @media only screen and (max-width: 1024px) {
