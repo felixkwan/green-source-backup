@@ -34,8 +34,8 @@ const Layout = ({ children }) => {
 
               <div className="column is-half is-hidden-tablet">
                   <ul className="footer-navbar is-flex is-flex-direction-row is-align-items-end">
-                    <li className="mr-4 has-text-white">條款及細則</li>
-                    <li className="mr-2 has-text-white">私隱政策</li>
+                    <li className="mr-4 "><Link to="/terms">條款及細則</Link></li>
+                    <li className="mr-2 "><Link to="/privacy">私隱政策</Link></li>
                   </ul>
                 </div>
 
@@ -47,8 +47,8 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="column is-half is-hidden-mobile">
                   <ul className="footer-navbar is-pulled-right is-flex is-flex-direction-row is-align-items-end">
-                    <li className="mr-4 has-text-white">條款及細則</li>
-                    <li className="mr-2 has-text-white">私隱政策</li>
+                    <li className="mr-4 "><Link to="/terms" className="has-text-white">條款及細則</Link></li>
+                    <li className="mr-2 "><Link to="/privacy" className="has-text-white">私隱政策</Link></li>
                   </ul>
                 </div>
 
