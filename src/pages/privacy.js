@@ -11,18 +11,8 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 
 const Privacy = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      desktop: file(relativePath: { eq: "manson-yim-6yS7w6HN8hY-unsplash.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   
+
   return (
     <Layout>
 
@@ -52,7 +42,6 @@ const Privacy = () => {
                 </ul>
               </nav>
 
-              <Clients/>
             </div>
           </div>
         </div>
