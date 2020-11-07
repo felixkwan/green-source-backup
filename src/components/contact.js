@@ -16,7 +16,7 @@ class Contact extends Component {
                     <div className="container is-fullhd contact-content is-clearfix">
                         <div className="container py-6">
                             <div className="columns is-4 is-multiline is-desktop">
-                                <div className="column is-half-desktop contact-tel has-text-centered-touch">
+                                <div className="column is-half-desktop contact-tel">
                                     <div className="is-clearfix">
                                         <div className="contact-item">
                                             <h6 className="eng mb-4 eng-label">Contact</h6>
@@ -26,12 +26,12 @@ class Contact extends Component {
                                             <h4>2670 0378 / 2697 6456</h4>
                                         </div>
                                         <Link to="https://wa.me/85269965240">
-                                            <h5 className="contact-btn-r contact-btn py-4 pl-5 has-background-white is-size-6-mobile has-text-left-desktop"> <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-5 mt-1 is-size-5" />立即查詢報價或細節</h5>
+                                            <h5 className="contact-btn-r contact-btn py-4 pl-5 s-size-6-mobile has-text-left-desktop"> <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-5 mt-1 is-size-5 is-svg" />立即查詢報價或細節</h5>
                                         </Link>
                                     </div> 
                                 </div>
 
-                                <div className="column is-half-desktop has-text-centered-touch">
+                                <div className="column is-half-desktop">
                                     <div className="is-clearfix">
                                         <div className="contact-item">
                                             <h6 className="eng mb-4 eng-label">Email</h6>
@@ -41,7 +41,7 @@ class Contact extends Component {
                                             <p>除左電話之外, 可以電郵到以下地址。</p>
                                         </div>
                                         <Link to="/">
-                                                <h5 className="contact-btn-l contact-btn py-4 pl-5 has-background-white is-size-6-mobile has-text-left-desktop"> <FontAwesomeIcon icon={faEnvelopeOpen} className="ml-2 mr-5 mt-1" />gsgaderning@yahoo.com</h5>
+                                                <h5 className="contact-btn-l contact-btn py-4 pl-5 is-size-6-mobile has-text-left-desktop"> <FontAwesomeIcon icon={faEnvelopeOpen} className="ml-2 mr-5 mt-1 is-svg" />gsgaderning@yahoo.com</h5>
                                         </Link>
                                     </div>
                                 </div>

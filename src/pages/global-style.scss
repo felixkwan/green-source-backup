@@ -2,7 +2,6 @@
 $primary-color: hsl(143, 45%, 50%);
 $dark-grey: hsl(120,1.8%,10.8%);
 $text-color: hsl(0, 0%, 22%);
-$dark-green: hsl(134.5,23.6%,24.1%);
 
 //navbar
 $navbar-background-color: white;
@@ -35,7 +34,7 @@ $table-foot-cell-border-width: 0 0 0;
 $table-cell-border: none;
 
 //footer 
-$footer-background-color: hsl(140,15.8%,96.3%);
+$footer-background-color: hsl(143.1,52%,4.9%);
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap');
@@ -358,7 +357,7 @@ button.navbar-burger {
 }
 
 .eng-label {
-  color: $primary-color;
+  color: hsl(141.7,51.3%,55.7%);
 }
 
 @media only screen and (max-width: 1024px) {
