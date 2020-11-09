@@ -66,42 +66,42 @@ const Recruit = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <th>Position</th>
+                        <th className="has-text-left">Position</th>
                         <td className="is-hidden-mobile">Team</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>Team</td>
                       </tr>
                       <tr>
-                        <th>Work</th>
+                        <th className="has-text-left">Work</th>
                         <td className="is-hidden-mobile">Maintenance</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>Maintenance</td>
                       </tr>
                       <tr>
-                        <th>Requirement</th>
+                        <th className="has-text-left">Requirement</th>
                         <td className="is-hidden-mobile">Onsite work</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>Onsite work</td>
                       </tr>
                       <tr>
-                        <th>Duty Type</th>
+                        <th className="has-text-left">Duty Type</th>
                         <td className="is-hidden-mobile">Full Time / Part Time</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>Full Time / Part Time</td>
                       </tr>
                       <tr>
-                        <th>Time</th>
+                        <th className="has-text-left">Time</th>
                         <td className="is-hidden-mobile">From 0900 to 1700</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>From 0900 to 1700</td>
                       </tr>
                       <tr>
-                        <th>Salary</th>
+                        <th className="has-text-left">Salary</th>
                         <td className="is-hidden-mobile">Discuss at interview</td>
                       </tr>
                       <tr className="is-hidden-tablet">

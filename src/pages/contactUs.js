@@ -69,42 +69,42 @@ const ContactUs = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <th>Address Chinese</th>
+                        <th className="has-text-left">Address Chinese</th>
                         <td className="is-hidden-mobile">Team</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>Team</td>
                       </tr>
                       <tr>
-                        <th>Address English</th>
+                        <th className="has-text-left">Address English</th>
                         <td className="is-hidden-mobile">Maintenance</td>
                       </tr>
                       <tr className="is-hidden-tablet">
                         <td>Maintenance</td>
                       </tr>
                       <tr>
-                        <th>Contact</th>
+                        <th className="has-text-left">Contact</th>
                         <td>Nic Yip</td>
                         <th className="is-hidden-mobile">Number</th>
                         <td className="is-hidden-mobile">9585-3845</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <th>Number</th>
+                        <th className="has-text-left">Number</th>
                         <td>9585-3845</td>
                       </tr>
                       <tr>
-                        <th>Contact</th>
+                        <th className="has-text-left">Contact</th>
                         <td>Jay Cheung</td>
                         <th className="is-hidden-mobile">Number</th>
                         <td className="is-hidden-mobile">6996-5240</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <th>Number</th>
+                        <th className="has-text-left">Number</th>
                         <td>6996-5240</td>
                       </tr>
                     
                       <tr>
-                        <th>Mail</th>
+                        <th className="has-text-left">Mail</th>
                         <td className="is-hidden-mobile">gsgardening@yahoo.com</td>
                       </tr>
                       <tr className="is-hidden-tablet">
@@ -112,7 +112,7 @@ const ContactUs = () => {
                       </tr>
 
                       <tr>
-                        <th>Tel</th>
+                        <th className="has-text-left">Tel</th>
                         <td>2670-0378</td>
                         <th className="is-hidden-mobile">Fax</th>
                         <td className="is-hidden-mobile">2670-9016</td>
