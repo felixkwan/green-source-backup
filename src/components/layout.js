@@ -14,6 +14,7 @@ import ser1Icon from "../images/icons8-tree-planting-64.png"
 import ser2Icon from "../images/icons8-worker-64.png"
 import ser3Icon from "../images/icons8-wheelbarrow-64.png"
 import ser4Icon from "../images/icons8-lotus-64.png"
+import logo from "../images/logo-gs-footer.svg"
 
 import Contact from "./contact"
 import "./layout.css"
@@ -30,26 +31,32 @@ const Layout = ({ children }) => {
         <footer className="footer">
           <div className="container">
             <div className="container is-fullhd">
-              <div className="columns is-touch is-gapless">
+              <div className="columns is-touch is-gapless is-vcentered">
+
+              <div className="column is-half">
+                <img src={logo} className="logo-svg-footer is-hidden-mobile" alt=""></img>
+                <img src={logo} className="logo-svg-footer is-hidden-tablet mb-5" alt=""></img>
+              </div>
 
               <div className="column is-half is-hidden-tablet">
-                  <ul className="footer-navbar is-flex is-flex-direction-row is-align-items-end">
-                    <li className="mr-4 "><Link to="/terms">條款及細則</Link></li>
-                    <li className="mr-2 "><Link to="/privacy">私隱政策</Link></li>
+                  <ul className="is-flex is-flex-direction-row is-align-items-end">
+                    <li className="mr-4 "><Link to="/terms" className="has-text-white-bis">條款及細則</Link></li>
+                    <li className="mr-2 "><Link to="/privacy" className="has-text-white-bis">私隱政策</Link></li>
                   </ul>
-                </div>
-
-                <div className="column is-half">
                   <small className="is-flex-wrap-wrap has-text-white">
-                  © {new Date().getFullYear()} Green Source Gardening Art Co.Ltd
+                  © {new Date().getFullYear()} GSGA Co.Ltd. All rights reserved.
                   {` `}
                   </small>
                 </div>
-                <div className="column is-half is-hidden-mobile">
-                  <ul className="footer-navbar is-pulled-right is-flex is-flex-direction-row is-align-items-end">
-                    <li className="mr-4 "><Link to="/terms" className="has-text-white">條款及細則</Link></li>
-                    <li className="mr-2 "><Link to="/privacy" className="has-text-white">私隱政策</Link></li>
+                <div className="column is-half is-hidden-mobile has-text-right">
+                  <ul className="is-flex is-flex-direction-row-reverse is-align-items-start">
+                    <li><Link to="/terms" className="has-text-white-bis">條款及細則</Link></li>
+                    <li className="mr-3"><Link to="/privacy" className="has-text-white-bis">私隱政策</Link></li>
                   </ul>
+                  <small className="is-flex-wrap-wrap has-text-white">
+                  © {new Date().getFullYear()} GSGA Co.Ltd. All rights reserved.
+                  {` `}
+                  </small>
                 </div>
 
                 

@@ -12,6 +12,7 @@ $navbar-item-hover-background-color: transparent;
 $navbar-item-hover-color: $dark-grey;
 $navbar-dropdown-border-top: 2px solid $primary-color;
 $navbar-dropdown-arrow: hsl(143, 45%, 50%);
+$navbar-dropdown-item-hover-background-color: hsl(140,25%,95.3%);
 
 //hero
 $hero-body-padding-medium: 6.5rem 1.5rem 10.5rem;
@@ -115,6 +116,10 @@ h6 {
   &.eng {
     letter-spacing: -0.025rem;
   }
+}
+
+.is-underline {
+  text-decoration: underline;
 }
 
 th {
@@ -409,7 +414,7 @@ button.navbar-burger {
 }
 
 @media only screen and (max-width: 1023px) {
-  .header {
+  .page-header {
     color: white;
   }
 }
@@ -462,6 +467,10 @@ button.navbar-burger {
   .footer {
     padding-bottom: 12rem;
   }
+}
+
+.logo-svg-footer {
+  height: 48px;
 }
 
 //service page

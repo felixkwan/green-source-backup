@@ -14,7 +14,7 @@ const Terms = () => {
   return (
     <Layout>
 
-      <div id="terms" className="header page-header">
+      <div id="terms" className="header">
         <section className="hero is-relative has-background-gradient-green">
           <div className="hero-head">
             <Header />
