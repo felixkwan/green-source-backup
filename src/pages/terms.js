@@ -72,7 +72,7 @@ const Terms = () => {
                   <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
                   </li>
                   <li>
-                  <p><strong>Website</strong> refers to Green Source, accessible from <Link to="/" rel="external nofollow noopener" target="_blank">https://greensourcegroup.co</Link></p>
+                  <p><strong>Website</strong> refers to Green Source, accessible from <Link to="/">https://greensourcegroup.co</Link></p>
                   </li>
                   <li>
                   <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
