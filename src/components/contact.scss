@@ -1,0 +1,68 @@
+// block-contact
+
+.block-contact {
+    background: hsl(140,27.3%,95.7%);
+}
+
+.contact-btn {
+    border-radius: 1.35rem;
+    border: none;
+    outline: none;
+    background: white;
+    color: hsl(120,1.8%,10.8%);
+}
+
+.contact-item {
+    .eng-label {
+        color: hsl(163.4,69.7%,28.4%);
+    }
+}
+
+.is-svg {
+    color: hsl(120,1.8%,10.8%);
+}
+
+@media only screen and (min-width: 1024px) {
+    .block-contact {
+        background: hsl(140,27.3%,95.7%);
+    
+        .column:last-child {
+            padding-left: 2.5rem;
+        }
+    }
+    
+    .contact-btn-r {
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .contact-btn-l {
+        margin-top: 1.75rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-btn {
+        margin-top: 1rem;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+
+    .contact-item {
+        margin-left: 4.75rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-btn {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .contact-item {
+        margin-left: 1.75rem;
+    }
+}
