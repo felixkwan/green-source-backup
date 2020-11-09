@@ -228,11 +228,13 @@ img {
 
   &:hover {
     background: $primary-color;
+    color: white;
     transition: background-color .55s ease;
   }
 
   &:active {
     background: $primary-color;
+    color: white;
     transition: background-color .55s ease;
   }
 
@@ -335,7 +337,7 @@ button.navbar-burger {
       right: 0;
       position: absolute;
       box-shadow: none;
-      padding: 1rem .25rem;
+      padding: 1rem .25rem .5rem;
       margin-top: .5rem;
       border-radius: 1.25rem;
   }
@@ -347,7 +349,7 @@ button.navbar-burger {
   position: fixed;
   width: 100%;
   height: fit-content;
-  padding: 1rem 1.5rem .25rem;
+  padding: 1rem 1.5rem .5rem;
   bottom: 0;
   left: 0;
   background: white;
@@ -508,7 +510,7 @@ button.navbar-burger {
 
 @media only screen and (max-width: 1023px) {
   .footer {
-    padding-bottom: 12rem;
+    padding-bottom: 8.5rem;
   }
 }
 

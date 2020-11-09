@@ -1,3 +1,5 @@
+$primary-color: hsl(143, 45%, 50%);
+
 // block-contact
 
 .block-contact {
@@ -19,7 +21,7 @@
 }
 
 .is-svg {
-    color: hsl(120,1.8%,10.8%);
+    color: $primary-color;
 }
 
 @media only screen and (min-width: 1024px) {
