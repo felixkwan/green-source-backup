@@ -61,7 +61,7 @@ const Recruit = () => {
               </div>
               <section className="hero">
                 <div className="hero-body">
-                  <table className="table is-fullwidth">
+                  <table className="table">
                     <thead>
                     </thead>
                     <tbody>
