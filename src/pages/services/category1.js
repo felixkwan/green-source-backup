@@ -84,54 +84,61 @@ const Category1 = () => {
             <div className="service-content">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
                   <div className="column is-half-tablet is-one-third-widescreen">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">園林設計</h2>
-                          <article className="content px-4">
-                            <p>為客戶創造更好的綠化環境。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">園林設計</h2>
+                            <article className="content px-4">
+                              <p>為客戶創造更好的綠化環境。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-widescreen">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                   <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">種植及修剪</h2>
-                          <article className="content px-4">
-                            <p>擁有多名經驗豐富的人員，負責種植植物及修剪，為各戶提供綠化保養。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">種植及修剪</h2>
+                            <article className="content px-4">
+                              <p>擁有多名經驗豐富的人員，負責種植植物及修剪，為各戶提供綠化保養。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-widescreen">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-2">
+                        <div className="card-image">
+                          <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">清理渠道</h2>
-                          <article className="content px-4">
-                            <p>清潔團隊專門負責清理由泥土、枯枝及枯葉造成的堵塞問題，以保持環境潔淨及渠道暢通。</p>
-                          </article>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">清理渠道</h2>
+                            <article className="content px-4">
+                              <p>清潔團隊專門負責清理由泥土、枯枝及枯葉造成的堵塞問題，以保持環境潔淨及渠道暢通。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
                       </div>
-                      <div className="card-footer"></div>
                     </div>
                   </div>
+                  
                 </div>
 
                 <div className="container is-widescreen service-navbar is-hidden-touch">

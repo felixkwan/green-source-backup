@@ -91,68 +91,76 @@ const Category2 = () => {
             <div className="service-content">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">危樹移除</h2>
-                          <article className="content px-4">
-                            <p>經驗豐富的專業人員，並配備相關的機械設備專門負責移除危險樹木。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">危樹移除</h2>
+                            <article className="content px-4">
+                              <p>經驗豐富的專業人員，並配備相關的機械設備專門負責移除危險樹木。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">林木保養</h2>
-                          <article className="content px-4">
-                            <p>定期為樹木修剪樹冠及疏枝，令其勻稱得宜、外觀自然優美。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">林木保養</h2>
+                            <article className="content px-4">
+                              <p>定期為樹木修剪樹冠及疏枝，令其勻稱得宜、外觀自然優美。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-2">
+                        <div className="card-image">
+                          <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">高空砍伐</h2>
-                          <article className="content px-4">
-                            <p>使用高空工作台、升降車等器具處理較高林木。除外，亦有專業而富有經驗的攀樹師負責高空伐樹。</p>
-                          </article>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">高空砍伐</h2>
+                            <article className="content px-4">
+                              <p>使用高空工作台、升降車等器具處理較高林木。除外，亦有專業而富有經驗的攀樹師負責高空伐樹。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
                       </div>
-                      <div className="card-footer"></div>
-                    </div>
+                    </div>  
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.s4Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-2">
+                        <div className="card-image">
+                          <Img fluid={data.s4Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">樹木評估</h2>
-                          <article className="content px-4">
-                            <p>配備評估樹木相關的儀器和工具，為客戶測量及為樹木進行專業評估。</p>
-                          </article>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">樹木評估</h2>
+                            <article className="content px-4">
+                              <p>配備評估樹木相關的儀器和工具，為客戶測量及為樹木進行專業評估。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
                       </div>
-                      <div className="card-footer"></div>
                     </div>
                   </div>
 
