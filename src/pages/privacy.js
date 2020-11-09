@@ -44,7 +44,7 @@ const Privacy = () => {
                 <h1 className="eng title is-2">Statement</h1>
                 <div className="content pb-5">
                   <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-                  <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" className="is-underline " target="_blank">Privacy Policy Generator</a>.</p>
+                  <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" className="is-underline ">Privacy Policy Generator</a>.</p>
                 </div>
 
                 <h1 className="eng title is-2 is-spaced">Interpretation and Definitions</h1>
@@ -125,7 +125,7 @@ const Privacy = () => {
                   <h3 className="eng title is-4">Tracking Technologies and Cookies</h3>
                   <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service.</p>
                   <p>You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service.</p>
-                  <p>Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser. Learn more about cookies: <a href="https://www.termsfeed.com/blog/cookies/" target="_blank">All About Cookies</a>.</p>
+                  <p>Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser. Learn more about cookies: <a href="https://www.termsfeed.com/blog/cookies/" className="is-underline">All About Cookies</a>.</p>
                   <p>We use both session and persistent Cookies for the purposes set out below:</p>
                   <ul>
                   <li>
