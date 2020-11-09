@@ -91,68 +91,76 @@ const Category4 = () => {
             <div className="service-content">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">綠化牆</h2>
-                          <article className="content px-4">
-                            <p>美化生活環境，提供更優質的生活質素。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">綠化牆</h2>
+                            <article className="content px-4">
+                              <p>美化生活環境，提供更優質的生活質素。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">植樹</h2>
-                          <article className="content px-4">
-                            <p>幫助客戶移除舊有枯樹及種植樹苗，並且設有數月的保養期。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">植樹</h2>
+                            <article className="content px-4">
+                              <p>幫助客戶移除舊有枯樹及種植樹苗，並且設有數月的保養期。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-2">
+                        <div className="card-image">
+                          <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">灌溉系統</h2>
-                          <article className="content px-4">
-                            <p>有專業的工程人員負責鋪設植物灌溉系統，以幫助客戶解決植物灌溉的問題。</p>
-                          </article>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">灌溉系統</h2>
+                            <article className="content px-4">
+                              <p>有專業的工程人員負責鋪設植物灌溉系統，以幫助客戶解決植物灌溉的問題。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
                       </div>
-                      <div className="card-footer"></div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.s4Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-2">
+                        <div className="card-image">
+                          <Img fluid={data.s4Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">零售</h2>
-                          <article className="content px-4">
-                            <p>為客戶供應各類時花、植物、籬笆及各種園藝裝飾。</p>
-                          </article>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">零售</h2>
+                            <article className="content px-4">
+                              <p>為客戶供應各類時花、植物、籬笆及各種園藝裝飾。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
                       </div>
-                      <div className="card-footer"></div>
                     </div>
                   </div>
 

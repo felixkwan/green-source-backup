@@ -83,52 +83,58 @@ const Category3 = () => {
             <div className="service-content">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s1Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">草地修剪</h2>
-                          <article className="content px-4">
-                            <p>配備相關工具及安全設施，如剪草機及護面罩，為客戶以最快捷又安全的情況進行草地修剪。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">草地修剪</h2>
+                            <article className="content px-4">
+                              <p>配備相關工具及安全設施，如剪草機及護面罩，為客戶以最快捷又安全的情況進行草地修剪。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-4">
-                      <div className="card-image">
-                        <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-4">
+                        <div className="card-image">
+                          <Img fluid={data.s2Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">舖設草皮</h2>
-                          <article className="content px-4">
-                            <p>網球場，足球場，公園，各類大小型花園等由具經驗技工使用相關專門設備進行架設。</p>
-                          </article>
-                      </div>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">舖設草皮</h2>
+                            <article className="content px-4">
+                              <p>網球場，足球場，公園，各類大小型花園等由具經驗技工使用相關專門設備進行架設。</p>
+                            </article>
+                        </div>
 
-                      <div className="card-footer"></div>
+                        <div className="card-footer"></div>
+                      </div>
                     </div>
                   </div>
 
                   <div className="column is-half-tablet is-one-third-desktop">
-                    <div className="card pb-2">
-                      <div className="card-image">
-                        <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
-                      </div>
+                    <div className="inner">
+                      <div className="card pb-2">
+                        <div className="card-image">
+                          <Img fluid={data.s3Image.childImageSharp.fluid} className="" alt=""/>
+                        </div>
 
-                      <div className="card-content">
-                        <h2 className="service-title px-4 mb-2">斜坡割草</h2>
-                          <article className="content px-4">
-                            <p>具經驗且配備安全設備的專業人員，專為客戶在陡峭斜坡上進行除草。</p>
-                          </article>
+                        <div className="card-content">
+                          <h2 className="service-title px-4 mb-2">斜坡割草</h2>
+                            <article className="content px-4">
+                              <p>具經驗且配備安全設備的專業人員，專為客戶在陡峭斜坡上進行除草。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
                       </div>
-                      <div className="card-footer"></div>
                     </div>
                   </div>
 
