@@ -555,6 +555,7 @@ button.navbar-burger {
 
   .inner {
     height: 100%;
+    perspective: 1000px;
   }
 
   .card {
@@ -583,7 +584,7 @@ button.navbar-burger {
 @media only screen and (min-width: 1024px) {
   .service-content {
     .inner:hover .card {
-      transform:  scale(1.035);
+      transform:  rotateY(15deg);
       transition: all .25s ease;
       box-shadow: -0px 30px 38px 0px rgba(209,209,209,0.15);
     }

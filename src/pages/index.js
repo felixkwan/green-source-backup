@@ -241,12 +241,12 @@ const IndexPage = ({intl}) => (
                       alt=""
                 />
                 </div>
-                <div className="column is-half info-1-text is-flex">
-                  <div className="container is-max-desktop info-1 is-align-self-center">
-                    <div className="info-title">
-                      <h4 className="eng eng-label">Shape Safety</h4>
-                    </div>
-                    <div className="container">
+                <div className="column is-half">
+                  <div className="info-1 is-align-self-center is-flex">
+                    <div className="container info-1-content is-flex is-flex-direction-column is-justify-content-center">
+                      <div className="info-title">
+                        <h4 className="eng eng-label">Shape Safety</h4>
+                      </div>
                       <h1 className="eng mb-3">Maintain every details in your garden.</h1>
                       <h2>提供安全可靠綠化環境，遠離隱藏危險。</h2>
                     </div>
@@ -262,12 +262,12 @@ const IndexPage = ({intl}) => (
                       alt=""
                 />
                 </div>
-                <div className="column is-half info-2-text is-flex">
-                  <div className="container is-max-desktop info-2 is-align-self-center">
-                    <div className="info-title">
-                      <h4 className="eng eng-label">Live Green</h4>
-                    </div>
-                    <div className="container">
+                <div className="column is-half">
+                  <div className="info-2 is-align-self-center is-flex">
+                    <div className="container info-2-content is-flex is-flex-direction-column is-justify-content-center">
+                      <div className="info-title">
+                        <h4 className="eng eng-label">Live Green</h4>
+                      </div>
                       <h1 className="eng mb-3">Build healthy working &amp; learning place.</h1>
                       <h2>建造更優質的環境，塑造更健康的生活。</h2>
                     </div>
@@ -290,10 +290,12 @@ const IndexPage = ({intl}) => (
 
           <div className="block-message">    
             <div className="container is-max-desktop">
-              <div className="message-wrap has-text-centered-tablet">
+              <div className="message-wrap has-text-centered-tablet is-relative is-clipped">
+                <div className="top-left-bk"></div>
+                <div className="bottom-right-bk is-hidden-mobile"></div>
                 <div className="msg-heading">
                   <h1 className="eng is-size-2-mobile">Our Commit</h1>
-                  <h3 className="heading-chin px-2 is-size-4-mobile">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+                  <h3 className="heading-chin is-size-3-tablet is-size-4-mobile">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
                 </div> 
               </div>
             </div>

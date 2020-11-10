@@ -69,42 +69,42 @@ const ContactUs = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <th className="has-text-left">Address Chinese</th>
-                        <td className="is-hidden-mobile">Team</td>
+                        <th className="has-text-left">公司地址</th>
+                        <td className="is-hidden-mobile">渣甸山衛信道8號地下</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Team</td>
+                        <td>渣甸山衛信道8號地下</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Address English</th>
-                        <td className="is-hidden-mobile">Maintenance</td>
+                        <th className="has-text-left">Address</th>
+                        <td className="is-hidden-mobile">G/f No.8 Wilson Road Jardine's Lookout</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Maintenance</td>
+                        <td>G/f No.8 Wilson Road Jardine's Lookout</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Contact</th>
-                        <td>Nic Yip</td>
-                        <th className="is-hidden-mobile">Number</th>
+                        <th className="has-text-left">聯絡人</th>
+                        <td>葉生</td>
+                        <th className="is-hidden-mobile">聯絡電話</th>
                         <td className="is-hidden-mobile">9585-3845</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <th className="has-text-left">Number</th>
+                        <th className="has-text-left">聯絡電話</th>
                         <td>9585-3845</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Contact</th>
-                        <td>Jay Cheung</td>
-                        <th className="is-hidden-mobile">Number</th>
+                        <th className="has-text-left">聯絡人</th>
+                        <td>張生</td>
+                        <th className="is-hidden-mobile">聯絡電話</th>
                         <td className="is-hidden-mobile">6996-5240</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <th className="has-text-left">Number</th>
+                        <th className="has-text-left">聯絡電話</th>
                         <td>6996-5240</td>
                       </tr>
                     
                       <tr>
-                        <th className="has-text-left">Mail</th>
+                        <th className="has-text-left">電郵地址</th>
                         <td className="is-hidden-mobile">gsgardening@yahoo.com</td>
                       </tr>
                       <tr className="is-hidden-tablet">
@@ -112,7 +112,7 @@ const ContactUs = () => {
                       </tr>
 
                       <tr>
-                        <th className="has-text-left">Tel</th>
+                        <th className="has-text-left">電話</th>
                         <td>2670-0378</td>
                         <th className="is-hidden-mobile">Fax</th>
                         <td className="is-hidden-mobile">2670-9016</td>

@@ -66,46 +66,46 @@ const Recruit = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <th className="has-text-left">Position</th>
-                        <td className="is-hidden-mobile">Team</td>
+                        <th className="has-text-left">職位</th>
+                        <td className="is-hidden-mobile">園藝技工</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Team</td>
+                        <td>園藝技工</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Work</th>
-                        <td className="is-hidden-mobile">Maintenance</td>
+                        <th className="has-text-left">工作內容</th>
+                        <td className="is-hidden-mobile">園藝保養 ,修剪植物、清理枯葉 、灌溉</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Maintenance</td>
+                        <td>園藝保養 ,修剪植物、清理枯葉 、灌溉</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Requirement</th>
-                        <td className="is-hidden-mobile">Onsite work</td>
+                        <th className="has-text-left">要求條件</th>
+                        <td className="is-hidden-mobile">具責任心，戶外工作 ,操作簡單設備如割草機</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Onsite work</td>
+                        <td>具責任心，戶外工作 ,操作簡單設備如割草機</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Duty Type</th>
-                        <td className="is-hidden-mobile">Full Time / Part Time</td>
+                        <th className="has-text-left">工作類型</th>
+                        <td className="is-hidden-mobile">全職, 兼職</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Full Time / Part Time</td>
+                        <td>全職, 兼職</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Time</th>
-                        <td className="is-hidden-mobile">From 0900 to 1700</td>
+                        <th className="has-text-left">工作時間</th>
+                        <td className="is-hidden-mobile">早上9時 至 下午5時</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>From 0900 to 1700</td>
+                        <td>早上9時 至 下午5時</td>
                       </tr>
                       <tr>
-                        <th className="has-text-left">Salary</th>
-                        <td className="is-hidden-mobile">Discuss at interview</td>
+                        <th className="has-text-left">薪酬</th>
+                        <td className="is-hidden-mobile">面議</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <td>Discuss at interview</td>
+                        <td>面議</td>
                       </tr>
                     </tbody>
                     <tfoot>
