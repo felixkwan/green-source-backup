@@ -290,10 +290,12 @@ const IndexPage = ({intl}) => (
 
           <div className="block-message">    
             <div className="container is-max-desktop">
-              <div className="message-wrap has-text-centered-tablet">
+              <div className="message-wrap has-text-centered-tablet is-relative is-clipped">
+                <div className="top-left-bk"></div>
+                <div className="bottom-right-bk is-hidden-mobile"></div>
                 <div className="msg-heading">
                   <h1 className="eng is-size-2-mobile">Our Commit</h1>
-                  <h3 className="heading-chin is-size-3-desktop is-size-4-mobile">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
+                  <h3 className="heading-chin is-size-3-tablet is-size-4-mobile">信譽第一,品質至上,追求完美,不斷創新,為客戶提供高品質的服務。</h3>
                 </div> 
               </div>
             </div>
