@@ -17,6 +17,9 @@ $navbar-dropdown-item-hover-background-color: hsl(140,25%,95.3%);
 //hero
 $hero-body-padding-medium: 6.5rem 1.5rem 10.5rem;
 
+//section
+$section-padding: 1.5rem 1.25rem;
+
 //text
 $title-color: $dark-grey;
 $subtitle-color: $primary-color;
@@ -406,7 +409,7 @@ button.navbar-burger {
   margin-left: -3rem;
   margin-top: -7.25rem;
   position: absolute;
-  color: hsl(141.7,28.6%,24.7%);
+  color: hsl(140,10.3%,94.3%);
 }
 
 .eng-label {
@@ -427,7 +430,7 @@ button.navbar-burger {
 
 @media only screen and (max-width: 768px) {
   .page-body {
-    padding: 0 1.5rem;
+    padding: 0 .5rem;
   }
 
   .page-title-text  {
@@ -616,5 +619,5 @@ button.navbar-burger {
 
 .table-bottom {
   padding: .5rem;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
 }
