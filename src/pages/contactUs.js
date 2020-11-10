@@ -82,25 +82,29 @@ const ContactUs = () => {
                       <tr className="is-hidden-tablet">
                         <td>G/f No.8 Wilson Road Jardine's Lookout</td>
                       </tr>
-                      <tr>
-                        <th className="has-text-left">聯絡人</th>
+                      <tr className="is-hidden-mobile">
+                        <th>聯絡人</th>
                         <td>葉生</td>
-                        <th className="is-hidden-mobile">聯絡電話</th>
-                        <td className="is-hidden-mobile">9585-3845</td>
-                      </tr>
-                      <tr className="is-hidden-tablet">
-                        <th className="has-text-left">聯絡電話</th>
+                        <th>聯絡電話</th>
                         <td>9585-3845</td>
                       </tr>
-                      <tr>
+                      <tr className="is-hidden-tablet">
                         <th className="has-text-left">聯絡人</th>
-                        <td>張生</td>
-                        <th className="is-hidden-mobile">聯絡電話</th>
-                        <td className="is-hidden-mobile">6996-5240</td>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <th className="has-text-left">聯絡電話</th>
-                        <td>6996-5240</td>
+                        <td>葉生 &#173; 9585-3845</td>
+                      </tr>
+
+                      <tr className="is-hidden-mobile">
+                        <th>聯絡人</th>
+                        <td>張生</td>
+                      </tr>
+
+                      <tr className="is-hidden-tablet">
+                        <th className="has-text-left">聯絡人</th>
+                      </tr>
+                      <tr className="is-hidden-tablet">
+                        <td>張生 &#173; 6996-5240</td>
                       </tr>
                     
                       <tr>
@@ -111,14 +115,23 @@ const ContactUs = () => {
                         <td>gsgardening@yahoo.com</td>
                       </tr>
 
-                      <tr>
-                        <th className="has-text-left">電話</th>
+                      <tr className="is-hidden-mobile">
+                        <th>電話</th>
                         <td>2670-0378</td>
-                        <th className="is-hidden-mobile">Fax</th>
-                        <td className="is-hidden-mobile">2670-9016</td>
+                        <th >Fax</th>
+                        <td>2670-9016</td>
+                      </tr>
+
+                      <tr className="is-hidden-tablet">
+                        <th className="has-text-left">電話</th>
                       </tr>
                       <tr className="is-hidden-tablet">
-                        <th>Fax</th>
+                        <td>2670-0378</td>
+                      </tr>
+                      <tr className="is-hidden-tablet">
+                        <th className="has-text-left">Fax</th>
+                      </tr>
+                      <tr className="is-hidden-tablet">
                         <td>2670-9016</td>
                       </tr>
                     </tbody>
