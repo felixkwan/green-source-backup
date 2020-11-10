@@ -98,6 +98,8 @@ const ContactUs = () => {
                       <tr className="is-hidden-mobile">
                         <th>聯絡人</th>
                         <td>張生</td>
+                        <th>聯絡電話</th>
+                        <td>6996-5240</td>
                       </tr>
 
                       <tr className="is-hidden-tablet">
