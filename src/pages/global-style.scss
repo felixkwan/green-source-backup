@@ -17,6 +17,9 @@ $navbar-dropdown-item-hover-background-color: hsl(140,25%,95.3%);
 //hero
 $hero-body-padding-medium: 6.5rem 1.5rem 10.5rem;
 
+//section
+$section-padding: 1.5rem 1.25rem;
+
 //text
 $title-color: $dark-grey;
 $subtitle-color: $primary-color;
@@ -427,7 +430,7 @@ button.navbar-burger {
 
 @media only screen and (max-width: 768px) {
   .page-body {
-    padding: 0 1.5rem;
+    padding: 0 .5rem;
   }
 
   .page-title-text  {
