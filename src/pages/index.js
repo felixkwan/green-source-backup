@@ -241,12 +241,12 @@ const IndexPage = ({intl}) => (
                       alt=""
                 />
                 </div>
-                <div className="column is-half info-1-text is-flex">
-                  <div className="container is-max-desktop info-1 is-align-self-center">
-                    <div className="info-title">
-                      <h4 className="eng eng-label">Shape Safety</h4>
-                    </div>
-                    <div className="container">
+                <div className="column is-half">
+                  <div className="info-1 is-align-self-center is-flex">
+                    <div className="container info-1-content is-flex is-flex-direction-column is-justify-content-center">
+                      <div className="info-title">
+                        <h4 className="eng eng-label">Shape Safety</h4>
+                      </div>
                       <h1 className="eng mb-3">Maintain every details in your garden.</h1>
                       <h2>提供安全可靠綠化環境，遠離隱藏危險。</h2>
                     </div>
@@ -262,12 +262,12 @@ const IndexPage = ({intl}) => (
                       alt=""
                 />
                 </div>
-                <div className="column is-half info-2-text is-flex">
-                  <div className="container is-max-desktop info-2 is-align-self-center">
-                    <div className="info-title">
-                      <h4 className="eng eng-label">Live Green</h4>
-                    </div>
-                    <div className="container">
+                <div className="column is-half">
+                  <div className="info-2 is-align-self-center is-flex">
+                    <div className="container info-2-content is-flex is-flex-direction-column is-justify-content-center">
+                      <div className="info-title">
+                        <h4 className="eng eng-label">Live Green</h4>
+                      </div>
                       <h1 className="eng mb-3">Build healthy working &amp; learning place.</h1>
                       <h2>建造更優質的環境，塑造更健康的生活。</h2>
                     </div>
