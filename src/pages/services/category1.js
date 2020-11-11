@@ -83,7 +83,7 @@ const Category1 = () => {
 
             <div className="service-content">
                 <div className="columns is-variable is-3-mobile is-4-tablet is-multiline">
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="inner">
                       <div className="card pb-4">
                         <div className="card-image">
@@ -102,7 +102,7 @@ const Category1 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                    <div className="inner">
                       <div className="card pb-4">
                         <div className="card-image">
@@ -121,7 +121,7 @@ const Category1 = () => {
                     </div>
                   </div>
 
-                  <div className="column is-half-tablet is-one-third-widescreen">
+                  <div className="column is-half-tablet is-one-third-desktop">
                     <div className="inner">
                       <div className="card pb-2">
                         <div className="card-image">
