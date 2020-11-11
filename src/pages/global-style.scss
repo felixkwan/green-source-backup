@@ -590,12 +590,12 @@ button.navbar-burger {
   .card-top-border:before {
     content: "";
     position: absolute;
-    height: 2px;
+    height: .3rem;
     top: 0;
     left: 0;
     width: 100%;
     background: hsl(142.9,10.1%,59.4%);
-    border-radius: 1px;
+    border-radius: .15rem;
   }
 }
 
