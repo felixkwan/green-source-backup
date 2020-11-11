@@ -193,7 +193,7 @@ const IndexPage = ({intl}) => (
                             <p>多年的經驗及專業知識，專門為客戶進行各類型的草坪保養及工程。</p>
                           </article>
                         </div>
-                        <Link to="/"><h5 className="read-more px-3 py-2 has-text-centered mb-5 mx-5">了解細項</h5></Link>
+                        <Link to="/services/category3"><h5 className="read-more px-3 py-2 has-text-centered mb-5 mx-5">了解細項</h5></Link>
                       </div>
                     </div>
 
@@ -216,7 +216,7 @@ const IndexPage = ({intl}) => (
                             <p>我們具備多年經驗，專門為客戶進行各類型的綠化工程項目。</p>
                           </article>
                         </div>
-                        <Link to="/"><h5 className="read-more px-3 py-2  has-text-centered mb-5 mx-5">了解細項</h5></Link>
+                        <Link to="/services/category4"><h5 className="read-more px-3 py-2  has-text-centered mb-5 mx-5">了解細項</h5></Link>
                       </div>
                     </div>
                     
