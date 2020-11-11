@@ -62,7 +62,7 @@ $primary-color: hsl(143, 45%, 50%);
 .message-wrap {
     overflow: hidden;
     background: rgb(250,255,242);
-    background: linear-gradient(90deg, rgba(250,255,242,.25) 0%, rgba(242,255,245, .75) 75%);
+    background: linear-gradient(90deg, rgba(250,255,242,.75) 0%, rgba(242,255,245, .95) 75%);
     border-radius: 2.5rem;
     z-index: 0;
 }
@@ -151,12 +151,11 @@ $primary-color: hsl(143, 45%, 50%);
     }
 
     .block-message {
-        margin: 2.5rem;
-        
+        margin: 1.25rem;
     }
 
     .message-wrap {
-        padding: 1.5rem;
+        padding: 2.5rem 1.25rem;
     }
 
     .msg-heading {
