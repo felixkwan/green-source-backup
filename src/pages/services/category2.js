@@ -164,6 +164,22 @@ const Category2 = () => {
                     </div>
                   </div>
 
+                  <div className="column new-service is-half-tablet is-one-third-desktop">
+                    <div className="inner">
+                      <div className="card pb-2">
+
+                        <div className="card-content">
+                          <div className="container card-top-border is-relative"></div>
+                          <h2 className="service-title px-4 mb-2">快將更新</h2>
+                            <article className="content px-4">
+                              <p>即將提供新的高品質服務, 以完善不同需要。</p>
+                            </article>
+                        </div>
+                        <div className="card-footer"></div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
                 <div className="container is-widescreen service-navbar is-hidden-touch">
