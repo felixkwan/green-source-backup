@@ -659,7 +659,6 @@ button.navbar-burger {
 
   .hero-body {
     background: white;
-    box-shadow: 0px 12px 28px 0px rgba(209,209,209,0.35);
     border-radius: 1.58rem;
     z-index: -1;
   }
@@ -668,4 +667,19 @@ button.navbar-burger {
 .table-bottom {
   padding: .5rem;
   margin-top: -1.5rem;
+}
+
+.caption {
+  padding-bottom: 2.5rem;
+  color: hsl(142.9,10.1%,59.4%);
+}
+
+//contact
+
+.table-wrapper {
+  border: 1px solid  hsl(140,12%,90.2%);
+}
+
+.contact-pding-bottom {
+  padding-bottom: 3.5rem;
 }

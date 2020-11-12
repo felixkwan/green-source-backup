@@ -45,7 +45,7 @@ const Recruit = () => {
             <span className="page-title-text has-text-weight-bold">Opportunities</span>
         </div>
  
-        <div className="page-body has-background-white">
+        <div className="page-body">
 
           <div className="page-content container">
             <nav className="breadcrumb px-3 " aria-label="breadcrumbs">
@@ -119,7 +119,7 @@ const Recruit = () => {
             </div>
 
             <section className="container caption">
-              <small className="has-text-grey pl-5">&#10040; 所有個人資料只會用於招聘用途。</small>
+              <small className="pl-5">&#10040; 所有個人資料只會用於招聘用途。</small>
             </section>
 
           </div>

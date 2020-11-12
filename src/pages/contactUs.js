@@ -63,7 +63,7 @@ const ContactUs = () => {
                 <h3 className="eng is-inline-block">Company Information</h3>
               </div>
               <section className="hero">
-                <div className="hero-body">
+                <div className="hero-body table-wrapper">
                   <table className="table">
                     <thead>
                     </thead>
@@ -140,6 +140,8 @@ const ContactUs = () => {
                   </table>
                 </div>
               </section>
+
+              <div className="contact-pding-bottom container"></div>
             </div>
 
           </div>
