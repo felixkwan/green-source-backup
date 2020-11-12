@@ -60,7 +60,7 @@ const Recruit = () => {
                 <h3 className="eng is-inline-block">Open</h3>
               </div>
               <section className="hero">
-                <div className="hero-body">
+                <div className="hero-body table-wrapper">
                   <table className="table">
                     <thead>
                     </thead>
@@ -111,11 +111,12 @@ const Recruit = () => {
                     <tfoot>
                     </tfoot>
                   </table>
+
+                  <div className="table-bottom has-text-right-tablet has-text-centered-mobile">
+                    <Link to="https://wa.me/85269965240" className="recruit-btn is-size-5 has-text-weight-bold px-5">馬上應徵</Link>
+                  </div>
                 </div>
               </section>
-              <div className="table-bottom has-text-centered">
-                <Link to="https://wa.me/85269965240" className="recruit-btn is-size-5 has-text-weight-bold px-5">馬上應徵</Link>
-              </div>
             </div>
 
             <section className="container caption">
