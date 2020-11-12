@@ -37,10 +37,12 @@ $breadcrumb-item-hover-color: hsl(143, 45%, 50%);
 $breadcrumb-item-separator-color: hsl(143, 45%, 50%);
 
 //table
+$table-background-color: transparent;
 $table-cell-padding: 1.25rem 2rem;
 $table-head-cell-border-width: 0 0 0;
 $table-foot-cell-border-width: 0 0 0;
 $table-cell-border: none;
+
 
 //footer 
 $footer-background-color: hsl(143.1,52%,4.9%);
@@ -157,6 +159,7 @@ img {
 
 .recruit-btn {
   border: none;
+  z-index: 2;
   letter-spacing: 1.2px;
   color: $dark-grey;
   border-radius: 2.5rem;
@@ -640,29 +643,36 @@ button.navbar-burger {
 
 //recruit page
 
-.table-title {
-  margin-bottom: -1.95rem;
-
-  h3 {
-    background: white;
-    padding: .5rem 2.5rem;
-    border-radius: 2rem;
-  }
-}
-
 .table-section {
   margin-bottom: 1.5rem;
 
+  .table-title {
+    margin-bottom: -1.95rem;
+    z-index: 2;
+    position: relative;
+  
+    h3 {
+      background: white;
+      padding: .5rem 2.5rem;
+      border-radius: 2rem;
+    }
+  }
+
   .hero-body {
-    background: white;
     border-radius: 1.58rem;
-    z-index: -1;
+    padding: 3rem 1.5rem 1rem;
+    background: white;
+    z-index: 0;
+    position: relative;
+    box-shadow: -0px 30px 38px 0px rgba(209,209,209,0.15);
   }
 }
 
 .table-bottom {
-  padding: .5rem;
-  margin-top: -1.5rem;
+  padding: 1.5rem;
+  margin: .5rem 0 .25rem;
+  position: relative;
+  z-index: 2;
 }
 
 .caption {
@@ -673,7 +683,7 @@ button.navbar-burger {
 //contact
 
 .table-wrapper {
-  border: 1px solid  hsl(140,12%,90.2%);
+  border: 6px solid hsl(135,23.5%,93.3%);
 }
 
 .contact-pding-bottom {
