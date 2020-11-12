@@ -471,12 +471,8 @@ button.navbar-burger {
   .page-header {
     color: white;
   }
-
-  .home-header {
-    .hero-body,
-    .hero-head {
-      backdrop-filter: brightness(.85);
-    }
+  .header-bk {
+    filter: brightness(0.85);
   }
 }
 
