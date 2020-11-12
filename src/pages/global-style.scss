@@ -56,6 +56,9 @@ html {
   font-size: 1rem;
   min-width: 375px;
   box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 body {
@@ -438,8 +441,6 @@ button.navbar-burger {
 //header
 
 .header {
-  word-break: break-word;
-  overflow-wrap: break-word;
   
   .heading-us {
     color: $dark-grey;
