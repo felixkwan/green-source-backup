@@ -84,7 +84,7 @@ const IndexPage = ({intl}) => (
         <Layout>
           <SEO title="Home" />
 
-          <div id="home" className="header">
+          <div id="home" className="header home-header">
             <section className="hero is-medium is-relative">
               <Img className="top-header-bk header-bk" fluid={desktop}></Img>
               <div className="hero-head">

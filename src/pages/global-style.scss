@@ -438,6 +438,9 @@ button.navbar-burger {
 //header
 
 .header {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  
   .heading-us {
     color: $dark-grey;
   }
@@ -453,6 +456,12 @@ button.navbar-burger {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-content {
+    max-width: 75%;
+  }
+}
+
 .heading-des {
   max-width: 360px;
   padding-left: 0.05rem;
@@ -461,6 +470,13 @@ button.navbar-burger {
 @media only screen and (max-width: 1023px) {
   .page-header {
     color: white;
+  }
+
+  .home-header {
+    .hero-body,
+    .hero-head {
+      backdrop-filter: brightness(.85);
+    }
   }
 }
 
