@@ -55,7 +55,7 @@ const Recruit = () => {
               </ul>
             </nav>
 
-            <div className="table-section">
+            <div className="table-section recruit-table">
               <div className="table-title px-3 py-2 has-text-centered">
                 <h3 className="eng is-inline-block">Open</h3>
               </div>
