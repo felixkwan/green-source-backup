@@ -56,6 +56,8 @@ html {
   font-size: 1rem;
   min-width: 375px;
   box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 body {
@@ -438,6 +440,7 @@ button.navbar-burger {
 //header
 
 .header {
+  
   .heading-us {
     color: $dark-grey;
   }
@@ -453,6 +456,12 @@ button.navbar-burger {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-content {
+    max-width: 75%;
+  }
+}
+
 .heading-des {
   max-width: 360px;
   padding-left: 0.05rem;
@@ -461,6 +470,13 @@ button.navbar-burger {
 @media only screen and (max-width: 1023px) {
   .page-header {
     color: white;
+  }
+
+  .home-header {
+    .hero-body,
+    .hero-head {
+      backdrop-filter: brightness(.85);
+    }
   }
 }
 
