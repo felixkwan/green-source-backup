@@ -83,9 +83,9 @@ const ContactUs = () => {
                         <td>G/f No.8 Wilson Road Jardine's Lookout</td>
                       </tr>
                       <tr className="is-hidden-mobile">
-                        <th>聯絡人</th>
+                        <th className="has-text-left">聯絡人</th>
                         <td>葉生</td>
-                        <th>聯絡電話</th>
+                        <th className="has-text-left">聯絡電話</th>
                         <td>9585-3845</td>
                       </tr>
                       <tr className="is-hidden-tablet">
@@ -96,9 +96,9 @@ const ContactUs = () => {
                       </tr>
 
                       <tr className="is-hidden-mobile">
-                        <th>聯絡人</th>
+                        <th className="has-text-left">聯絡人</th>
                         <td>張生</td>
-                        <th>聯絡電話</th>
+                        <th className="has-text-left">聯絡電話</th>
                         <td>6996-5240</td>
                       </tr>
 

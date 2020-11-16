@@ -23,7 +23,7 @@ class Contact extends Component {
                                         </div>
                                         <div className="contact-item">
                                             <h5>電話聯絡方法</h5>
-                                            <h4>2670 0378 / 2697 6456</h4>
+                                            <h4>2670-0378 / 9585-3845</h4>
                                         </div>
                                         <Link to="https://wa.me/85269965240">
                                             <h5 className="contact-btn-r contact-btn py-4 pl-5 s-size-6-mobile has-text-left-desktop"> <FontAwesomeIcon icon={faWhatsapp} className="ml-2 mr-5 mt-1 is-size-5 is-svg" />立即查詢報價或細節</h5>
