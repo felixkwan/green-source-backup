@@ -118,9 +118,9 @@ const ContactUs = () => {
                       </tr>
 
                       <tr className="is-hidden-mobile">
-                        <th>電話</th>
+                        <th className="has-text-left">電話</th>
                         <td>2670-0378</td>
-                        <th >Fax</th>
+                        <th className="has-text-left">Fax</th>
                         <td>2670-9016</td>
                       </tr>
 
