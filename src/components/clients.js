@@ -9,7 +9,7 @@ const Clients = () => {
     return (
         <>
             <div className="block-client">
-                <div className="container is-max-widescreen">
+                <div className="container is-max-fullhd">
                     <div className="hero">
                         <div className="hero-body">
                             <div className="block-heading has-text-centered-tablet mb-6">
@@ -17,7 +17,10 @@ const Clients = () => {
                                 <h1 className="eng mb-2 px-1">
                                     Serve the best, Make you the best.
                                 </h1>
-                                <h3 className="px-1">
+                                <h3 className="is-hidden-mobile">
+                                    我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
+                                </h3>
+                                <h3 className="px-1 is-hidden-tablet">
                                     我哋為各大物業管理公司,院校,屋苑提供各類專業園藝服務,咨詢及施工。
                                 </h3>
                             </div>

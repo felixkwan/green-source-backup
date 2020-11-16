@@ -122,9 +122,14 @@ const IndexPage = ({intl}) => (
                     <h1 className="eng mb-2 px-1">
                       Experienced, Skilful Teams.
                     </h1>
-                    <h3 className="px-1">
+                    <h3 className="is-hidden-mobile">
                       綠源擁有專業技術顧問及施工團隊, 如樹藝師, 攀樹師,園林設計師,保養技工等等。
                     </h3>
+                    
+                    <h3 className="px-1 is-hidden-tablet">
+                      綠源擁有專業技術顧問及施工團隊, 如樹藝師, 攀樹師,園林設計師,保養技工等等。
+                    </h3>
+
                   </div>
                   
                   <div className="columns is-multiline is-8 is-tablet">

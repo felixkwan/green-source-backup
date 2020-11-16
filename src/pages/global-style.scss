@@ -453,6 +453,15 @@ button.navbar-burger {
   }
 }
 
+@media only screen and (min-width: 769px) {
+  .block-heading {
+    h3 {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .header-content {
     max-width: 50%;
