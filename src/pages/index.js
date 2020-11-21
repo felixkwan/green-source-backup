@@ -59,7 +59,7 @@ const IndexPage = ({intl}) => (
             }
           }
         },
-        info2Image: file(relativePath: { eq: "info-2-img-2.webp" }) {
+        info2Image: file(relativePath: { eq: "info-2-img.webp" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1200) {
               ...GatsbyImageSharpFluid
