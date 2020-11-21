@@ -23,7 +23,7 @@ const Category3 = () => {
           }
         }
       },
-      s1Image: file(relativePath: { eq: "cate3-s1.webp" }) {
+      s1Image: file(relativePath: { eq: "cate3-s1-2.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid

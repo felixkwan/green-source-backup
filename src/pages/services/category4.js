@@ -16,7 +16,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Category4 = () => {
   const data = useStaticQuery(graphql`
     query {
-      heading: file(relativePath: { eq: "cate4-bk.webp" }) {
+      heading: file(relativePath: { eq: "cate4-bk-2.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -30,7 +30,7 @@ const Category4 = () => {
           }
         }
       },
-      s2Image: file(relativePath: { eq: "cate4-s2.webp" }) {
+      s2Image: file(relativePath: { eq: "cate4-s2-2.webp" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
