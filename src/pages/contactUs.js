@@ -14,8 +14,8 @@ const ContactUs = () => {
     query {
       desktop: file(relativePath: { eq: "contact-bk.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1440) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 1200) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

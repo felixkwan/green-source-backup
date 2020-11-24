@@ -16,31 +16,31 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Category1 = () => {
   const data = useStaticQuery(graphql`
     query {
-      heading: file(relativePath: { eq: "cate1-bk.webp" }) {
+      heading: file(relativePath: { eq: "cate1-bk.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1200) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s1Image: file(relativePath: { eq: "cate1-s1.webp" }) {
+      s1Image: file(relativePath: { eq: "cate1-s1.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s2Image: file(relativePath: { eq: "cate1-s2.webp" }) {
+      s2Image: file(relativePath: { eq: "cate1-s2.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s3Image: file(relativePath: { eq: "cate1-s3.webp" }) {
+      s3Image: file(relativePath: { eq: "cate1-s3.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

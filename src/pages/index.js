@@ -17,7 +17,7 @@ const IndexPage = ({intl}) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "desktop.webp" }) {
+        desktop: file(relativePath: { eq: "desktop.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp
@@ -52,17 +52,17 @@ const IndexPage = ({intl}) => (
             }
           }
         },
-        info1Image: file(relativePath: { eq: "info-1-img.webp" }) {
+        info1Image: file(relativePath: { eq: "info-1-img.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         },
-        info2Image: file(relativePath: { eq: "info-2-img.webp" }) {
+        info2Image: file(relativePath: { eq: "info-2-img.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
