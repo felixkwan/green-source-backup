@@ -16,38 +16,38 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 const Category4 = () => {
   const data = useStaticQuery(graphql`
     query {
-      heading: file(relativePath: { eq: "cate4-bk-2.webp" }) {
+      heading: file(relativePath: { eq: "cate4-bk-2.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s1Image: file(relativePath: { eq: "cate4-s1.webp" }) {
+      s1Image: file(relativePath: { eq: "cate4-s1.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s2Image: file(relativePath: { eq: "cate4-s2-2.webp" }) {
+      s2Image: file(relativePath: { eq: "cate4-s2-2.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s3Image: file(relativePath: { eq: "cate4-s3.webp" }) {
+      s3Image: file(relativePath: { eq: "cate4-s3.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       },
-      s4Image: file(relativePath: { eq: "cate4-s4.webp" }) {
+      s4Image: file(relativePath: { eq: "cate4-s4.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 100, maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
